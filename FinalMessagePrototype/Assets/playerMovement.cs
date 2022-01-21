@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public float moveSpeed;
+    public GameObject playeron;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
@@ -25,14 +26,21 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get player inputs
-        processInputs();
+        if (Input.GetKeyDown("space"))
+        {
+            playeron.active = !playeron.active;
+        }
+        if (playeron.active == true)
+        {
+            // Get player inputs
+            processInputs();
 
-        // Animate
-        animate();
+            // Animate
+            animate();
 
-        // Move
-        move();
+            // Move
+            move();
+        }
     }
 
     private void move()
