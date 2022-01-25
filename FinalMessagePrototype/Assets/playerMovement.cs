@@ -12,7 +12,7 @@ public class playerMovement : MonoBehaviour
     private float moveDirection;
 
     // Awake is called after all objects are initialized. Called in random order
-    private void Awake() 
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); // will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D
     }
@@ -20,7 +20,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -28,9 +28,9 @@ public class playerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            playeron.active = !playeron.active;
+            playeron.SetActive(false);
         }
-        if (playeron.active == true)
+        if (playeron.activeSelf == true)
         {
             // Get player inputs
             processInputs();
@@ -59,13 +59,13 @@ public class playerMovement : MonoBehaviour
             flipChara();
         }
     }
-    
+
     private void processInputs()
     {
         moveDirection = Input.GetAxis("Horizontal"); // from -1 to 1
     }
 
-    private void flipChara() 
+    private void flipChara()
     {
         facingRight = !facingRight; //inverse boolean
         transform.Rotate(0f, 180f, 0f);

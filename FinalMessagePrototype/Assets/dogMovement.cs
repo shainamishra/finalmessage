@@ -27,9 +27,9 @@ public class dogMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("space")) {
-            dogon.active = !dogon.active;
+            dogon.SetActive(false);
         }
-            if (dogon.active == true)
+            if (dogon.activeSelf == true)
         {
             // Get player inputs
             processInputs();
