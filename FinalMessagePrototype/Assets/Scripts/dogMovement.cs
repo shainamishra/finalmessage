@@ -26,14 +26,10 @@ public class dogMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space") && dogon.activeSelf == true) {
+        if (Input.GetKeyDown("space")) {
             dogon.SetActive(false);
-        } 
-        else if (Input.GetKeyDown("space") && dogon.activeSelf == false) {
-            dogon.SetActive(true);
         }
-            
-        if (dogon.activeSelf == true)
+            if (dogon.activeSelf == true)
         {
             // Get player inputs
             processInputs();

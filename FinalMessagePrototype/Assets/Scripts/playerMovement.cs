@@ -26,14 +26,10 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space") && playeron.activeSelf == true)
+        if (Input.GetKeyDown("space"))
         {
             playeron.SetActive(false);
-        } 
-        else if (Input.GetKeyDown("space") && playeron.activeSelf == false) {
-            playeron.SetActive(true);
         }
-
         if (playeron.activeSelf == true)
         {
             // Get player inputs
