@@ -20,8 +20,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-                Debug.Log("player = " + playeron.activeSelf);
+        
     }
 
     // Update is called once per frame
@@ -30,11 +29,9 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown("space")) {
             if(playeron.activeSelf == true){
                 playeron.SetActive(false);
-                Debug.Log("player = " + playeron.activeSelf);
             }
             else if(playeron.activeSelf == false){
                 playeron.SetActive(true);
-                Debug.Log("player = " + playeron.activeSelf);
             }
         }
 

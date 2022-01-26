@@ -20,8 +20,7 @@ public class dogMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-                Debug.Log("dog = " + dogon.activeSelf);
+        
     }
 
     // Update is called once per frame
@@ -30,11 +29,9 @@ public class dogMovement : MonoBehaviour
         if (Input.GetKeyDown("space")) {
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
-                Debug.Log("dog = " + dogon.activeSelf);
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);
-                Debug.Log("dog = " + dogon.activeSelf);
             }
         }
         
