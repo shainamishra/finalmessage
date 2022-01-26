@@ -21,15 +21,24 @@ public class dogMovement : MonoBehaviour
     void Start()
     {
 
+                Debug.Log("dog = " + dogon.activeSelf);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("space")) {
-            dogon.SetActive(false);
+            if(dogon.activeSelf == true){
+                dogon.SetActive(false);
+                Debug.Log("dog = " + dogon.activeSelf);
+            }
+            else if(dogon.activeSelf == false){
+                dogon.SetActive(true);
+                Debug.Log("dog = " + dogon.activeSelf);
+            }
         }
-            if (dogon.activeSelf == true)
+        
+        if (dogon.activeSelf == true)
         {
             // Get player inputs
             processInputs();

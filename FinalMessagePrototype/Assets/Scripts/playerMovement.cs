@@ -21,15 +21,23 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
 
+                Debug.Log("player = " + playeron.activeSelf);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            playeron.SetActive(false);
+        if (Input.GetKeyDown("space")) {
+            if(playeron.activeSelf == true){
+                playeron.SetActive(false);
+                Debug.Log("player = " + playeron.activeSelf);
+            }
+            else if(playeron.activeSelf == false){
+                playeron.SetActive(true);
+                Debug.Log("player = " + playeron.activeSelf);
+            }
         }
+
         if (playeron.activeSelf == true)
         {
             // Get player inputs
