@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 5868103562066243233}
   transitionTime: 2
+  dog: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &5868103561980109685
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +132,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5868103561980109685}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
