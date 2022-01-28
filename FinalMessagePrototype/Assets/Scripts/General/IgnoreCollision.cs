@@ -6,6 +6,7 @@ public class IgnoreCollision : MonoBehaviour
 {
     public GameObject dog;
     public GameObject human;
+    public GameObject ropeinteract;
 
     // Start is called before the first frame update
     void Start()
@@ -17,5 +18,7 @@ public class IgnoreCollision : MonoBehaviour
     void Update()
     {
         Physics2D.IgnoreCollision(dog.GetComponent<Collider2D>(), human.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(dog.GetComponent<Collider2D>(), ropeinteract.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(human.GetComponent<Collider2D>(), ropeinteract.GetComponent<Collider2D>());
     }
 }
