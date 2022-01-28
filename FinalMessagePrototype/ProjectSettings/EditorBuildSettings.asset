@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialReasoning.unity
     guid: a7fe86f69e5d5434f8a5884684d4cf76
+  - enabled: 1
+    path: Assets/Scenes/TutorialKnowledge.unity
+    guid: 1cac8b1cb50c44186a2c9552e305f7c7
   m_configObjects: {}

@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject playeron;
+    //public NPCBehavior npc;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
@@ -20,7 +22,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -74,5 +76,19 @@ public class playerMovement : MonoBehaviour
     {
         facingRight = !facingRight; //inverse boolean
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.tag == "NPC"){
+            Debug.Log("touched NPC");
+            other.gameObject.GetComponent<NPCBehavior>().Talk();
+            // NPCBehavior npc = GameObject.Find("NPC").GetComponent<NPCBehavior>();
+            // npc.Talk();
+        }
+    }
+
+    public void Die() {
+        playeron.SetActive(false);
+        SceneManager.LoadScene("StartScene");
     }
 }

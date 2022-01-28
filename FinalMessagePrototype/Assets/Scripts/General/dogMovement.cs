@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class dogMovement : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class dogMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class dogMovement : MonoBehaviour
                 dogon.SetActive(true);
             }
         }
-        
+
         if (dogon.activeSelf == true)
         {
             // Get player inputs
@@ -74,5 +75,10 @@ public class dogMovement : MonoBehaviour
     {
         facingRight = !facingRight; //inverse boolean
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    public void Die() {
+        dogon.SetActive(false);
+        SceneManager.LoadScene("StartScene");
     }
 }
