@@ -33,7 +33,10 @@ public class LevelLoader : MonoBehaviour
         {
             if(door.activeSelf == false)
             {
-                LoadNextLevel();
+                if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+                {
+                    LoadNextLevel();
+                }
             }
         }
     }
