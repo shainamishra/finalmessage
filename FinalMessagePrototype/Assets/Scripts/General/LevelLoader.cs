@@ -35,6 +35,7 @@ public class LevelLoader : MonoBehaviour
     {
         // loads the next scene
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        level += 1;
     }
 
     IEnumerator LoadLevel(int levelIndex)
