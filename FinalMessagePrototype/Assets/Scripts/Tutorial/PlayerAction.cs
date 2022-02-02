@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
+    public Animator animator;
     public GameObject playeron;
     public GameObject dogon;
     public GameObject strikepoint;
     public GameObject rope;
-    public GameObject ropeint;
-    public GameObject square;
+    public GameObject ropeNPC;
+    public GameObject freeNPC;
 
     // Start is called before the first frame update
     void Start()
     {
-        rope = GameObject.Find("Rope");
-        ropeint = GameObject.Find("RopeInteract");
-        square = GameObject.Find("Square");
+        ropeNPC = GameObject.Find("RopeNPC");
+        //freeNPC = GameObject.Find("freeNPC");
     }
 
     // Update is called once per frame
@@ -31,25 +31,11 @@ public class PlayerAction : MonoBehaviour
         { 
             strikepoint.SetActive(false); 
         }
-        if (Input.GetMouseButtonDown(1)) 
-        {
-            Talk();
-        }
     }
 
     void Act() 
     {
-        //box collider appears
-        //if specific object is in box, then result occurs
-        //if ()
-        //set unnecessary objects to not active to clear area
-    }
-
-    void Talk()
-    {
-        //dialogue box appears
-        //click to progress the text
-
+        animator.SetTrigger("Strike");
     }
 
     // Collision stuff
@@ -58,10 +44,8 @@ public class PlayerAction : MonoBehaviour
         if (collider.gameObject.name == "RopeInteract")
         {
             //Debug.Log("RopeInteract");
-            rope.SetActive(false);
-            ropeint.SetActive(false);
-            square.SetActive(false);
-            
+            ropeNPC.SetActive(false);
+            freeNPC.SetActive(true);
         }
     }
 }

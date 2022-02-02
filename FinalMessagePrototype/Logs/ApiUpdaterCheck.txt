@@ -318,3 +318,43 @@ C# parse time         : 305ms
 candidates check time : 32ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 2/2/2022 2:55:06 PM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1079.2917ms
+moved types parse time: 82ms
+candidates parse time : 1ms
+C# parse time         : 896ms
+candidates check time : 74ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 2/2/2022 3:08:50 PM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 177.7577ms
+moved types parse time: 107ms
+candidates parse time : 2ms
+C# parse time         : 410ms
+candidates check time : 63ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 2/2/2022 3:09:25 PM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 130.9127ms
+moved types parse time: 61ms
+candidates parse time : 2ms
+C# parse time         : 340ms
+candidates check time : 37ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 2/2/2022 3:25:09 PM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 120.6285ms
+moved types parse time: 126ms
+candidates parse time : 3ms
+C# parse time         : 399ms
+candidates check time : 59ms
+console write time    : 1ms
+
