@@ -8,14 +8,12 @@ public class NPCBehavior : MonoBehaviour
 
     void Start()
     {
-        panel = GameObject.Find("Dialogue Box");
-        panel.gameObject.SetActive(false);
-
+        panel.SetActive(false);
     }
 
     public void Talk()
     {
-        panel.gameObject.SetActive(true);
+        panel.SetActive(true);
     }
 
     public void OpenDoor()

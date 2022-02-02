@@ -21,6 +21,7 @@ public class Dialogue : MonoBehaviour
         // UnityEngine.UI.Button button1 = GameObject.Find("Choice1").GetComponent<UnityEngine.UI.Button>();
         // UnityEngine.UI.Button button2 = GameObject.Find("Choice2").GetComponent<UnityEngine.UI.Button>();
         // UnityEngine.UI.Button button3 = GameObject.Find("Choice3").GetComponent<UnityEngine.UI.Button>();
+        //Debug.Log("i am at dialogue start function!");
         button1.gameObject.SetActive(false);
         button2.gameObject.SetActive(false);
         button3.gameObject.SetActive(false);
