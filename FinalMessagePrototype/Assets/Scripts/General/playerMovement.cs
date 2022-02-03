@@ -89,6 +89,6 @@ public class playerMovement : MonoBehaviour
 
     public void Die() {
         playeron.SetActive(false);
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("1StartScene");
     }
 }
