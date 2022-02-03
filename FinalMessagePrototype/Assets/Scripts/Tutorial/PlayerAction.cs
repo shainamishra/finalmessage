@@ -8,15 +8,11 @@ public class PlayerAction : MonoBehaviour
     public GameObject playeron;
     public GameObject dogon;
     public GameObject strikepoint;
-    public GameObject rope;
-    public GameObject ropeNPC;
-    public GameObject freeNPC;
 
     // Start is called before the first frame update
     void Start()
     {
-        ropeNPC = GameObject.Find("RopeNPC");
-        //freeNPC = GameObject.Find("freeNPC");
+        
     }
 
     // Update is called once per frame
@@ -35,17 +31,9 @@ public class PlayerAction : MonoBehaviour
 
     void Act() 
     {
-        animator.SetTrigger("Strike");
-    }
-
-    // Collision stuff
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.name == "RopeInteract")
+        if (playeron.activeSelf == true)
         {
-            //Debug.Log("RopeInteract");
-            ropeNPC.SetActive(false);
-            freeNPC.SetActive(true);
+            animator.SetTrigger("Strike");
         }
     }
 }

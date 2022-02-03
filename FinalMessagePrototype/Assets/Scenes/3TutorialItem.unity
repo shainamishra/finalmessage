@@ -1129,9 +1129,6 @@ MonoBehaviour:
   playeron: {fileID: 1328440739}
   dogon: {fileID: 1401497370}
   strikepoint: {fileID: 329561583}
-  rope: {fileID: 0}
-  ropeNPC: {fileID: 0}
-  freeNPC: {fileID: 0}
 --- !u!95 &1289025117
 Animator:
   serializedVersion: 3
@@ -1319,9 +1316,6 @@ MonoBehaviour:
   playeron: {fileID: 1328440739}
   dogon: {fileID: 1401497370}
   strikepoint: {fileID: 329561583}
-  rope: {fileID: 0}
-  ropeNPC: {fileID: 0}
-  freeNPC: {fileID: 1815359360}
 --- !u!95 &1297160996
 Animator:
   serializedVersion: 3
@@ -1516,6 +1510,7 @@ GameObject:
   - component: {fileID: 1470288408}
   - component: {fileID: 1470288409}
   - component: {fileID: 1470288410}
+  - component: {fileID: 1470288411}
   m_Layer: 0
   m_Name: RopeInteract
   m_TagString: Untagged
@@ -1614,6 +1609,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1470288411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470288407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcb62932da70b14d8177e9543f28b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ropeNPC: {fileID: 33931960}
+  freeNPC: {fileID: 1815359360}
 --- !u!1001 &1649312280
 PrefabInstance:
   m_ObjectHideFlags: 0
