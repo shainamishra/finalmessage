@@ -469,6 +469,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5868103561602681018, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1146,6 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46da85149967c4d63b40abcef2ac371a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 1224493406}
 --- !u!212 &1047801314
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -1621,6 +1621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5868103561602681018, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2068,6 +2072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939411409}
   - component: {fileID: 1939411408}
+  - component: {fileID: 1939411410}
   m_Layer: 0
   m_Name: IgnoreCollision
   m_TagString: Untagged
@@ -2089,8 +2094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dog: {fileID: 1289025110}
   human: {fileID: 1297160989}
-  ropeinteract: {fileID: 1470288407}
-  freeNPC: {fileID: 1815359360}
 --- !u!4 &1939411409
 Transform:
   m_ObjectHideFlags: 0
@@ -2105,6 +2108,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1939411410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939411407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a5d69f1ac6d4e27a5e65a711c39c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dog: {fileID: 1289025110}
+  human: {fileID: 1297160989}
+  object1: {fileID: 1470288407}
+  object2: {fileID: 1815359360}
 --- !u!1 &2045325948
 GameObject:
   m_ObjectHideFlags: 0

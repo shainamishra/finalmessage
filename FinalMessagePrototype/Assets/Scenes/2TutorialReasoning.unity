@@ -281,7 +281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dog: {fileID: 1566176511}
   human: {fileID: 1239793821}
-  ropeinteract: {fileID: 0}
 --- !u!4 &355145870
 Transform:
   m_ObjectHideFlags: 0
@@ -467,6 +466,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5868103561602681018, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_RootOrder
       value: 0

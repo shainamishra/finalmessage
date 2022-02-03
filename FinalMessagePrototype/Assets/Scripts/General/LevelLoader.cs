@@ -39,6 +39,22 @@ public class LevelLoader : MonoBehaviour
                 }
             }
         }
+
+        if(SceneManager.GetActiveScene().buildIndex  == 2)
+        {
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            {
+                LoadNextLevel();
+            }
+        }
+
+        if(SceneManager.GetActiveScene().buildIndex  == 3)
+        {
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            {
+                LoadNextLevel();
+            }
+        }
     }
 
     public void LoadNextLevel()
