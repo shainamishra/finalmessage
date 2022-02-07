@@ -7,11 +7,12 @@ public class playerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject playeron;
+    public Animator animator;
     //public NPCBehavior npc;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
-    private float moveDirection;
+    private float moveDirection = 0f;
 
     // Awake is called after all objects are initialized. Called in random order
     private void Awake()
@@ -31,6 +32,7 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown("space")) {
             if(playeron.activeSelf == true){
                 playeron.SetActive(false);
+                animator.SetFloat("Speed", 0);
             }
             else if(playeron.activeSelf == false){
                 playeron.SetActive(true);
@@ -70,6 +72,7 @@ public class playerMovement : MonoBehaviour
     private void processInputs()
     {
         moveDirection = Input.GetAxis("Horizontal"); // from -1 to 1
+        animator.SetFloat("Speed", Mathf.Abs(moveDirection));
     }
 
     private void flipChara()

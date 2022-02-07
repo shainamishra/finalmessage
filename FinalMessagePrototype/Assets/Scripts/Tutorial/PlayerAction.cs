@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
-    public Animator animator;
+    //public Animator animator;
     public GameObject playeron;
     public GameObject dogon;
     public GameObject strikepoint;
@@ -31,9 +31,6 @@ public class PlayerAction : MonoBehaviour
 
     void Act() 
     {
-        if (playeron.activeSelf == true)
-        {
-            animator.SetTrigger("Strike");
-        }
+        
     }
 }
