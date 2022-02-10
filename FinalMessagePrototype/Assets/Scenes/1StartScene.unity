@@ -898,6 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   dogon: {fileID: 420385896}
+  animator: {fileID: 723762063}
 --- !u!61 &723762059
 BoxCollider2D:
   m_ObjectHideFlags: 0

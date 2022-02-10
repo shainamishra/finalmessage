@@ -6,10 +6,11 @@ public class dogMovement : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject dogon;
+    public Animator animator;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
-    private float moveDirection;
+    private float moveDirection = 0f;
 
     // Awake is called after all objects are initialized. Called in random order
     private void Awake()
@@ -29,6 +30,7 @@ public class dogMovement : MonoBehaviour
         if (Input.GetKeyDown("space")) {
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
+                animator.SetFloat("Speed", 0);
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);
@@ -68,6 +70,7 @@ public class dogMovement : MonoBehaviour
     private void processInputs()
     {
         moveDirection = Input.GetAxis("Horizontal"); // from -1 to 1
+        animator.SetFloat("Speed", Mathf.Abs(moveDirection));
     }
 
     private void flipChara()
