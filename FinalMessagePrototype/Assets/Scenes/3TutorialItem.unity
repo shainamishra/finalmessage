@@ -1296,8 +1296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6a1e867cd829745b97680fe1d83679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1297160996}
   playeron: {fileID: 1328440739}
-  dogon: {fileID: 0}
+  dogon: {fileID: 40956313}
   strikepoint: {fileID: 329561583}
 --- !u!95 &1297160996
 Animator:

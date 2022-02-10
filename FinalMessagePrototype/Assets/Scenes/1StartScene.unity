@@ -699,8 +699,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6a1e867cd829745b97680fe1d83679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 598393701}
   playeron: {fileID: 1556850452}
-  dogon: {fileID: 0}
+  dogon: {fileID: 420385896}
   strikepoint: {fileID: 674410697}
 --- !u!114 &598393703
 MonoBehaviour:
@@ -1606,6 +1607,10 @@ PrefabInstance:
     - target: {fileID: 5868103561602681019, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_Name
       value: Level Loader
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561980109684, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.75634766
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}

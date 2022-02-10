@@ -17,7 +17,7 @@ public class DoorMove : MonoBehaviour
     void Update()
     {
         // osilates the door up and down
-        float y = Mathf.PingPong(Time.time * speed, 1) * 3 - 2;
+        float y = Mathf.PingPong(Time.time * speed, 1) * 3 - 1;
         door.transform.position = new Vector3(0, y, 0);
     }
 }

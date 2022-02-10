@@ -2414,8 +2414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6a1e867cd829745b97680fe1d83679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1927170188}
   playeron: {fileID: 234331080}
-  dogon: {fileID: 0}
+  dogon: {fileID: 1297437875}
   strikepoint: {fileID: 764390757}
 --- !u!114 &1927170184
 MonoBehaviour:
