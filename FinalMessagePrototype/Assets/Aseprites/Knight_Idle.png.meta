@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 06b34473768fa404bafa57331df85928
+guid: 4c68cae4a8663ac40b2686af99c26a44
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -120,7 +120,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,9 +139,9 @@ TextureImporter:
       name: Knight_Idle_1
       rect:
         serializedVersion: 2
-        x: 300
+        x: 425
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,9 +160,9 @@ TextureImporter:
       name: Knight_Idle_2
       rect:
         serializedVersion: 2
-        x: 600
+        x: 850
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,9 +181,9 @@ TextureImporter:
       name: Knight_Idle_3
       rect:
         serializedVersion: 2
-        x: 900
+        x: 1275
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,9 +202,9 @@ TextureImporter:
       name: Knight_Idle_4
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 1700
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,9 +223,9 @@ TextureImporter:
       name: Knight_Idle_5
       rect:
         serializedVersion: 2
-        x: 1500
+        x: 2125
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,9 +244,9 @@ TextureImporter:
       name: Knight_Idle_6
       rect:
         serializedVersion: 2
-        x: 1800
+        x: 2550
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -265,9 +265,9 @@ TextureImporter:
       name: Knight_Idle_7
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 2975
         y: 0
-        width: 300
+        width: 425
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
