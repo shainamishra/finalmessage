@@ -21,7 +21,7 @@ public class dogMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class dogMovement : MonoBehaviour
                 dogon.SetActive(true);
             }
         }
-        
+
         if (dogon.activeSelf == true)
         {
             // Get player inputs
@@ -53,6 +53,14 @@ public class dogMovement : MonoBehaviour
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        if(rb.velocity.x != 0){
+            if(!FindObjectOfType<AudioManager>().isPlaying()){
+                FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
+            }
+        }
+        else if(rb.velocity.x == 0){
+            FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
+        }
     }
 
     private void animate()
