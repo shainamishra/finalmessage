@@ -14,12 +14,6 @@ TextureImporter:
   - first:
       213: 6809725193694497038
     second: KnightAttack (2)_3
-  - first:
-      213: 2362795977477010809
-    second: KnightAttack (2)_4
-  - first:
-      213: 3043832119668440645
-    second: KnightAttack (2)_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -188,48 +182,6 @@ TextureImporter:
       bones: []
       spriteID: e094034fbf0018e50800000000000000
       internalID: 6809725193694497038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KnightAttack (2)_4
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 0
-        width: 420
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9753d324c665ac020800000000000000
-      internalID: 2362795977477010809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KnightAttack (2)_5
-      rect:
-        serializedVersion: 2
-        x: 2100
-        y: 0
-        width: 420
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54ef2c89f2ddd3a20800000000000000
-      internalID: 3043832119668440645
       vertices: []
       indices: 
       edges: []
