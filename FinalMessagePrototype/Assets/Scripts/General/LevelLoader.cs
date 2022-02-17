@@ -12,6 +12,8 @@ public class LevelLoader : MonoBehaviour
     public GameObject player;
     public GameObject door;
 
+    public int levelVar = 0;
+
     void Start()
     {
         dog = GameObject.Find("Dog");
@@ -22,6 +24,9 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
+        // build index starts at ZERO while out scene names start at ONE!!!!
+
+        // start scene
         if(SceneManager.GetActiveScene().buildIndex == 0){
             // level ending conditions
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
@@ -29,7 +34,8 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        if(SceneManager.GetActiveScene().buildIndex  == 1)
+        // tutorial reasoning
+        if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             if(door.activeSelf == false)
             {
@@ -40,7 +46,8 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        if(SceneManager.GetActiveScene().buildIndex  == 2)
+        // tutorial item
+        if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
@@ -48,19 +55,50 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        if(SceneManager.GetActiveScene().buildIndex  == 3)
+        // tutorial knowledge
+        // going to need to actually code this
+        if(SceneManager.GetActiveScene().buildIndex == 3)
         {
+            // four platform
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
                 LoadNextLevel();
             }
+            //lonely climber
+        }
+
+        // four platform
+        if(SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            // witch knight
+            if(((player.transform.position.x > -1 && player.transform.position.x < 1)) && Input.GetKeyDown("x"))
+            {
+                levelVar = 9;
+                LoadNextLevel();
+            }
+            else if(((player.transform.position.x > 6.5 && player.transform.position.x < 9.3) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3)) && Input.GetKeyDown("x"))
+            {
+                LoadNextLevel();
+            }
+            // final message 1
+        }
+
+        // lonely climber
+        if(SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            // witch knight
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            {
+                LoadNextLevel();
+            }
+            // level 7
         }
     }
 
     public void LoadNextLevel()
     {
         // loads the next scene
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 + levelVar));
     }
 
     IEnumerator LoadLevel(int levelIndex)
