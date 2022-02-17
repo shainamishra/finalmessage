@@ -8,6 +8,7 @@ public class PlayerAction : MonoBehaviour
     public GameObject playeron;
     public GameObject dogon;
     public GameObject strikepoint;
+    public GameObject reachzone;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +28,21 @@ public class PlayerAction : MonoBehaviour
         { 
             strikepoint.SetActive(false); 
         }
+        if (Input.GetMouseButton(1) == true)
+        {
+            reachzone.SetActive(true);
+        }
+        else
+        {
+            reachzone.SetActive(false);
+        }
     }
 
     void Act() 
     {
-        animator.SetTrigger("Strike");
+        if (playeron.activeSelf == true)
+        {
+            animator.SetTrigger("Strike");
+        }
     }
 }
