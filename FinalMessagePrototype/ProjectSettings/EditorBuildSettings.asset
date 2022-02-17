@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2TutorialReasoning.unity
     guid: a7fe86f69e5d5434f8a5884684d4cf76
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/3TutorialItem.unity
     guid: 28215cbcf3fbf6a4a9a8aa5934477323
