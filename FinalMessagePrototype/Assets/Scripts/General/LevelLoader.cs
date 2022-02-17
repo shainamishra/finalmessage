@@ -76,22 +76,28 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 9;
                 LoadNextLevel();
             }
+            // final message 1
             else if(((player.transform.position.x > 6.5 && player.transform.position.x < 9.3) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3)) && Input.GetKeyDown("x"))
             {
+                levelVar = 7;
                 LoadNextLevel();
             }
-            // final message 1
         }
 
         // lonely climber
         if(SceneManager.GetActiveScene().buildIndex == 5)
         {
             // witch knight
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(((player.transform.position.x > 11.5 && player.transform.position.y > 10)) || (dog.transform.position.x > 11.5 && dog.transform.position.y > 10))
             {
+                levelVar = 8;
                 LoadNextLevel();
             }
             // level 7
+            else if((player.transform.position.x < -8.5 && (player.transform.position.y > 6 && player.transform.position.y < 9)) || (dog.transform.position.x < -8.5 && (dog.transform.position.y > 6 && dog.transform.position.y < 9)))
+            {
+                LoadNextLevel();
+            }
         }
     }
 
