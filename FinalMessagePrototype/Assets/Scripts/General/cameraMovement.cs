@@ -18,12 +18,14 @@ public class cameraMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        // focus on the knight
         if (playeron.activeSelf == true)
         {
             Vector3 position = transform.position;
             position.y = (player.position + offset).y;
             transform.position = position;
         }
+        // focus on the dog
         if (dogon.activeSelf == true)
         {
             Vector3 position = transform.position;

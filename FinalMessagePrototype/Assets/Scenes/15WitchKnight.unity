@@ -679,10 +679,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 198721557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3b7e5eaafd17043a1d9fcc5ea0c29a, type: 3}
+  m_Script: {fileID: 11500000, guid: e63bbef5adb0d844395e20dfa4d50a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  LeftMover: {fileID: 198721560}
+  RightMover: {fileID: 2033556336}
+  rock1: {fileID: 1723541831}
+  rock2: {fileID: 1218453953}
+  player: {fileID: 1719622612}
 --- !u!50 &198721559
 Rigidbody2D:
   serializedVersion: 4
@@ -1283,7 +1287,7 @@ GameObject:
   - component: {fileID: 854921171}
   - component: {fileID: 854921170}
   m_Layer: 0
-  m_Name: Exit
+  m_Name: Platform
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3004,10 +3008,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2033556333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3b7e5eaafd17043a1d9fcc5ea0c29a, type: 3}
+  m_Script: {fileID: 11500000, guid: e63bbef5adb0d844395e20dfa4d50a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  LeftMover: {fileID: 198721560}
+  RightMover: {fileID: 2033556336}
+  rock1: {fileID: 1723541831}
+  rock2: {fileID: 1218453953}
+  player: {fileID: 1719622612}
 --- !u!50 &2033556335
 Rigidbody2D:
   serializedVersion: 4
