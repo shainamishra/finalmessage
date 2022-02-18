@@ -99,6 +99,23 @@ public class LevelLoader : MonoBehaviour
                 LoadNextLevel();
             }
         }
+
+        // witch knight
+        if (SceneManager.GetActiveScene().buildIndex == 14)
+        {
+            // chime gate
+            if ((player.transform.position.x > 10 && player.transform.position.y > 0))
+            {
+                levelVar = 0;
+                LoadNextLevel();
+            }
+            // key 1
+            else if (((player.transform.position.x > 6.5 && player.transform.position.x < 9.3) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3)) && Input.GetKeyDown("x"))
+            {
+                levelVar = -2;
+                LoadNextLevel();
+            }
+        }
     }
 
     public void LoadNextLevel()

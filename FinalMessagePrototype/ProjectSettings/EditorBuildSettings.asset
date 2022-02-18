@@ -45,13 +45,13 @@ EditorBuildSettings:
     path: Assets/Scenes/13.unity
     guid: 98c91a14b65ec41069f1887bd0aee7dd
   - enabled: 1
-    path: Assets/Scenes/14.unity
+    path: Assets/Scenes/14Key1.unity
     guid: b4d234c863fa241d1862e307acc38d6a
   - enabled: 1
     path: Assets/Scenes/15WitchKnight.unity
     guid: fc97e94f43acc99468d84580a6c2c5d5
   - enabled: 1
-    path: Assets/Scenes/16.unity
+    path: Assets/Scenes/16ChimeGate.unity
     guid: d3d94577368ec4b0ca3c5712d8c06006
   - enabled: 1
     path: Assets/Scenes/17.unity
