@@ -6,4 +6,5 @@
 - Use A & D to move forward and back
 - Use W & S to climb up ladders
 - Use space to switch between characters
-- Click on an object to interact with it
+- Use Left click to strike/bark
+- Use Right click to grab objects
