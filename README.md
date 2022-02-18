@@ -4,6 +4,6 @@
 
 ### Instructions
 - Use A & D to move forward and back
-- Use W to climb up ladders
-- Use spcae to switch between characters
+- Use W & S to climb up ladders
+- Use space to switch between characters
 - Click on an object to interact with it
