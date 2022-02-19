@@ -8,3 +8,4 @@
 - Use space to switch between characters
 - Use Left click to strike/bark
 - Use Right click to grab objects
+- Use ESC to end the game
