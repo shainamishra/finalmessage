@@ -25,6 +25,12 @@ public class LevelLoader : MonoBehaviour
     void Update()
     {
         // build index starts at ZERO while out scene names start at ONE!!!!
+        // end the game
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Debug.Log("help");
+            checkLevel(SceneManager.GetActiveScene().buildIndex);
+            LoadNextLevel();
+        }
 
         // start scene
         if(SceneManager.GetActiveScene().buildIndex == 0){
@@ -73,6 +79,7 @@ public class LevelLoader : MonoBehaviour
             // witch knight
             if(((player.transform.position.x > -1 && player.transform.position.x < 1)) && Input.GetKeyDown("x"))
             {
+                // level Var is a variable which gets added to the number in LoadNextLevel() so that we can jump to the correct scene
                 levelVar = 9;
                 LoadNextLevel();
             }
@@ -121,6 +128,7 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextLevel()
     {
         // loads the next scene
+            // level Var is a variable which gets added to the level number so that we can jump to the correct scene
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 + levelVar));
     }
 
@@ -134,5 +142,56 @@ public class LevelLoader : MonoBehaviour
 
         // load scene
         SceneManager.LoadScene(levelIndex);
+    }
+
+    private void checkLevel(int level)
+    {
+        // end level is index 6
+        levelVar = 0;
+
+        if (level == 0){
+            levelVar = 5;
+        } else if (level == 1){
+            levelVar = 4;
+        } else if (level == 2){
+            levelVar = 3;
+        }  else if (level == 3){
+            levelVar = 2;
+        }  else if (level == 4){
+            levelVar = 1;
+        }  else if (level == 5){
+            levelVar = 0;
+        }  else if (level == 6){
+            levelVar = -1;
+        }  else if (level == 7){
+            levelVar = -2;
+        }  else if (level == 8){
+            levelVar = -3;
+        }  else if (level == 9){
+            levelVar = -4;
+        }  else if (level == 10){
+            levelVar = -5;
+        }  else if (level == 11){
+            levelVar = -6;
+        }  else if (level == 12){
+            levelVar = -7;
+        }  else if (level == 13){
+            levelVar = -8;
+        }  else if (level == 14){
+            levelVar = -9;
+        }  else if (level == 15){
+            levelVar = -10;
+        }  else if (level == 16){
+            levelVar = -11;
+        }  else if (level == 17){
+            levelVar = -12;
+        }  else if (level == 18){
+            levelVar = -13;
+        }  else if (level == 19){
+            levelVar = -14;
+        }  else if (level == 20){
+            levelVar = -15;
+        } 
+        //return levelVar;
     }
 }
