@@ -92,7 +92,7 @@ public class LevelLoader : MonoBehaviour
                 LoadNextLevel();
             }
             // final message 1
-            else if(((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3 && playeron.activeSelf == false)) && Input.GetKeyDown("x"))
+            else if((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) && Input.GetKeyDown("x"))
             {
                 levelVar = 7;
                 LoadNextLevel();
@@ -125,7 +125,7 @@ public class LevelLoader : MonoBehaviour
                 LoadNextLevel();
             }
             // key 1
-            else if (((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3 && playeron.activeSelf == false)) && Input.GetKeyDown("x"))
+            else if ((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) && Input.GetKeyDown("x"))
             {
                 levelVar = -2;
                 LoadNextLevel();
