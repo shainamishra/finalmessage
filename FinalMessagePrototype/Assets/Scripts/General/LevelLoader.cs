@@ -10,6 +10,7 @@ public class LevelLoader : MonoBehaviour
 
     public GameObject dog;
     public GameObject player;
+    public GameObject playeron;
     public GameObject door;
 
     public int levelVar = 0;
@@ -18,6 +19,7 @@ public class LevelLoader : MonoBehaviour
     {
         dog = GameObject.Find("Dog");
         player = GameObject.Find("Player");
+        playeron = GameObject.Find("PlayerON");
         door = GameObject.Find("Door");
     }
 
@@ -32,8 +34,14 @@ public class LevelLoader : MonoBehaviour
             LoadNextLevel();
         }
 
+        // QUIT THE GAME WITH ENTER
+        if (Input.GetKey(KeyCode.Return))
+        {
+            Application.Quit();
+        }
+
         // start scene
-        if(SceneManager.GetActiveScene().buildIndex == 0){
+        if (SceneManager.GetActiveScene().buildIndex == 0){
             // level ending conditions
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 LoadNextLevel();
@@ -77,14 +85,14 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
             // witch knight
-            if(((player.transform.position.x > -1 && player.transform.position.x < 1)) && Input.GetKeyDown("x"))
+            if(((player.transform.position.x > -1 && player.transform.position.x < 1 && player.transform.position.y > 1)) && Input.GetKeyDown("x"))
             {
                 // level Var is a variable which gets added to the number in LoadNextLevel() so that we can jump to the correct scene
                 levelVar = 9;
                 LoadNextLevel();
             }
             // final message 1
-            else if(((player.transform.position.x > 6.5 && player.transform.position.x < 9.3) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3)) && Input.GetKeyDown("x"))
+            else if(((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3 && playeron.activeSelf == false)) && Input.GetKeyDown("x"))
             {
                 levelVar = 7;
                 LoadNextLevel();
@@ -117,7 +125,7 @@ public class LevelLoader : MonoBehaviour
                 LoadNextLevel();
             }
             // key 1
-            else if (((player.transform.position.x > 6.5 && player.transform.position.x < 9.3) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3)) && Input.GetKeyDown("x"))
+            else if (((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) || (dog.transform.position.x > 6.5 && dog.transform.position.x < 9.3 && playeron.activeSelf == false)) && Input.GetKeyDown("x"))
             {
                 levelVar = -2;
                 LoadNextLevel();

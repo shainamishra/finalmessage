@@ -37,6 +37,17 @@ public class dogMovement : MonoBehaviour
             }
         }
 
+        if (Input.GetKey("w") || Input.GetKey("s"))
+        {
+            // stay put
+            rb.gravityScale = 0f;
+        }
+        else
+        {
+            // apply gravity
+            rb.gravityScale = 1f;
+        }
+
         if (dogon.activeSelf == true)
         {
             // Get player inputs

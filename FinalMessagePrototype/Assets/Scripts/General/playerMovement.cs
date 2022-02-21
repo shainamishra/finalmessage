@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKey("w") || Input.GetKey("s"))
+        /*if (Input.GetKey("w") || Input.GetKey("s"))
         {
             //Debug.Log("up down");
             gameObject.GetComponent<BoxCollider2D>().size = new Vector3(.5f, 6.85f, 0f);
@@ -48,7 +48,7 @@ public class playerMovement : MonoBehaviour
         {
             //Debug.Log("not moving up or down");
             gameObject.GetComponent<BoxCollider2D>().size = new Vector3(3.87f, 6.85f, 0f);
-        }
+        }*/
 
         if (playeron.activeSelf == true)
         {
