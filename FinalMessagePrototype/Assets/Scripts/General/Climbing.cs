@@ -19,18 +19,6 @@ public class Climbing : MonoBehaviour
         {
             isClimbing = true;
         }
-
-        if (Input.GetKeyDown("w") || Input.GetKeyDown("s"))
-        {
-            if (Input.GetKeyUp("w") || Input.GetKeyUp("s"))
-            {
-                animator.enabled = false;
-            }
-        }
-        else
-        {
-            animator.enabled = true;
-        }
     }
 
     private void FixedUpdate()
@@ -44,7 +32,7 @@ public class Climbing : MonoBehaviour
             {
                 animator.enabled = true;
             }
-            if (Input.GetKeyUp("w") || Input.GetKeyUp("s"))
+            else
             {
                 animator.enabled = false;
             }
@@ -53,7 +41,6 @@ public class Climbing : MonoBehaviour
         {
             rb.gravityScale = 1f;
             animator.SetBool("IsClimbing", false);
-            animator.enabled = false;
         }
     }
 
