@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Climbing : MonoBehaviour
 {
+    public Animator animator;
+
     private float vertical;
     private float speed = 3f;
     private bool canClimb; 
@@ -17,6 +19,18 @@ public class Climbing : MonoBehaviour
         {
             isClimbing = true;
         }
+
+        if (Input.GetKeyDown("w") || Input.GetKeyDown("s"))
+        {
+            if (Input.GetKeyUp("w") || Input.GetKeyUp("s"))
+            {
+                animator.enabled = false;
+            }
+        }
+        else
+        {
+            animator.enabled = true;
+        }
     }
 
     private void FixedUpdate()
@@ -25,10 +39,21 @@ public class Climbing : MonoBehaviour
         {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+            animator.SetBool("IsClimbing", true);
+            if (Input.GetKey("w") || Input.GetKey("s"))
+            {
+                animator.enabled = true;
+            }
+            if (Input.GetKeyUp("w") || Input.GetKeyUp("s"))
+            {
+                animator.enabled = false;
+            }
         }
         else
         {
             rb.gravityScale = 1f;
+            animator.SetBool("IsClimbing", false);
+            animator.enabled = false;
         }
     }
 

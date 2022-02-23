@@ -2330,8 +2330,8 @@ GameObject:
   - component: {fileID: 1719622612}
   - component: {fileID: 1719622611}
   - component: {fileID: 1719622610}
-  - component: {fileID: 1719622609}
   - component: {fileID: 1719622616}
+  - component: {fileID: 1719622609}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2413,7 +2413,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.87, y: 6.85}
+  m_Size: {x: 1.73, y: 6.85}
   m_EdgeRadius: 0
 --- !u!50 &1719622613
 Rigidbody2D:
@@ -2517,6 +2517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ca845ede718f54aa4df7567a324c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1719622609}
   rb: {fileID: 1719622613}
 --- !u!1 &1723541829
 GameObject:
@@ -3103,8 +3104,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072190176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8, y: 2.5, z: 0}
-  m_LocalScale: {x: 0.5, y: 12, z: 1}
+  m_LocalPosition: {x: -1.8, y: 2.3942, z: 0}
+  m_LocalScale: {x: 0.5, y: 11.7852, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
