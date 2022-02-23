@@ -6,7 +6,6 @@ public class PlayerAction : MonoBehaviour
 {
     public Animator animator;
     public GameObject playeron;
-    public GameObject dogon;
     public GameObject strikepoint;
     public GameObject reachzone;
 
@@ -19,30 +18,30 @@ public class PlayerAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) == true)
+        if (playeron.activeSelf == true)
         {
-            strikepoint.SetActive(true);
-            Act();
-        }
-        else 
-        { 
-            strikepoint.SetActive(false); 
-        }
-        if (Input.GetMouseButton(1) == true)
-        {
-            reachzone.SetActive(true);
-        }
-        else
-        {
-            reachzone.SetActive(false);
+            if (Input.GetMouseButton(0) == true)
+            {
+                strikepoint.SetActive(true);
+                Act();
+            }
+            else
+            {
+                strikepoint.SetActive(false);
+            }
+            if (Input.GetMouseButton(1) == true)
+            {
+                reachzone.SetActive(true);
+            }
+            else
+            {
+                reachzone.SetActive(false);
+            }
         }
     }
 
     void Act() 
     {
-        if (playeron.activeSelf == true)
-        {
-            animator.SetTrigger("Strike");
-        }
+        animator.SetTrigger("Strike");
     }
 }

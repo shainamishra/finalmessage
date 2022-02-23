@@ -1237,6 +1237,7 @@ GameObject:
   - component: {fileID: 956184239}
   - component: {fileID: 956184238}
   - component: {fileID: 956184237}
+  - component: {fileID: 956184242}
   - component: {fileID: 956184236}
   m_Layer: 0
   m_Name: Dog
@@ -1392,6 +1393,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &956184242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956184235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fb3fa8545c094478efbaae9b006342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 956184236}
+  dogon: {fileID: 73321751}
 --- !u!1 &1035682169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,7 +2372,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1719622609}
   playeron: {fileID: 85189671}
-  dogon: {fileID: 73321751}
   strikepoint: {fileID: 221812976}
   reachzone: {fileID: 1696615330}
 --- !u!114 &1719622611
