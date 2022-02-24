@@ -46,11 +46,26 @@ MonoBehaviour:
   sounds:
   - name: Ambience-Wind
     clip: {fileID: 8300000, guid: d5730d7e9fbaf4c67a5544cadf740da1, type: 3}
-    volume: 1
-    pitch: 3
+    volume: 0.444
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   - name: Footsteps-Armor
     clip: {fileID: 8300000, guid: dd16f54610c0b4bcb9148c2bec5aafdd, type: 3}
-    volume: 1
-    pitch: 3
+    volume: 0.6
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 1f6a2b05d2e4e48c3bd4f2069cd3f48e, type: 3}
+    volume: 0.753
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Footsteps-Dog
+    clip: {fileID: 8300000, guid: 1af528eb7fb9341089a5bd3dfdf38d03, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  isPlayings: 0

@@ -115,6 +115,17 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
+        // time gate
+        if (SceneManager.GetActiveScene().buildIndex == 8)
+        {
+            // witch knight
+            if (player.transform.position.x >5.9 && player.transform.position.y > 27 && Input.GetKeyDown("x"))
+            {
+                levelVar = 0;
+                LoadNextLevel();
+            }
+        }
+
         // witch knight
         if (SceneManager.GetActiveScene().buildIndex == 14)
         {
