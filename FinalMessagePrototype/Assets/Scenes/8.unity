@@ -275,7 +275,7 @@ Transform:
   m_LocalScale: {x: 2, y: 25, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &74707477
 GameObject:
@@ -353,7 +353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74707477}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.44, y: 4.39, z: 0}
+  m_LocalPosition: {x: 0, y: 4.39, z: 0}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2120426152}
@@ -1242,12 +1242,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640141885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.09, y: -1.23, z: 0}
+  m_LocalPosition: {x: -6.28, y: -1.23, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 439887497}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722447991
 GameObject:
@@ -1651,7 +1651,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2120426146}
   playeron: {fileID: 74707477}
-  dogon: {fileID: 439887495}
   strikepoint: {fileID: 1002302681}
   reachzone: {fileID: 1722447991}
 --- !u!114 &2120426148
@@ -1775,7 +1774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120426145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.14, y: -1.21, z: 0}
+  m_LocalPosition: {x: -7.09, y: -1.21, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1775541509}

@@ -1777,7 +1777,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1631463398}
   playeron: {fileID: 2114154249}
-  dogon: {fileID: 2139315995}
   strikepoint: {fileID: 2142840698}
   reachzone: {fileID: 1056356908}
 --- !u!114 &1631463400
@@ -1923,6 +1922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ca845ede718f54aa4df7567a324c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   rb: {fileID: 1631463402}
 --- !u!1 &1638511741
 GameObject:
@@ -2835,7 +2835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114154249}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.44, y: 4.39, z: 0}
+  m_LocalPosition: {x: 0, y: 4.39, z: 0}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1631463404}
