@@ -521,6 +521,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7890483132059736131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 600486815}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &600486817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2536786408706460654, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 600486815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &600486818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6458947272876494402, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 600486815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &832610667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1174,6 +1184,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4663050324671714030, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
   m_PrefabInstance: {fileID: 1480812240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480812242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5357921975361143272, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+  m_PrefabInstance: {fileID: 1480812240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1480812243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1458721408522701579, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+  m_PrefabInstance: {fileID: 1480812240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1487586171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1319,7 @@ GameObject:
   - component: {fileID: 1502957488}
   - component: {fileID: 1502957487}
   - component: {fileID: 1502957486}
+  - component: {fileID: 1502957489}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1371,6 +1392,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1502957489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502957485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b20c8892f4a4710bed519566763ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 600486818}
+  playeron: {fileID: 600486817}
+  dog: {fileID: 1480812243}
+  dogon: {fileID: 1480812242}
+  offset: {x: 0, y: 1.192501, z: 0}
 --- !u!1 &1718486173
 GameObject:
   m_ObjectHideFlags: 0
