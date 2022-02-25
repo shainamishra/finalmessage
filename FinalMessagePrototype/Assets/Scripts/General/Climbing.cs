@@ -58,6 +58,7 @@ public class Climbing : MonoBehaviour
         {
             canClimb = false;
             isClimbing = false;
+            animator.enabled = true;
         }
     }
 }
