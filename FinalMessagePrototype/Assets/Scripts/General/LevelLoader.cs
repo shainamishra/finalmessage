@@ -126,6 +126,31 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
+        // six doors
+        if (SceneManager.GetActiveScene().buildIndex == 9)
+        {
+            // WK (does this open with the witch knight key?? omg :skull:)
+            if (player.transform.position.x > -1.1 && player.transform.position.x < 1.5 && Input.GetKeyDown("x"))
+            {
+                levelVar = 0;
+                LoadNextLevel();
+            }
+            // IDK WHAT FF IS SO THIS CODE IS WRONG FOR NOW
+            if (player.transform.position.x > 10 && player.transform.position.x < 12.5 && Input.GetKeyDown("x"))
+            {
+                levelVar = 1;
+                LoadNextLevel();
+            }
+            // wrong doors (death's door if you will)
+            if (((player.transform.position.x > -4 && player.transform.position.x < -1.35) || (player.transform.position.x > 1.75 && player.transform.position.x < 4.35)
+                || (player.transform.position.x > 4.4 && player.transform.position.x < 7) || (player.transform.position.x > 7.15 && player.transform.position.x < 9.7))
+                && Input.GetKeyDown("x"))
+            {
+                levelVar = -10;
+                LoadNextLevel();
+            }
+        }
+
         // witch knight
         if (SceneManager.GetActiveScene().buildIndex == 14)
         {
