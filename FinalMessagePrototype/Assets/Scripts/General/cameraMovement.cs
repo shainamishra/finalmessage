@@ -10,6 +10,9 @@ public class cameraMovement : MonoBehaviour
     public GameObject dogon;
     public Vector3 offset;
 
+    public float[] _xClamp;
+    //public float[] _yClamp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +24,22 @@ public class cameraMovement : MonoBehaviour
         // focus on the knight
         if (playeron.activeSelf == true)
         {
-            Vector3 position = transform.position;
+            float xClamp = Mathf.Clamp(player.position.x, _xClamp[0], _xClamp[1]);
+            //float yClamp = Mathf.Clamp(player.position.y, _yClamp[0], _yClamp[1]);
+            transform.position = new Vector3(xClamp, (player.position + offset).y, transform.position.z);
+            /*Vector3 position = transform.position;
             position.y = (player.position + offset).y;
-            transform.position = position;
+            transform.position = position;*/
         }
         // focus on the dog
         if (dogon.activeSelf == true)
         {
-            Vector3 position = transform.position;
+            float xClamp = Mathf.Clamp(dog.position.x, _xClamp[0], _xClamp[1]);
+            //float yClamp = Mathf.Clamp(dog.position.y, _yClamp[0], _yClamp[1]);
+            transform.position = new Vector3(xClamp, (dog.position + offset).y, transform.position.z);
+            /*Vector3 position = transform.position;
             position.y = (dog.position + offset).y;
-            transform.position = position;
+            transform.position = position;*/
         }
     } 
 }

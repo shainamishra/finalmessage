@@ -126,7 +126,7 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        // six doors
+        // six doors FIX DOOR PLACEMENTS
         if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             // WK (does this open with the witch knight key?? omg :skull:)
