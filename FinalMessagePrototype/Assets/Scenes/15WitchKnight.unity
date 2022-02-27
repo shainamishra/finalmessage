@@ -2102,6 +2102,9 @@ MonoBehaviour:
   dog: {fileID: 1734111406}
   dogon: {fileID: 1768404741}
   offset: {x: 0, y: 1.192501, z: 0}
+  _xClamp:
+  - 0
+  - 0.1
 --- !u!1 &2033556333
 GameObject:
   m_ObjectHideFlags: 0

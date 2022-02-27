@@ -426,7 +426,6 @@ GameObject:
   - component: {fileID: 1663769156227580805}
   - component: {fileID: 1768952286846286840}
   - component: {fileID: 3065096178899888131}
-  - component: {fileID: 5578072918469451821}
   - component: {fileID: 1527980907868759071}
   - component: {fileID: 4803309098173792284}
   m_Layer: 0
@@ -567,20 +566,6 @@ MonoBehaviour:
   moveSpeed: 3
   playeron: {fileID: 2536786408706460654}
   animator: {fileID: 4803309098173792284}
---- !u!114 &5578072918469451821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7890483132059736131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6a1e867cd829745b97680fe1d83679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 4803309098173792284}
-  playeron: {fileID: 2536786408706460654}
   strikepoint: {fileID: 8509873703597993653}
   reachzone: {fileID: 3415249136469001705}
 --- !u!114 &1527980907868759071

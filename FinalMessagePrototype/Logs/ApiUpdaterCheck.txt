@@ -658,3 +658,23 @@ C# parse time         : 1218ms
 candidates check time : 76ms
 console write time    : 2ms
 
+[api-updater (non-obsolete-error-filter)] 2/27/2022 11:27:49 AM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 2329.6613ms
+moved types parse time: 93ms
+candidates parse time : 2ms
+C# parse time         : 1172ms
+candidates check time : 131ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 2/27/2022 12:34:04 PM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 208.4374ms
+moved types parse time: 70ms
+candidates parse time : 2ms
+C# parse time         : 363ms
+candidates check time : 96ms
+console write time    : 0ms
+

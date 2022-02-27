@@ -8,12 +8,17 @@ public class playerMovement : MonoBehaviour
     public float moveSpeed;
     public GameObject playeron;
     public Animator animator;
+    public GameObject strikepoint;
+    public GameObject reachzone;
     //public NPCBehavior npc;
+
+    //public bool interactPressed = false;
+    //public bool submitPressed = false;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
-
+    
     // Awake is called after all objects are initialized. Called in random order
     private void Awake()
     {
@@ -29,27 +34,71 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space")) {
-            if(playeron.activeSelf == true){
+        // swapping between knight and dog
+        if (Input.GetKeyDown("space"))
+        {
+            if (playeron.activeSelf == true)
+            {
                 playeron.SetActive(false);
                 animator.SetFloat("Speed", 0);
             }
-            else if(playeron.activeSelf == false){
+            else if (playeron.activeSelf == false)
+            {
                 playeron.SetActive(true);
             }
         }
 
-        /*if (Input.GetKey("w") || Input.GetKey("s"))
+        /*// interact with NPC
+        if (playeron.activeSelf == true)
         {
-            //Debug.Log("up down");
-            gameObject.GetComponent<BoxCollider2D>().size = new Vector3(.5f, 6.85f, 0f);
+            if (Input.GetKeyDown("f"))
+            {
+                interactPressed = true;
+                Debug.Log("Pressing F to pay respects");
+            }
+            else if (Input.GetKeyUp("f"))
+            {
+                interactPressed = false;
+                Debug.Log("Pressed F to pay respects");
+            }
         }
-        else 
+
+        // submit dialogue to NPC
+        if (playeron.activeSelf == true)
         {
-            //Debug.Log("not moving up or down");
-            gameObject.GetComponent<BoxCollider2D>().size = new Vector3(3.87f, 6.85f, 0f);
+            if (Input.GetKeyDown("g"))
+            {
+                submitPressed = true;
+                Debug.Log("Pressing G bc you're a G");
+            }
+            else if (Input.GetKeyUp("g"))
+            {
+                submitPressed = false;
+                Debug.Log("Pressed G like a G");
+            }
         }*/
 
+        // Left Click (0) to strike and Right Click (1) to grab objects
+        if (playeron.activeSelf == true)
+        {
+            if (Input.GetMouseButton(0) == true)
+            {
+                strikepoint.SetActive(true);
+                Act();
+            }
+            else
+            {
+                strikepoint.SetActive(false);
+            }
+            if (Input.GetMouseButton(1) == true)
+            {
+                reachzone.SetActive(true);
+            }
+            else
+            {
+                reachzone.SetActive(false);
+            }
+        }
         if (playeron.activeSelf == true)
         {
 
@@ -62,6 +111,12 @@ public class playerMovement : MonoBehaviour
             move();
 
         }
+
+    }
+
+    void Act()
+    {
+        animator.SetTrigger("Strike");
     }
 
     private void move()
@@ -101,14 +156,16 @@ public class playerMovement : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "NPC"){
+    /*private void OnCollisionEnter2D(Collision2D other) {
+        
+        if (other.gameObject.tag == "NPC")
+        {
             Debug.Log("touched NPC");
-            other.gameObject.GetComponent<NPCBehavior>().Talk();
+            //other.gameObject.GetComponent<NPCBehavior>().Talk();
             // NPCBehavior npc = GameObject.Find("NPC").GetComponent<NPCBehavior>();
             // npc.Talk();
         }
-    }
+    }*/
 
     public void Die() {
         playeron.SetActive(false);
