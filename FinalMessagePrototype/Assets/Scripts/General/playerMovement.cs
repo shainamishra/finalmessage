@@ -34,6 +34,10 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueManager.GetInstance().dialogueisPlaying)
+        {
+            return;
+        }
         // swapping between knight and dog
         if (Input.GetKeyDown("space"))
         {
@@ -47,36 +51,6 @@ public class playerMovement : MonoBehaviour
                 playeron.SetActive(true);
             }
         }
-
-        /*// interact with NPC
-        if (playeron.activeSelf == true)
-        {
-            if (Input.GetKeyDown("f"))
-            {
-                interactPressed = true;
-                Debug.Log("Pressing F to pay respects");
-            }
-            else if (Input.GetKeyUp("f"))
-            {
-                interactPressed = false;
-                Debug.Log("Pressed F to pay respects");
-            }
-        }
-
-        // submit dialogue to NPC
-        if (playeron.activeSelf == true)
-        {
-            if (Input.GetKeyDown("g"))
-            {
-                submitPressed = true;
-                Debug.Log("Pressing G bc you're a G");
-            }
-            else if (Input.GetKeyUp("g"))
-            {
-                submitPressed = false;
-                Debug.Log("Pressed G like a G");
-            }
-        }*/
 
         // Left Click (0) to strike and Right Click (1) to grab objects
         if (playeron.activeSelf == true)
