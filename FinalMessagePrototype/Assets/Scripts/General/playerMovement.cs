@@ -34,11 +34,13 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     /*   
+        /*
         if (DialogueManager.GetInstance().dialogueisPlaying)
         {
             return;
-        }*/
+        }
+        */
+        
         // swapping between knight and dog
         if (Input.GetKeyDown("space"))
         {

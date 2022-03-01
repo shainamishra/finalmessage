@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -61,6 +62,7 @@ public class DialogueManager : MonoBehaviour
         {
             ContinueStory();
         }
+
     }
 
     public void EnterDialogueMode(TextAsset inkJSON) 
@@ -124,7 +126,7 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator SelectFirstChoice()
     {
         // event system requires we clear it first, then wait
-        // for at least one frame before we set teh current selected object
+        // for at least one frame before we set the current selected object
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);

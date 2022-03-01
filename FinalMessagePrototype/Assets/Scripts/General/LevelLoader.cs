@@ -77,7 +77,7 @@ public class LevelLoader : MonoBehaviour
         // going to need to actually code this
         if(SceneManager.GetActiveScene().buildIndex == 3)
         {
-            levels[] = 3;
+            levels[3] = 1;
             // four platform
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {

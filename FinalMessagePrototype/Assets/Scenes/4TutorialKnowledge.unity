@@ -897,8 +897,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1344258451}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: MakeChoice
-        m_Mode: 3
+        m_MethodName: TaskOnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2747,6 +2747,9 @@ MonoBehaviour:
   - {fileID: 516092497}
   - {fileID: 1678091933}
   - {fileID: 1095030128}
+  button0: {fileID: 0}
+  button1: {fileID: 0}
+  button2: {fileID: 0}
 --- !u!1001 &1427586808
 PrefabInstance:
   m_ObjectHideFlags: 0
