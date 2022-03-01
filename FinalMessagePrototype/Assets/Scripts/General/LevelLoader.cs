@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    public static int[] levels = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     public Animator transition;
     public float transitionTime = 0.5f;
 
@@ -43,6 +44,7 @@ public class LevelLoader : MonoBehaviour
         // start scene
         if (SceneManager.GetActiveScene().buildIndex == 0){
             // level ending conditions
+            levels[0] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 LoadNextLevel();
             }
@@ -51,6 +53,7 @@ public class LevelLoader : MonoBehaviour
         // tutorial reasoning
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
+            levels[1] = 1;
             if(door.activeSelf == false)
             {
                 if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
@@ -63,6 +66,7 @@ public class LevelLoader : MonoBehaviour
         // tutorial item
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
+            levels[2] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
                 LoadNextLevel();
@@ -73,6 +77,7 @@ public class LevelLoader : MonoBehaviour
         // going to need to actually code this
         if(SceneManager.GetActiveScene().buildIndex == 3)
         {
+            levels[] = 3;
             // four platform
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
@@ -84,6 +89,7 @@ public class LevelLoader : MonoBehaviour
         // four platform
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
+            levels[4] = 1;
             // witch knight
             if(((player.transform.position.x > -1 && player.transform.position.x < 1 && player.transform.position.y > 1)) && Input.GetKeyDown("x"))
             {
@@ -102,6 +108,7 @@ public class LevelLoader : MonoBehaviour
         // lonely climber
         if(SceneManager.GetActiveScene().buildIndex == 5)
         {
+            levels[5] = 1;
             // witch knight
             if(((player.transform.position.x > 11.5 && player.transform.position.y > 10)) || (dog.transform.position.x > 11.5 && dog.transform.position.y > 10))
             {
@@ -118,6 +125,7 @@ public class LevelLoader : MonoBehaviour
         // time gate
         if (SceneManager.GetActiveScene().buildIndex == 8)
         {
+            levels[8] = 1;
             // witch knight
             if (player.transform.position.x >5.9 && player.transform.position.y > 27 && Input.GetKeyDown("x"))
             {
@@ -129,6 +137,7 @@ public class LevelLoader : MonoBehaviour
         // six doors FIX DOOR PLACEMENTS
         if (SceneManager.GetActiveScene().buildIndex == 9)
         {
+            levels[9] = 1;
             // WK (does this open with the witch knight key?? omg :skull:)
             if (player.transform.position.x > -1.1 && player.transform.position.x < 1.5 && Input.GetKeyDown("x"))
             {
@@ -154,6 +163,7 @@ public class LevelLoader : MonoBehaviour
         // witch knight
         if (SceneManager.GetActiveScene().buildIndex == 14)
         {
+            levels[14] = 1;
             // chime gate
             if ((player.transform.position.x > 10 && player.transform.position.y > 0))
             {
