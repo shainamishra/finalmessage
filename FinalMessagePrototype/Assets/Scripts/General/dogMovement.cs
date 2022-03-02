@@ -28,7 +28,7 @@ public class dogMovement : MonoBehaviour
     void Update()
     {
         // if dialgoue is on screen then the player shouldnt be able to do anything
-        if (DialogueManager.GetInstance().dialogueisPlaying)
+        if ((DialogueManager.GetInstance() != null) && (DialogueManager.GetInstance().dialogueisPlaying))
         {
             return;
         }
