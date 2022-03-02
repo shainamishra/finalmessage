@@ -27,6 +27,12 @@ public class dogMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if dialgoue is on screen then the player shouldnt be able to do anything
+        if (DialogueManager.GetInstance().dialogueisPlaying)
+        {
+            return;
+        }
+        
         if (Input.GetKeyDown("space")) {
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
