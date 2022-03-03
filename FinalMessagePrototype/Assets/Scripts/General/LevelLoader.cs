@@ -27,7 +27,7 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
-        // build index starts at ZERO while out scene names start at ONE!!!!
+        // build index starts at ZERO while our scene names start at ONE!!!!
         // end the game
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Debug.Log("help");
