@@ -15,6 +15,7 @@ public class LevelLoader : MonoBehaviour
     public GameObject door;
 
     public int levelVar = 0;
+    public int levelVarNeg = 0;
 
     void Start()
     {
@@ -27,6 +28,8 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
+        checkLevel(SceneManager.GetActiveScene().buildIndex);
+
         // build index starts at ZERO while our scene names start at ONE!!!!
         // end the game
         if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -122,6 +125,22 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
+        // level 7
+        if(SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            levels[6] = 1;
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            {
+                LoadNextLevel();
+            }
+            // previous level
+            else if((player.transform.position.x < -8 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -1.5 && (dog.transform.position.y > 0 && dog.transform.position.y < 1)))
+            {
+                Debug.Log("hehe");
+                LoadPrevLevel();
+            }
+        }
+
         // time gate
         if (SceneManager.GetActiveScene().buildIndex == 8)
         {
@@ -176,6 +195,12 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -2;
                 LoadNextLevel();
             }
+            // previous level
+            else if((player.transform.position.x < -8 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -1.5 && (dog.transform.position.y > 0 && dog.transform.position.y < 1)))
+            {
+                Debug.Log("hehe");
+                LoadPrevLevel();
+            }
         }
     }
 
@@ -184,6 +209,14 @@ public class LevelLoader : MonoBehaviour
         // loads the next scene
             // level Var is a variable which gets added to the level number so that we can jump to the correct scene
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 + levelVar));
+    }
+
+
+    public void LoadPrevLevel()
+    {
+        // loads the next scene
+            // level Var is a variable which gets added to the level number so that we can jump to the correct scene
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + (-1) + levelVarNeg));
     }
 
     IEnumerator LoadLevel(int levelIndex)
@@ -246,6 +279,59 @@ public class LevelLoader : MonoBehaviour
         }  else if (level == 20){
             levelVar = -15;
         } 
-        //return levelVar;
+
+        // backwards movement
+        levelVarNeg = 0;
+
+        /*
+        if (level == 0){
+            levelVar = 5;
+        } else if (level == 1){
+            levelVar = 4;
+        } else if (level == 2){
+            levelVar = 3;
+        }  else if (level == 3){
+            levelVar = 2;
+        }  else if (level == 4){
+            levelVar = 1;
+        }  else if (level == 5){
+            levelVar = 0;
+        }  else */if (level == 6){
+            levelVarNeg = 0;
+        }  else if (level == 7){
+            levelVarNeg = -1;
+        }  else if (level == 8){
+            levelVarNeg = 0;
+        }  else if (level == 9){
+            levelVarNeg = 0;
+        }  else if (level == 10){
+            levelVarNeg = 0;
+        }  else if (level == 11){
+            levelVarNeg = -1;
+        }  else if (level == 12){
+            levelVarNeg = -7;
+        }  else if (level == 13){
+            levelVarNeg = 2;
+        }  else if (level == 14){
+                Debug.Log("4: " + levels[4]);
+                Debug.Log("5: " + levels[5]);
+            if(levels[4] == 1){
+                levelVarNeg = -9;
+            } else if (levels[5] == 1){
+                levelVarNeg = -8;
+            }
+        }  else if (level == 15){
+            levelVarNeg = 0;
+        }  else if (level == 16){
+            levelVarNeg = 0;
+        }  else if (level == 17){
+            levelVarNeg = 0;
+        }  else if (level == 18){
+            levelVarNeg = 0;
+        }  else if (level == 19){
+            levelVarNeg = 0;
+        }  else if (level == 20){
+            levelVarNeg = 0;
+        } 
     }
 }
