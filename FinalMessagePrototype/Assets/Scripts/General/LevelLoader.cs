@@ -153,7 +153,7 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        // six doors (Scene: 10SixDoors)
+        // six doors (Scene: 10SixDoors)        FIX DOOR POSITIONS
         if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             levels[9] = 1;
@@ -211,6 +211,28 @@ public class LevelLoader : MonoBehaviour
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
                 levelVar = -12;
+                LoadNextLevel();
+            }
+        }
+        // Final Message 4 corridor (Scene: 10b_FM4)
+        if (SceneManager.GetActiveScene().buildIndex == 21)
+        {
+            levels[20] = 1;
+            // back to six doors room (sadge)
+            if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
+            {
+                levelVar = -11;
+                LoadNextLevel();
+            }
+        }
+        // Final Message 5 corridor (Scene: 10b_FM5)
+        if (SceneManager.GetActiveScene().buildIndex == 22)
+        {
+            levels[20] = 1;
+            // back to six doors room (sadge)
+            if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
+            {
+                levelVar = -11;
                 LoadNextLevel();
             }
         }

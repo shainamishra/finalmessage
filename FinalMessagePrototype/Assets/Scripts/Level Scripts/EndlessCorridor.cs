@@ -21,7 +21,7 @@ public class EndlessCorridor : MonoBehaviour
     {
         if (collision.gameObject.name == "LoopOnce" && looped == false)
         {
-            player.transform.position = new Vector3(-8.3f, -1.2f, 0.0f);
+            player.transform.position = new Vector3(6.7f, -1.2f, 0.0f);
             looped = true;
             loopTrigger.SetActive(false);
             door.SetActive(true);
