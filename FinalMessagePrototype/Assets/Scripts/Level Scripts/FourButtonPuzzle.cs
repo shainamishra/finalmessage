@@ -61,7 +61,7 @@ public class FourButtonPuzzle : MonoBehaviour
             // then the button is lowered
             Vector3 temp2 = new Vector3(0.05f, -4.4f, 0.0f);
             button2.transform.position = temp2;
-            if (LLadder.transform.position.y > -1.5f)
+            if (LLadder.transform.position.y > -0.5f)
             {
                 LLadder.transform.position += new Vector3(0.0f, -0.005f, 0.0f);
             }
@@ -105,7 +105,7 @@ public class FourButtonPuzzle : MonoBehaviour
             // then the button is lowered
             Vector3 temp4 = new Vector3(5.1f, -4.4f, 0.0f);
             button4.transform.position = temp4;
-            if (RLadder.transform.position.y > -1.5f)
+            if (RLadder.transform.position.y > -0.5f)
             {
                 RLadder.transform.position += new Vector3(0.0f, -0.005f, 0.0f);
             }
