@@ -347,8 +347,8 @@ public class LevelLoader : MonoBehaviour
         }  else if (level == 13){
             levelVarNeg = 2;
         }  else if (level == 14){
-                Debug.Log("4: " + levels[4]);
-                Debug.Log("5: " + levels[5]);
+                //Debug.Log("4: " + levels[4]);
+                //Debug.Log("5: " + levels[5]);
             if(levels[4] == 1){
                 levelVarNeg = -9;
             } else if (levels[5] == 1){

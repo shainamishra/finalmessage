@@ -10,12 +10,12 @@ public class playerMovement : MonoBehaviour
     public Animator animator;
     public GameObject strikepoint;
     public GameObject reachzone;
+    public static Rigidbody2D rb;
     //public NPCBehavior npc;
 
     //public bool interactPressed = false;
     //public bool submitPressed = false;
 
-    private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
     

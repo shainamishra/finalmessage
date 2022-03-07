@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Dialogue
   - CanClimb
+  - Floor
   layers:
   - Default
   - TransparentFX

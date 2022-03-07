@@ -2161,7 +2161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 601.1, y: 349}
+  m_AnchoredPosition: {x: 696.22, y: 349}
   m_SizeDelta: {x: 235.1, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873818663
@@ -2197,7 +2197,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Climb silver ladders with the W & A keys
+  m_Text: 'Climb the ladders with the W & A keys
 
 
     Enter doorways with X'
