@@ -123,6 +123,12 @@ public class LevelLoader : MonoBehaviour
             {
                 LoadNextLevel();
             }
+            // check if player fell from a great height
+            if (GroundCheck.dead == true)
+            {
+                levelVar = -6;
+                LoadNextLevel();
+            }
         }
 
         // level 7
@@ -151,30 +157,36 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // check if player fell from a great height
+            if (GroundCheck.dead == true)
+            {
+                levelVar = -9;
+                LoadNextLevel();
+            }
         }
 
         // six doors (Scene: 10SixDoors)        FIX DOOR POSITIONS
         if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             levels[9] = 1;
-            // final message 4
-            if (player.transform.position.x > -1.1 && player.transform.position.x < 1.5 && Input.GetKeyDown("x"))
+            // final message 4 (second door)
+            if (player.transform.position.x > 4.7 && player.transform.position.x < 7.6 && Input.GetKeyDown("x"))
             {
-                levelVar = 0;
+                levelVar = 11;
                 LoadNextLevel();
             }
-            // final message 5
-            if (player.transform.position.x > 10 && player.transform.position.x < 12.5 && Input.GetKeyDown("x"))
+            // final message 5 (sixth door)
+            if (player.transform.position.x > 31.5 && player.transform.position.x < 34.8 && Input.GetKeyDown("x"))
             {
-                levelVar = 1;
+                levelVar = 12;
                 LoadNextLevel();
             }
             // bad doors
-            if (((player.transform.position.x > -4 && player.transform.position.x < -1.35) || (player.transform.position.x > 1.75 && player.transform.position.x < 4.35)
-                || (player.transform.position.x > 4.4 && player.transform.position.x < 7) || (player.transform.position.x > 7.15 && player.transform.position.x < 9.7))
+            if (((player.transform.position.x > -1.2 && player.transform.position.x < 1.4) || (player.transform.position.x > 10.7 && player.transform.position.x < 13.5)
+                || (player.transform.position.x > 19.8 && player.transform.position.x < 22.5) || (player.transform.position.x > 25.5 && player.transform.position.x < 28.8))
                 && Input.GetKeyDown("x"))
             {
-                levelVar = -10;
+                levelVar = 10;
                 LoadNextLevel();
             }
         }
@@ -200,6 +212,12 @@ public class LevelLoader : MonoBehaviour
             {
                 Debug.Log("hehe");
                 LoadPrevLevel();
+            }
+            // check if player fell from a great height
+            if (GroundCheck.dead == true) 
+            {
+                levelVar = -15;
+                LoadNextLevel();
             }
         }
 
@@ -347,8 +365,8 @@ public class LevelLoader : MonoBehaviour
         }  else if (level == 13){
             levelVarNeg = 2;
         }  else if (level == 14){
-                //Debug.Log("4: " + levels[4]);
-                //Debug.Log("5: " + levels[5]);
+                Debug.Log("4: " + levels[4]);
+                Debug.Log("5: " + levels[5]);
             if(levels[4] == 1){
                 levelVarNeg = -9;
             } else if (levels[5] == 1){
