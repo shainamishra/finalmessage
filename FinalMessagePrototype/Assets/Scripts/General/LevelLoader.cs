@@ -17,6 +17,11 @@ public class LevelLoader : MonoBehaviour
     public int levelVar = 0;
     public int levelVarNeg = 0;
 
+    public static int Key1 = 0;
+    public static int Key2 = 0;
+    public static int Key3 = 0;
+    public static int Key4 = 0;
+
     void Start()
     {
         dog = GameObject.Find("Dog");
@@ -28,6 +33,12 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
+        if (Key1 == 1 && Key2 == 1 && Key3 == 1 && Key4 == 1) 
+        {
+            checkLevel(SceneManager.GetActiveScene().buildIndex);
+            LoadNextLevel();
+        }
+
         checkLevel(SceneManager.GetActiveScene().buildIndex);
 
         // build index starts at ZERO while our scene names start at ONE!!!!
@@ -70,8 +81,10 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             levels[2] = 1;
+            Key4 = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
+                levelVar = 0;
                 LoadNextLevel();
             }
         }
