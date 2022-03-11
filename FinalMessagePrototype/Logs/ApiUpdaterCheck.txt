@@ -892,3 +892,13 @@ C# parse time         : 1069ms
 candidates check time : 51ms
 console write time    : 1ms
 
+[api-updater (non-obsolete-error-filter)] 3/11/2022 10:09:42 AM : Starting C:/Users/cgee1/OneDrive/Documents/CMPM 121/Unity Editor Installation/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 2671.134ms
+moved types parse time: 118ms
+candidates parse time : 2ms
+C# parse time         : 1919ms
+candidates check time : 78ms
+console write time    : 2ms
+

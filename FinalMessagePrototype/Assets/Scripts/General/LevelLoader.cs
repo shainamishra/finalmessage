@@ -228,7 +228,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 11){
             // level ending conditions
             levels[0] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+            if(dog.transform.position.x > 40 || player.transform.position.x > 40){
                 levelVar = 11;
                 LoadNextLevel();
             }

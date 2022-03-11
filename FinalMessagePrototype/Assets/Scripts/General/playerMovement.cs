@@ -34,12 +34,6 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if dialgoue is on screen then the player shouldnt be able to do anything
-        if ((DialogueManager.GetInstance() != null) && (DialogueManager.GetInstance().dialogueisPlaying))
-        {
-            return;
-        }
-        
         // swapping between knight and dog
         if (Input.GetKeyDown("space"))
         {

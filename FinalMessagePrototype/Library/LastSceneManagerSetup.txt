@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/4TutorialKnowledge.unity
+- path: Assets/Scenes/12FM5_Seeker.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
