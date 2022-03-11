@@ -160,6 +160,16 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
+        // final message 2
+        if (SceneManager.GetActiveScene().buildIndex == 7){
+            // level ending conditions
+            levels[0] = 1;
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+                levelVar = 15;
+                LoadNextLevel();
+            }
+        }
+
         // time gate
         if (SceneManager.GetActiveScene().buildIndex == 8)
         {
@@ -200,6 +210,46 @@ public class LevelLoader : MonoBehaviour
                 && Input.GetKeyDown("x"))
             {
                 levelVar = 10;
+                LoadNextLevel();
+            }
+        }
+
+        // final message 4
+        if (SceneManager.GetActiveScene().buildIndex == 10){
+            // level ending conditions
+            levels[0] = 1;
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+                levelVar = 12;
+                LoadNextLevel();
+            }
+        }
+
+        // final message 5
+        if (SceneManager.GetActiveScene().buildIndex == 11){
+            // level ending conditions
+            levels[0] = 1;
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+                levelVar = 11;
+                LoadNextLevel();
+            }
+        }
+
+        // final message 1
+        if (SceneManager.GetActiveScene().buildIndex == 12){
+            // level ending conditions
+            levels[0] = 1;
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+                levelVar = 10;
+                LoadNextLevel();
+            }
+        }
+
+        // final message 3
+        if (SceneManager.GetActiveScene().buildIndex == 13){
+            // level ending conditions
+            levels[0] = 1;
+            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+                levelVar = 9;
                 LoadNextLevel();
             }
         }
