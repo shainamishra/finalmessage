@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPCBehavior : MonoBehaviour
 {
-    public GameObject panel;
+    public GameObject npc;
+    public GameObject canvas;
 
     void Start()
     {
-        panel.SetActive(false);
+        canvas.SetActive(false);
     }
 
-    public void Talk()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        panel.SetActive(true);
+        canvas.SetActive(true);
+        npc.GetComponent<Collider2D>().enabled = false;;
+        OpenDoor();
     }
 
     public void OpenDoor()

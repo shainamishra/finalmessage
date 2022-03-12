@@ -150,12 +150,13 @@ public class LevelLoader : MonoBehaviour
             levels[6] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
+                levelVar = 16;
+                Debug.Log("here");
                 LoadNextLevel();
             }
             // previous level
             else if((player.transform.position.x < -8 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -1.5 && (dog.transform.position.y > 0 && dog.transform.position.y < 1)))
             {
-                Debug.Log("hehe");
                 LoadPrevLevel();
             }
         }
@@ -163,7 +164,7 @@ public class LevelLoader : MonoBehaviour
         // final message 2
         if (SceneManager.GetActiveScene().buildIndex == 7){
             // level ending conditions
-            levels[0] = 1;
+            levels[7] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 15;
                 LoadNextLevel();
@@ -217,7 +218,7 @@ public class LevelLoader : MonoBehaviour
         // final message 4
         if (SceneManager.GetActiveScene().buildIndex == 10){
             // level ending conditions
-            levels[0] = 1;
+            levels[10] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 12;
                 LoadNextLevel();
@@ -227,7 +228,7 @@ public class LevelLoader : MonoBehaviour
         // final message 5
         if (SceneManager.GetActiveScene().buildIndex == 11){
             // level ending conditions
-            levels[0] = 1;
+            levels[11] = 1;
             if(dog.transform.position.x > 40 || player.transform.position.x > 40){
                 levelVar = 11;
                 LoadNextLevel();
@@ -237,7 +238,7 @@ public class LevelLoader : MonoBehaviour
         // final message 1
         if (SceneManager.GetActiveScene().buildIndex == 12){
             // level ending conditions
-            levels[0] = 1;
+            levels[12] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 10;
                 LoadNextLevel();
@@ -247,7 +248,7 @@ public class LevelLoader : MonoBehaviour
         // final message 3
         if (SceneManager.GetActiveScene().buildIndex == 13){
             // level ending conditions
-            levels[0] = 1;
+            levels[13] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 9;
                 LoadNextLevel();
@@ -298,7 +299,7 @@ public class LevelLoader : MonoBehaviour
         // Final Message 4 corridor (Scene: 10b_FM4)
         if (SceneManager.GetActiveScene().buildIndex == 21)
         {
-            levels[20] = 1;
+            levels[21] = 1;
             // back to six doors room (sadge)
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
@@ -309,7 +310,7 @@ public class LevelLoader : MonoBehaviour
         // Final Message 5 corridor (Scene: 10b_FM5)
         if (SceneManager.GetActiveScene().buildIndex == 22)
         {
-            levels[20] = 1;
+            levels[22] = 1;
             // back to six doors room (sadge)
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
@@ -352,19 +353,19 @@ public class LevelLoader : MonoBehaviour
         levelVar = 0;
 
         if (level == 0){
-            levelVar = 5;
+            levelVar = 0;
         } else if (level == 1){
-            levelVar = 4;
+            levelVar = 0;
         } else if (level == 2){
-            levelVar = 3;
+            levelVar = 0;
         }  else if (level == 3){
-            levelVar = 2;
+            levelVar = 0;
         }  else if (level == 4){
             levelVar = 1;
         }  else if (level == 5){
             levelVar = 0;
         }  else if (level == 6){
-            levelVar = -1;
+            levelVar = 16;
         }  else if (level == 7){
             levelVar = -2;
         }  else if (level == 8){
