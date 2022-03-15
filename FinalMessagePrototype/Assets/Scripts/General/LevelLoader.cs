@@ -42,18 +42,19 @@ public class LevelLoader : MonoBehaviour
         checkLevel(SceneManager.GetActiveScene().buildIndex);
 
         // build index starts at ZERO while our scene names start at ONE!!!!
-        // end the game
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            Debug.Log("help");
-            checkLevel(SceneManager.GetActiveScene().buildIndex);
-            LoadNextLevel();
+        // quit the game
+        if (Input.GetKey(KeyCode.Escape)) {
+            //Debug.Log("help");
+            Application.Quit();
         }
 
+        /*
         // QUIT THE GAME WITH ENTER
         if (Input.GetKey(KeyCode.Return))
         {
             Application.Quit();
         }
+        */
 
         // start scene
         if (SceneManager.GetActiveScene().buildIndex == 0){
