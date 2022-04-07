@@ -58,7 +58,7 @@ public class LevelLoader : MonoBehaviour
         // start scene
         if (SceneManager.GetActiveScene().buildIndex == 1){
             // level ending conditions
-            levels[0] = 1;
+            levels[1] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 LoadNextLevel();
             }
@@ -67,7 +67,7 @@ public class LevelLoader : MonoBehaviour
         // tutorial reasoning
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
-            levels[1] = 1;
+            levels[2] = 1;
             if(door.activeSelf == false)
             {
                 if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
@@ -80,7 +80,7 @@ public class LevelLoader : MonoBehaviour
         // tutorial item
         if(SceneManager.GetActiveScene().buildIndex == 3)
         {
-            levels[2] = 1;
+            levels[3] = 1;
             Key4 = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
@@ -93,7 +93,7 @@ public class LevelLoader : MonoBehaviour
         // going to need to actually code this
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
-            levels[3] = 1;
+            levels[4] = 1;
             // four platform
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
@@ -128,7 +128,7 @@ public class LevelLoader : MonoBehaviour
         // final message 1
         if (SceneManager.GetActiveScene().buildIndex == 7){
             // level ending conditions
-            levels[12] = 1;
+            levels[7] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 10;
                 LoadNextLevel();
@@ -138,7 +138,7 @@ public class LevelLoader : MonoBehaviour
         // final message 2
         if (SceneManager.GetActiveScene().buildIndex == 8){
             // level ending conditions
-            levels[7] = 1;
+            levels[8] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 15;
                 LoadNextLevel();
@@ -148,7 +148,7 @@ public class LevelLoader : MonoBehaviour
         // four buttons
         if(SceneManager.GetActiveScene().buildIndex == 9)
         {
-            levels[4] = 1;
+            levels[9] = 1;
             // witch knight
             if(((player.transform.position.x > -1 && player.transform.position.x < 1 && player.transform.position.y > 1)) && Input.GetKeyDown("x"))
             {
@@ -167,21 +167,19 @@ public class LevelLoader : MonoBehaviour
         // six doors (Scene: 10SixDoors)        FIX DOOR POSITIONS
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
-            levels[9] = 1;
+            levels[11] = 1;
             // final message 4 (second door)
             if (player.transform.position.x > 4.7 && player.transform.position.x < 7.6 && Input.GetKeyDown("x"))
             {
                 // send to buildIndex 24
-                //fuck
-                levelVar = 11;
+                levelVar = 12;
                 LoadNextLevel();
             }
             // final message 5 (sixth door)
             if (player.transform.position.x > 31.5 && player.transform.position.x < 34.8 && Input.GetKeyDown("x"))
             {
                 // send to buildIndex 25
-                //fuck
-                levelVar = 12;
+                levelVar = 13;
                 LoadNextLevel();
             }
             // bad doors
@@ -190,8 +188,7 @@ public class LevelLoader : MonoBehaviour
                 && Input.GetKeyDown("x"))
             {
                 // send to buildIndex 23
-                //fuck
-                levelVar = 10;
+                levelVar = 11;
                 LoadNextLevel();
             }
         }
@@ -199,7 +196,7 @@ public class LevelLoader : MonoBehaviour
         // final message 5
         if (SceneManager.GetActiveScene().buildIndex == 12){
             // level ending conditions
-            levels[11] = 1;
+            levels[12] = 1;
             if(dog.transform.position.x > 40 || player.transform.position.x > 40){
                 levelVar = 11;
                 LoadNextLevel();
@@ -209,7 +206,7 @@ public class LevelLoader : MonoBehaviour
         // final message 4
         if (SceneManager.GetActiveScene().buildIndex == 13){
             // level ending conditions
-            levels[10] = 1;
+            levels[13] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 12;
                 LoadNextLevel();
@@ -219,7 +216,7 @@ public class LevelLoader : MonoBehaviour
         // temp end
         if(SceneManager.GetActiveScene().buildIndex == 14)
         {
-            levels[6] = 1;
+            levels[14] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
             {
                 levelVar = 16;
@@ -235,7 +232,7 @@ public class LevelLoader : MonoBehaviour
         // time gate
         if (SceneManager.GetActiveScene().buildIndex == 15)
         {
-            levels[8] = 1;
+            levels[15] = 1;
             // witch knight
             if (player.transform.position.x >5.9 && player.transform.position.y > 27 && Input.GetKeyDown("x"))
             {
@@ -253,7 +250,7 @@ public class LevelLoader : MonoBehaviour
         // witch knight
         if (SceneManager.GetActiveScene().buildIndex == 16)
         {
-            levels[14] = 1;
+            levels[16] = 1;
             // chime gate
             if ((player.transform.position.x > 10 && player.transform.position.y > 0))
             {
@@ -286,7 +283,7 @@ public class LevelLoader : MonoBehaviour
         // final message 3
         if (SceneManager.GetActiveScene().buildIndex == 18){
             // level ending conditions
-            levels[13] = 1;
+            levels[18] = 1;
             if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
                 levelVar = 9;
                 LoadNextLevel();
@@ -296,7 +293,7 @@ public class LevelLoader : MonoBehaviour
         // bad endless corridor (Scene: 11a_Bad)
         if (SceneManager.GetActiveScene().buildIndex == 23)
         {
-            levels[20] = 1;
+            levels[23] = 1;
             // back to six doors room (sadge)
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
@@ -307,7 +304,7 @@ public class LevelLoader : MonoBehaviour
         // Final Message 4 corridor (Scene: 11b_FM4)
         if (SceneManager.GetActiveScene().buildIndex == 24)
         {
-            levels[21] = 1;
+            levels[24] = 1;
             // back to six doors room (sadge)
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
@@ -318,7 +315,7 @@ public class LevelLoader : MonoBehaviour
         // Final Message 5 corridor (Scene: 10b_FM5)
         if (SceneManager.GetActiveScene().buildIndex == 25)
         {
-            levels[22] = 1;
+            levels[25] = 1;
             // back to six doors room (sadge)
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
