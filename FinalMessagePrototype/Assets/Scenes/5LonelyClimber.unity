@@ -186,6 +186,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 14874868}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 14874868}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: switchSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: switchSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: dogMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: dogMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
 --- !u!1 &14874861 stripped
@@ -203,6 +259,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1458721408522701579, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
   m_PrefabInstance: {fileID: 14874860}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &14874868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+  m_PrefabInstance: {fileID: 14874860}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14874861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ded343e509d7c04e80a7f15bdaedcc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &68858031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,6 +1784,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Path
+      value: event:/CharacterSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: sounds.Array.data[0].loop
       value: 1
       objectReference: {fileID: 0}
@@ -1747,6 +1818,22 @@ PrefabInstance:
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: sounds.Array.data[3].name
       value: Footsteps-Dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data1
+      value: -331481439
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data2
+      value: 1107244370
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data3
+      value: 1870295445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data4
+      value: -1507784253
       objectReference: {fileID: 0}
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: sounds.Array.data[0].pitch
@@ -2840,8 +2927,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1942233567}
   - component: {fileID: 1942233566}
-  - component: {fileID: 1942233565}
   - component: {fileID: 1942233568}
+  - component: {fileID: 1942233565}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2849,14 +2936,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1942233565
-AudioListener:
+--- !u!114 &1942233565
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942233564}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &1942233566
 Camera:
   m_ObjectHideFlags: 0
