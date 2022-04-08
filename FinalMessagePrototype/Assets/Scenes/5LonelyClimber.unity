@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: soundEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: sfxEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1118,6 +1118,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1055833421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2549319671031523740, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+  m_PrefabInstance: {fileID: 14874860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1055833423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055833421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3339e7390924157b69ba1111b66373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSwitch:
+    Guid:
+      Data1: -331481439
+      Data2: 1107244370
+      Data3: 1870295445
+      Data4: -1507784253
+    Path: event:/CharacterSwitch
 --- !u!1 &1061902164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +2723,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799321109}
   m_CullTransparentMesh: 1
+--- !u!1 &1811419212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 1350717764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1811419214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811419212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3339e7390924157b69ba1111b66373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSwitch:
+    Guid:
+      Data1: -331481439
+      Data2: 1107244370
+      Data3: 1870295445
+      Data4: -1507784253
+    Path: event:/CharacterSwitch
 --- !u!1 &1811546246
 GameObject:
   m_ObjectHideFlags: 0

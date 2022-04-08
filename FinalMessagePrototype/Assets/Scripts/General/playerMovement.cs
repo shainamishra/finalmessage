@@ -41,7 +41,7 @@ public class playerMovement : MonoBehaviour
             {
                 playeron.SetActive(false);
                 animator.SetFloat("Speed", 0);
-                switchSFX();
+                
             }
             else if (playeron.activeSelf == false)
             {
@@ -91,7 +91,7 @@ public class playerMovement : MonoBehaviour
 
     private void switchSFX() 
     {
-        AudioManager.instance.PlaySound("event:/CharacterSwitch");
+        AudioManager.instance.PlaySound("event:/UI/CharacterSwitch");
     
     } 
     

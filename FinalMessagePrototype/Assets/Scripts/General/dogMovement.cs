@@ -34,10 +34,6 @@ public class dogMovement : MonoBehaviour
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
-                
-
-                //switchSFX();
-                // Debug.Log("Test");
 
             }
             else if(dogon.activeSelf == false){
@@ -76,7 +72,7 @@ public class dogMovement : MonoBehaviour
     //play character switchSFX
     private void switchSFX() 
     {
-        AudioManager.instance.PlaySound("event:/CharacterSwitch");
+        AudioManager.instance.PlaySound("event:/UI/CharacterSwitch");
     
     } 
 

@@ -5,15 +5,17 @@ using FMODUnity;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-
-    [SerializeField]
-    public EventReference CharacterSwitch;
-    private string CharSwitch = null;
-
-    private void Awake() {
+     private void Awake() {
         instance = this;
     }
 
+    [SerializeField]
+    public EventReference CharacterSwitch;
+
+   
+
+
+   
     public void PlaySound(string path) {
         if (path != null) {
             RuntimeManager.PlayOneShot(path);
