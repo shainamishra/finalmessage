@@ -14,9 +14,10 @@ public class AudioManager : MonoBehaviour
         instance = this;
     }
 
-    public void PlayCharSwitchEvent() {
-        if (CharSwitch != null) {
-            RuntimeManager.PlayOneShot(CharacterSwitch);
+    public void PlaySound(string path) {
+        if (path != null) {
+            RuntimeManager.PlayOneShot(path);
+            // Debug.Log("Playing!");
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using FMODUnity;
 
 public class dogMovement : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class dogMovement : MonoBehaviour
     public GameObject dogon;
     public Animator animator;
 
-    public UnityEvent soundEvent;
+    //public UnityEvent soundEvent;
     private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
@@ -34,15 +35,16 @@ public class dogMovement : MonoBehaviour
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
                 
-                soundEvent.Invoke();
-                //Debug.Log("Test");
+
+                //switchSFX();
+                // Debug.Log("Test");
 
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);
                 
-                soundEvent.Invoke();
-                //Debug.Log("Test");
+                switchSFX();
+                // Debug.Log("Test");
                 
             }
         }
@@ -72,13 +74,10 @@ public class dogMovement : MonoBehaviour
     }
 
     //play character switchSFX
-    public void switchSFX() 
+    private void switchSFX() 
     {
-        if (Input.GetKeyDown("space")) {
-            
-                AudioManager.instance.PlayCharSwitchEvent();
-                //Debug.Log("test");
-        }
+        AudioManager.instance.PlaySound("event:/CharacterSwitch");
+    
     } 
 
     private void move()

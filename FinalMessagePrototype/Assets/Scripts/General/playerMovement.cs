@@ -41,11 +41,13 @@ public class playerMovement : MonoBehaviour
             {
                 playeron.SetActive(false);
                 animator.SetFloat("Speed", 0);
+                switchSFX();
             }
             else if (playeron.activeSelf == false)
             {
                 playeron.SetActive(true);
-            }
+                switchSFX();
+            }   
         }
 
         // Left Click (0) to strike and Right Click (1) to grab objects
@@ -87,6 +89,12 @@ public class playerMovement : MonoBehaviour
         animator.SetTrigger("Strike");
     }
 
+    private void switchSFX() 
+    {
+        AudioManager.instance.PlaySound("event:/CharacterSwitch");
+    
+    } 
+    
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
