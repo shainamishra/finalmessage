@@ -270,6 +270,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ded343e509d7c04e80a7f15bdaedcc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &14874872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14874861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3339e7390924157b69ba1111b66373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSwitch:
+    Guid:
+      Data1: -331481439
+      Data2: 1107244370
+      Data3: 1870295445
+      Data4: -1507784253
+    Path: event:/UI/CharacterSwitch
+  KnightFootsteps:
+    Guid:
+      Data1: 722593387
+      Data2: 1279997008
+      Data3: -1320082790
+      Data4: 2016629470
+    Path: event:/PlayerMovement/Knight/Knight-Footsteps
+  DogFootsteps:
+    Guid:
+      Data1: 428993281
+      Data2: 1160442263
+      Data3: 1967844244
+      Data4: -770996072
+    Path: event:/PlayerMovement/Dog/Pup-Footstep_Grass
 --- !u!1 &68858031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1174,21 @@ MonoBehaviour:
       Data2: 1107244370
       Data3: 1870295445
       Data4: -1507784253
-    Path: event:/CharacterSwitch
+    Path: event:/UI/CharacterSwitch
+  KnightFootsteps:
+    Guid:
+      Data1: 722593387
+      Data2: 1279997008
+      Data3: -1320082790
+      Data4: 2016629470
+    Path: event:/PlayerMovement/Knight/Knight-Footsteps
+  DogFootsteps:
+    Guid:
+      Data1: 428993281
+      Data2: 1160442263
+      Data3: 1967844244
+      Data4: -770996072
+    Path: event:/PlayerMovement/Dog/Pup-Footstep_Grass
 --- !u!1 &1061902164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,6 +1743,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8408249268984980376, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 1350717764}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1350717778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350717765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3339e7390924157b69ba1111b66373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSwitch:
+    Guid:
+      Data1: -331481439
+      Data2: 1107244370
+      Data3: 1870295445
+      Data4: -1507784253
+    Path: event:/UI/CharacterSwitch
+  KnightFootsteps:
+    Guid:
+      Data1: 722593387
+      Data2: 1279997008
+      Data3: -1320082790
+      Data4: 2016629470
+    Path: event:/PlayerMovement/Knight/Knight-Footsteps
+  DogFootsteps:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1352395982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,8 +1888,32 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: DogtFootsteps.Path
+      value: event:/PlayerMovement/Dog/Pup-Footstep_Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: CharacterSwitch.Path
-      value: event:/CharacterSwitch
+      value: event:/UI/CharacterSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: KnightFootsteps.Path
+      value: event:/PlayerMovement/Knight/Knight-Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: DogtFootsteps.Guid.Data1
+      value: 428993281
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: DogtFootsteps.Guid.Data2
+      value: 1160442263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: DogtFootsteps.Guid.Data3
+      value: 1967844244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: DogtFootsteps.Guid.Data4
+      value: -770996072
       objectReference: {fileID: 0}
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: sounds.Array.data[0].loop
@@ -1858,6 +1962,22 @@ PrefabInstance:
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: CharacterSwitch.Guid.Data4
       value: -1507784253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: KnightFootsteps.Guid.Data1
+      value: 722593387
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: KnightFootsteps.Guid.Data2
+      value: 1279997008
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: KnightFootsteps.Guid.Data3
+      value: -1320082790
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: KnightFootsteps.Guid.Data4
+      value: 2016629470
       objectReference: {fileID: 0}
     - target: {fileID: 4168062496619537864, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: sounds.Array.data[0].pitch
@@ -2746,7 +2866,21 @@ MonoBehaviour:
       Data2: 1107244370
       Data3: 1870295445
       Data4: -1507784253
-    Path: event:/CharacterSwitch
+    Path: event:/UI/CharacterSwitch
+  KnightFootsteps:
+    Guid:
+      Data1: 722593387
+      Data2: 1279997008
+      Data3: -1320082790
+      Data4: 2016629470
+    Path: event:/PlayerMovement/Knight/Knight-Footsteps
+  DogFootsteps:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1811546246
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,15 +11,30 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField]
     public EventReference CharacterSwitch;
-
-   
-
-
-   
-    public void PlaySound(string path) {
+    
+    public void PlayCharSwitch(string path) {
+        
         if (path != null) {
             RuntimeManager.PlayOneShot(path);
             // Debug.Log("Playing!");
         }
+    }
+
+    [SerializeField]
+    public EventReference KnightFootsteps;
+
+    public void PlayKnightSteps(string path) {
+        FMOD.Studio.EventInstance KnightSteps = RuntimeManager.CreateInstance(path);
+        KnightSteps.start();
+        KnightSteps.release();
+    }
+
+    [SerializeField]
+    public EventReference DogFootsteps;
+
+    public void PlayDogSteps(string path) {
+        FMOD.Studio.EventInstance DogSteps = RuntimeManager.CreateInstance(path);
+        DogSteps.start();
+        DogSteps.release();
     }
 }

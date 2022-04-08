@@ -72,7 +72,7 @@ public class dogMovement : MonoBehaviour
     //play character switchSFX
     private void switchSFX() 
     {
-        AudioManager.instance.PlaySound("event:/UI/CharacterSwitch");
+        AudioManager.instance.PlayCharSwitch("event:/UI/CharacterSwitch");
     
     } 
 
