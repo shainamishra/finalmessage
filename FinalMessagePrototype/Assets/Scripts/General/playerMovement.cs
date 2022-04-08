@@ -90,14 +90,14 @@ public class playerMovement : MonoBehaviour
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        if(rb.velocity.x != 0){
-            if(!FindObjectOfType<AudioManager>().isPlaying()){
-                FindObjectOfType<AudioManager>().Play("Footsteps-Armor");
-            }
-        }
-        else if(rb.velocity.x == 0){
-            FindObjectOfType<AudioManager>().Stop("Footsteps-Armor");
-        }
+        // if(rb.velocity.x != 0){
+        //     if(!FindObjectOfType<AudioManager>().isPlaying()){
+        //         FindObjectOfType<AudioManager>().Play("Footsteps-Armor");
+        //     }
+        // }
+        // else if(rb.velocity.x == 0){
+        //     FindObjectOfType<AudioManager>().Stop("Footsteps-Armor");
+        // }
     }
 
     private void animate()

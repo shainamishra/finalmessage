@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class dogMovement : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class dogMovement : MonoBehaviour
     public GameObject dogon;
     public Animator animator;
 
+    public UnityEvent soundEvent;
     private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
@@ -31,9 +33,17 @@ public class dogMovement : MonoBehaviour
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
+                
+                soundEvent.Invoke();
+                //Debug.Log("Test");
+
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);
+                
+                soundEvent.Invoke();
+                //Debug.Log("Test");
+                
             }
         }
 
@@ -61,17 +71,27 @@ public class dogMovement : MonoBehaviour
         }
     }
 
+    //play character switchSFX
+    public void switchSFX() 
+    {
+        if (Input.GetKeyDown("space")) {
+            
+                AudioManager.instance.PlayCharSwitchEvent();
+                //Debug.Log("test");
+        }
+    } 
+
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        if(rb.velocity.x != 0){
-            if(!FindObjectOfType<AudioManager>().isPlaying()){
-                FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
-            }
-        }
-        else if(rb.velocity.x == 0){
-            FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
-        }
+        // if(rb.velocity.x != 0){
+        //     if(!FindObjectOfType<AudioManager>().isPlaying()){
+        //         FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
+        //     }
+        // }
+        // else if(rb.velocity.x == 0){
+        //     FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
+        // }
     }
 
     private void animate()
