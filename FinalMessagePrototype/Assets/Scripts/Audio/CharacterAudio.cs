@@ -18,5 +18,11 @@ public class CharacterAudio : MonoBehaviour
         Secondary.release();
     }
 
+    public void PlayAction(string path) {
+        FMOD.Studio.EventInstance Action = RuntimeManager.CreateInstance(path);
+        Action.start();
+        Action.release();
+    }
+
 
 }

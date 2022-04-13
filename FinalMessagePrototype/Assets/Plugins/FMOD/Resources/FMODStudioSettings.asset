@@ -233,6 +233,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - CharActions
   - CharMovement
   - UIBank
   BanksToLoad: []
