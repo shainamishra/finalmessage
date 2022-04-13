@@ -230,9 +230,11 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks:
-  - UI
+  - CharMovement
+  - UIBank
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

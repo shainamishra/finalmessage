@@ -31,9 +31,11 @@ public class dogMovement : MonoBehaviour
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
+                
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);
+                switchSFX();
             }
         }
 
@@ -61,17 +63,22 @@ public class dogMovement : MonoBehaviour
         }
     }
 
+    private void switchSFX() 
+    {
+        AudioManager.instance.PlayCharSwitch("event:/UI/CharacterSwitch");
+    
+    } 
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        if(rb.velocity.x != 0){
-            if(!FindObjectOfType<AudioManager>().isPlaying()){
-                FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
-            }
-        }
-        else if(rb.velocity.x == 0){
-            FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
-        }
+        // if(rb.velocity.x != 0){
+        //     if(!FindObjectOfType<AudioManager>().isPlaying()){
+        //         FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
+        //     }
+        // }
+        // else if(rb.velocity.x == 0){
+        //     FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
+        // }
     }
 
     private void animate()
