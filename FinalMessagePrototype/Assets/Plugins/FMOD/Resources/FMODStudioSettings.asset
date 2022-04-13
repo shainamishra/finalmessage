@@ -208,7 +208,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: ../../../FM-FMOD/FM-FMOD.fspro
-  sourceBankPath: Assets/FMODBanks/Desktop/Desktop
+  sourceBankPath: Assets/FMODBanks/Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

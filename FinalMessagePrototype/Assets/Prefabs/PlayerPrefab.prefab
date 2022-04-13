@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 3065096178899888131}
   - component: {fileID: 1527980907868759071}
   - component: {fileID: 4803309098173792284}
+  - component: {fileID: 4729933332123370671}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -590,6 +591,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4729933332123370671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890483132059736131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7488fc043b926481d88a4742963c80b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Footsteps:
+    Guid:
+      Data1: 722593387
+      Data2: 1279997008
+      Data3: -1320082790
+      Data4: 2016629470
+    Path: event:/PlayerMovement/Knight/Knight-Footsteps
 --- !u!1 &8408249268984980376
 GameObject:
   m_ObjectHideFlags: 0

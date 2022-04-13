@@ -94,9 +94,23 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0
+    functionName: PlaySecondary
+    data: event:/PlayerMovement/Knight/Knight-Armor
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.38333333
     functionName: PlayFootsteps
     data: event:/PlayerMovement/Knight/Knight-Footsteps
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.38333333
+    functionName: PlaySecondary
+    data: event:/PlayerMovement/Knight/Knight-Armor
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

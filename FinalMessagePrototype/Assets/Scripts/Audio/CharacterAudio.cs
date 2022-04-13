@@ -14,5 +14,11 @@ public class CharacterAudio : MonoBehaviour
         Footsteps.release();
     }
 
+    public void PlaySecondary(string path) {
+        FMOD.Studio.EventInstance Secondary = RuntimeManager.CreateInstance(path);
+        Secondary.start();
+        Secondary.release();
+    }
+
 
 }

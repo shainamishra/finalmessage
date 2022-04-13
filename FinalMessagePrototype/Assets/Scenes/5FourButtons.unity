@@ -575,14 +575,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &584528374
-AudioListener:
+--- !u!114 &584528374
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584528373}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &584528375
 Camera:
   m_ObjectHideFlags: 0
@@ -1317,6 +1323,26 @@ PrefabInstance:
     - target: {fileID: 4168062496619537867, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668769410694531017, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Path
+      value: event:/UI/CharacterSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668769410694531017, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data1
+      value: -331481439
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668769410694531017, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data2
+      value: 1107244370
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668769410694531017, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data3
+      value: 1870295445
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668769410694531017, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
+      propertyPath: CharacterSwitch.Guid.Data4
+      value: -1507784253
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 474ce85cd0dde4ad484bb20eaefcf4eb, type: 3}
