@@ -8,8 +8,6 @@ public class ButtonCollision : MonoBehaviour
     public Collider2D player;
     public Collider2D dogButton;
     public Collider2D playerButton;
-    public Animator DogButtonAnimator;
-    public Animator PlayerButtonAnimator;
 
     public GameObject door;
 
@@ -31,32 +29,28 @@ public class ButtonCollision : MonoBehaviour
         if(dogButton.IsTouching(dog))
         {
             // then the button is lowered
-            //Vector3 temp = new Vector3(3.75f, -3f, 0.0f);
-            //(GameObject.Find("DogButton")).transform.position = temp;
-            DogButtonAnimator.SetBool("Down", true);
+            Vector3 temp = new Vector3(3.75f, -3f, 0.0f);
+            (GameObject.Find("DogButton")).transform.position = temp;
         }
         else
         {
             // raise the button
-            //Vector3 temp = new Vector3(3.75f, -2.75f, 0.0f);
-            //(GameObject.Find("DogButton")).transform.position = temp;
-            DogButtonAnimator.SetBool("Down", false);
+            Vector3 temp = new Vector3(3.75f, -2.75f, 0.0f);
+            (GameObject.Find("DogButton")).transform.position = temp;
         }
 
         // if the player is on the button then the button is lowered
         if(playerButton.IsTouching(player))
         {
             // then the button is lowered
-            //Vector3 temp = new Vector3(-3.75f, -3f, 0.0f);
-            //(GameObject.Find("PlayerButton")).transform.position = temp;
-            PlayerButtonAnimator.SetBool("Down", true);
+            Vector3 temp = new Vector3(-3.75f, -3f, 0.0f);
+            (GameObject.Find("PlayerButton")).transform.position = temp;
         }
         else
         {
             // raise the button
-            //Vector3 temp = new Vector3(-3.75f, -2.75f, 0.0f);
-            //(GameObject.Find("PlayerButton")).transform.position = temp;
-            PlayerButtonAnimator.SetBool("Down", false);
+            Vector3 temp = new Vector3(-3.75f, -2.75f, 0.0f);
+            (GameObject.Find("PlayerButton")).transform.position = temp;
         }
 
         // if the dog and the player are on their respective buttons and the door is visisble

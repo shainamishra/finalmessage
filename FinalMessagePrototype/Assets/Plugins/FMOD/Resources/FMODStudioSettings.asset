@@ -233,8 +233,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - CharMovement
-  - UIBank
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

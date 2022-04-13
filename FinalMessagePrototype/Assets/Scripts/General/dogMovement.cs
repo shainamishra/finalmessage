@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using FMODUnity;
 
 public class dogMovement : MonoBehaviour
 {
@@ -10,7 +8,6 @@ public class dogMovement : MonoBehaviour
     public GameObject dogon;
     public Animator animator;
 
-    //public UnityEvent soundEvent;
     private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
@@ -34,14 +31,9 @@ public class dogMovement : MonoBehaviour
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
-
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);
-                
-                switchSFX();
-                // Debug.Log("Test");
-                
             }
         }
 
@@ -69,24 +61,17 @@ public class dogMovement : MonoBehaviour
         }
     }
 
-    //play character switchSFX
-    private void switchSFX() 
-    {
-        AudioManager.instance.PlayCharSwitch("event:/UI/CharacterSwitch");
-    
-    } 
-
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        // if(rb.velocity.x != 0){
-        //     if(!FindObjectOfType<AudioManager>().isPlaying()){
-        //         FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
-        //     }
-        // }
-        // else if(rb.velocity.x == 0){
-        //     FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
-        // }
+        if(rb.velocity.x != 0){
+            if(!FindObjectOfType<AudioManager>().isPlaying()){
+                FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
+            }
+        }
+        else if(rb.velocity.x == 0){
+            FindObjectOfType<AudioManager>().Stop("Footsteps-Dog");
+        }
     }
 
     private void animate()
