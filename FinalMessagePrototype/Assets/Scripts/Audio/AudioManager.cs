@@ -9,8 +9,8 @@ public class AudioManager : MonoBehaviour
         instance = this;
     }
 
-    [SerializeField]
-    public EventReference CharacterSwitch;
+    // [SerializeField]
+    // public EventReference CharacterSwitch;
     
     public void PlayCharSwitch(string path) {
         
