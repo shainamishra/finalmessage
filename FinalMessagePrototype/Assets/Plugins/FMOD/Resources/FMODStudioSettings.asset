@@ -208,7 +208,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: ../../../FM-FMOD/FM-FMOD.fspro
-  sourceBankPath: Assets/FMODBanks/Desktop
+  sourceBankPath: Assets/FMODBanks/Desktop/Desktop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -231,7 +231,8 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks: []
-  Banks: []
+  Banks:
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
