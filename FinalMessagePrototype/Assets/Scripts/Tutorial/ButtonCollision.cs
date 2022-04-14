@@ -16,8 +16,8 @@ public class ButtonCollision : MonoBehaviour
     {
         dog = GameObject.Find("Dog").GetComponent<Collider2D>();
         player = GameObject.Find("Player").GetComponent<Collider2D>();
-        dogButton = GameObject.Find("DogButton").GetComponent<Collider2D>();
-        playerButton = GameObject.Find("PlayerButton").GetComponent<Collider2D>();
+        //dogButton = GameObject.Find("DogButton").GetComponent<Collider2D>();
+        //playerButton = GameObject.Find("PlayerButton").GetComponent<Collider2D>();
         
         door = GameObject.Find("Door");
     }
@@ -25,7 +25,7 @@ public class ButtonCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if the dog is on the button
+        /*// if the dog is on the button
         if(dogButton.IsTouching(dog))
         {
             // then the button is lowered
@@ -51,7 +51,7 @@ public class ButtonCollision : MonoBehaviour
             // raise the button
             Vector3 temp = new Vector3(-3.75f, -2.75f, 0.0f);
             (GameObject.Find("PlayerButton")).transform.position = temp;
-        }
+        }*/
 
         // if the dog and the player are on their respective buttons and the door is visisble
         if (dogButton.IsTouching(dog) && playerButton.IsTouching(player) && door.activeSelf == true)
