@@ -8,9 +8,6 @@ public class AudioManager : MonoBehaviour
      private void Awake() {
         instance = this;
     }
-
-    // [SerializeField]
-    // public EventReference CharacterSwitch;
     
     public void PlayCharSwitch(string path) {
         
@@ -19,4 +16,6 @@ public class AudioManager : MonoBehaviour
             // Debug.Log("Playing!");
         }
     }
+
+    
 }
