@@ -10,8 +10,10 @@ public class TimeManager : MonoBehaviour
     public float startingTime = 300;
     private Text theText;
     public static bool TimesUp = false;
-    // public playerMovement player;
-    // public dogMovement dog;
+    
+
+    
+  
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,8 @@ public class TimeManager : MonoBehaviour
           startingTime=0;
           theText.text = min + ":0" + sec;
           TimesUp = true;
+          
+    
           // player.gameObject.SetActive(false);
           // dog.gameObject.SetActive(false);
         }
@@ -51,6 +55,7 @@ public class TimeManager : MonoBehaviour
     {
         if(TimesUp){
           GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
+          
         }
     }
 }
