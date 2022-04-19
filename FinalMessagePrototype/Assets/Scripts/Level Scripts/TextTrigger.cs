@@ -21,9 +21,9 @@ public class TextTrigger : MonoBehaviour
 
     public GameObject NPCname; 
     public GameObject canvas; 
-    //public GameObject finalText; 
+    public GameObject finalText; 
 
-    int correctAnswer = 0;
+    //int correctAnswer = 0;
 
     // level loading stuff
     public int levelVar = 0;
