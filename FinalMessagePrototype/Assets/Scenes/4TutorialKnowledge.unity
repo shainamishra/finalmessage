@@ -1271,6 +1271,7 @@ MonoBehaviour:
   option4: {fileID: 433105040}
   NPCname: {fileID: 1110853278}
   canvas: {fileID: 1673738715}
+  finalText: {fileID: 0}
   levelVar: 0
   transition: {fileID: 882419020}
   transitionTime: 0.5
@@ -2265,6 +2266,7 @@ MonoBehaviour:
   option4: {fileID: 433105040}
   NPCname: {fileID: 1110853278}
   canvas: {fileID: 1673738715}
+  finalText: {fileID: 640461967}
   levelVar: 0
   transition: {fileID: 882419020}
   transitionTime: 0.5
@@ -2285,7 +2287,6 @@ MonoBehaviour:
     sentences:
     - Fellow Warrior, Climber of Mount Arar. I am the Witch Knight, the final guardian
       of the summit. I ask you once more, what is your purpose on this mountain?
-    - ' '
 --- !u!1 &1757557472
 GameObject:
   m_ObjectHideFlags: 0
