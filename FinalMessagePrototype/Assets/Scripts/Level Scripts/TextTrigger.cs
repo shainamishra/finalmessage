@@ -21,6 +21,9 @@ public class TextTrigger : MonoBehaviour
 
     public GameObject NPCname; 
     public GameObject canvas; 
+    //public GameObject finalText; 
+
+    int correctAnswer = 0;
 
     // level loading stuff
     public int levelVar = 0;
@@ -90,6 +93,17 @@ public class TextTrigger : MonoBehaviour
         option3.gameObject.SetActive(true);
         option4.gameObject.SetActive(true);
     }
+
+    // show the canvas
+    void DiaableOptions() 
+    {
+        // show the option buttons
+        option1.gameObject.SetActive(false);
+        option2.gameObject.SetActive(false);
+        option3.gameObject.SetActive(false);
+        option4.gameObject.SetActive(false);
+    }
+    
     // when the start button is clicked
     void startTask()
     {
@@ -108,7 +122,7 @@ public class TextTrigger : MonoBehaviour
         NPCname.gameObject.SetActive(false);
 
         //remove continue button
-        cont.GetComponent<Button>().onClick.RemoveListener(continueTask);
+        //cont.GetComponent<Button>().onClick.RemoveListener(continueTask);
         cont.gameObject.SetActive(false);
 
         // show option buttons
@@ -117,7 +131,6 @@ public class TextTrigger : MonoBehaviour
 
     void TaskOnClick1()
     {
-        Debug.Log("clicked");
         levelVar = -4;
         LoadNextLevel();
     }
@@ -126,7 +139,8 @@ public class TextTrigger : MonoBehaviour
         // if in scene 4
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-
+            levelVar = -4;
+            LoadNextLevel();
         }
     }
     void TaskOnClick3()
@@ -134,7 +148,16 @@ public class TextTrigger : MonoBehaviour
         // if in scene 4
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-
+            // hide buttona
+            DiaableOptions();
+            // show name tag
+            NPCname.gameObject.SetActive(true);
+            // show continue button
+            //cont.gameObject.SetActive(true);
+            // show final text
+            finalText.gameObject.SetActive(true);
+            // disable NPC box collider
+            npc.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
     void TaskOnClick4()
@@ -142,7 +165,8 @@ public class TextTrigger : MonoBehaviour
         // if in scene 4
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-
+            levelVar = -4;
+            LoadNextLevel();
         }
     }
 
