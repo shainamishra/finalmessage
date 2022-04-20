@@ -14,4 +14,10 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void PlayUISound() {
+        DontDestroyOnLoad(UIAudioManager.instance);
+        UIAudioManager.instance.PlayUIClick();
+        
+    }
 }
