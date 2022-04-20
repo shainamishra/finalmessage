@@ -1218,7 +1218,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1.192501, z: 0}
   _xClamp:
   - 0
-  - 25
+  - 32
 --- !u!1001 &1324219246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1355,6 +1355,7 @@ GameObject:
   - component: {fileID: 1374597877}
   - component: {fileID: 1374597876}
   - component: {fileID: 1374597878}
+  - component: {fileID: 1374597879}
   m_Layer: 0
   m_Name: Seeker
   m_TagString: Untagged
@@ -1446,6 +1447,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1374597879
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374597875}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.46875, y: 12.84375}
+    newSize: {x: 7.46875, y: 12.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.46875, y: 12.84375}
+  m_EdgeRadius: 0
 --- !u!1 &1378180472
 GameObject:
   m_ObjectHideFlags: 0
