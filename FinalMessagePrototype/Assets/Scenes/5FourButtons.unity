@@ -2936,10 +2936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Climb the ladders with the W & A keys
-
-
-    Enter doorways with X'
+  m_Text: Climb the ladders with the W & A keys
 --- !u!222 &1873818664
 CanvasRenderer:
   m_ObjectHideFlags: 0
