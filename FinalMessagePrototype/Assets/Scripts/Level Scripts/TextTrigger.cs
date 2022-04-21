@@ -146,7 +146,7 @@ public class TextTrigger : MonoBehaviour
     void TaskOnClick3()
     {
         // if in scene 4
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             // hide buttona
             DiaableOptions();

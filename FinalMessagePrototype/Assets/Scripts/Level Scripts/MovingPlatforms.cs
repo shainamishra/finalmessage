@@ -6,7 +6,7 @@ public class MovingPlatforms : MonoBehaviour
 {
     public Collider2D one;
     public Collider2D two;
-    public Collider2D rock;
+    public Collider2D rock1;
     public Collider2D rock2;
 
     public Vector3 max = new Vector3(-1.86f, 4f, 0.0f);
@@ -21,15 +21,15 @@ public class MovingPlatforms : MonoBehaviour
     void Update()
     {
         Vector3 rock2POS = rock2.transform.position;
-        
+
         // if the rock is on the button
-        if(one.IsTouching(rock))
+        if (one.IsTouching(rock1))
         {
-            //Debug.Log("first");
+            Debug.Log("one");
         }
-        else if ((!one.IsTouching(rock)) && (!one.IsTouching(rock2)) && (rock2POS.y > 10))
+        else if ((one.IsTouching(rock1) == false) && (one.IsTouching(rock2) == false) && (rock2POS.y > 10))
         {
-            // Debug.Log("kdjfjkhadhk");
+            Debug.Log("second");
 
             // then the platforms move
             Vector3 temp = one.transform.position + new Vector3(0.0f, 0.01f, 0.0f);
@@ -44,10 +44,10 @@ public class MovingPlatforms : MonoBehaviour
             }
         }
         // if the rock is on the button
-        else if (one.IsTouching(rock2))
+        else if (one.IsTouching(rock2) == true)
         {
             // original position
-            //Debug.Log("second");
+            Debug.Log("third");
             
             // then the platforms move
             Vector3 temp = one.transform.position - new Vector3(0.0f, 0.01f, 0.0f);
