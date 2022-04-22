@@ -60,7 +60,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 1){
             // level ending conditions
             levels[1] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5){
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5){
                 LoadNextLevel();
             }
         }
@@ -71,7 +71,7 @@ public class LevelLoader : MonoBehaviour
             levels[2] = 1;
             if(door.activeSelf == false)
             {
-                if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+                if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
                 {
                     LoadNextLevel();
                 }
@@ -83,7 +83,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[3] = 1;
             Key4 = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 levelVar = 0;
                 LoadNextLevel();
@@ -95,7 +95,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[4] = 1;
             // four platform
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // goes to three doors
                 levelVar = 17;
@@ -108,8 +108,8 @@ public class LevelLoader : MonoBehaviour
         {
             levels[5] = 1;
             // FM 2
-            //if(((player.transform.position.x > 11.5 && player.transform.position.y > 10)) || (dog.transform.position.x > 11.5 && dog.transform.position.y > 10))
-            if(((player.transform.position.x > 11.5)) || (dog.transform.position.x > 11.5))
+            //if(((player.transform.position.x > 10.5 && player.transform.position.y > 10)) || (dog.transform.position.x > 10.5 && dog.transform.position.y > 10))
+            if(((player.transform.position.x > 10.5)) || (dog.transform.position.x > 10.5))
             {
                 levelVar = 2;
                 LoadNextLevel();
@@ -133,7 +133,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[6] = 1;
             
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // goes to 7
                 levelVar = 0;
@@ -145,7 +145,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 7){
             // level ending conditions
             levels[7] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
             }
@@ -155,7 +155,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 8){
             // level ending conditions
             levels[8] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
             }
@@ -185,7 +185,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 10){
             // level ending conditions
             levels[10] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 levelVar = 0;
                 LoadNextLevel();
@@ -223,7 +223,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 12){
             // level ending conditions
             levels[12] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
             }
@@ -233,7 +233,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 13){
             // level ending conditions
             levels[13] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
             }
@@ -243,7 +243,7 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 14)
         {
             levels[14] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // goes to 15
                 levelVar = 0;
@@ -312,7 +312,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 17){
             // level ending conditions
             levels[17] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 //goes to 19
                 levelVar = 1;
@@ -324,7 +324,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 18){
             // level ending conditions
             levels[18] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
             }
@@ -334,7 +334,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 19){
             // level ending conditions
             levels[19] = 1;
-            if(dog.transform.position.x > 11.5 || player.transform.position.x > 11.5)
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 //goes to 20
                 levelVar = 0;
