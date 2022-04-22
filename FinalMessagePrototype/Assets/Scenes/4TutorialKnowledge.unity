@@ -1644,7 +1644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762151657734394880, guid: 28e881062843f9641bbfe5cc4b97d52b, type: 3}
       propertyPath: m_Name
-      value: InvisibleBarrier
+      value: InvisibleBarrier R
       objectReference: {fileID: 0}
     - target: {fileID: 7801790763369048892, guid: 28e881062843f9641bbfe5cc4b97d52b, type: 3}
       propertyPath: m_RootOrder
@@ -2377,7 +2377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762151657734394880, guid: 28e881062843f9641bbfe5cc4b97d52b, type: 3}
       propertyPath: m_Name
-      value: InvisibleBarrier (1)
+      value: InvisibleBarrier L
       objectReference: {fileID: 0}
     - target: {fileID: 7801790763369048892, guid: 28e881062843f9641bbfe5cc4b97d52b, type: 3}
       propertyPath: m_RootOrder

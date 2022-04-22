@@ -36,11 +36,11 @@ public class LevelLoader : MonoBehaviour
     {
         if (Key1 == 1 && Key2 == 1 && Key3 == 1 && Key4 == 1) 
         {
-            checkLevel(SceneManager.GetActiveScene().buildIndex);
-            LoadNextLevel();
+            //checkLevel(SceneManager.GetActiveScene().buildIndex);
+            //LoadNextLevel();
         }
 
-        checkLevel(SceneManager.GetActiveScene().buildIndex);
+        //checkLevel(SceneManager.GetActiveScene().buildIndex);
 
         // build index starts at ZERO while our scene names start at ONE!!!!
         // quit the game
@@ -49,14 +49,14 @@ public class LevelLoader : MonoBehaviour
             Application.Quit();
         }
 
-        // start menu
+        // Menu
         if (SceneManager.GetActiveScene().buildIndex == 0){
             // level ending conditions
             levels[0] = 1;
             //LoadNextLevel();
         }
 
-        // start scene
+        // Start
         if (SceneManager.GetActiveScene().buildIndex == 1){
             // level ending conditions
             levels[1] = 1;
@@ -65,10 +65,11 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        // tutorial reasoning
+        // Tutorial Reasoning
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             levels[2] = 1;
+
             if(door.activeSelf == false)
             {
                 if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
@@ -76,9 +77,16 @@ public class LevelLoader : MonoBehaviour
                     LoadNextLevel();
                 }
             }
+
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // tutorial item
+        // Tutorial Item
         if(SceneManager.GetActiveScene().buildIndex == 3)
         {
             levels[3] = 1;
@@ -88,9 +96,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // tutorial knowledge
+        // Tutorial Knowledge
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
             levels[4] = 1;
@@ -101,9 +115,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 17;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // lonely climber
+        // Lonely Climber
         if(SceneManager.GetActiveScene().buildIndex == 5)
         {
             levels[5] = 1;
@@ -120,6 +140,13 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 18;
+                LoadPrevLevel();
+            }
+
             // check if player fell from a great height, send to start
             if (GroundCheck.dead == true)
             {
@@ -139,9 +166,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // final message 1
+        // Final Message 1
         if (SceneManager.GetActiveScene().buildIndex == 7){
             // level ending conditions
             levels[7] = 1;
@@ -149,9 +182,16 @@ public class LevelLoader : MonoBehaviour
             {
                 // end of branch
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
+            
         }
 
-        // final message 2
+        // Final Message 2
         if (SceneManager.GetActiveScene().buildIndex == 8){
             // level ending conditions
             levels[8] = 1;
@@ -159,9 +199,15 @@ public class LevelLoader : MonoBehaviour
             {
                 // end of branch
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = -2;
+                LoadPrevLevel();
+            }
         }
 
-        // four platform
+        // Four Platform
         if(SceneManager.GetActiveScene().buildIndex == 9)
         {
             levels[9] = 1;
@@ -179,9 +225,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 14;
+                LoadPrevLevel();
+            }
         }
 
-        // exhausted adventurer
+        // Exhausted Adventurer
         if (SceneManager.GetActiveScene().buildIndex == 10){
             // level ending conditions
             levels[10] = 1;
@@ -190,9 +242,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // six doors (Scene: 10SixDoors)        FIX DOOR POSITIONS
+        // Six Doors (Scene: 10SixDoors)        FIX DOOR POSITIONS
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             levels[11] = 1;
@@ -217,15 +275,27 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 11;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // final message 5
+        // Final Message 5
         if (SceneManager.GetActiveScene().buildIndex == 12){
             // level ending conditions
             levels[12] = 1;
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
+            }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
             }
         }
 
@@ -237,9 +307,15 @@ public class LevelLoader : MonoBehaviour
             {
                 // end of branch
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = -1;
+                LoadPrevLevel();
+            }
         }
 
-        // checks
+        // Checks
         if(SceneManager.GetActiveScene().buildIndex == 14)
         {
             levels[14] = 1;
@@ -249,14 +325,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
-            // previous level
-            else if((player.transform.position.x < -8 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -1.5 && (dog.transform.position.y > 0 && dog.transform.position.y < 1)))
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
-                //LoadPrevLevel();
+                levelVarNeg = 9;
+                LoadPrevLevel();
             }
         }
 
-        // time gate
+        // Time Gate
         if (SceneManager.GetActiveScene().buildIndex == 15)
         {
             levels[15] = 1;
@@ -274,9 +351,15 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -15;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
-        // trick weight
+        // Trick Weight
         if (SceneManager.GetActiveScene().buildIndex == 16)
         {
             levels[16] = 1;
@@ -299,6 +382,13 @@ public class LevelLoader : MonoBehaviour
             {
                 //LoadPrevLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
+
             // check if player fell from a great height
             if (GroundCheck.dead == true) 
             {
@@ -318,6 +408,12 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 1;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
         // FM 3
@@ -327,6 +423,12 @@ public class LevelLoader : MonoBehaviour
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch
+            }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = -1;
+                LoadPrevLevel();
             }
         }
 
@@ -339,6 +441,12 @@ public class LevelLoader : MonoBehaviour
                 //goes to 20
                 levelVar = 0;
                 LoadNextLevel();
+            }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = -1;
+                LoadPrevLevel();
             }
         }
 
@@ -353,6 +461,12 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
+            }
         }
 
         // The Summit
@@ -362,6 +476,12 @@ public class LevelLoader : MonoBehaviour
             if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
             {
                 // end of game
+            }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = 0;
+                LoadPrevLevel();
             }
         }
 
@@ -388,6 +508,12 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -9;
                 LoadNextLevel();
                 Debug.Log("14");
+            }
+            // move back
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = -17;
+                LoadPrevLevel();
             }
         }
     }
