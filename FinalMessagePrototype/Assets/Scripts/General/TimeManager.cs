@@ -25,6 +25,7 @@ public class TimeManager : MonoBehaviour
     {
         theText = GetComponent<Text>();
         TimesUp = false;
+        // Update();
         // player = FindObjectofType<playerMovement>();
         // dog = FindObjectofType<dogMovement>();
     }
@@ -58,25 +59,40 @@ public class TimeManager : MonoBehaviour
           // dog.gameObject.SetActive(false);
         }
 
-        if(TimesUp == true && Input.GetKeyDown("r"))
+        if(TimesUp == true && Input.GetKeyDown("r")){
+          GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
+          // GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
+          // myButtonStyle.fontSize = 50;
+          // // Load and set Font
+          // Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
+          // myButtonStyle.font = myFont;
+          // // Set color for selected and unselected buttons
+          // myButtonStyle.normal.textColor = Color.blue;
+          // myButtonStyle.hover.textColor = Color.red;
+          // // use style in button
+          // bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
+          TimesUp = false;
           SceneManager.LoadScene("1StartScene");
+
+        }
+          
     }
 
     void OnGUI()
     {
-        if(TimesUp){
+        // if(TimesUp){
 
-          // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
-          GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
-          myButtonStyle.fontSize = 50;
-          // Load and set Font
-          Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
-          myButtonStyle.font = myFont;
-          // Set color for selected and unselected buttons
-          myButtonStyle.normal.textColor = Color.blue;
-          myButtonStyle.hover.textColor = Color.red;
-          // use style in button
-          bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
-        }
+        //   // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
+        //   GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
+        //   myButtonStyle.fontSize = 50;
+        //   // Load and set Font
+        //   Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
+        //   myButtonStyle.font = myFont;
+        //   // Set color for selected and unselected buttons
+        //   myButtonStyle.normal.textColor = Color.blue;
+        //   myButtonStyle.hover.textColor = Color.red;
+        //   // use style in button
+        //   bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
+        // }
     }
 }
