@@ -29,6 +29,9 @@ public class TextTrigger : MonoBehaviour
     public int levelVar = 0;
     public Animator transition;
     public float transitionTime = 0.5f;
+
+    int contClicked = 0;
+    public int sentences;
     
     void Start()
     {
@@ -115,18 +118,26 @@ public class TextTrigger : MonoBehaviour
         EnableCanvas();
     }
     
-    // when the start button is clicked
+    // when the continue button is clicked
     void continueTask()
     {
-        //hide NPC name tag
-        NPCname.gameObject.SetActive(false);
+        contClicked = contClicked + 1;
 
-        //remove continue button
-        //cont.GetComponent<Button>().onClick.RemoveListener(continueTask);
-        cont.gameObject.SetActive(false);
+        if (contClicked == sentences)
+        {
 
-        // show option buttons
-        EnableOptions();
+            //remove continue button
+            //cont.GetComponent<Button>().onClick.RemoveListener(continueTask);
+            cont.gameObject.SetActive(false);
+
+            if(SceneManager.GetActiveScene().buildIndex != 17)
+            {
+                //hide NPC name tag
+                NPCname.gameObject.SetActive(false);
+                // show option buttons
+                EnableOptions();
+            }
+        }
     }
 
     void TaskOnClick1()
