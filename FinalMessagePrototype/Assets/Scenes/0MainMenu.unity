@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 364451680}
   - component: {fileID: 364451679}
   - component: {fileID: 364451678}
+  - component: {fileID: 364451681}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -359,6 +360,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 364451681}
+        m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &364451679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,6 +410,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364451676}
   m_CullTransparentMesh: 1
+--- !u!114 &364451681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364451676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 292540157
+      Data2: 1310872726
+      Data3: -1367507560
+      Data4: 2046376757
+    Path: event:/UI/UI-Click
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &383402577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1604,7 @@ GameObject:
   - component: {fileID: 1526031790}
   - component: {fileID: 1526031789}
   - component: {fileID: 1526031788}
+  - component: {fileID: 1526031791}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1653,6 +1688,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1526031791}
+        m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1526031789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,6 +1738,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526031786}
   m_CullTransparentMesh: 1
+--- !u!114 &1526031791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526031786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: -1079483834
+      Data2: 1095862467
+      Data3: 1374090145
+      Data4: -226216673
+    Path: event:/UI/Unpause
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &1643928175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,6 +2118,7 @@ GameObject:
   - component: {fileID: 2093691918}
   - component: {fileID: 2093691917}
   - component: {fileID: 2093691916}
+  - component: {fileID: 2093691919}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -2157,6 +2226,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2093691919}
+        m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2093691917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2195,6 +2276,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093691914}
   m_CullTransparentMesh: 1
+--- !u!114 &2093691919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093691914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 292540157
+      Data2: 1310872726
+      Data3: -1367507560
+      Data4: 2046376757
+    Path: event:/UI/UI-Click
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &2115008848
 GameObject:
   m_ObjectHideFlags: 0
