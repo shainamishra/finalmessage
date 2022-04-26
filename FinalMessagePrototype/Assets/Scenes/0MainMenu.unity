@@ -277,6 +277,8 @@ GameObject:
   - component: {fileID: 364451679}
   - component: {fileID: 364451678}
   - component: {fileID: 364451681}
+  - component: {fileID: 364451683}
+  - component: {fileID: 364451682}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -431,6 +433,56 @@ MonoBehaviour:
     Path: event:/UI/UI-Click
   PlayOnAwake: 0
   PlayOnDestroy: 0
+--- !u!114 &364451682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364451676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 73897388
+      Data2: 1338894680
+      Data3: 1022207370
+      Data4: 1068826667
+    Path: event:/UI/UI-SoftSelect
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
+--- !u!114 &364451683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364451676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 364451682}
+          m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+          m_MethodName: PlayOneShot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &383402577
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +916,8 @@ GameObject:
   - component: {fileID: 957912130}
   - component: {fileID: 957912129}
   - component: {fileID: 957912132}
+  - component: {fileID: 957912134}
+  - component: {fileID: 957912133}
   m_Layer: 5
   m_Name: returnButton
   m_TagString: Untagged
@@ -1043,6 +1097,56 @@ MonoBehaviour:
     Path: event:/UI/UI-Click
   PlayOnAwake: 0
   PlayOnDestroy: 0
+--- !u!114 &957912133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957912127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 73897388
+      Data2: 1338894680
+      Data3: 1022207370
+      Data4: 1068826667
+    Path: event:/UI/UI-SoftSelect
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
+--- !u!114 &957912134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957912127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 957912133}
+          m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+          m_MethodName: PlayOneShot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &969055277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,6 +1743,8 @@ GameObject:
   - component: {fileID: 1526031789}
   - component: {fileID: 1526031788}
   - component: {fileID: 1526031791}
+  - component: {fileID: 1526031793}
+  - component: {fileID: 1526031792}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1793,6 +1899,56 @@ MonoBehaviour:
     Path: event:/UI/Unpause
   PlayOnAwake: 0
   PlayOnDestroy: 0
+--- !u!114 &1526031792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526031786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 73897388
+      Data2: 1338894680
+      Data3: 1022207370
+      Data4: 1068826667
+    Path: event:/UI/UI-SoftSelect
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
+--- !u!114 &1526031793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526031786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1526031792}
+          m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+          m_MethodName: PlayOneShot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1643928175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,6 +2309,8 @@ GameObject:
   - component: {fileID: 2093691917}
   - component: {fileID: 2093691916}
   - component: {fileID: 2093691919}
+  - component: {fileID: 2093691921}
+  - component: {fileID: 2093691920}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -2331,6 +2489,56 @@ MonoBehaviour:
     Path: event:/UI/UI-Click
   PlayOnAwake: 0
   PlayOnDestroy: 0
+--- !u!114 &2093691920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093691914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 73897388
+      Data2: 1338894680
+      Data3: 1022207370
+      Data4: 1068826667
+    Path: event:/UI/UI-SoftSelect
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
+--- !u!114 &2093691921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093691914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2093691920}
+          m_TargetAssemblyTypeName: AudioTrigger, Assembly-CSharp
+          m_MethodName: PlayOneShot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2115008848
 GameObject:
   m_ObjectHideFlags: 0
