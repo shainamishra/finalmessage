@@ -1331,7 +1331,7 @@ MonoBehaviour:
       Data2: 1249700546
       Data3: 129203388
       Data4: -1954776876
-    Path: event:/Ambience/Rope
+    Path: event:/Environment & Ambience/Rope
   Event: 
   PlayEvent: 1
   StopEvent: 12
@@ -1628,7 +1628,7 @@ MonoBehaviour:
       Data2: 1163168486
       Data3: 1316113799
       Data4: 317772160
-    Path: event:/Ambience/RopeSnap
+    Path: event:/Environment & Ambience/RopeSnap
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -1812,7 +1812,7 @@ MonoBehaviour:
       Data2: 1322489739
       Data3: -411140973
       Data4: 1281404409
-    Path: event:/Ambience/Wind
+    Path: event:/Environment & Ambience/Wind
   Event: 
   PlayEvent: 1
   StopEvent: 2
