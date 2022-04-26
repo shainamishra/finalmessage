@@ -1239,6 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1276905757}
   - component: {fileID: 1276905758}
+  - component: {fileID: 1276905759}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Untagged
@@ -1311,6 +1312,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1276905759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276905756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -565234904
+      Data2: 1249700546
+      Data3: 129203388
+      Data4: -1954776876
+    Path: event:/Ambience/Rope
+  Event: 
+  PlayEvent: 1
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1312083864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,6 +1496,7 @@ GameObject:
   - component: {fileID: 1470288409}
   - component: {fileID: 1470288411}
   - component: {fileID: 1470288410}
+  - component: {fileID: 1470288412}
   m_Layer: 0
   m_Name: RopeInteract
   m_TagString: Untagged
@@ -1577,6 +1609,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ropeNPC: {fileID: 33931960}
   freeNPC: {fileID: 1815359360}
+--- !u!114 &1470288412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470288407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -898395767
+      Data2: 1163168486
+      Data3: 1316113799
+      Data4: 317772160
+    Path: event:/Ambience/RopeSnap
+  Event: 
+  PlayEvent: 12
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1480995516
 GameObject:
   m_ObjectHideFlags: 0
