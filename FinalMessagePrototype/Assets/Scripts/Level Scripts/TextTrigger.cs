@@ -125,7 +125,6 @@ public class TextTrigger : MonoBehaviour
 
         if (contClicked == sentences)
         {
-
             //remove continue button
             //cont.GetComponent<Button>().onClick.RemoveListener(continueTask);
             cont.gameObject.SetActive(false);
