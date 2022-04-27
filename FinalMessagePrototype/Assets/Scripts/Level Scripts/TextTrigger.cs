@@ -121,33 +121,40 @@ public class TextTrigger : MonoBehaviour
     // when the continue button is clicked
     void continueTask()
     {
-        contClicked = contClicked + 1;
-
         if (contClicked == sentences)
         {
             //remove continue button
-            //cont.GetComponent<Button>().onClick.RemoveListener(continueTask);
             cont.gameObject.SetActive(false);
 
-            if(SceneManager.GetActiveScene().buildIndex != 17)
+            // if scene does not have options
+            if(SceneManager.GetActiveScene().buildIndex != 17 && SceneManager.GetActiveScene().buildIndex != 7)
             {
+                Debug.Log("fuck");
                 //hide NPC name tag
                 NPCname.gameObject.SetActive(false);
                 // show option buttons
                 EnableOptions();
             }
         }
+        else
+        {
+            contClicked = contClicked + 1;
+        }
     }
 
     void TaskOnClick1()
     {
-        levelVar = -4;
-        LoadNextLevel();
+        // if in scene 4
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            levelVar = -4;
+            LoadNextLevel();
+        }
     }
     void TaskOnClick2()
     {
         // if in scene 4
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             levelVar = -4;
             LoadNextLevel();
@@ -173,7 +180,7 @@ public class TextTrigger : MonoBehaviour
     void TaskOnClick4()
     {
         // if in scene 4
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             levelVar = -4;
             LoadNextLevel();
