@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    public static int[] levels = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    public static int[] levels = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     public Animator transition;
     public float transitionTime = 0.5f;
 
@@ -13,6 +13,8 @@ public class LevelLoader : MonoBehaviour
     public GameObject player;
     public GameObject playeron;
     public GameObject door;
+
+    public static bool Prev;
 
     public int levelVar = 0;
     public int levelVarNeg = 0;
@@ -34,13 +36,12 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
+        checkPrev();
+
         if (Key1 == 1 && Key2 == 1 && Key3 == 1 && Key4 == 1) 
         {
-            //checkLevel(SceneManager.GetActiveScene().buildIndex);
             //LoadNextLevel();
         }
-
-        //checkLevel(SceneManager.GetActiveScene().buildIndex);
 
         // build index starts at ZERO while our scene names start at ONE!!!!
         // quit the game
@@ -53,6 +54,12 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 0){
             // level ending conditions
             levels[0] = 1;
+            //LoadNextLevel();
+        }
+
+        // CutScene
+        if (SceneManager.GetActiveScene().buildIndex == 25){
+            levelVar = 0;
             //LoadNextLevel();
         }
 
@@ -545,109 +552,27 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
-    private void checkLevel(int level)
+    public void checkPrev()
     {
         /*
-        // end level is index 6
-        levelVar = 0;
+        for direction: 
+        if levels[previous scene#] != 0 then start pos right and facing right
 
-        if (level == 0){
-            levelVar = 0;
-        } else if (level == 1){
-            levelVar = 0;
-        } else if (level == 2){
-            levelVar = 0;
-        }  else if (level == 3){
-            levelVar = 0;
-        }  else if (level == 4){
-            levelVar = 1;
-        }  else if (level == 5){
-            levelVar = 0;
-        }  else if (level == 6){
-            levelVar = 16;
-        }  else if (level == 7){
-            levelVar = -2;
-        }  else if (level == 8){
-            levelVar = -3;
-        }  else if (level == 9){
-            levelVar = -4;
-        }  else if (level == 10){
-            levelVar = -5;
-        }  else if (level == 11){
-            levelVar = -6;
-        }  else if (level == 12){
-            levelVar = -7;
-        }  else if (level == 13){
-            levelVar = -8;
-        }  else if (level == 14){
-            levelVar = -9;
-        }  else if (level == 15){
-            levelVar = -10;
-        }  else if (level == 16){
-            levelVar = -11;
-        }  else if (level == 17){
-            levelVar = -12;
-        }  else if (level == 18){
-            levelVar = -13;
-        }  else if (level == 19){
-            levelVar = -14;
-        }  else if (level == 20){
-            levelVar = -15;
-        } 
-
-        // backwards movement
-        levelVarNeg = 0;
-
-        /*
-        if (level == 0){
-            levelVar = 5;
-        } else if (level == 1){
-            levelVar = 4;
-        } else if (level == 2){
-            levelVar = 3;
-        }  else if (level == 3){
-            levelVar = 2;
-        }  else if (level == 4){
-            levelVar = 1;
-        }  else if (level == 5){
-            levelVar = 0;
-        }  else if (level == 6){
-            levelVarNeg = 0;
-        }  else if (level == 7){
-            levelVarNeg = -1;
-        }  else if (level == 8){
-            levelVarNeg = 0;
-        }  else if (level == 9){
-            levelVarNeg = 0;
-        }  else if (level == 10){
-            levelVarNeg = 0;
-        }  else if (level == 11){
-            levelVarNeg = -1;
-        }  else if (level == 12){
-            levelVarNeg = -7;
-        }  else if (level == 13){
-            levelVarNeg = 2;
-        }  else if (level == 14){
-                Debug.Log("4: " + levels[4]);
-                Debug.Log("5: " + levels[5]);
-            if(levels[4] == 1){
-                levelVarNeg = -9;
-            } else if (levels[5] == 1){
-                levelVarNeg = -8;
-            }
-        }  else if (level == 15){
-            levelVarNeg = 0;
-        }  else if (level == 16){
-            levelVarNeg = 0;
-        }  else if (level == 17){
-            levelVarNeg = 0;
-        }  else if (level == 18){
-            levelVarNeg = 0;
-        }  else if (level == 19){
-            levelVarNeg = 0;
-        }  else if (level == 20){
-            levelVarNeg = 0;
-        } 
+        later on I can use the check to reset the level
         */
+
+        // completed scene
+        if(levels[SceneManager.GetActiveScene().buildIndex - 1] != 0)
+        {
+            Debug.Log("complete");
+            Prev = true;
+            //player.transform.position = new Vector3(7.5f, -1.2f, 0.0f);
+
+        }
+        // new scene
+        else
+        {
+            Debug.Log("new");
+        }
     }
 }

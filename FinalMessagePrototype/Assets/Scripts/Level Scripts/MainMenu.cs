@@ -10,16 +10,19 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        Debug.Log("start");
+        SceneManager.LoadScene(24);
     }
 
     public void Settings()
     {
+        Debug.Log("settings");
         canvas.gameObject.SetActive(false);
     }
 
     public void QuitGame()
     {
+        Debug.Log("quit");
         Application.Quit();
     }
 

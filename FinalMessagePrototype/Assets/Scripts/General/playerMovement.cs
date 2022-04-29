@@ -28,12 +28,39 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
+        // get levels complete from Level Loader script
+        levelsComplete = LevelLoader.levels;
 
+        for direction: 
+        if levels[previous scene#] != 0 then start pos right and facing right
+
+        later on I can use the check to reset the level
+
+        // completed scene
+        if(levelsComplete[SceneManager.GetActiveScene().buildIndex - 1] != 0)
+        {
+            Debug.Log("complete");
+        }
+        // new scene
+        else
+        {
+            Debug.Log("new");
+        }
+        */
+
+        if (LevelLoader.Prev == true)
+        {
+            Debug.Log("true");
+            facingRight = false;
+            playeron.transform.position = new Vector3(7.5f, -1.2f, 0.0f);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+
         // swapping between knight and dog
         if (Input.GetKeyDown("space"))
         {
