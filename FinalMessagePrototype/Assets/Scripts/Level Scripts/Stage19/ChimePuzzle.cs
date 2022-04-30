@@ -1,9 +1,17 @@
+/* Okay, so this script is a little odd looking, but it's pretty simple in concept.
+ * It's a standard brute force puzzle, like Simon: players have to hit the chimes in a certain order.
+ * If the mess up the order, they have to start over.
+ * I managed this is probably the least elegant way possible, but it's workable for a small number of variations.
+ * If we want more variations or a longer version, we'll revisit it.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ChimePuzzle : MonoBehaviour
 {
+    //Grab the Chime children of this object
     Transform chime1;
     Transform chime2;
     Transform chime3;
@@ -11,12 +19,19 @@ public class ChimePuzzle : MonoBehaviour
     ChimeActivate chimeActivate2;
     ChimeActivate chimeActivate3;
 
-    bool level_one = false;
-    bool level_two = false;
-    bool level_three = false;
+    //Grab the obstacle objects, assigned in the editor
+    public GameObject Obstacle_1;
+    public GameObject Obstacle_2;
+    public GameObject Obstacle_3;
+    ChimePuzzleObstacleMove obstacleMove1;
+    ChimePuzzleObstacleMove obstacleMove2;
+    ChimePuzzleObstacleMove obstacleMove3;
+    
+    //Instantiate control variables
     bool control1 = false;
     bool control2 = false;
     bool control3 = false;
+    int state = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,56 +42,74 @@ public class ChimePuzzle : MonoBehaviour
         chimeActivate1 = chime1.GetComponent<ChimeActivate>();
         chimeActivate2 = chime2.GetComponent<ChimeActivate>();
         chimeActivate3 = chime3.GetComponent<ChimeActivate>();
+        obstacleMove1 = Obstacle_1.GetComponent<ChimePuzzleObstacleMove>();
+        obstacleMove2 = Obstacle_2.GetComponent<ChimePuzzleObstacleMove>();
+        obstacleMove3 = Obstacle_3.GetComponent<ChimePuzzleObstacleMove>();
+
+        print("State = " + state);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(WhichChanged() == 1){
-            level_one = true;
-            Debug.Log("Level one");
-        }
-        if(level_one && (WhichChanged() == 2)){
-            level_two = true;
-            Debug.Log("Level two");
-        }
-        if(level_two && (WhichChanged() == 3)){
-            level_three = true;
-            Debug.Log("Level Three");
-        }
+        /*
+        Okay, so this is where things get kinda complicated...
+        Basically, we advance from state 0 (start) to state 3 (puzzle complete) one at a time.
+        To do this, we check the status of the current chime against its status in the last call of update() (control1/2/3)
+        If the proper bell for this state is activated, stop the associated obstacle and advance the state by 1
+        Else, reset everything to state 0
 
-        if(level_one && level_two && level_three){
-            Debug.Log("Puzzle Solved!");
-        }
+        Current Solution: 3, 1, 2
 
-        if(Input.GetKeyDown(KeyCode.E)){
-            chimeActivate1.status = false;
-            chimeActivate2.status = false;
-            chimeActivate3.status = false;
+        */
+
+        if(state == 0){
+            if(chimeActivate3.status != control3){
+                obstacleMove3.is_on = false;
+                state++;
+                Debug.Log("State = " + state);
+            }
+            else if( (chimeActivate1.status != control1) || (chimeActivate2.status != control2)){
+                StartOver();
+                Debug.Log("State = " + state);
+            }
         }
+        else if(state == 1){
+            if(chimeActivate1.status != control1){
+                obstacleMove1.is_on = false;
+                state++;
+                Debug.Log("State = " + state);
+            }
+            else if( (chimeActivate2.status != control2) || (chimeActivate3.status != control3)){
+                StartOver();
+                Debug.Log("State = " + state);
+            }
+        }
+        else if(state == 2){
+            if(chimeActivate2.status != control2){
+                obstacleMove2.is_on = false;
+                state++;
+                Debug.Log("State = " + state);
+            }
+            else if( (chimeActivate1.status != control1) || (chimeActivate3.status != control3)){
+                StartOver();
+                Debug.Log("State = " + state);
+            }
+        }
+        control1 = chimeActivate1.status;
+        control2 = chimeActivate2.status;
+        control3 = chimeActivate3.status;
     }
 
-    int WhichChanged(){
-        if(chimeActivate1.status != control1){
-            Debug.Log("Chime one changed.");
-            control1 = chimeActivate1.status;
-            return 1;
-        }
-        else if(chimeActivate2.status != control2){
-            Debug.Log("Chime two changed.");
-            control2 = chimeActivate2.status;
-            return 2;
-        }
-        else if(chimeActivate3.status != control3){
-            Debug.Log("Chime three changed.");
-            control3 = chimeActivate3.status;
-            return 3;
-        }
-        else{
-            control1 = chimeActivate1.status;
-            control2 = chimeActivate2.status;
-            control3 = chimeActivate3.status;
-            return 0;
-        }
+    //Pretty self-expanatory: this resets everything.
+    void StartOver(){
+        chimeActivate1.status = false;
+        chimeActivate2.status = false;
+        chimeActivate3.status = false;
+        state = 0;
+        obstacleMove1.is_on = true;
+        obstacleMove2.is_on = true;
+        obstacleMove3.is_on = true;
+        Debug.Log("Start Over.");
     }
 }

@@ -564,7 +564,7 @@ public class LevelLoader : MonoBehaviour
         // completed scene
         if(levels[SceneManager.GetActiveScene().buildIndex - 1] != 0)
         {
-            Debug.Log("complete");
+            //Debug.Log("complete");
             Prev = true;
             //player.transform.position = new Vector3(7.5f, -1.2f, 0.0f);
 
@@ -572,7 +572,7 @@ public class LevelLoader : MonoBehaviour
         // new scene
         else
         {
-            Debug.Log("new");
+            //Debug.Log("new");
         }
     }
 }

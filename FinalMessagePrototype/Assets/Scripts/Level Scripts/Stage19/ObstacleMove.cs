@@ -1,3 +1,6 @@
+/* This script animates the basic behavior of the moving obstacles: to oscillate up and down
+ * This can be disabled by a trigger using the public variable is_on.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +11,8 @@ public class ObstacleMove : MonoBehaviour
     public float min_height;
     public float speed;
     public bool is_moving_up;
+
+    public bool is_on = true;
 
     Vector3 pos;
 
@@ -20,10 +25,12 @@ public class ObstacleMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if(is_on){
+            Oscillate();
+        }
     }
 
-    void Move(){
+    void Oscillate(){
         pos = transform.position;
         if(is_moving_up){
             if(pos.y < max_height){

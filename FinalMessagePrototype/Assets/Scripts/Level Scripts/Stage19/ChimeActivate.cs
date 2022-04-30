@@ -26,8 +26,13 @@ public class ChimeActivate : MonoBehaviour
     void Update()
     {
         if(overlap && Input.GetKeyDown(KeyCode.X)){
-            status = true;
-            Debug.Log("Ding..." + status);
+            if(status == false){
+                status = true;
+            }
+            else{
+                status = false;
+            }
+            //Debug.Log("Ding..." + status);
         }
     }
 }
