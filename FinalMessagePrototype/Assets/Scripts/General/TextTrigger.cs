@@ -129,7 +129,6 @@ public class TextTrigger : MonoBehaviour
             // if scene does not have options
             if(SceneManager.GetActiveScene().buildIndex != 7 && SceneManager.GetActiveScene().buildIndex != 8 && SceneManager.GetActiveScene().buildIndex != 13 && SceneManager.GetActiveScene().buildIndex != 17 && SceneManager.GetActiveScene().buildIndex != 18)
             {
-                Debug.Log("fuck");
                 //hide NPC name tag
                 NPCname.gameObject.SetActive(false);
                 // show option buttons

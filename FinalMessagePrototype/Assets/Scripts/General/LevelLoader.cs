@@ -535,7 +535,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadPrevLevel()
     {
-        // loads the next scene
+        // loads the prev scene
             // level Var is a variable which gets added to the level number so that we can jump to the correct scene
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + (-1) + levelVarNeg));
     }
@@ -555,24 +555,33 @@ public class LevelLoader : MonoBehaviour
     public void checkPrev()
     {
         /*
-        for direction: 
-        if levels[previous scene#] != 0 then start pos right and facing right
-
-        later on I can use the check to reset the level
+            later on I can use the check to reset the level
         */
+        int var = 0;
+
+        // check if level load var is 0
+        if(levelVarNeg == 0)
+        {
+            var = -1;
+        }
+        else{
+            var = levelVarNeg;
+        }
+
+        //Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + (-1) + var]);
 
         // completed scene
-        if(levels[SceneManager.GetActiveScene().buildIndex - 1] != 0)
+        if(SceneManager.GetActiveScene().buildIndex != 1)
         {
-            //Debug.Log("complete");
-            Prev = true;
-            //player.transform.position = new Vector3(7.5f, -1.2f, 0.0f);
-
-        }
-        // new scene
-        else
-        {
-            //Debug.Log("new");
+            if(levels[SceneManager.GetActiveScene().buildIndex + var + (-1)] != 0)
+            {
+                Prev = true;
+            }
+            // new scene
+            else
+            {
+                Prev = false;
+            }
         }
     }
 }

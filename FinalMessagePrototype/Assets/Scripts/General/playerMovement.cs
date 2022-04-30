@@ -7,6 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject playeron;
+    public GameObject player;
     public Animator animator;
     public GameObject strikepoint;
     public GameObject reachzone;
@@ -36,31 +37,25 @@ public class playerMovement : MonoBehaviour
         if levels[previous scene#] != 0 then start pos right and facing right
 
         later on I can use the check to reset the level
-
-        // completed scene
-        if(levelsComplete[SceneManager.GetActiveScene().buildIndex - 1] != 0)
-        {
-            Debug.Log("complete");
-        }
-        // new scene
-        else
-        {
-            Debug.Log("new");
-        }
         */
 
         if (LevelLoader.Prev == true)
         {
             Debug.Log("true");
-            facingRight = false;
-            playeron.transform.position = new Vector3(7.5f, -1.2f, 0.0f);
+            //facingRight = false;
+            player.transform.position = new Vector3(6.75f, -1.2f, 0.0f);
+            flipChara();
+        }
+        else
+        {
+            Debug.Log("false");
+            player.transform.position = new Vector3(-7.3f, -1.2f, 0.0f);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
         // swapping between knight and dog
         if (Input.GetKeyDown("space"))
         {

@@ -6,6 +6,7 @@ public class dogMovement : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject dogon;
+    public GameObject dog;
     public Animator animator;
 
     private Rigidbody2D rb;
@@ -21,7 +22,13 @@ public class dogMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (LevelLoader.Prev == true)
+        {
+            Debug.Log("true");
+            //facingRight = false;
+            dog.transform.position = new Vector3(7.0f, -1.2f, 0.0f);
+            flipChara();
+        }
     }
 
     // Update is called once per frame

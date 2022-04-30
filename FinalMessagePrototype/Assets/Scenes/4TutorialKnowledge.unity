@@ -325,7 +325,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.79, y: 8.14}
+  m_Size: {x: 25, y: 20}
   m_EdgeRadius: 0
 --- !u!95 &175578069
 Animator:
@@ -409,6 +409,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: dog
+      value: 
+      objectReference: {fileID: 212761063}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
 --- !u!1 &212761063 stripped
@@ -2178,6 +2182,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 3.17
       objectReference: {fileID: 0}
+    - target: {fileID: 3065096178899888131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1427586809}
     - target: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab
@@ -2472,7 +2480,7 @@ MonoBehaviour:
   levelVar: 0
   transition: {fileID: 882419020}
   transitionTime: 0.5
-  sentences: 1
+  sentences: 0
 --- !u!1001 &1756964916
 PrefabInstance:
   m_ObjectHideFlags: 0
