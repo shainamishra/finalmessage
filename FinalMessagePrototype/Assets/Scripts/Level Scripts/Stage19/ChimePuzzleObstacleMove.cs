@@ -65,7 +65,6 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
 
     void MoveUp(float end_pos){
         pos = transform.position;
-        //is_on = buttonActivate.status;
         if(pos.y < end_pos){
             pos.y += speed * Time.deltaTime;
         }
@@ -74,7 +73,6 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
 
     void MoveDown(float end_pos){
         pos = transform.position;
-        //is_on = buttonActivate.status;
         if(pos.y > end_pos){
             pos.y -= speed * Time.deltaTime;
         }

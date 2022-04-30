@@ -46,7 +46,7 @@ public class ChimePuzzle : MonoBehaviour
         obstacleMove2 = Obstacle_2.GetComponent<ChimePuzzleObstacleMove>();
         obstacleMove3 = Obstacle_3.GetComponent<ChimePuzzleObstacleMove>();
 
-        print("State = " + state);
+        //print("State = " + state);
     }
 
     // Update is called once per frame
@@ -67,33 +67,33 @@ public class ChimePuzzle : MonoBehaviour
             if(chimeActivate3.status != control3){
                 obstacleMove3.is_on = false;
                 state++;
-                Debug.Log("State = " + state);
+                //Debug.Log("State = " + state);
             }
             else if( (chimeActivate1.status != control1) || (chimeActivate2.status != control2)){
                 StartOver();
-                Debug.Log("State = " + state);
+                //Debug.Log("State = " + state);
             }
         }
         else if(state == 1){
             if(chimeActivate1.status != control1){
                 obstacleMove1.is_on = false;
                 state++;
-                Debug.Log("State = " + state);
+                //Debug.Log("State = " + state);
             }
             else if( (chimeActivate2.status != control2) || (chimeActivate3.status != control3)){
                 StartOver();
-                Debug.Log("State = " + state);
+                //Debug.Log("State = " + state);
             }
         }
         else if(state == 2){
             if(chimeActivate2.status != control2){
                 obstacleMove2.is_on = false;
                 state++;
-                Debug.Log("State = " + state);
+                //Debug.Log("State = " + state);
             }
             else if( (chimeActivate1.status != control1) || (chimeActivate3.status != control3)){
                 StartOver();
-                Debug.Log("State = " + state);
+                //Debug.Log("State = " + state);
             }
         }
         control1 = chimeActivate1.status;
@@ -110,6 +110,6 @@ public class ChimePuzzle : MonoBehaviour
         obstacleMove1.is_on = true;
         obstacleMove2.is_on = true;
         obstacleMove3.is_on = true;
-        Debug.Log("Start Over.");
+        //Debug.Log("Start Over.");
     }
 }

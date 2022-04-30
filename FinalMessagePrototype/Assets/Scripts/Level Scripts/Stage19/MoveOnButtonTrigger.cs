@@ -55,7 +55,6 @@ public class MoveOnButtonTrigger : MonoBehaviour
 
     void MoveUp(float end_pos){
         pos = transform.position;
-        //is_on = buttonActivate.status;
         if(pos.y < end_pos){
             pos.y += speed * Time.deltaTime;
         }
@@ -64,7 +63,6 @@ public class MoveOnButtonTrigger : MonoBehaviour
 
     void MoveDown(float end_pos){
         pos = transform.position;
-        //is_on = buttonActivate.status;
         if(pos.y > end_pos){
             pos.y -= speed * Time.deltaTime;
         }

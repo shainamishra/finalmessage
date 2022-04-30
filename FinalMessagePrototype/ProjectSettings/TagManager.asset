@@ -10,6 +10,7 @@ TagManager:
   - Dialogue
   - CanClimb
   - Floor
+  - Dog
   layers:
   - Default
   - TransparentFX
