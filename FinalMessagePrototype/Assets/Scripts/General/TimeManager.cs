@@ -7,15 +7,17 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public float startingTime = 300;
+    public float startingTime;
     private Text theText;
     public static bool TimesUp = false;
     public GameObject shadow;
+    public playerMovement player;
+    public dogMovement dog;
 
-    public Animator player;
-    public Animator dog;
-    public Animator playeron;
-    public Animator dogon;
+    // public Animator player;
+    // public Animator dog;
+    // public Animator playeron;
+    // public Animator dogon;
 
     
   
@@ -28,6 +30,13 @@ public class TimeManager : MonoBehaviour
         // Update();
         // player = FindObjectofType<playerMovement>();
         // dog = FindObjectofType<dogMovement>();
+
+        // player = gameObject.GetComponent<Animator>();
+        // dog = gameObject.GetComponent<Animator>();
+        // playeron = gameObject.GetComponent<Animator>();
+        // dogon = gameObject.GetComponent<Animator>();
+
+
     }
 
     // Update is called once per frame
@@ -45,22 +54,38 @@ public class TimeManager : MonoBehaviour
 
         shadow.SetActive(false);
 
+        if (Input.GetKeyDown(KeyCode.R)){
+          SceneManager.LoadScene("1StartScene");
+          startingTime = 300;
+        }
+
         if(startingTime<=0){
-          startingTime=0;
-          theText.text = min + ":0" + sec;
+          // startingTime=0;
+          // theText.text = min + ":0" + sec;
+          theText.text = "0:00";
+          player.moveSpeed = 0;
+          dog.moveSpeed = 0;
           TimesUp = true;
-          player.enabled = false;
-          dog.enabled = false;
-          playeron.enabled = false;
-          dogon.enabled = false;
+          
+          
           shadow.SetActive(true);
+
+         
     
           // player.gameObject.SetActive(false);
           // dog.gameObject.SetActive(false);
         }
 
-        if(TimesUp == true && Input.GetKeyDown("r")){
-          GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
+        if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
+          // player.SetFloat("Speed", 3);
+          // dog.SetFloat("Speed", 3);
+          // playeron.SetFloat("Speed", 3);
+          // dogon.SetFloat("Speed", 3);
+          TimesUp = false;
+          startingTime = 300;
+          SceneManager.LoadScene("1StartScene");
+
+          // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
           // GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
           // myButtonStyle.fontSize = 50;
           // // Load and set Font
@@ -71,28 +96,32 @@ public class TimeManager : MonoBehaviour
           // myButtonStyle.hover.textColor = Color.red;
           // // use style in button
           // bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
-          TimesUp = false;
-          SceneManager.LoadScene("1StartScene");
+          // TimesUp = false;
+          // startingTime = 300;
+          // SceneManager.LoadScene("1StartScene");
 
         }
+
+        
+
           
     }
 
-    void OnGUI()
-    {
-        // if(TimesUp){
+    // void OnGUI()
+    // {
+    //     // if(TimesUp){
 
-        //   // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
-        //   GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
-        //   myButtonStyle.fontSize = 50;
-        //   // Load and set Font
-        //   Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
-        //   myButtonStyle.font = myFont;
-        //   // Set color for selected and unselected buttons
-        //   myButtonStyle.normal.textColor = Color.blue;
-        //   myButtonStyle.hover.textColor = Color.red;
-        //   // use style in button
-        //   bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
-        // }
-    }
+    //     //   // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
+    //     //   GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
+    //     //   myButtonStyle.fontSize = 50;
+    //     //   // Load and set Font
+    //     //   Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
+    //     //   myButtonStyle.font = myFont;
+    //     //   // Set color for selected and unselected buttons
+    //     //   myButtonStyle.normal.textColor = Color.blue;
+    //     //   myButtonStyle.hover.textColor = Color.red;
+    //     //   // use style in button
+    //     //   bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
+    //     // }
+    // }
 }
