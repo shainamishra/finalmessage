@@ -850,6 +850,26 @@ PrefabInstance:
       propertyPath: transitionTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Path
+      value: event:/PlayerAudio/SceneTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data1
+      value: 345546735
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data2
+      value: 1197736667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data3
+      value: -1008379472
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data4
+      value: -1979097216
+      objectReference: {fileID: 0}
     - target: {fileID: 5868103561602681018, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -974,41 +994,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4086369856852257020, guid: 38f190a58657b85429b275b89511d475, type: 3}
   m_PrefabInstance: {fileID: 541523627}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &541523629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3781561737679820664, guid: 38f190a58657b85429b275b89511d475, type: 3}
-  m_PrefabInstance: {fileID: 541523627}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &541523630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541523629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 227962681
-      Data2: 1125955365
-      Data3: 846523021
-      Data4: 1815852522
-    Path: event:/Environment & Ambience/BoulderPushPull
-  Event: 
-  PlayEvent: 7
-  StopEvent: 8
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &704008537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1246,6 +1231,8 @@ MonoBehaviour:
   shadow: {fileID: 142544645}
   player: {fileID: 1350717769}
   dog: {fileID: 14874864}
+  mc: {fileID: 0}
+  newBG1: {fileID: 0}
 --- !u!114 &800305613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1553,7 @@ GameObject:
   - component: {fileID: 1179699756}
   - component: {fileID: 1179699755}
   - component: {fileID: 1179699752}
+  - component: {fileID: 1179699757}
   m_Layer: 0
   m_Name: Rock 1
   m_TagString: Untagged
@@ -1704,6 +1692,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1179699757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179699751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: 227962681
+      Data2: 1125955365
+      Data3: 846523021
+      Data4: 1815852522
+    Path: event:/Environment & Ambience/BoulderPushPull
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &1325396033
 GameObject:
   m_ObjectHideFlags: 0

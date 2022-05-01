@@ -1015,6 +1015,8 @@ MonoBehaviour:
   shadow: {fileID: 1513448923}
   player: {fileID: 1945300921}
   dog: {fileID: 1829454191}
+  mc: {fileID: 0}
+  newBG1: {fileID: 0}
 --- !u!114 &758065631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,6 +2204,7 @@ GameObject:
   - component: {fileID: 1480995518}
   - component: {fileID: 1480995519}
   - component: {fileID: 1480995520}
+  - component: {fileID: 1480995521}
   m_Layer: 0
   m_Name: WitchKnightKey
   m_TagString: Untagged
@@ -2313,6 +2316,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 1480995516}
+--- !u!114 &1480995521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480995516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -536301823
+      Data2: 1205742474
+      Data3: 1641270200
+      Data4: -1948076511
+    Path: event:/UI/Item-PickUp
+  Event: 
+  PlayEvent: 12
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1495183243
 GameObject:
   m_ObjectHideFlags: 0

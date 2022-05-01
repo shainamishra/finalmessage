@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class LevelLoader : MonoBehaviour
     public GameObject player;
     public GameObject playeron;
     public GameObject door;
+
+    public EventReference transitionAudio;
 
     public static bool Prev;
 
@@ -525,11 +528,21 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
+    // public void PlayTransition() {
+    //     FMOD.Studio.EventInstance transitionSteps = RuntimeManager.CreateInstance(transitionAudio);
+    //     if (!transitionSteps.isPlaying()) {
+    //         transitionSteps.start();
+    //     } else if (transitionSteps.isPlaying()) {
+    //         transitionSteps.release();
+    //     }
+    // }
+    
     public void LoadNextLevel()
     {
         // loads the next scene
             // level Var is a variable which gets added to the level number so that we can jump to the correct scene
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 + levelVar));
+        
     }
 
 
@@ -538,12 +551,16 @@ public class LevelLoader : MonoBehaviour
         // loads the prev scene
             // level Var is a variable which gets added to the level number so that we can jump to the correct scene
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + (-1) + levelVarNeg));
+        
     }
 
     IEnumerator LoadLevel(int levelIndex)
     {
         // play animation
         transition.SetTrigger("Start");
+
+        //play scene transition audio
+        // PlayTransition();
 
         // wait for x amount of seconds
         yield return new WaitForSeconds(transitionTime);

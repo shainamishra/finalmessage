@@ -2231,6 +2231,26 @@ PrefabInstance:
       propertyPath: transitionTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Path
+      value: event:/PlayerAudio/SceneTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data1
+      value: 345546735
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data2
+      value: 1197736667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data3
+      value: -1008379472
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: transitionAudio.Guid.Data4
+      value: -1979097216
+      objectReference: {fileID: 0}
     - target: {fileID: 5868103561602681018, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -387,6 +387,8 @@ MonoBehaviour:
   shadow: {fileID: 906440460}
   player: {fileID: 585663445}
   dog: {fileID: 2114285652}
+  mc: {fileID: 0}
+  newBG1: {fileID: 0}
 --- !u!114 &138636643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1888,6 +1890,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 514027829126201558, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
   m_PrefabInstance: {fileID: 1917996396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1132569980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132569979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: -807389467
+      Data2: 1207946385
+      Data3: -396595563
+      Data4: 1067773877
+    Path: event:/Environment & Ambience/ButtonPress
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!61 &1132569981 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 6681693448402124915, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
@@ -2806,6 +2829,27 @@ MonoBehaviour:
   dogButton: {fileID: 1524960964}
   playerButton: {fileID: 1132569981}
   door: {fileID: 1662842831}
+--- !u!114 &1524960968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524960961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: -807389467
+      Data2: 1207946385
+      Data3: -396595563
+      Data4: 1067773877
+    Path: event:/Environment & Ambience/ButtonPress
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &1600285524
 GameObject:
   m_ObjectHideFlags: 0
