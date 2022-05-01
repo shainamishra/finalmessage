@@ -32,15 +32,15 @@ public class pauseMenu : MonoBehaviour
     {
         Debug.Log("pause");
         pause.gameObject.SetActive(false);
-        canvas.gameObject.SetActive(true);
         play.gameObject.SetActive(true);
+        canvas.gameObject.SetActive(true);
     }
 
     void playTask()
     {
         Debug.Log("play");
         pause.gameObject.SetActive(true);
-        canvas.gameObject.SetActive(false);
         play.gameObject.SetActive(false);
+        canvas.gameObject.SetActive(false);
     }
 }
