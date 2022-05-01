@@ -41,14 +41,13 @@ public class playerMovement : MonoBehaviour
 
         if (LevelLoader.Prev == true)
         {
-            Debug.Log("true");
-            //facingRight = false;
+            //Debug.Log("true");
             player.transform.position = new Vector3(6.75f, -1.2f, 0.0f);
             flipChara();
         }
         else
         {
-            Debug.Log("false");
+            //Debug.Log("false");
             player.transform.position = new Vector3(-7.3f, -1.2f, 0.0f);
         }
     }

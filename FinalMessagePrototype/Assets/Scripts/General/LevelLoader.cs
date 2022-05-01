@@ -39,7 +39,7 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
-        checkPrev();
+        //checkPrev();
 
         if (Key1 == 1 && Key2 == 1 && Key3 == 1 && Key4 == 1) 
         {
@@ -62,7 +62,6 @@ public class LevelLoader : MonoBehaviour
 
         // CutScene
         if (SceneManager.GetActiveScene().buildIndex == 25){
-            levelVar = 0;
             //LoadNextLevel();
         }
 
@@ -79,7 +78,6 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             levels[2] = 1;
-
             if(door.activeSelf == false)
             {
                 if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
@@ -92,6 +90,7 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
+                checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -110,6 +109,7 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
+                checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -129,6 +129,7 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
+                checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -585,12 +586,13 @@ public class LevelLoader : MonoBehaviour
             var = levelVarNeg;
         }
 
-        //Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + (-1) + var]);
+        Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + var]);
+        Debug.Log("num= " + (SceneManager.GetActiveScene().buildIndex + var));
 
         // completed scene
         if(SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 1)
         {
-            if(levels[SceneManager.GetActiveScene().buildIndex + var + (-1)] != 0)
+            if(levels[SceneManager.GetActiveScene().buildIndex + var] != 0)
             {
                 Prev = true;
             }
@@ -599,6 +601,10 @@ public class LevelLoader : MonoBehaviour
             {
                 Prev = false;
             }
+        } 
+        else if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Prev = true;
         }
     }
 }
