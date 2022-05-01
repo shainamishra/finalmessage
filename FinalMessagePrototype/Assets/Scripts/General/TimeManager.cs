@@ -13,6 +13,8 @@ public class TimeManager : MonoBehaviour
     public GameObject shadow;
     public playerMovement player;
     public dogMovement dog;
+    public SpriteRenderer mc;
+    public Sprite newBG1;
 
     // public Animator player;
     // public Animator dog;
@@ -53,6 +55,7 @@ public class TimeManager : MonoBehaviour
         else theText.text = min + ":" + sec;
 
         shadow.SetActive(false);
+        changeBG();
 
         if (Input.GetKeyDown(KeyCode.R)){
           SceneManager.LoadScene("1StartScene");
@@ -105,6 +108,12 @@ public class TimeManager : MonoBehaviour
         
 
           
+    }
+
+    void changeBG(){
+      if (startingTime <= 10){
+        mc.sprite = newBG1;
+      }
     }
 
     // void OnGUI()
