@@ -571,7 +571,7 @@ public class LevelLoader : MonoBehaviour
         //Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + (-1) + var]);
 
         // completed scene
-        if(SceneManager.GetActiveScene().buildIndex != 1)
+        if(SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 1)
         {
             if(levels[SceneManager.GetActiveScene().buildIndex + var + (-1)] != 0)
             {
