@@ -133,4 +133,14 @@ public class TimeManager : MonoBehaviour
     //     //   bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
     //     // }
     // }
+
+    public void PauseGame ()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame ()
+    {
+        Time.timeScale = 1;
+    }
 }
