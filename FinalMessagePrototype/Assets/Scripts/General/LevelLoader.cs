@@ -78,13 +78,13 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             levels[2] = 1;
-            if(door.activeSelf == false)
-            {
+            //if(door.activeSelf == false)
+            //{
                 if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
                 {
                     LoadNextLevel();
                 }
-            }
+            //}
 
             // move back
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
