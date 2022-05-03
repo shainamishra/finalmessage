@@ -237,7 +237,7 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }*/
-            if(dog.transform.position.x > 50 || player.transform.position.x > 50){
+            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5){
                 levelVar = 0;
                 LoadNextLevel();
             }
