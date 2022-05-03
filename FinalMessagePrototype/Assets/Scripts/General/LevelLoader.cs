@@ -223,6 +223,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[9] = 1;
             // lonely climber
+            /*
             if(((player.transform.position.x > -1 && player.transform.position.x < 1 && player.transform.position.y > 1)) && Input.GetKeyDown("x"))
             {
                 // level 10
@@ -233,6 +234,10 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) && Input.GetKeyDown("x"))
             {
                 // level 10
+                levelVar = 0;
+                LoadNextLevel();
+            }*/
+            if(dog.transform.position.x > 50 || player.transform.position.x > 50){
                 levelVar = 0;
                 LoadNextLevel();
             }
