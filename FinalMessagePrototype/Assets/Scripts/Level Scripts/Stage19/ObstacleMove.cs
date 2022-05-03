@@ -12,19 +12,28 @@ public class ObstacleMove : MonoBehaviour
     public float speed;
     public bool is_moving_up;
 
-    public bool is_on = true;
+    public bool button_controlled;
+    public GameObject button;
 
+    ButtonActivate buttonActivate;
     Vector3 pos;
+    bool is_on = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(button_controlled){
+            buttonActivate = button.GetComponent<ButtonActivate>();  
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(button_controlled){
+            is_on = !buttonActivate.status;
+        }
+        
         if(is_on){
             Oscillate();
         }

@@ -10,6 +10,7 @@ public class MoveOnRopeTrigger : MonoBehaviour
     public float target_elevation;
 
     RopeCut ropeCut;
+    Vector3 initial_position;
     Vector3 pos;
     bool is_on = false;
 
@@ -17,18 +18,35 @@ public class MoveOnRopeTrigger : MonoBehaviour
     void Start()
     {
         ropeCut = rope.GetComponent<RopeCut>();
-        pos = transform.position;
+        initial_position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         is_on = ropeCut.status;
-        pos = transform.position;
         if(is_on){
-            if(pos.y < target_elevation){
-                pos.y += speed * Time.deltaTime;
+            if( (target_elevation-initial_position.y) > 0){
+                MoveUp(target_elevation);
             }
+            else{
+                MoveDown(target_elevation);
+            }
+        }
+    }
+
+    void MoveUp(float end_pos){
+        pos = transform.position;
+        if(pos.y < end_pos){
+            pos.y += speed * Time.deltaTime;
+        }
+        transform.position = pos;
+    }
+
+    void MoveDown(float end_pos){
+        pos = transform.position;
+        if(pos.y > end_pos){
+            pos.y -= speed * Time.deltaTime;
         }
         transform.position = pos;
     }
