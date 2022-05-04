@@ -1431,6 +1431,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587129912}
   m_CullTransparentMesh: 1
+--- !u!1 &690907473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690907474}
+  - component: {fileID: 690907475}
+  m_Layer: 0
+  m_Name: BackgroundChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &690907474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690907473}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8897543, y: 0.33878458, z: 9.474865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939325521}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &690907475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690907473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9629ba388cd54d00ac51f6b0129a500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bg1: {fileID: 541368332}
+  bg2: {fileID: 21300000, guid: ce26f428fc47e44da89b43f096d78180, type: 3}
+  bg3: {fileID: 21300000, guid: cea942738d90740a5ab2792d642ef8f6, type: 3}
+  fg1: {fileID: 1208913529}
+  fg2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  fg3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
+  cliff1: {fileID: 499483762}
+  cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
+  cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
 --- !u!1 &715611259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,6 +3290,7 @@ Transform:
   m_Children:
   - {fileID: 1942203712}
   - {fileID: 541368331}
+  - {fileID: 690907474}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

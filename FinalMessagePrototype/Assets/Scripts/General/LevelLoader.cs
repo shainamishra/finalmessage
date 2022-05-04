@@ -591,8 +591,8 @@ public class LevelLoader : MonoBehaviour
             var = levelVarNeg;
         }
 
-        Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + var]);
-        Debug.Log("num= " + (SceneManager.GetActiveScene().buildIndex + var));
+        //Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + var]);
+        //Debug.Log("num= " + (SceneManager.GetActiveScene().buildIndex + var));
 
         // completed scene
         if(SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 1)

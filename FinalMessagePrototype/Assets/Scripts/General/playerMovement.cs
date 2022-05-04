@@ -39,6 +39,7 @@ public class playerMovement : MonoBehaviour
         later on I can use the check to reset the level
         */
 
+        /*
         if (LevelLoader.Prev == true)
         {
             //Debug.Log("true");
@@ -50,6 +51,7 @@ public class playerMovement : MonoBehaviour
             //Debug.Log("false");
             player.transform.position = new Vector3(-7.3f, -1.2f, 0.0f);
         }
+        */
     }
 
     // Update is called once per frame

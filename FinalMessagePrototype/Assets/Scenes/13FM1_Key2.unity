@@ -1066,7 +1066,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: 76bcd477996d544c8ae46a061e9ca1bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8309605021664296ae4599304960a9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3226,6 +3226,7 @@ Transform:
   m_Children:
   - {fileID: 401597578}
   - {fileID: 605127905}
+  - {fileID: 2099894061}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3389,3 +3390,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075341383}
   m_CullTransparentMesh: 1
+--- !u!1 &2099894060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2099894061}
+  - component: {fileID: 2099894062}
+  m_Layer: 0
+  m_Name: BackgroundChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2099894061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099894060}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8897543, y: 0.33878458, z: 9.474865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2049895978}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2099894062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099894060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9629ba388cd54d00ac51f6b0129a500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bg1: {fileID: 605127904}
+  bg2: {fileID: 21300000, guid: ce26f428fc47e44da89b43f096d78180, type: 3}
+  bg3: {fileID: 21300000, guid: cea942738d90740a5ab2792d642ef8f6, type: 3}
+  fg1: {fileID: 653385410}
+  fg2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  fg3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
+  cliff1: {fileID: 205616165}
+  cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
+  cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
