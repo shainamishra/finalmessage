@@ -697,7 +697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736745045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -14.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1242581865}
@@ -1369,9 +1369,15 @@ MonoBehaviour:
   fg1: {fileID: 1703028468}
   fg2: {fileID: 21300000, guid: ea0fdacbcd06742ee88343819f09b567, type: 3}
   fg3: {fileID: 21300000, guid: 1b8f928ab31944504b498511b7328d09, type: 3}
-  cliff1: {fileID: 736745047}
+  cliff1: {fileID: 2118372735}
   cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
+  cliffPt2: {fileID: 1782905098}
+  floorPt2: {fileID: 1693668557}
+  floorPt3: {fileID: 736745047}
+  floorPt4: {fileID: 736745047}
+  floorPt5: {fileID: 736745047}
+  floorPt6: {fileID: 736745047}
 --- !u!1001 &1328142413
 PrefabInstance:
   m_ObjectHideFlags: 0

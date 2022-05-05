@@ -764,6 +764,12 @@ MonoBehaviour:
   cliff1: {fileID: 2072893302}
   cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
+  cliffPt2: {fileID: 2072893302}
+  floorPt2: {fileID: 2072893302}
+  floorPt3: {fileID: 2072893302}
+  floorPt4: {fileID: 2072893302}
+  floorPt5: {fileID: 2072893302}
+  floorPt6: {fileID: 2072893302}
 --- !u!1 &1851751546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072893300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -8.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1646287266}

@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213131570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -13.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1891241975}
@@ -528,7 +528,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 8b68601a3d277470cb5b68399dbb890b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9fcc407017dd4656bb49dae02bcaac8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1738,6 +1738,12 @@ MonoBehaviour:
   cliff1: {fileID: 213131572}
   cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
+  cliffPt2: {fileID: 213131572}
+  floorPt2: {fileID: 213131572}
+  floorPt3: {fileID: 213131572}
+  floorPt4: {fileID: 213131572}
+  floorPt5: {fileID: 213131572}
+  floorPt6: {fileID: 213131572}
 --- !u!1001 &1936386441
 PrefabInstance:
   m_ObjectHideFlags: 0
