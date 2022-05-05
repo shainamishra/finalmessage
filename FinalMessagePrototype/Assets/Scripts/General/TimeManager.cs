@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 120;
+    public static float startingTime = 300;
     private Text theText;
 
     public static bool TimesUp = false;
