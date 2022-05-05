@@ -335,7 +335,7 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 14)
         {
             levels[14] = 1;
-            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
+            if(dog.transform.position.x > 28 || player.transform.position.x > 28)
             {
                 // goes to 15
                 levelVar = 0;
