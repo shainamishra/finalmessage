@@ -140,13 +140,15 @@ public class LevelLoader : MonoBehaviour
             levels[5] = 1;
             // FM 2
             //if(((player.transform.position.x > 10.5 && player.transform.position.y > 10)) || (dog.transform.position.x > 10.5 && dog.transform.position.y > 10))
-            if(((player.transform.position.x > 10.5)) || (dog.transform.position.x > 10.5))
+            GameObject door5 = GameObject.Find("StageExit");
+            ExitTransitionTrigger exitTransition5 = door5.GetComponent<ExitTransitionTrigger>();
+            if(exitTransition5.status)
             {
                 levelVar = 2;
                 LoadNextLevel();
             }
             // no no zone
-            else if((player.transform.position.x < -8.5 && (player.transform.position.y > 6 && player.transform.position.y < 9)) || (dog.transform.position.x < -8.5 && (dog.transform.position.y > 6 && dog.transform.position.y < 9)))
+            else if((player.transform.position.x > 10.5) || (dog.transform.position.x > 10.5))
             {
                 levelVar = 0;
                 LoadNextLevel();
@@ -452,11 +454,13 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 19){
             // level ending conditions
             levels[19] = 1;
-            if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
+            GameObject door19 = GameObject.Find("StageExit");
+            ExitTransitionTrigger exitTransition19 = door19.GetComponent<ExitTransitionTrigger>();
+            if(exitTransition19.status)
             {
                 //goes to 20
                 levelVar = 0;
-                //LoadNextLevel();
+                LoadNextLevel();
             }
             // move back
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
@@ -471,7 +475,9 @@ public class LevelLoader : MonoBehaviour
         {
             levels[20] = 1;
             // back to six doors room (sadge)
-            if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
+            GameObject door20 = GameObject.Find("StageExit");
+            GrandioseDoorOpen exitTransition20 = door20.GetComponent<GrandioseDoorOpen>();
+            if (exitTransition20.status)
             {
                 //goes to 21
                 levelVar = 0;

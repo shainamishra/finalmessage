@@ -794,6 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508bcdae641aaf74790de1ceeb7986b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
 --- !u!1001 &267847120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2371,6 +2372,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: dog
+      value: 
+      objectReference: {fileID: 267847121}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1913854009}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: playeron
+      value: 
+      objectReference: {fileID: 1602107683}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: transitionTime
       value: 1
       objectReference: {fileID: 0}
@@ -2659,6 +2672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47a6ab49e471a746a4f35219802efc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rock_in_scene: 0
   status: 0
 --- !u!114 &897697534
 MonoBehaviour:
@@ -3509,6 +3523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47a6ab49e471a746a4f35219802efc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rock_in_scene: 0
   status: 0
 --- !u!1 &1050387587
 GameObject:

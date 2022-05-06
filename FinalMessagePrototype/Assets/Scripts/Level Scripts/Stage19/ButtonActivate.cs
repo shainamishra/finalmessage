@@ -26,11 +26,21 @@ public class ButtonActivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(thisButton.IsTouching(knight) || thisButton.IsTouching(dog) || thisButton.IsTouching(rock)){
-            status = true;
+        if(rock_in_scene){
+            if(thisButton.IsTouching(knight) || thisButton.IsTouching(dog) || thisButton.IsTouching(rock)){
+                status = true;
+            }
+            else{
+                status = false;
+            }
         }
         else{
-            status = false;
+            if(thisButton.IsTouching(knight) || thisButton.IsTouching(dog)){
+                status = true;
+            }
+            else{
+               status = false;
+            }
         }
     }
 }
