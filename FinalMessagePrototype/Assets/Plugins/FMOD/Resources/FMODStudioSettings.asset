@@ -236,6 +236,7 @@ MonoBehaviour:
   - Ambience
   - CharActions
   - CharMovement
+  - Music
   - UIBank
   BanksToLoad: []
   LiveUpdatePort: 9264
