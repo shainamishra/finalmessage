@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 300;
+    public static float startingTime = 5;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -16,24 +16,20 @@ public class TimeManager : MonoBehaviour
     public playerMovement player;
     public dogMovement dog;
 
-    // public Animator player;
-    // public Animator dog;
-    // public Animator playeron;
-    // public Animator dogon;
+    
+    public Transform kpos;
+    public Transform skpos;
+    public static float speed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
+    // public Animator transition;
+    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         theText = GetComponent<Text>();
         TimesUp = false;
-        // Update();
-        // player = FindObjectofType<playerMovement>();
-        // dog = FindObjectofType<dogMovement>();
-
-        // player = gameObject.GetComponent<Animator>();
-        // dog = gameObject.GetComponent<Animator>();
-        // playeron = gameObject.GetComponent<Animator>();
-        // dogon = gameObject.GetComponent<Animator>();
 
 
     }
@@ -52,7 +48,7 @@ public class TimeManager : MonoBehaviour
         else theText.text = min + ":" + sec;
 
         shadow.SetActive(false);
-        //changeBG();
+    
 
         if (Input.GetKeyDown(KeyCode.R)){
           SceneManager.LoadScene("1StartScene");
@@ -60,77 +56,37 @@ public class TimeManager : MonoBehaviour
         }
 
         if(startingTime<=0){
-          // startingTime=0;
-          // theText.text = min + ":0" + sec;
+          startingTime=0;
+          
           theText.text = "0:00";
           player.moveSpeed = 0;
           dog.moveSpeed = 0;
           TimesUp = true;
           
           
-          shadow.SetActive(true);
-    
-          // player.gameObject.SetActive(false);
-          // dog.gameObject.SetActive(false);
+          
+          // transition.Play("Crossfade_End",-1,0.75f);
+            shadow.SetActive(true);
+            if(skpos.position.x>-0.9){
+
+                shadowMove();
+            }
         }
 
         if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
-          // player.SetFloat("Speed", 3);
-          // dog.SetFloat("Speed", 3);
-          // playeron.SetFloat("Speed", 3);
-          // dogon.SetFloat("Speed", 3);
+          
           TimesUp = false;
           startingTime = 300;
           SceneManager.LoadScene("1StartScene");
 
-          // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
-          // GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
-          // myButtonStyle.fontSize = 50;
-          // // Load and set Font
-          // Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
-          // myButtonStyle.font = myFont;
-          // // Set color for selected and unselected buttons
-          // myButtonStyle.normal.textColor = Color.blue;
-          // myButtonStyle.hover.textColor = Color.red;
-          // // use style in button
-          // bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
-          // TimesUp = false;
-          // startingTime = 300;
-          // SceneManager.LoadScene("1StartScene");
         } 
     }
 
-    void changeBG(){
-      /*
-      if (startingTime <= 60){
-        bg1.sprite = bg2;
-        fg1.sprite = fg2;
-      }
-
-      if (startingTime <= 0){
-        bg1.sprite = bg3;
-        fg1.sprite = fg3;
-      }
-      */
+    void shadowMove(){
+        Vector3 path = Vector3.MoveTowards(new Vector3(-1,0,0),skpos.position,speed*Time.deltaTime/10000000000000000);
+        skpos.Translate(path);
     }
 
-    // void OnGUI()
-    // {
-    //     // if(TimesUp){
-
-    //     //   // GUI.Box(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart");
-    //     //   GUIStyle myButtonStyle = new GUIStyle(GUI.skin.button);
-    //     //   myButtonStyle.fontSize = 50;
-    //     //   // Load and set Font
-    //     //   Font myFont = (Font)Resources.Load("Fonts/comic", typeof(Font));
-    //     //   myButtonStyle.font = myFont;
-    //     //   // Set color for selected and unselected buttons
-    //     //   myButtonStyle.normal.textColor = Color.blue;
-    //     //   myButtonStyle.hover.textColor = Color.red;
-    //     //   // use style in button
-    //     //   bool testButtonTwo = GUI.Button(new Rect(0,0,Screen.width,Screen.height), "GAME OVER! Press 'R' to restart", myButtonStyle);
-    //     // }
-    // }
 
     public void PauseGame ()
     {

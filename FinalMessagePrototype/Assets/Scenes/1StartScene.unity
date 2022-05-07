@@ -1465,6 +1465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+--- !u!4 &528630793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 528630792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &531344940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1697,7 @@ RectTransform:
   - {fileID: 1930143243}
   - {fileID: 159433452}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3676,7 +3681,6 @@ GameObject:
   - component: {fileID: 1755007189}
   - component: {fileID: 1755007188}
   - component: {fileID: 1755007187}
-  - component: {fileID: 1755007186}
   m_Layer: 0
   m_Name: ShadowKnight
   m_TagString: Untagged
@@ -3692,25 +3696,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755007184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 700, y: -335, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 0}
+  m_LocalPosition: {x: 11.27, y: -1.33, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 0}
   m_Children: []
-  m_Father: {fileID: 1930143243}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1755007186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755007184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf5fcece6bce46f6bf1926fb204e6c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shadow: {fileID: 1755007184}
 --- !u!50 &1755007187
 Rigidbody2D:
   serializedVersion: 4
@@ -3742,7 +3733,7 @@ Animator:
   m_GameObject: {fileID: 1755007184}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 27add3b311ab64d759be7d650635c56c, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3799,7 +3790,7 @@ SpriteRenderer:
   m_Size: {x: 0.30821696, y: 0.3578125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1809403044
@@ -4530,8 +4521,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
-  m_Children:
-  - {fileID: 1755007185}
+  m_Children: []
   m_Father: {fileID: 628722392}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4555,6 +4545,8 @@ MonoBehaviour:
   shadow: {fileID: 1755007184}
   player: {fileID: 1274237546}
   dog: {fileID: 2133830881}
+  kpos: {fileID: 528630793}
+  skpos: {fileID: 1755007185}
 --- !u!114 &1930143245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4777,7 +4769,7 @@ Transform:
   - {fileID: 1375939949}
   - {fileID: 531344941}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1981267373
 GameObject:

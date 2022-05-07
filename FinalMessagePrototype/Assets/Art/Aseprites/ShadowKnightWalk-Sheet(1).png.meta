@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: edd4ea1a7f9bb44b4be2a4c9a0637353
+guid: a771f4195e96c4c64ad1f2b2d6ddf236
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7280619126248965829
-    second: ShadowKnightWalk-Sheet_0
+      213: -8997926213817637733
+    second: ShadowKnightWalk-Sheet(1)_0
   - first:
-      213: -4593524000327521200
-    second: ShadowKnightWalk-Sheet_1
+      213: -2835460676309980559
+    second: ShadowKnightWalk-Sheet(1)_1
   - first:
-      213: 5745851627218773318
-    second: ShadowKnightWalk-Sheet_2
+      213: -7612258404432250540
+    second: ShadowKnightWalk-Sheet(1)_2
   - first:
-      213: 8022581330386954560
-    second: ShadowKnightWalk-Sheet_3
-  - first:
-      213: -4175516018019997226
-    second: ShadowKnightWalk-Sheet_4
-  - first:
-      213: -9171974621430510915
-    second: ShadowKnightWalk-Sheet_5
-  - first:
-      213: 8475771257454381512
-    second: ShadowKnightWalk-Sheet_6
-  - first:
-      213: 6548451183912196277
-    second: ShadowKnightWalk-Sheet_7
+      213: -9087455964845811531
+    second: ShadowKnightWalk-Sheet(1)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_0
+      name: ShadowKnightWalk-Sheet(1)_0
       rect:
         serializedVersion: 2
-        x: 138
-        y: 11
-        width: 197
-        height: 229
+        x: 125
+        y: 12
+        width: 195
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b39f303aa7b06fa90800000000000000
-      internalID: -7280619126248965829
+      spriteID: b94693618c1f02380800000000000000
+      internalID: -8997926213817637733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_1
+      name: ShadowKnightWalk-Sheet(1)_1
       rect:
         serializedVersion: 2
-        x: 558
-        y: 11
-        width: 197
-        height: 227
+        x: 545
+        y: 13
+        width: 195
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05c2f3d52468040c0800000000000000
-      internalID: -4593524000327521200
+      spriteID: 17a64fda98b66a8d0800000000000000
+      internalID: -2835460676309980559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_2
+      name: ShadowKnightWalk-Sheet(1)_2
       rect:
         serializedVersion: 2
-        x: 978
-        y: 11
-        width: 197
-        height: 225
+        x: 965
+        y: 13
+        width: 195
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645a974bc9d5dbf40800000000000000
-      internalID: 5745851627218773318
+      spriteID: 45975590053db5690800000000000000
+      internalID: -7612258404432250540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_3
+      name: ShadowKnightWalk-Sheet(1)_3
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 11
-        width: 197
-        height: 227
+        x: 1385
+        y: 13
+        width: 195
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,92 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049256be63fe55f60800000000000000
-      internalID: 8022581330386954560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1818
-        y: 11
-        width: 197
-        height: 229
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d9e6ffed469d06c0800000000000000
-      internalID: -4175516018019997226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 2238
-        y: 11
-        width: 197
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dba8cb05da996b080800000000000000
-      internalID: -9171974621430510915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 2658
-        y: 11
-        width: 197
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c9c8065d0dff9570800000000000000
-      internalID: 8475771257454381512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowKnightWalk-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 3078
-        y: 11
-        width: 197
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b8921618a5c0ea50800000000000000
-      internalID: 6548451183912196277
+      spriteID: 5b85c5782fed2e180800000000000000
+      internalID: -9087455964845811531
       vertices: []
       indices: 
       edges: []
