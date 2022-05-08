@@ -20,7 +20,7 @@ public class TimeManager : MonoBehaviour
     public Transform kpos;
     public Transform skpos;
     public static float speed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
-    // public Animator transition;
+    public Animator transition;
     
 
 
@@ -64,17 +64,18 @@ public class TimeManager : MonoBehaviour
           TimesUp = true;
           
           
-          
-          // transition.Play("Crossfade_End",-1,0.75f);
+          // transition.SetTrigger("Start");
+          transition.Play("Crossfade_End",-1,0.25f);
             shadow.SetActive(true);
             if(skpos.position.x>-0.9){
 
                 shadowMove();
             }
+            // transition.StopPlayback();
         }
 
         if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
-          
+          shadow.SetActive(false);
           TimesUp = false;
           startingTime = 300;
           SceneManager.LoadScene("1StartScene");
