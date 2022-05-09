@@ -268,7 +268,7 @@ public class LevelLoader : MonoBehaviour
             }
         }
 
-        // Six Doors (Scene: 10SixDoors)        FIX DOOR POSITIONS
+        // Six Doors (Scene: 10SixDoors)
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             levels[11] = 1;
