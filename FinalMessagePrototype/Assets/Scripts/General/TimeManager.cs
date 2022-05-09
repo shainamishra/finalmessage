@@ -17,16 +17,22 @@ public class TimeManager : MonoBehaviour
     
     public dogMovement dog;
 
-    
+    public Rigidbody2D rb;
     public Transform kpos;
     public Transform skpos;
     public static float speed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
     // public Animator transition;
     
+    private float moveDirection = 0f;
+        private float moveSpeed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
 
 
 
     // Start is called before the first frame update
+    // private void Awake()
+    // {
+    //     rb = GetComponent<Rigidbody2D>(); // will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D
+    // }
     void Start()
     {
       // DontDestroyOnLoad(this.gameObject);
@@ -88,7 +94,11 @@ public class TimeManager : MonoBehaviour
     }
 
     void shadowMove(){
-        Vector3 path = Vector3.MoveTowards(new Vector3(-1,0,0),skpos.position,speed*Time.deltaTime/10000000000000000);
+       rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        // Vector3 path = Vector3.MoveTowards(new Vector3(-1,0,0),skpos.position,speed*Time.deltaTime/10000000000000000);
+        Vector2 target = new Vector2(-1f,0f);
+        Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
+
         skpos.Translate(path);
     }
 
