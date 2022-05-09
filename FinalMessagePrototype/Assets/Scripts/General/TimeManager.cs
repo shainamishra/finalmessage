@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 20;
+    public static float startingTime = 300;
     private Text theText;
 
     public static bool TimesUp = false;
     public GameObject shadow;
 
     public playerMovement player;
+    
     public dogMovement dog;
 
     
@@ -28,7 +29,7 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      DontDestroyOnLoad(this.gameObject);
+      // DontDestroyOnLoad(this.gameObject);
       
         theText = GetComponent<Text>();
         TimesUp = false;
