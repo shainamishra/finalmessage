@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 300;
+    public static float startingTime = 20;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -28,6 +28,8 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      DontDestroyOnLoad(this.gameObject);
+      
         theText = GetComponent<Text>();
         TimesUp = false;
 
@@ -51,6 +53,7 @@ public class TimeManager : MonoBehaviour
     
 
         if (Input.GetKeyDown(KeyCode.R)){
+          // shadow.SetActive(false);
           SceneManager.LoadScene("1StartScene");
           startingTime = 300;
         }

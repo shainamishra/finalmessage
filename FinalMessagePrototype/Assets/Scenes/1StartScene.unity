@@ -1334,6 +1334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog
       objectReference: {fileID: 0}
+    - target: {fileID: 2549319671031523740, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1402,6 +1406,10 @@ PrefabInstance:
     - target: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6458947272876494402, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalScale.x
@@ -3410,11 +3418,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e881062843f9641bbfe5cc4b97d52b, type: 3}
---- !u!95 &1477436788 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5868103562066243233, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
-  m_PrefabInstance: {fileID: 5868103560961377975}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506562724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3689,7 @@ GameObject:
   - component: {fileID: 1755007189}
   - component: {fileID: 1755007188}
   - component: {fileID: 1755007187}
+  - component: {fileID: 1755007186}
   m_Layer: 0
   m_Name: ShadowKnight
   m_TagString: Untagged
@@ -3707,6 +3711,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755007186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755007184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858bdae3479e244dca2d14482786a56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1755007187
 Rigidbody2D:
   serializedVersion: 4
@@ -4552,7 +4568,6 @@ MonoBehaviour:
   dog: {fileID: 2133830881}
   kpos: {fileID: 528630793}
   skpos: {fileID: 1755007185}
-  transition: {fileID: 1477436788}
 --- !u!114 &1930143245
 MonoBehaviour:
   m_ObjectHideFlags: 0
