@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class TextTrigger : MonoBehaviour
 {
     private bool textOn = false;
+    public static bool Speaking = false;
 
     public Collider2D player; 
     public Collider2D npc; 
@@ -72,6 +73,8 @@ public class TextTrigger : MonoBehaviour
         {
             // show the talk button
             start.gameObject.SetActive(true);
+
+            TextTrigger.Speaking = true;
         }
     }
     
@@ -174,6 +177,8 @@ public class TextTrigger : MonoBehaviour
             finalText.gameObject.SetActive(true);
             // disable NPC box collider
             npc.GetComponent<BoxCollider2D>().enabled = false;
+
+            TextTrigger.Speaking = false;
         }
     }
     void TaskOnClick4()

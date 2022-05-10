@@ -10,7 +10,6 @@ public class AltarActivate : MonoBehaviour
     public bool bark_status;
     public bool ember_heart_status;
     bool overlap;
-    public static int Key3 = 0;
 
     void OnTriggerEnter2D(Collider2D collider){
         overlap = true;
@@ -38,7 +37,7 @@ public class AltarActivate : MonoBehaviour
         }
 
         // if the player has the ember heart
-        if (Key3 == 1) {
+        if (LevelLoader.Key3 == 1) {
             if (bark_status && (player_on.activeSelf == true) && overlap && Input.GetKeyDown(KeyCode.X)) {
                 ember_heart_status = true;
                 Debug.Log("Ember Heart on pedestal: " + ember_heart_status);

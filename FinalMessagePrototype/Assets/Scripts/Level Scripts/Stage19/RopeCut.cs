@@ -8,7 +8,6 @@ using UnityEngine;
 public class RopeCut : MonoBehaviour
 {
     public bool status;
-    public static int Key1 = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +25,7 @@ public class RopeCut : MonoBehaviour
     {
         if (collider.gameObject.name == "StrikeZone")
         {
-            if (Key1 == 1)
+            if (LevelLoader.Key1 == 1)
             {
                 Destroy(gameObject, 0.15f);
                 status = true;

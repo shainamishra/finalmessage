@@ -573,8 +573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5cda89ed724ef4b9c968a488ef9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 5
   playeron: {fileID: 2536786408706460654}
+  player: {fileID: 0}
   animator: {fileID: 4803309098173792284}
   strikepoint: {fileID: 8509873703597993653}
   reachzone: {fileID: 3415249136469001705}

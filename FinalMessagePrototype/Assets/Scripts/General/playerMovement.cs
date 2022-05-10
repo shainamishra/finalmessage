@@ -109,7 +109,10 @@ public class playerMovement : MonoBehaviour
 
     void Act()
     {
-        animator.SetTrigger("Strike");
+        if (TextTrigger.Speaking == false)
+        {
+            animator.SetTrigger("Strike");
+        }
     }
 
     private void switchSFX() 

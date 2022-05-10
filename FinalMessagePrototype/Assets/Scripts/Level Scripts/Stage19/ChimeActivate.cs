@@ -6,7 +6,6 @@ public class ChimeActivate : MonoBehaviour
 {
     bool overlap;
     public bool status;
-    public static int Key2 = 0;
 
     void OnTriggerEnter2D(Collider2D collider){
         overlap = true;
@@ -27,7 +26,7 @@ public class ChimeActivate : MonoBehaviour
     void Update()
     {
         if(overlap && Input.GetKeyDown(KeyCode.X)){
-            if (Key2 == 1)
+            if (LevelLoader.Key2 == 1)
             {
                 if (status == false)
                 {

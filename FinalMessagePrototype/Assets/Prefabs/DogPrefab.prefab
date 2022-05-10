@@ -179,8 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ded343e509d7c04e80a7f15bdaedcc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   dogon: {fileID: 5357921975361143272}
+  dog: {fileID: 0}
   animator: {fileID: 2173304178534002162}
 --- !u!114 &2201513378567035431
 MonoBehaviour:
