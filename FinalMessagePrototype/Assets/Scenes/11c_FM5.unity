@@ -773,6 +773,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: dogMovement
+      value: 
+      objectReference: {fileID: 1557030169}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2114314337}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: transitionTime
       value: 1
       objectReference: {fileID: 0}
@@ -1376,6 +1384,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1458721408522701579, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
   m_PrefabInstance: {fileID: 1557030165}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1557030169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+  m_PrefabInstance: {fileID: 1557030165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557030166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ded343e509d7c04e80a7f15bdaedcc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1637527691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2007,3 +2026,14 @@ MonoBehaviour:
   loopTrigger: {fileID: 0}
   looped: 0
   door: {fileID: 551571407}
+--- !u!114 &2114314337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3065096178899888131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 2114314332}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114314333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5cda89ed724ef4b9c968a488ef9a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

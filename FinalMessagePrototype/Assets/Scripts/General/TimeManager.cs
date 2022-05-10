@@ -13,12 +13,12 @@ public class TimeManager : MonoBehaviour
     public static bool TimesUp = false;
     public GameObject shadow;
 
-    public playerMovement player;
+    // public playerMovement player;
     
-    public dogMovement dog;
+    // public dogMovement dog;
 
     public Rigidbody2D rb;
-    public Transform kpos;
+    // public Transform kpos;
     public Transform skpos;
     public static float speed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
     // public Animator transition;
@@ -69,8 +69,8 @@ public class TimeManager : MonoBehaviour
           startingTime=0;
           
           theText.text = "0:00";
-          player.moveSpeed = 0;
-          dog.moveSpeed = 0;
+          // player.moveSpeed = 0;
+          // dog.moveSpeed = 0;
           TimesUp = true;
           
           

@@ -27,18 +27,28 @@ public class LevelLoader : MonoBehaviour
     public static int Key3 = 0;
     public static int Key4 = 0;
 
+    public playerMovement playerMovement;
+    public dogMovement dogMovement;
+
     void Start()
     {
         dog = GameObject.Find("Dog");
         player = GameObject.Find("Player");
         playeron = GameObject.Find("PlayerON");
         door = GameObject.Find("Door");
+        // playerMovement = GameObject.GetComponent(typeof(playerMovement));
+        // dogMovement = GameObject.GetComponent(typeof(dogMovement));
+  
+
         LoadLevel(24);
     }
 
     // Check win conditions
     void Update()
     {
+        if(TimeManager.TimesUp == true){
+            disableMovement();
+        }
         //checkPrev();
 
         if (Key1 == 1 && Key2 == 1 && Key3 == 1 && Key4 == 1) 
@@ -538,6 +548,7 @@ public class LevelLoader : MonoBehaviour
                 LoadPrevLevel();
             }
         }
+        
     }
 
     // public void PlayTransition() {
@@ -617,5 +628,11 @@ public class LevelLoader : MonoBehaviour
         {
             Prev = true;
         }
+    }
+    public void disableMovement(){
+        
+            playerMovement.moveSpeed = 0;
+            dogMovement.moveSpeed = 0;
+        
     }
 }

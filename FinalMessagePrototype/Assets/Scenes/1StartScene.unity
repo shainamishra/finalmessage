@@ -1473,11 +1473,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
---- !u!4 &528630793 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
-  m_PrefabInstance: {fileID: 528630792}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &531344940
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,9 +4559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shadow: {fileID: 1755007184}
-  player: {fileID: 1274237546}
-  dog: {fileID: 2133830881}
-  kpos: {fileID: 528630793}
+  rb: {fileID: 1755007187}
   skpos: {fileID: 1755007185}
 --- !u!114 &1930143245
 MonoBehaviour:
@@ -5390,6 +5383,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: dogMovement
+      value: 
+      objectReference: {fileID: 2133830881}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1274237546}
     - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: transitionTime
       value: 1
