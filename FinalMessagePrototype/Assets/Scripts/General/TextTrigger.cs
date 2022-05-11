@@ -14,6 +14,7 @@ public class TextTrigger : MonoBehaviour
 
     public Button start; 
     public Button cont; 
+    public Button close; 
 
     public Button option1; 
     public Button option2; 
@@ -50,6 +51,10 @@ public class TextTrigger : MonoBehaviour
         Button continueBTN = cont.GetComponent<Button>();
         continueBTN.onClick.AddListener(continueTask);
 
+        // close button listeners
+        Button closeBTN = close.GetComponent<Button>();
+        closeBTN.onClick.AddListener(Close);
+
         // option button listeners
         Button btn1 = option1.GetComponent<Button>();
         btn1.onClick.AddListener(TaskOnClick1);
@@ -69,6 +74,12 @@ public class TextTrigger : MonoBehaviour
     void Update()
     {
         // if the player touches the NPC
+        StartDialogue();
+    }
+
+    // show start button
+    void StartDialogue()
+    {
         if(player.IsTouching(npc) && (textOn == false))
         {
             // show the talk button
@@ -78,16 +89,29 @@ public class TextTrigger : MonoBehaviour
         }
     }
     
+    // close the canvas
+    void Close() 
+    {
+        contClicked = 0;
+        TextTrigger.Speaking = false;
+        textOn = false;
+
+        DisableCanvas();
+        StartDialogue();
+    }
+    
     // hide the canvas
     void DisableCanvas() 
     {
         canvas.SetActive(false);
+        close.gameObject.SetActive(false);
     }
 
     // show the canvas
     void EnableCanvas() 
     {
         canvas.SetActive(true);
+        close.gameObject.SetActive(true);
     }
 
     // show the canvas
