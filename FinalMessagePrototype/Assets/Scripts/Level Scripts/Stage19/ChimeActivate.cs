@@ -26,8 +26,8 @@ public class ChimeActivate : MonoBehaviour
     void Update()
     {
         if(overlap && Input.GetKeyDown(KeyCode.X)){
-            if (LevelLoader.Key2 == 1)
-            {
+            //if (LevelLoader.Key2 == 1)
+            //{
                 if (status == false)
                 {
                     status = true;
@@ -36,7 +36,7 @@ public class ChimeActivate : MonoBehaviour
                 {
                     status = false;
                 }
-            }
+            //}
             //Debug.Log("Ding..." + status);
         }
     }

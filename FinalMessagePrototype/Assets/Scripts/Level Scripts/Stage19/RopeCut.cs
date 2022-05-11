@@ -25,11 +25,11 @@ public class RopeCut : MonoBehaviour
     {
         if (collider.gameObject.name == "StrikeZone")
         {
-            if (LevelLoader.Key1 == 1)
-            {
+            //if (LevelLoader.Key1 == 1)
+            //{
                 Destroy(gameObject, 0.15f);
                 status = true;
-            }
+            //}
             //Debug.Log(status);
         }
     }

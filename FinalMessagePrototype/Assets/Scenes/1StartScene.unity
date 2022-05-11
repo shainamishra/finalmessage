@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0822c59ebaec14aad9e5ce95936e8b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 528630793}
+  player: {fileID: 0}
   npc: {fileID: 1800773565}
   start: {fileID: 1594392969}
   cont: {fileID: 1493083914}
@@ -2366,11 +2366,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
---- !u!61 &528630793 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1768952286846286840, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
-  m_PrefabInstance: {fileID: 528630792}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &531344940
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,7 +7047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1800773565
 BoxCollider2D:
   m_ObjectHideFlags: 0
