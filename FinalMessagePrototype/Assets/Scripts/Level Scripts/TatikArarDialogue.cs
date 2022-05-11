@@ -187,7 +187,6 @@ public class TatikArarDialogue : MonoBehaviour
     // when the continue button is clicked
     void continueTask()
     {
-            Debug.Log("fuck");
         if (contClicked == sentences)
         {
             //remove continue button
@@ -235,46 +234,57 @@ public class TatikArarDialogue : MonoBehaviour
         }
     }
 
+    // What is Mount Arar?
     void TaskOnClick1()
     {
 
     }
+    // Who is the Lonely Climber?
     void TaskOnClick2()
     {
         
     }
+    // Who is the Witch Knight?
     void TaskOnClick3()
     {
         
     }
+    // What are the keys?
     void TaskOnClick4()
     {
         
     }
+    // What is the Witch Key?
     void TaskOnClick5()
     {
         
     }
+    // What is the Fallens Falchion?
     void TaskOnClick6()
     {
         
     }
+    // What is the Seekers Chime Staff?
     void TaskOnClick7()
     {
         
     }
+    // What is the Ember Heart?
     void TaskOnClick8()
     {
         
     }
+    // What is a Final Message?
     void TaskOnClick9()
     {
         
     }
+    // Who is the Exhausted Adventurer?
     void TaskOnClick10()
     {
         
     }
+    // Who is the Seeker of Eternity?
     void TaskOnClick11()
     {
         
