@@ -13,18 +13,22 @@ public class TimeManager : MonoBehaviour
     public static bool TimesUp = false;
     public GameObject shadow;
 
+    public Animator shadowidle;
+
     // public playerMovement player;
     
     // public dogMovement dog;
 
-    public Rigidbody2D rb;
+    // public Rigidbody2D rb;
+
+
     // public Transform kpos;
     public Transform skpos;
     public static float speed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
     // public Animator transition;
     
-    private float moveDirection = 0f;
-        private float moveSpeed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
+    // private float moveDirection = 0f;
+        // private float moveSpeed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
 
 
 
@@ -56,7 +60,7 @@ public class TimeManager : MonoBehaviour
         else if(Mathf.Round((t%60))<10) theText.text = min + ":0" + sec;
         else theText.text = min + ":" + sec;
 
-        shadow.SetActive(false);
+        // shadow.SetActive(false);
     
 
         if (Input.GetKeyDown(KeyCode.R)){
@@ -77,10 +81,13 @@ public class TimeManager : MonoBehaviour
           // transition.SetTrigger("Start");
           // transition.Play("Crossfade_End",-1,0.25f);
             shadow.SetActive(true);
-            if(skpos.position.x>-0.9){
+            if(skpos.position.x>0){
 
                 shadowMove();
+                shadowidle.SetTrigger("Start");
+
             }
+           
             // transition.StopPlayback();
         }
 
@@ -94,10 +101,10 @@ public class TimeManager : MonoBehaviour
     }
 
     void shadowMove(){
-       rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        // Vector3 path = Vector3.MoveTowards(new Vector3(-1,0,0),skpos.position,speed*Time.deltaTime/10000000000000000);
-        Vector2 target = new Vector2(-1f,0f);
-        Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
+      //  rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        Vector3 path = Vector3.MoveTowards(new Vector3(-1,0,0),skpos.position,speed*Time.deltaTime/10000000000000000);
+        // Vector2 target = new Vector2(-1f,0f);
+        // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
 
         skpos.Translate(path);
     }

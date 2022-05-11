@@ -30,6 +30,9 @@ public class LevelLoader : MonoBehaviour
     public playerMovement playerMovement;
     public dogMovement dogMovement;
 
+    // private float playbackTime = 2;
+    
+
     void Start()
     {
         dog = GameObject.Find("Dog");
@@ -630,9 +633,36 @@ public class LevelLoader : MonoBehaviour
         }
     }
     public void disableMovement(){
+        playerMovement.moveSpeed = 0;
+        dogMovement.moveSpeed = 0;
+        // transition.SetTrigger("Start");
+        // transition.StartPlayback();
+        // transition.playbackTime = playbackTime;
+        // transition.StopPlayback();
+        // float count = 1;
+        // while (count < 9){
+        //     float offset = count * 0.1f;
+        //     transition.Play("Crossfade_Start", -1, offset)
+
+        //     transition.Play("Crossfade_End", -1, offset);
+        //     count++;
+        // }
+        transition.SetTrigger("Start");
+        transition.Play("Crossfade_Start", -1, 0.75f);
+        transition.Play("Crossfade_Start", -1, 0.50f);
+        transition.Play("Crossfade_Start", -1, 0.25f);
+        transition.Play("Crossfade_End", -1, 0.75f);
+        transition.Play("Crossfade_End", -1, 0.50f);
+        transition.Play("Crossfade_End", -1, 0.25f);
+        // transition.Play("Crossfade_End", -1, 0.90f);
+
+      
+      
+
+
         
-            playerMovement.moveSpeed = 0;
-            dogMovement.moveSpeed = 0;
         
+    
+           
     }
 }
