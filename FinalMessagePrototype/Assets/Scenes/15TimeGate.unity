@@ -1102,7 +1102,7 @@ Transform:
   m_LocalScale: {x: 1.7, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848834821
 GameObject:
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   dog: {fileID: 0}
   button1: {fileID: 174602591}
   button2: {fileID: 962392078}
-  door: {fileID: 714844455}
+  door: {fileID: 0}
 --- !u!61 &962392078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2054,7 +2054,7 @@ Transform:
   m_LocalScale: {x: 12, y: 1.4099, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1348726310
 PrefabInstance:

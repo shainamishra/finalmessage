@@ -48,7 +48,19 @@ MonoBehaviour:
   transitionTime: 2
   dog: {fileID: 0}
   player: {fileID: 0}
+  playeron: {fileID: 0}
   door: {fileID: 0}
+  transitionAudio:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  levelVar: 0
+  levelVarNeg: 0
+  playerMovement: {fileID: 0}
+  dogMovement: {fileID: 0}
 --- !u!1 &5868103561980109685
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +207,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 104513875
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &5868103562066243235

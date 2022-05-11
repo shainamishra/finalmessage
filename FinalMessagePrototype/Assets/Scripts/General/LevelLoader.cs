@@ -14,6 +14,8 @@ public class LevelLoader : MonoBehaviour
     public GameObject player;
     public GameObject playeron;
     public GameObject door;
+    GameObject stageExit;
+    ExitTransitionTrigger exitTransition;
 
     public EventReference transitionAudio;
 
@@ -153,9 +155,9 @@ public class LevelLoader : MonoBehaviour
             levels[5] = 1;
             // FM 2
             //if(((player.transform.position.x > 10.5 && player.transform.position.y > 10)) || (dog.transform.position.x > 10.5 && dog.transform.position.y > 10))
-            GameObject door5 = GameObject.Find("StageExit");
-            ExitTransitionTrigger exitTransition5 = door5.GetComponent<ExitTransitionTrigger>();
-            if(exitTransition5.status)
+            stageExit = GameObject.Find("StageExit");
+            exitTransition = stageExit.GetComponent<ExitTransitionTrigger>();
+            if(exitTransition.status)
             {
                 levelVar = 2;
                 LoadNextLevel();
@@ -285,22 +287,27 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             levels[11] = 1;
+            //stageExit = GameObject.Find("StageExit");
+            ExitTransitionTrigger exitTransition1 = GameObject.Find("StageExit1").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition2 = GameObject.Find("StageExit2").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition3 = GameObject.Find("StageExit3").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition4 = GameObject.Find("StageExit4").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition5 = GameObject.Find("StageExit5").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition6 = GameObject.Find("StageExit6").GetComponent<ExitTransitionTrigger>();
             // final message 4 (second door) scene 13
-            if (player.transform.position.x > 4.7 && player.transform.position.x < 7.6 && Input.GetKeyDown("x"))
+            if (exitTransition2.status)
             {
                 levelVar = 1;
                 LoadNextLevel();
             }
             // final message 5 (sixth door) scene 12
-            if (player.transform.position.x > 31.5 && player.transform.position.x < 34.8 && Input.GetKeyDown("x"))
+            if (exitTransition6.status)
             {
                 levelVar = 0;
                 LoadNextLevel();
             }
             // bad doors - 11a scene 23
-            if (((player.transform.position.x > -1.2 && player.transform.position.x < 1.4) || (player.transform.position.x > 10.7 && player.transform.position.x < 13.5)
-                || (player.transform.position.x > 19.8 && player.transform.position.x < 22.5) || (player.transform.position.x > 25.5 && player.transform.position.x < 28.8))
-                && Input.GetKeyDown("x"))
+            if (exitTransition1.status || exitTransition3.status || exitTransition4.status || exitTransition5.status)
             {
                 // goes to 23
                 levelVar = 11;
@@ -395,6 +402,8 @@ public class LevelLoader : MonoBehaviour
         {
             levels[16] = 1;
             // graveyard
+            stageExit = GameObject.Find("StageExit");
+            exitTransition = stageExit.GetComponent<ExitTransitionTrigger>();
             if ((player.transform.position.x > 10 && player.transform.position.y > 0))
             {
                 // goes to 17
@@ -402,7 +411,7 @@ public class LevelLoader : MonoBehaviour
                 LoadNextLevel();
             }
             // FM 3
-            else if ((player.transform.position.x > 6.5 && player.transform.position.x < 9.3 && playeron.activeSelf == true) && Input.GetKeyDown("x"))
+            else if(exitTransition.status)
             {
                 // goes to 18
                 levelVar = 1;
@@ -467,9 +476,9 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 19){
             // level ending conditions
             levels[19] = 1;
-            GameObject door19 = GameObject.Find("StageExit");
-            ExitTransitionTrigger exitTransition19 = door19.GetComponent<ExitTransitionTrigger>();
-            if(exitTransition19.status)
+            stageExit = GameObject.Find("StageExit");
+            exitTransition = stageExit.GetComponent<ExitTransitionTrigger>();
+            if(exitTransition.status)
             {
                 //goes to 20
                 levelVar = 0;
@@ -525,20 +534,22 @@ public class LevelLoader : MonoBehaviour
         {
             levels[22] = 1;
             //Debug.Log(player.transform.position.x);
-
-            if ((player.transform.position.x > -3 && player.transform.position.x < 1.5) && Input.GetKeyDown("x"))
+            ExitTransitionTrigger exitTransition1 = GameObject.Find("StageExit1").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition2 = GameObject.Find("StageExit2").GetComponent<ExitTransitionTrigger>();
+            ExitTransitionTrigger exitTransition3 = GameObject.Find("StageExit3").GetComponent<ExitTransitionTrigger>();
+            if (exitTransition1.status)
             {
                 levelVar = -18;
                 LoadNextLevel();
                 Debug.Log("5");
             }
-            else if ((player.transform.position.x > 1.5 && player.transform.position.x < 3.25) && Input.GetKeyDown("x"))
+            else if (exitTransition2.status)
             {
                 levelVar = -14;
                 LoadNextLevel();
                 Debug.Log("9");
             }
-            else if ((player.transform.position.x > 5.9 && player.transform.position.x < 7.75) && Input.GetKeyDown("x"))
+            else if (exitTransition3.status)
             {
                 levelVar = -9;
                 LoadNextLevel();
