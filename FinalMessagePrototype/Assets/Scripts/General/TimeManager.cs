@@ -15,28 +15,13 @@ public class TimeManager : MonoBehaviour
 
     public Animator shadowidle;
 
-    // public playerMovement player;
-    
-    // public dogMovement dog;
 
-    // public Rigidbody2D rb;
 
 
     // public Transform kpos;
     public Transform skpos;
     public static float speed = 0.000000000000000000000000000000000000000000000001f;
-    // public Animator transition;
-    
-    // private float moveDirection = 0f;
-        // private float moveSpeed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
 
-
-
-    // Start is called before the first frame update
-    // private void Awake()
-    // {
-    //     rb = GetComponent<Rigidbody2D>(); // will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D
-    // }
     void Start()
     {
       // DontDestroyOnLoad(this.gameObject);
@@ -71,25 +56,18 @@ public class TimeManager : MonoBehaviour
 
         if(startingTime<=0){
           startingTime=0;
-          
           theText.text = "0:00";
-          // player.moveSpeed = 0;
-          // dog.moveSpeed = 0;
-          TimesUp = true;
-          
-          
-          // transition.SetTrigger("Start");
-          // transition.Play("Crossfade_End",-1,0.25f);
+
             shadow.SetActive(true);
             if(skpos.position.x>0){
 
-                shadowMove();
-                shadowidle.SetTrigger("Start");
-
+                // shadowMove();
+                StartCoroutine(waiter());
+                
             }
-           
-            // transition.StopPlayback();
+            TimesUp = true;
         }
+        
 
         if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
           // shadow.SetActive(false);
@@ -102,21 +80,35 @@ public class TimeManager : MonoBehaviour
 
     void shadowMove(){
       // //  rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-      //   Vector3 path = Vector3.MoveTowards(new Vector3(-0.14f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
       //   // Vector2 target = new Vector2(-1f,0f);
       //   // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
-
-      //   skpos.Translate(path);
-
+ shadowidle.SetTrigger("Start");
         if(skpos.position.x>10){
-          Vector3 path1 = Vector3.MoveTowards(new Vector3(-1f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          Vector3 path1 = Vector3.MoveTowards(new Vector3(-6f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
           skpos.Translate(path1);
         }
         else{
-          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.02f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
           skpos.Translate(path2);
         }
     }
+    // void shadowLeave() {
+
+    //   if(skpos.position.x <102 && skpos.position.x>15){
+    //     // skpos.Rotate(0f, 180f, 0f);
+        
+    //       Vector3 path1 = Vector3.MoveTowards(new Vector3(6f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+    //       skpos.Translate(path1);
+
+
+    // }
+    // else{
+    //       Vector3 path2 = Vector3.MoveTowards(new Vector3(0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+    //       skpos.Translate(path2);
+    //     }
+
+    //   }
+      
 
 
     public void PauseGame ()
@@ -127,5 +119,23 @@ public class TimeManager : MonoBehaviour
     public void ResumeGame ()
     {
         Time.timeScale = 1;
+    }
+
+    public IEnumerator waiter()
+    {
+        //Wait for 10 seconds
+        Debug.Log("Fine. I admit it. I cut in line.");
+        shadowMove();
+        yield return new WaitForSecondsRealtime (8f);
+        // Debug.Log("Fine. I admit it. I cut in line.");
+        // shadowLeave();
+        Debug.Log("flipped");
+        skpos.Translate(102,-1.3f,0);
+        Debug.Log("Leave");
+          startingTime = 300;
+          Debug.Log("Restart");
+        
+        
+
     }
 }
