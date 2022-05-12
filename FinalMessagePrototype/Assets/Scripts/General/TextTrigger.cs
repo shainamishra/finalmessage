@@ -23,7 +23,9 @@ public class TextTrigger : MonoBehaviour
 
     public GameObject NPCname; 
     public GameObject canvas; 
-    public GameObject finalText; 
+    public GameObject finalText;
+
+    public GameObject dialogueManager;
 
     //int correctAnswer = 0;
 
@@ -68,6 +70,7 @@ public class TextTrigger : MonoBehaviour
         Button btn4 = option4.GetComponent<Button>();
         btn4.onClick.AddListener(TaskOnClick4);
         
+        sentences = start.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
     }
 
     // Update is called once per frame
@@ -125,7 +128,7 @@ public class TextTrigger : MonoBehaviour
     }
 
     // show the canvas
-    void DiaableOptions() 
+    void DisableOptions() 
     {
         // show the option buttons
         option1.gameObject.SetActive(false);
@@ -176,6 +179,25 @@ public class TextTrigger : MonoBehaviour
             levelVar = -4;
             LoadNextLevel();
         }
+        // not in scene 4
+        else {
+            //jump to new dialogue
+            contClicked = 0;
+            sentences = option1.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+            dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option1.gameObject.GetComponent<DialogueTrigger>().dialogue);
+            // hide buttons
+            DisableOptions();
+            // show name tag
+            NPCname.gameObject.SetActive(true);
+            // show continue button
+            cont.gameObject.SetActive(true);
+            // show final text
+            //finalText.gameObject.SetActive(true);
+            // disable NPC box collider
+            npc.GetComponent<BoxCollider2D>().enabled = false;
+
+            //TextTrigger.Speaking = false;
+        }
     }
     void TaskOnClick2()
     {
@@ -185,14 +207,33 @@ public class TextTrigger : MonoBehaviour
             levelVar = -4;
             LoadNextLevel();
         }
+        // not in scene 4
+        else {
+            //jump to new dialogue
+            contClicked = 0;
+            sentences = option2.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+            dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option2.gameObject.GetComponent<DialogueTrigger>().dialogue);
+            // hide buttons
+            DisableOptions();
+            // show name tag
+            NPCname.gameObject.SetActive(true);
+            // show continue button
+            cont.gameObject.SetActive(true);
+            // show final text
+            //finalText.gameObject.SetActive(true);
+            // disable NPC box collider
+            npc.GetComponent<BoxCollider2D>().enabled = false;
+
+            //TextTrigger.Speaking = false;
+        }
     }
     void TaskOnClick3()
     {
         // if in scene 4
         if (SceneManager.GetActiveScene().buildIndex == 4)
         {
-            // hide buttona
-            DiaableOptions();
+            // hide buttons
+            DisableOptions();
             // show name tag
             NPCname.gameObject.SetActive(true);
             // show continue button
@@ -204,6 +245,25 @@ public class TextTrigger : MonoBehaviour
 
             TextTrigger.Speaking = false;
         }
+        // not in scene 4
+        else {
+            //jump to new dialogue
+            contClicked = 0;
+            sentences = option3.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+            dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option3.gameObject.GetComponent<DialogueTrigger>().dialogue);
+            // hide buttons
+            DisableOptions();
+            // show name tag
+            NPCname.gameObject.SetActive(true);
+            // show continue button
+            cont.gameObject.SetActive(true);
+            // show final text
+            //finalText.gameObject.SetActive(true);
+            // disable NPC box collider
+            npc.GetComponent<BoxCollider2D>().enabled = false;
+
+            //TextTrigger.Speaking = false;
+        }
     }
     void TaskOnClick4()
     {
@@ -212,6 +272,21 @@ public class TextTrigger : MonoBehaviour
         {
             levelVar = -4;
             LoadNextLevel();
+        }
+        // not in scene 4
+        else {
+            // hide buttons
+            DisableOptions();
+            // show name tag
+            NPCname.gameObject.SetActive(true);
+            // show continue button
+            //cont.gameObject.SetActive(true);
+            // show final text
+            finalText.gameObject.SetActive(true);
+            // disable NPC box collider
+            npc.GetComponent<BoxCollider2D>().enabled = false;
+
+            TextTrigger.Speaking = false;
         }
     }
 

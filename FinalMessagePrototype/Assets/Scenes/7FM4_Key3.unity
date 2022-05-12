@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Witch Knight
+    name: Final Message
     sentences:
     - Is this how I am to die?! Defeated by rope?!
     - I finally found my way to the staff-which-brings-music, but there is a problem.
@@ -1083,9 +1083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5cda89ed724ef4b9c968a488ef9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &357207506 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1768952286846286840, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+--- !u!70 &357207503 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7408466783819260744, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 357207500}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &399841893
@@ -3579,7 +3579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 357207506}
+  player: {fileID: 357207503}
   npc: {fileID: 939425664}
   start: {fileID: 232999954}
   cont: {fileID: 1284318533}

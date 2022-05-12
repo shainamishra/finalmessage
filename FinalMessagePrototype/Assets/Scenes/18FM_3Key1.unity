@@ -337,8 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1777492531}
-  npc: {fileID: 515718525}
+  player: {fileID: 1777492528}
+  npc: {fileID: 1459596128}
   start: {fileID: 1322060192}
   cont: {fileID: 1382170101}
   close: {fileID: 137641684}
@@ -1467,11 +1467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ded343e509d7c04e80a7f15bdaedcc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &515718525 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4261230115782810071, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
-  m_PrefabInstance: {fileID: 515718519}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &541368330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,7 +2414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Witch Knight
+    name: Final Message
     sentences:
     - "\u201CCurses, how cruel is a fate such as this?"
     - My darling Witch Knight, the sun of my Earth,
@@ -3101,6 +3096,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1459596127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459596129}
+  - component: {fileID: 1459596128}
+  m_Layer: 0
+  m_Name: finalMessageBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1459596128
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459596127}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 6, y: -3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4}
+  m_EdgeRadius: 0
+--- !u!4 &1459596129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459596127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.60600775, y: 2.3539774, z: -45.95901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1777492525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3182,9 +3234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5cda89ed724ef4b9c968a488ef9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1777492531 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1768952286846286840, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+--- !u!70 &1777492528 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7408466783819260744, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 1777492525}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1796658048

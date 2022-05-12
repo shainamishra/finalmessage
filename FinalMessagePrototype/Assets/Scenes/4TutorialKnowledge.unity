@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To live the life destined to me by an old witch.
+  m_Text: I feel it is destiny, and who am I to deny destiny?
 --- !u!222 &33143113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -585,8 +585,9 @@ MonoBehaviour:
     name: Witch Knight
     sentences:
     - Fellow Warrior, Climber of Mount Arar. I am the Witch Knight, the final guardian
-      of the summit. I ask you once more, what is your purpose on this mountain?
-    - ' '
+      of the Summit.
+    - I ask you, why do you climb this Mount?
+    - 
 --- !u!1 &370635835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,7 +1157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You may pass.
+  m_Text: Good. You'd do well to remember that. Now go.
 --- !u!222 &640461970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1472,7 +1473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1427586814}
+  player: {fileID: 1427586811}
   npc: {fileID: 175578068}
   start: {fileID: 297346249}
   cont: {fileID: 1213945954}
@@ -2527,9 +2528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5cda89ed724ef4b9c968a488ef9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1427586814 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1768952286846286840, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+--- !u!70 &1427586811 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7408466783819260744, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 1427586808}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1496306996
@@ -2831,7 +2832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1427586814}
+  player: {fileID: 1427586811}
   npc: {fileID: 175578068}
   start: {fileID: 297346249}
   cont: {fileID: 1213945954}
@@ -2846,7 +2847,7 @@ MonoBehaviour:
   levelVar: 0
   transition: {fileID: 882419020}
   transitionTime: 0.5
-  sentences: 0
+  sentences: 1
 --- !u!1001 &1756964916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3636,7 +3637,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Finding the sun, and basking forever underneath its glorious light.
+  m_Text: I wish to find the sun, and bask forever underneath its glorious light.
 --- !u!222 &2097268995
 CanvasRenderer:
   m_ObjectHideFlags: 0
