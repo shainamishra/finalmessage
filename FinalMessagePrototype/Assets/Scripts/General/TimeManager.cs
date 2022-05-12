@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 300;
+    public static float startingTime = 5;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -24,7 +24,7 @@ public class TimeManager : MonoBehaviour
 
     // public Transform kpos;
     public Transform skpos;
-    public static float speed = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f;
+    public static float speed = 0.000000000000000000000000000000000000000000000001f;
     // public Animator transition;
     
     // private float moveDirection = 0f;
@@ -101,12 +101,21 @@ public class TimeManager : MonoBehaviour
     }
 
     void shadowMove(){
-      //  rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        Vector3 path = Vector3.MoveTowards(new Vector3(-1,0,0),skpos.position,speed*Time.deltaTime/10000000000000000);
-        // Vector2 target = new Vector2(-1f,0f);
-        // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
+      // //  rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+      //   Vector3 path = Vector3.MoveTowards(new Vector3(-0.14f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+      //   // Vector2 target = new Vector2(-1f,0f);
+      //   // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
 
-        skpos.Translate(path);
+      //   skpos.Translate(path);
+
+        if(skpos.position.x>10){
+          Vector3 path1 = Vector3.MoveTowards(new Vector3(-1f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          skpos.Translate(path1);
+        }
+        else{
+          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.02f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          skpos.Translate(path2);
+        }
     }
 
 
