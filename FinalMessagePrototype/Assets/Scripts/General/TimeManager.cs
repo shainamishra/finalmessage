@@ -16,11 +16,25 @@ public class TimeManager : MonoBehaviour
     public Animator shadowidle;
 
 
-
-
     // public Transform kpos;
     public Transform skpos;
     public static float speed = 0.000000000000000000000000000000000000000000000001f;
+
+    static TimeManager instance;
+    // static GameObject ShadowKnight;
+ 
+     void Awake()
+     {
+         if(instance == null )
+         {    
+             instance = this; 
+            //  ShadowKnight = GameObject.Find("ShadowKnight");// In first scene, make us the singleton.
+            //  DontDestroyOnLoad(instance);
+         }
+         else if(instance != this)
+             Destroy(GameObject.Find("Time System"));
+            //  Destroy(GameObject.Find("ShadowKnight")); // On reload, singleton already set, so destroy duplicate.
+     } 
 
     void Start()
     {
@@ -76,6 +90,8 @@ public class TimeManager : MonoBehaviour
           SceneManager.LoadScene("1StartScene");
 
         } 
+        Awake();
+
     }
 
     void shadowMove(){
@@ -124,16 +140,16 @@ public class TimeManager : MonoBehaviour
     public IEnumerator waiter()
     {
         //Wait for 10 seconds
-        Debug.Log("Fine. I admit it. I cut in line.");
+        // Debug.Log("Fine. I admit it. I cut in line.");
         shadowMove();
         yield return new WaitForSecondsRealtime (8f);
         // Debug.Log("Fine. I admit it. I cut in line.");
         // shadowLeave();
-        Debug.Log("flipped");
+        // Debug.Log("flipped");
         skpos.Translate(102,-1.3f,0);
         Debug.Log("Leave");
-          startingTime = 300;
-          Debug.Log("Restart");
+          // startingTime = 300;
+          // Debug.Log("Restart");
         
         
 

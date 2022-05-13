@@ -1353,6 +1353,7 @@ MonoBehaviour:
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 2
+  finalMessage: 0
 --- !u!114 &296381892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,6 +1667,7 @@ MonoBehaviour:
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 2
+  finalMessage: 0
 --- !u!114 &372551614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3141,6 +3143,7 @@ MonoBehaviour:
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 2
+  finalMessage: 0
 --- !u!114 &834932257
 MonoBehaviour:
   m_ObjectHideFlags: 0
