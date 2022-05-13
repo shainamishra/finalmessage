@@ -270,10 +270,12 @@ MonoBehaviour:
   NPCname: {fileID: 1192497460}
   canvas: {fileID: 982528401}
   finalText: {fileID: 1739814680}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 12
+  finalMessage: 1
 --- !u!114 &14019378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2365,10 +2367,12 @@ MonoBehaviour:
   NPCname: {fileID: 1192497460}
   canvas: {fileID: 982528401}
   finalText: {fileID: 0}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 0
+  finalMessage: 0
 --- !u!114 &1298941946
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -389,10 +389,12 @@ MonoBehaviour:
   NPCname: {fileID: 962123721}
   canvas: {fileID: 1339725840}
   finalText: {fileID: 0}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 0
+  finalMessage: 0
 --- !u!114 &182563649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3539,7 +3541,7 @@ GameObject:
   - component: {fileID: 1837930771}
   - component: {fileID: 1837930770}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: Dialogue_fm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3591,10 +3593,12 @@ MonoBehaviour:
   NPCname: {fileID: 962123721}
   canvas: {fileID: 1339725840}
   finalText: {fileID: 1785499857}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 8
+  finalMessage: 1
 --- !u!114 &1837930771
 MonoBehaviour:
   m_ObjectHideFlags: 0

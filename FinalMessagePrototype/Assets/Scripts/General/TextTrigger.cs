@@ -36,6 +36,9 @@ public class TextTrigger : MonoBehaviour
 
     int contClicked = 0;
     public int sentences;
+
+    //toggling for conversations or Final Messages
+    public bool finalMessage = false;
     
     void Start()
     {
@@ -156,8 +159,8 @@ public class TextTrigger : MonoBehaviour
             //remove continue button
             cont.gameObject.SetActive(false);
 
-            // if scene does not have options
-            if(SceneManager.GetActiveScene().buildIndex != 7 && SceneManager.GetActiveScene().buildIndex != 8 && SceneManager.GetActiveScene().buildIndex != 13 && SceneManager.GetActiveScene().buildIndex != 17 && SceneManager.GetActiveScene().buildIndex != 18)
+            // if the dialogue isn't for a final message
+            if(!finalMessage)
             {
                 //hide NPC name tag
                 NPCname.gameObject.SetActive(false);
