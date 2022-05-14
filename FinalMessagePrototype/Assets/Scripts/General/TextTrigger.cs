@@ -24,6 +24,7 @@ public class TextTrigger : MonoBehaviour
     public GameObject NPCname; 
     public GameObject canvas; 
     public GameObject finalText;
+    public GameObject text;
 
     public GameObject dialogueManager;
 
@@ -166,6 +167,12 @@ public class TextTrigger : MonoBehaviour
                 NPCname.gameObject.SetActive(false);
                 // show option buttons
                 EnableOptions();
+            }
+            if(SceneManager.GetActiveScene().buildIndex == 3 && finalMessage)
+            {
+                text = GameObject.Find("Start Text");
+                text.gameObject.SetActive(false);
+                finalText.gameObject.SetActive(true);
             }
         }
         else

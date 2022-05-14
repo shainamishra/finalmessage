@@ -272,6 +272,7 @@ MonoBehaviour:
   NPCname: {fileID: 1375243010}
   canvas: {fileID: 1854619409}
   finalText: {fileID: 0}
+  text: {fileID: 0}
   dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 1649312281}
@@ -550,7 +551,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You may pass.
+  m_Text: I don't suppose you could cut me down, if you wouldn't mind?
 --- !u!222 &164701339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -575,8 +576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.816086, y: -447}
-  m_SizeDelta: {x: 552.72, y: 57.3226}
+  m_AnchoredPosition: {x: 21.461, y: -447}
+  m_SizeDelta: {x: 514.01, y: 57.3226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &177318873
 GameObject:
@@ -876,8 +877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2, y: -442.48}
-  m_SizeDelta: {x: 544.53, y: 57.3226}
+  m_AnchoredPosition: {x: -12.396695, y: -442.48}
+  m_SizeDelta: {x: 507.3367, y: 57.3226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332463665
 MonoBehaviour:
@@ -1987,11 +1988,12 @@ MonoBehaviour:
   NPCname: {fileID: 1969271364}
   canvas: {fileID: 1286211605}
   finalText: {fileID: 164701337}
+  text: {fileID: 0}
   dialogueManager: {fileID: 1358357589}
   levelVar: 0
   transition: {fileID: 1649312281}
   transitionTime: 0.5
-  sentences: 8
+  sentences: 0
   finalMessage: 1
 --- !u!114 &766494714
 MonoBehaviour:
@@ -3887,6 +3889,7 @@ MonoBehaviour:
   NPCname: {fileID: 1969271364}
   canvas: {fileID: 1286211605}
   finalText: {fileID: 0}
+  text: {fileID: 0}
   dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
@@ -5155,7 +5158,7 @@ MonoBehaviour:
     name: Lonely Climber
     sentences:
     - Ahhhhhh, light guide me, that's so much better. I can feel my arms again, haha...
-    - ' '
+    - 
 --- !u!114 &1679162970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5464,6 +5467,7 @@ MonoBehaviour:
   NPCname: {fileID: 1375243010}
   canvas: {fileID: 1854619409}
   finalText: {fileID: 1387070553}
+  text: {fileID: 0}
   dialogueManager: {fileID: 177318873}
   levelVar: 0
   transition: {fileID: 1649312281}
