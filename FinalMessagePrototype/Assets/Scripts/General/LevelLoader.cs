@@ -115,7 +115,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[3] = 1;
             Key4 = 1;
-            if(dog.transform.position.x > 18 || player.transform.position.x > 18)
+            if(dog.transform.position.x > 25 || player.transform.position.x > 25)
             {
                 levelVar = 0;
                 LoadNextLevel();

@@ -3016,7 +3016,7 @@ Canvas:
   m_GameObject: {fileID: 1018498856}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1760674516}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3591,7 +3591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.199951, y: 308}
+  m_AnchoredPosition: {x: 19, y: 278}
   m_SizeDelta: {x: 406.7461, y: 67.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354349415
@@ -5343,7 +5343,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   _xClamp:
   - -1
-  - 9
+  - 16
   _yClamp:
   - 0
   - 100
@@ -5808,6 +5808,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5357921975361143272, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: dog
       value: 
@@ -5856,7 +5860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611158552329407854, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.4
+      value: 15.34
       objectReference: {fileID: 0}
     - target: {fileID: 2611158552329407854, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6184,7 +6188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.71
+      value: -7.3
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7086,6 +7090,7 @@ GameObject:
   - component: {fileID: 2144474590}
   - component: {fileID: 2144474592}
   - component: {fileID: 2144474591}
+  - component: {fileID: 2144474593}
   m_Layer: 5
   m_Name: Instructions
   m_TagString: Untagged
@@ -7102,14 +7107,14 @@ RectTransform:
   m_GameObject: {fileID: 2144474589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 0.24473843, y: 0.24473843, z: 0.24473843}
   m_Children: []
   m_Father: {fileID: 1018498860}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.2, y: 226.8}
+  m_AnchoredPosition: {x: 19.000038, y: 214.4}
   m_SizeDelta: {x: 202.9537, y: 18.7478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144474591
@@ -7134,18 +7139,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c5d5070d675a3401c9e85e5fef9a299c, type: 3}
-    m_FontSize: 15
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 150
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: LEFT CLICK to strike objects
+  m_Text: As Knight, LEFT CLICK to strike objects
 --- !u!222 &2144474592
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7154,3 +7159,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144474589}
   m_CullTransparentMesh: 1
+--- !u!114 &2144474593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144474589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6cf713855b49e4186f735cdf71f296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_on: {fileID: 170097422}
+  dog_on: {fileID: 333358169}
+  text_box: {fileID: 2144474591}
+  instruction1: As Knight, LEFT CLICK to strike
+  instruction2: As Dog, LEFT CLICK to bark
+  transition_point: 8
+  horizontal_break: 1
