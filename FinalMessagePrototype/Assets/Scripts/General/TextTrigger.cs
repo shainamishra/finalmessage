@@ -82,6 +82,8 @@ public class TextTrigger : MonoBehaviour
     {
         // if the player touches the NPC
         StartDialogue();
+        // if the player stops touching the NPC
+        HideDialogue();
     }
 
     // show start button
@@ -93,6 +95,18 @@ public class TextTrigger : MonoBehaviour
             start.gameObject.SetActive(true);
 
             TextTrigger.Speaking = true;
+        }
+    }
+
+    // hide start button
+    void HideDialogue()
+    {
+        if(!player.IsTouching(npc) && (textOn == false))
+        {
+            // hide the talk button
+            start.gameObject.SetActive(false);
+
+            TextTrigger.Speaking = false;
         }
     }
     

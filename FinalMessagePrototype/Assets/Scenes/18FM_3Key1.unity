@@ -349,6 +349,7 @@ MonoBehaviour:
   NPCname: {fileID: 1372032248}
   canvas: {fileID: 1281150356}
   finalText: {fileID: 1251928089}
+  text: {fileID: 0}
   dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
@@ -2073,7 +2074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '  Speak to?'
+  m_Text: Read Message
 --- !u!222 &1019278174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3384,6 +3385,7 @@ MonoBehaviour:
   NPCname: {fileID: 1372032248}
   canvas: {fileID: 1281150356}
   finalText: {fileID: 0}
+  text: {fileID: 0}
   dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
