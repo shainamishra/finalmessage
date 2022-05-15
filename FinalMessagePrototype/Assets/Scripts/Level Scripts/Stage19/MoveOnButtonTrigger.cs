@@ -17,7 +17,11 @@ public class MoveOnButtonTrigger : MonoBehaviour
     public float speed = 30f;
     public float target_elevation;
 
+    public bool second_button = false;
+    public GameObject button_2;
+
     ButtonActivate buttonActivate;
+    ButtonActivate buttonActivate2;
     Vector3 initial_position;
     Vector3 pos;
     bool is_on; 
@@ -26,15 +30,25 @@ public class MoveOnButtonTrigger : MonoBehaviour
     void Start()
     {
         buttonActivate = button.GetComponent<ButtonActivate>();
+        if(second_button){
+            buttonActivate2 = button_2.GetComponent<ButtonActivate>();
+        }
         initial_position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        // If this object is controlled by two buttons at once, do that
+        // Else, just the first one
+        if(second_button){
+            is_on = (buttonActivate.status && buttonActivate2.status);
+        }
+        else{
+            is_on = buttonActivate.status;
+        }
         // If target elevation is above the initial position, move up first and then down
         // Else, go down first and then up
-        is_on = buttonActivate.status;
         if( (target_elevation-initial_position.y) > 0){
             if(is_on){
                 MoveUp(target_elevation);
