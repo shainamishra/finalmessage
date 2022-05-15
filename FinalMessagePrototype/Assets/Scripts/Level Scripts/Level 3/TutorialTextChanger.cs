@@ -27,15 +27,21 @@ public class TutorialTextChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if the knight is being controlled 
         if(player_on.activeSelf == true){
+            //and the horizontal position is the one we're concerned about
             if(horizontal_break == true){
+                //and they're NOT over the line
                 if(player.transform.position.x < transition_point){
+                    //the text is instruction #1
                     text_box.text = instruction1;
                 }
                 else{
+                    //the it becomes instruction #2
                     text_box.text = instruction2;
                 }
             }
+            //else we want the veritcal component
             else{
                 if(player.transform.position.y < transition_point){
                     text_box.text = instruction1;
@@ -45,6 +51,7 @@ public class TutorialTextChanger : MonoBehaviour
                 }
             }
         }
+        //else the dog is currently in focus, same rules apply
         if(dog_on.activeSelf == true){
             if(horizontal_break == true){
                 if(dog.transform.position.x < transition_point){
