@@ -2064,10 +2064,13 @@ MonoBehaviour:
   NPCname: {fileID: 680971996}
   canvas: {fileID: 455252464}
   finalText: {fileID: 0}
+  text: {fileID: 0}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 2
+  finalMessage: 0
 --- !u!114 &472207815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4581,10 +4584,13 @@ MonoBehaviour:
   NPCname: {fileID: 680971996}
   canvas: {fileID: 455252464}
   finalText: {fileID: 0}
+  text: {fileID: 0}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 2
+  finalMessage: 0
 --- !u!114 &1039334230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6228,11 +6234,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7890483132059736131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 1355799323}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1448076362 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1768952286846286840, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
-  m_PrefabInstance: {fileID: 1355799323}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1448076365 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3065096178899888131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
@@ -6388,7 +6389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0822c59ebaec14aad9e5ce95936e8b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1448076362}
+  player: {fileID: 0}
   npc: {fileID: 2122489064}
   start: {fileID: 2100944678}
   cont: {fileID: 1905929460}
@@ -9439,10 +9440,13 @@ MonoBehaviour:
   NPCname: {fileID: 680971996}
   canvas: {fileID: 455252464}
   finalText: {fileID: 0}
+  text: {fileID: 0}
+  dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
   sentences: 2
+  finalMessage: 0
 --- !u!114 &2132859937
 MonoBehaviour:
   m_ObjectHideFlags: 0
