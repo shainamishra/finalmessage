@@ -319,6 +319,7 @@ MonoBehaviour:
   NPCname: {fileID: 2102863366}
   canvas: {fileID: 1958102342}
   finalText: {fileID: 0}
+  text: {fileID: 0}
   dialogueManager: {fileID: 0}
   levelVar: 0
   transition: {fileID: 0}
@@ -3275,6 +3276,7 @@ MonoBehaviour:
   NPCname: {fileID: 2102863366}
   canvas: {fileID: 1958102342}
   finalText: {fileID: 2070024372}
+  text: {fileID: 0}
   dialogueManager: {fileID: 397001190}
   levelVar: 0
   transition: {fileID: 0}
@@ -3477,6 +3479,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 0
+  _yClamp:
+  - 0
+  - 100
 --- !u!1 &1958102342
 GameObject:
   m_ObjectHideFlags: 0

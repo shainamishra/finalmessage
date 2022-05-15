@@ -920,6 +920,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 30
+  _yClamp:
+  - 0
+  - 100
 --- !u!1001 &1534427902
 PrefabInstance:
   m_ObjectHideFlags: 0

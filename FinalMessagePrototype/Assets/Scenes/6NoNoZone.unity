@@ -1908,6 +1908,9 @@ MonoBehaviour:
   _xClamp:
   - -1
   - 45
+  _yClamp:
+  - 0
+  - 100
 --- !u!1 &1693668555
 GameObject:
   m_ObjectHideFlags: 0

@@ -2031,6 +2031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 7005447329923298701, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
 --- !u!1001 &1107279908
@@ -3703,6 +3707,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 0
+  _yClamp:
+  - 0
+  - 100
 --- !u!1001 &1991609427
 PrefabInstance:
   m_ObjectHideFlags: 0

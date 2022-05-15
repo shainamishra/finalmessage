@@ -402,7 +402,7 @@ MonoBehaviour:
   RightMover: {fileID: 2033556336}
   rock1: {fileID: 1723541831}
   rock2: {fileID: 1218453953}
-  player: {fileID: 1357232738}
+  player: {fileID: 0}
 --- !u!50 &198721559
 Rigidbody2D:
   serializedVersion: 4
@@ -2382,11 +2382,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
---- !u!61 &1357232738 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1768952286846286840, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
-  m_PrefabInstance: {fileID: 1357232737}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1357232739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7890483132059736131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
@@ -2830,6 +2825,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 0.1
+  _yClamp:
+  - 0
+  - 100
 --- !u!1 &2033556333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,7 +2864,7 @@ MonoBehaviour:
   RightMover: {fileID: 2033556336}
   rock1: {fileID: 1723541831}
   rock2: {fileID: 1218453953}
-  player: {fileID: 1357232738}
+  player: {fileID: 0}
 --- !u!50 &2033556335
 Rigidbody2D:
   serializedVersion: 4

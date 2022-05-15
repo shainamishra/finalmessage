@@ -162,6 +162,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 41
+  _yClamp:
+  - 0
+  - 100
 --- !u!114 &47809495
 MonoBehaviour:
   m_ObjectHideFlags: 0

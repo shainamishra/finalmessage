@@ -592,6 +592,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 6
+  _yClamp:
+  - 0
+  - 100
 --- !u!20 &750914445
 Camera:
   m_ObjectHideFlags: 0
