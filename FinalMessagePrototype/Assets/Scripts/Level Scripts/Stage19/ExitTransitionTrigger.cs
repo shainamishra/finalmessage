@@ -23,7 +23,7 @@ public class ExitTransitionTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((thisDoor.IsTouching(knight) || thisDoor.IsTouching(dog)) && Input.GetKeyDown(KeyCode.X)){
+        if((thisDoor.IsTouching(knight) || thisDoor.IsTouching(dog)) && Input.GetKeyDown(KeyCode.E)){
             status = true;
         }
         else{

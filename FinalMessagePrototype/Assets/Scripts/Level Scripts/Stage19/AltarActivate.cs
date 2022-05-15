@@ -38,7 +38,7 @@ public class AltarActivate : MonoBehaviour
 
         // if the player has the ember heart
         //if (LevelLoader.Key3 == 1) {
-            if (bark_status && (player_on.activeSelf == true) && overlap && Input.GetKeyDown(KeyCode.X)) {
+            if (bark_status && (player_on.activeSelf == true) && overlap && Input.GetKeyDown(KeyCode.E)) {
                 ember_heart_status = true;
                 Debug.Log("Ember Heart on pedestal: " + ember_heart_status);
             }

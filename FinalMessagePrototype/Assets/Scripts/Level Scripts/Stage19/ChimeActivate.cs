@@ -25,7 +25,7 @@ public class ChimeActivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(overlap && Input.GetKeyDown(KeyCode.X)){
+        if(overlap && Input.GetKeyDown(KeyCode.E)){
             //if (LevelLoader.Key2 == 1)
             //{
                 if (status == false)

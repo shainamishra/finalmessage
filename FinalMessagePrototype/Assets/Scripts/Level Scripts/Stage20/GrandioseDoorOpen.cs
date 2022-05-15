@@ -36,7 +36,7 @@ public class GrandioseDoorOpen : MonoBehaviour
             button_trigger = true;
         }
         if(button_trigger){
-            if((thisDoor.IsTouching(knight) || thisDoor.IsTouching(dog)) && Input.GetKeyDown(KeyCode.X)){
+            if((thisDoor.IsTouching(knight) || thisDoor.IsTouching(dog)) && Input.GetKeyDown(KeyCode.E)){
                 status = true;
             }
             else{
