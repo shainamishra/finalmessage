@@ -562,9 +562,9 @@ MonoBehaviour:
     - Facing the Shadow of death is a small price to pay for victory over it, I have
       learned. And I have learned much more, in the long time I have spent with the
       Mount as my teacher.
-    - 'Tell me, little climber, is there anything{not firstAsk: else} you would have
-      me teach you?'
+    - Tell me, little climber, is there anything you would have me teach you?
     - ' '
+  dialogueManager: {fileID: 1554712635}
 --- !u!114 &149955022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2748,6 +2748,7 @@ MonoBehaviour:
       I believe we should be grateful that she is a kindly guardian, and not a vengeful
       one.
     - 
+  dialogueManager: {fileID: 1554712635}
 --- !u!114 &835350971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3655,7 +3656,9 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 32
-  _yClamp: []
+  _yClamp:
+  - 0
+  - 0
 --- !u!1 &1314149068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,7 +3993,7 @@ MonoBehaviour:
   dialogue:
     name: Final Message
     sentences:
-    - "\u201CI have decided to rest."
+    - I have decided to rest.
     - I miss the shining spires of the university, and wish I could have seen them
       again, but I fear I was never any use to them anyway.
     - "I couldn\u2019t make this climb alone, and my poor companion is worse off
@@ -4001,7 +4004,8 @@ MonoBehaviour:
       never growing and never resting."
     - They will not listen, dear traveler, but please ask them anyway.
     - The day you stop pursuing futile things is the day you join me, after all.
-    - "I wish you luck on your climb, may the Sun\u2019s light draw you ever upward.\u201D"
+    - "I wish you luck on your climb, may the Sun\u2019s light draw you ever upward."
+  dialogueManager: {fileID: 1507329254}
 --- !u!114 &1341572519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4671,6 +4675,7 @@ MonoBehaviour:
     - Good. Now you may enter the Caves and begin your final ascent, if you wish.
       Foolishness, but who am I to stop you?
     - 
+  dialogueManager: {fileID: 1554712635}
 --- !u!114 &1549186769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5544,7 +5549,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 17, y: -3}
+  m_Offset: {x: 16, y: -3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6039,6 +6044,9 @@ MonoBehaviour:
     - It will continue to resurrect you at the break of dawn, forever.
     - 'Well, it will if you have any sense in you. The spell can be broken in two
       ways:'
+    - One, you become the first to Summit this Mount and it is washed away by the
+      Sun's radiance. I find this unlikely, although there is certainly no harm in
+      trying.
     - 'Two, your will breaks and you lose the desire to go on. This is how every
       climber before you has died: they swallowed the black truth concerning the
       futility of their climb, and their Shadows caught up to them.'
@@ -6051,6 +6059,7 @@ MonoBehaviour:
     - Which isn't such a terrible thing when you know you're going to wake up the
       next morning regardless.
     - 
+  dialogueManager: {fileID: 1554712635}
 --- !u!114 &1977769120
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1136,6 +1136,7 @@ MonoBehaviour:
     - "Now, I can\u2019t help but falter in my courage. The shadows come, and I leave
       \nthis message such that I may be avenged against this tree and its \ntantalizations:\n"
     - Find what is needed to cut the rope!
+  dialogueManager: {fileID: 1598313823}
 --- !u!114 &232999954
 MonoBehaviour:
   m_ObjectHideFlags: 0

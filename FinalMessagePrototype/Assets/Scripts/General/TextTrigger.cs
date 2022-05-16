@@ -182,12 +182,12 @@ public class TextTrigger : MonoBehaviour
                 // show option buttons
                 EnableOptions();
             }
-            if(SceneManager.GetActiveScene().buildIndex == 3 && finalMessage)
-            {
-                text = GameObject.Find("Start Text");
-                text.gameObject.SetActive(false);
-                finalText.gameObject.SetActive(true);
-            }
+            // if(SceneManager.GetActiveScene().buildIndex == 3 && finalMessage)
+            // {
+            //     text = GameObject.Find("Start Text");
+            //     text.gameObject.SetActive(false);
+            //     finalText.gameObject.SetActive(true);
+            // }
         }
         else
         {

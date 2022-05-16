@@ -191,6 +191,7 @@ MonoBehaviour:
       as a token of my thanks, then you'd best get going. I'm sure we'll see each
       other again on the climb. Good luck!
     - 
+  dialogueManager: {fileID: 0}
 --- !u!114 &230532061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +684,7 @@ MonoBehaviour:
     - Oh, nobody in particular. Just another climber Tatik sent on his way...like
       you, I presume?
     - 
+  dialogueManager: {fileID: 0}
 --- !u!114 &547882756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,6 +1920,7 @@ MonoBehaviour:
     - Ah, yes, thank you. A bruise or two, but nothing I can't handle. And if it
       is, I'll just have another shot at the mountain anyway, eh?
     - 
+  dialogueManager: {fileID: 0}
 --- !u!114 &1429222391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2909,6 +2912,7 @@ MonoBehaviour:
       be it advice or aid.
     - It's a tiring ordeal, this Mountain.
     - I suppose we'll meet again on your next climb. Fare well, and good luck.
+  dialogueManager: {fileID: 460657532}
 --- !u!114 &1731534203
 MonoBehaviour:
   m_ObjectHideFlags: 0

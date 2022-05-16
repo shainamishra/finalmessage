@@ -4262,6 +4262,7 @@ MonoBehaviour:
     - "I\u2019m sure there\u2019s another way, I only need find it."
     - But I tire of other ways, and I suspect only death awaits me at the summit.
     - "So, why not rest here, instead\u2026\u201D"
+  dialogueManager: {fileID: 541981648}
 --- !u!114 &2075341386
 MonoBehaviour:
   m_ObjectHideFlags: 0

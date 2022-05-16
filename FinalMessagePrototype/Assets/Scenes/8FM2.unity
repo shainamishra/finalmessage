@@ -2065,6 +2065,7 @@ MonoBehaviour:
     - I could not be more glad, even though there will be no one to guard mine.
     - If there is a peak, my greatest companion,
     - I will meet you there.
+  dialogueManager: {fileID: 1675725031}
 --- !u!114 &1081366977
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6447,6 +6447,7 @@ MonoBehaviour:
     sentences:
     - The Sun rains its blessings in the light, but cares not for those who dwell
       in shadow.
+  dialogueManager: {fileID: 1791162293}
 --- !u!114 &336408982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10229,6 +10230,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - "I\u2019m so tired\u2026how many times must I be cut down\u2026no more\u2026"
+  dialogueManager: {fileID: 1004962944}
 --- !u!114 &491474923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12245,6 +12247,7 @@ MonoBehaviour:
     sentences:
     - Foul Witch, what right have you to the Mount of the Sun? By the Power and Glory
       invested in m-
+  dialogueManager: {fileID: 1519600355}
 --- !u!114 &579140970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12875,6 +12878,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - "Help me\u2026 Why won\u2019t somebody help me!"
+  dialogueManager: {fileID: 527205731}
 --- !u!114 &593326591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14797,6 +14801,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - The Shadows! They come!
+  dialogueManager: {fileID: 241689827}
 --- !u!114 &683558766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14989,6 +14994,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - "Ah nightfall, old friend\u2026 Will I ever outstep you?"
+  dialogueManager: {fileID: 2081121511}
 --- !u!114 &693627176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16897,6 +16903,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - Beware of the Witch-Knight. She is resolute and ill likes outsiders.
+  dialogueManager: {fileID: 626901455}
 --- !u!114 &815376081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19163,6 +19170,7 @@ MonoBehaviour:
     - If you already feel the shadowed claws of hopelessness sinking into you,
     - then lay down your sword, and die before me.
     - It will be easier that way.
+  dialogueManager: {fileID: 137526506}
 --- !u!114 &925899393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21345,6 +21353,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - Is this truly as far as I go?
+  dialogueManager: {fileID: 1516938993}
 --- !u!114 &1015006134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22207,6 +22216,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - Death ahead.
+  dialogueManager: {fileID: 1653216894}
 --- !u!114 &1046638050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23057,6 +23067,7 @@ MonoBehaviour:
     sentences:
     - "I feel as though I wish to do something on behalf of the sun itself, in my
       final moments. Exalt it? No\u2026 Praise, perhaps?"
+  dialogueManager: {fileID: 1294148187}
 --- !u!114 &1085208279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23532,6 +23543,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - Warrior ahead.
+  dialogueManager: {fileID: 681202340}
 --- !u!114 &1138350018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26208,6 +26220,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - No Summit awaits you, only shadow and steel. Give up.
+  dialogueManager: {fileID: 480428253}
 --- !u!114 &1267605201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31668,6 +31681,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - "I can\u2019t believe I made it this far, only to be stopped here!"
+  dialogueManager: {fileID: 979911150}
 --- !u!114 &1543164409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39161,6 +39175,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - Try hitting.
+  dialogueManager: {fileID: 608233333}
 --- !u!114 &1926033137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41780,6 +41795,7 @@ MonoBehaviour:
     name: Final Message
     sentences:
     - "I can climb no further\u2026"
+  dialogueManager: {fileID: 1035722050}
 --- !u!114 &2063768712
 MonoBehaviour:
   m_ObjectHideFlags: 0

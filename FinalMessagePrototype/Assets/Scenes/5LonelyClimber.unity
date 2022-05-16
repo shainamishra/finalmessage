@@ -295,6 +295,7 @@ MonoBehaviour:
     - What a queer thing to do. You're a strange one, oh Knightly Climber of the
       Mount, to bestow such honors on the resting places of wretches.
     - 
+  dialogueManager: {fileID: 397001190}
 --- !u!114 &96678295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +704,7 @@ MonoBehaviour:
     - I wonder if all the newcomers have as little respect as you. That old Seeker
       seems to think so.
     - 
+  dialogueManager: {fileID: 397001190}
 --- !u!114 &294822313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,6 +1170,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5868103561980109684, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.75634766
+      objectReference: {fileID: 0}
     - target: {fileID: 5868103561980109685, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1544,6 +1550,7 @@ MonoBehaviour:
     - I'd recommend you pick up the pace, actually. I image in a few cycles I'll
       have figured it all out and made it to the top, hah!
     - 
+  dialogueManager: {fileID: 397001190}
 --- !u!114 &897287334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,6 +2680,7 @@ MonoBehaviour:
     sentences:
     - You again! How fares your climb? Not as well as mine I trust. Hah!
     - ' '
+  dialogueManager: {fileID: 397001190}
 --- !u!114 &1505797637
 MonoBehaviour:
   m_ObjectHideFlags: 0

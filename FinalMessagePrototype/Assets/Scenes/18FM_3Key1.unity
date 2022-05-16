@@ -3646,6 +3646,7 @@ MonoBehaviour:
     - Perhaps when the curse of the mountain is lifted, if it is ever lifted,
     - we will all be able to bask underneath the incandescent sun together.
     - "What a beautiful sight it would be\u2026 but never as beautiful as you.\u201D"
+  dialogueManager: {fileID: 564763451}
 --- !u!114 &1322060192
 MonoBehaviour:
   m_ObjectHideFlags: 0
