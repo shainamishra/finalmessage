@@ -2362,7 +2362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.46
+      value: -7.238
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7975,7 +7975,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shadow: {fileID: 963782717}
   shadowidle: {fileID: 963782718}
+  cameraMovement: {fileID: 0}
   skpos: {fileID: 963782720}
+  knight: {fileID: 0}
 --- !u!114 &1930143245
 MonoBehaviour:
   m_ObjectHideFlags: 0

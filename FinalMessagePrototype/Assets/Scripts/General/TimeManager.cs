@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 300;
+    public static float startingTime = 10;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -45,7 +45,7 @@ public class TimeManager : MonoBehaviour
       // DontDestroyOnLoad(this.gameObject);
       
         theText = GetComponent<Text>();
-        knight = GameObject.Find("PlayerPrefab");
+        knight = GameObject.Find("Player");
         cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
         TimesUp = false;
 
@@ -55,7 +55,7 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        knight = GameObject.Find("PlayerPrefab");
+        knight = GameObject.Find("Player");
         cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
 
         startingTime -= Time.deltaTime;
@@ -87,7 +87,7 @@ public class TimeManager : MonoBehaviour
 
             shadow.SetActive(true);
             
-            if(skpos.position.x>knight.transform.position.x+5){
+            if(skpos.position.x>knight.transform.position.x+3){
 
                 StartCoroutine(waiter());
                 
@@ -119,7 +119,10 @@ public class TimeManager : MonoBehaviour
         
         if(skpos.position.x>knight.transform.position.x+20){
           // Vector3 path1 = Vector3.MoveTowards(new Vector3(-20f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
-          skpos.Translate(new Vector3(-10,0,0));
+          skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
+          Debug.Log("meet y");
+          skpos.Translate(new Vector3(-knight.transform.position.x-5,0,0));
+          Debug.Log("meet x");
         }
         else{
           shadowidle.SetTrigger("Start");
