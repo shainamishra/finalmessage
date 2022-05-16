@@ -54,25 +54,20 @@ public class LevelLoader : MonoBehaviour
         if(TimeManager.TimesUp == true){
             disableMovement();
         }
-        //checkPrev();
-
+        
         if (Key1 == 1 && Key2 == 1 && Key3 == 1 && Key4 == 1) 
         {
-            //LoadNextLevel();
+            //
         }
 
-        // build index starts at ZERO while our scene names start at ONE!!!!
         // quit the game
         if (Input.GetKey(KeyCode.Escape)) {
-            //Debug.Log("help");
             Application.Quit();
         }
 
         // Menu
         if (SceneManager.GetActiveScene().buildIndex == 0){
-            // level ending conditions
             levels[0] = 1;
-            //LoadNextLevel();
         }
 
         // CutScene
@@ -105,7 +100,7 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
-                //checkPrev();
+                checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -124,7 +119,7 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
-                //checkPrev();
+                checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -517,9 +512,10 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 21)
         {
             levels[21] = 1;
-            if (player.transform.position.x > 48 && Input.GetKeyDown("x"))
+            if (player.transform.position.x > 35 && Input.GetKeyDown("x"))
             {
-                // end of game
+                levelVar = 3;
+                LoadNextLevel();
             }
             // move back
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
@@ -643,15 +639,10 @@ public class LevelLoader : MonoBehaviour
             Prev = true;
         }
     }
-    public void disableMovement(){
+
+    public void disableMovement()
+    {
         playerMovement.moveSpeed = 0;
         dogMovement.moveSpeed = 0;
-   
-
-
-        
-        
-    
-           
     }
 }

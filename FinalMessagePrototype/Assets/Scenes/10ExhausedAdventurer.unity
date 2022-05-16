@@ -1602,8 +1602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.5, y: -439.5}
-  m_SizeDelta: {x: 544.53, y: 57.3226}
+  m_AnchoredPosition: {x: -14.5186, y: -439.5}
+  m_SizeDelta: {x: 519.4929, y: 57.3226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247490094
 MonoBehaviour:
@@ -1816,7 +1816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.5935, y: 0}
+  m_AnchoredPosition: {x: -1.2000008, y: 0}
   m_SizeDelta: {x: -7.1869, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390313656
@@ -1846,13 +1846,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '  Speak'
+  m_Text: ' Speak'
 --- !u!222 &1390313657
 CanvasRenderer:
   m_ObjectHideFlags: 0

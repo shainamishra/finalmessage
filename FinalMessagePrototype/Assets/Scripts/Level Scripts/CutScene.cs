@@ -12,4 +12,14 @@ public class CutScene : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(26);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

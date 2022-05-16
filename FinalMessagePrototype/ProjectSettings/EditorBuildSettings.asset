@@ -78,10 +78,13 @@ EditorBuildSettings:
     path: Assets/Scenes/11a_Bad.unity
     guid: c50548a371bbd6048be234a7f1b84fa2
   - enabled: 1
-    path: Assets/Scenes/24CutScene.unity
+    path: Assets/Scenes/24Intro.unity
     guid: 6f71755d94ca24a239bf2d8abd45e544
   - enabled: 1
-    path: Assets/Scenes/25Credits.unity
+    path: Assets/Scenes/25Outro.unity
+    guid: e4da6395516974f5f9b252211b27b127
+  - enabled: 1
+    path: Assets/Scenes/26Credits.unity
     guid: baf80cc4e37ff46adb2c3e0fb0addd3c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 23b05b274057d0c46b88d39774aa18b6, type: 2}
