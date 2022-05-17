@@ -403,9 +403,9 @@ GameObject:
   - component: {fileID: 131328413}
   - component: {fileID: 131328412}
   - component: {fileID: 131328411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (1)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,9 +1234,9 @@ GameObject:
   - component: {fileID: 468144337}
   - component: {fileID: 468144336}
   - component: {fileID: 468144335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (2)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
