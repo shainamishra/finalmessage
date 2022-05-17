@@ -749,6 +749,7 @@ MonoBehaviour:
       of the Summit.
     - I ask you, why do you climb this Mount?
     - 
+  dialogueManager: {fileID: 0}
 --- !u!1 &331551630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2158,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 161633578629541076, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: PlayEvent
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 161633578629541076, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: StopEvent
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1113816838770911607, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
       propertyPath: m_RootOrder
       value: 19

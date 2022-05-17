@@ -2846,6 +2846,26 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c28d2d485fa92154e8d1099454dedc77, type: 2}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: BoulderAudio.Path
+      value: event:/Environment & Ambience/BoulderPushPull
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: BoulderAudio.Guid.Data1
+      value: 227962681
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: BoulderAudio.Guid.Data2
+      value: 1125955365
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: BoulderAudio.Guid.Data3
+      value: 846523021
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: BoulderAudio.Guid.Data4
+      value: 1815852522
+      objectReference: {fileID: 0}
     - target: {fileID: 1113816838770911607, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
       propertyPath: m_RootOrder
       value: 16

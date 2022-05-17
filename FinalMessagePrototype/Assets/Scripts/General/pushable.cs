@@ -8,9 +8,10 @@ public class pushable : MonoBehaviour
     public LayerMask boxMask;
     public GameObject player;
     public GameObject reach;
-
     GameObject box;
 
+
+    
     // Start is called before the first frame update
     void Start()
     {

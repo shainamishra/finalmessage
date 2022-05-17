@@ -150,3 +150,10 @@ MonoBehaviour:
     m_Bits: 0
   player: {fileID: 0}
   reach: {fileID: 0}
+  BoulderAudio:
+    Guid:
+      Data1: 227962681
+      Data2: 1125955365
+      Data3: 846523021
+      Data4: 1815852522
+    Path: event:/Environment & Ambience/BoulderPushPull

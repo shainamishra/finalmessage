@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6347981530451927433}
   - component: {fileID: 9079517532113669561}
   - component: {fileID: -8727871871392637871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AscentFloor
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Snow'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

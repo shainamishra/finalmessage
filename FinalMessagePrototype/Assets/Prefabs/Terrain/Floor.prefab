@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6339669118947359239}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8628398480171128375}
   - component: {fileID: 8012545655803138407}
   - component: {fileID: 4665299961609414769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ForegroundAsset
   m_TagString: Untagged
   m_Icon: {fileID: 0}

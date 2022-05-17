@@ -11,6 +11,10 @@ TagManager:
   - CanClimb
   - Floor
   - Dog
+  - 'Terrain: Snow'
+  - 'Terrain: Grass'
+  - 'Terrain: Cave'
+  - 'Terrain: Stone'
   layers:
   - Default
   - TransparentFX
@@ -18,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Terrain
   - 
   - 
   - 

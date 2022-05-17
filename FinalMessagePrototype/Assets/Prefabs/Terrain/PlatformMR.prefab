@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3356548971179594421}
   - component: {fileID: 5475425386383813855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,9 +91,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8447376248839487702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformMR
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
