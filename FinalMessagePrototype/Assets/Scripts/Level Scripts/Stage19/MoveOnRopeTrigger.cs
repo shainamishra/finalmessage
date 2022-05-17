@@ -6,7 +6,7 @@ public class MoveOnRopeTrigger : MonoBehaviour
 {
     // Accept relevant targets from Unity editor
     public GameObject rope;
-    public float speed = 15f;
+    public float speed = 5f;
     public float target_elevation;
 
     RopeCut ropeCut;
