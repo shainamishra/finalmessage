@@ -5267,7 +5267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
+  attenuationObject: {fileID: 2137321151}
   ListenerNumber: -1
 --- !u!20 &1760674516
 Camera:
@@ -7084,6 +7084,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069124417}
   m_CullTransparentMesh: 1
+--- !u!1 &2137321151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 1945300919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2144474589
 GameObject:
   m_ObjectHideFlags: 0

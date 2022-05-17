@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5504720739089461138}
   - component: {fileID: 5148869021734905732}
   - component: {fileID: 4446285007609019694}
+  - component: {fileID: 2557811412844089963}
   m_Layer: 0
   m_Name: Crow
   m_TagString: Untagged
@@ -114,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dog_on: {fileID: 0}
+  status: 0
 --- !u!95 &4446285007609019694
 Animator:
   serializedVersion: 3
@@ -133,3 +135,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2557811412844089963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651622134565669000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: -182154847
+      Data2: 1209756828
+      Data3: 788719786
+      Data4: -1793420223
+    Path: event:/Environment & Ambience/Crow-Caw
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
