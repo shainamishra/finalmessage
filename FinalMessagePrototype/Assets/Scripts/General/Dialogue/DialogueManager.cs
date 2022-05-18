@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class DialogueManager : MonoBehaviour 
 {
 
 	public Text nameText;
 	public Text dialogueText;
+	public GameObject audioTrigger;
 
 	//public Animator animator;
 
@@ -53,6 +55,7 @@ public class DialogueManager : MonoBehaviour
 		foreach (char letter in sentence.ToCharArray())
 		{
 			dialogueText.text += letter;
+			audioTrigger.gameObject.GetComponent<DialogueAudioTrigger>().playMumbles("event:/UI/DialougeTrill");
 			yield return null;
 		}
 	}

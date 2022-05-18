@@ -10,6 +10,12 @@ public class AudioTrigger : MonoBehaviour
     public bool PlayOnAwake;
     public bool PlayOnDestroy;
 
+    public void PlayEvent(string path) {
+        FMOD.Studio.EventInstance audioEvent = RuntimeManager.CreateInstance(path);
+        audioEvent.start();
+        audioEvent.release();
+    }
+    
     public void PlayOneShot() {
         RuntimeManager.PlayOneShot(Event);
     }

@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour {
 
 	public void TriggerDialogue ()
 	{
-		 dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(dialogue);
+		dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(dialogue);
 	}
 
 }

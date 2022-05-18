@@ -17,7 +17,7 @@ public class LevelLoader : MonoBehaviour
     GameObject stageExit;
     ExitTransitionTrigger exitTransition;
 
-    public EventReference transitionAudio;
+    //public EventReference transitionAudio;
 
     public static bool Prev;
 
