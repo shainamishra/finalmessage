@@ -4,6 +4,8 @@ using UnityEngine;
 
 // This is the script for phasing through platforms when using ladders
 
+// if there's time, change if GetKey() to if Player.isClimbing?
+
 public class ClimbingtoPlatform : MonoBehaviour
 {
     public Collider2D platform;

@@ -73,6 +73,9 @@ public class playerMovement : MonoBehaviour
             }   
         }
 
+        // Pet the Dog
+        pet();
+
         // Left Click (0) to strike and Right Click (1) to grab objects
         if (playeron.activeSelf == true)
         {
@@ -105,6 +108,15 @@ public class playerMovement : MonoBehaviour
             move();
 
         }
+    }
+
+    void pet()
+    {
+        if (Input.GetKey("p"))
+        {
+            animator.SetTrigger("Pet");
+        }
+        
     }
 
     void Act()

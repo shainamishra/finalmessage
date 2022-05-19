@@ -46,6 +46,9 @@ public class dogMovement : MonoBehaviour
             }
         }
 
+        // Get Pet
+        pet();
+
         if (Input.GetKey("w") || Input.GetKey("s"))
         {
             // stay put
@@ -68,6 +71,15 @@ public class dogMovement : MonoBehaviour
             // Move
             move();
         }
+    }
+
+    void pet()
+    {
+        if (Input.GetKey("p"))
+        {
+            animator.SetTrigger("Pet");
+        }
+
     }
 
     private void switchSFX() 
