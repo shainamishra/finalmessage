@@ -3040,6 +3040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1110853280}
   dialogueText: {fileID: 1997983464}
+  audioTrigger: {fileID: 0}
 --- !u!4 &1370415537
 Transform:
   m_ObjectHideFlags: 0
@@ -4096,6 +4097,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadderBamboo
       objectReference: {fileID: 0}
+    - target: {fileID: 1548402771310181757, guid: 642ed541a1fcacd4aaf868314a295511, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302652133842076001, guid: 642ed541a1fcacd4aaf868314a295511, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 3d36df24c84851049903c36bd8b19ca8, type: 2}
     - target: {fileID: 3230827818228131929, guid: 642ed541a1fcacd4aaf868314a295511, type: 3}
       propertyPath: m_RootOrder
       value: 14

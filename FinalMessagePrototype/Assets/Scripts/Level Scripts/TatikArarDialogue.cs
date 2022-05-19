@@ -213,7 +213,7 @@ public class TatikArarDialogue : MonoBehaviour
     // show the canvas
     void EnableOptions2() 
     {
-        // show options page 1
+        // show options page 3
         options = 2;
 
         // show the option buttons
