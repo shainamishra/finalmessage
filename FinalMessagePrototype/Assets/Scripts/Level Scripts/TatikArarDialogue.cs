@@ -36,6 +36,7 @@ public class TatikArarDialogue : MonoBehaviour
     // text stuff
     public GameObject NPCname; 
     public GameObject canvas; 
+    public GameObject text; 
     public GameObject finalText; 
 
     // int stuff
@@ -154,13 +155,87 @@ public class TatikArarDialogue : MonoBehaviour
     }
 
     // show the canvas
-    void EnableOptions() 
+    void EnableOptions0() 
     {
-        // show the option buttons
+        // show options page 1
+        options = 0;
+
+        // show the option buttons page 1
         option1.gameObject.SetActive(true);
         option2.gameObject.SetActive(true);
         option3.gameObject.SetActive(true);
         option4.gameObject.SetActive(true);
+
+        // hide the option buttons page 2
+        option5.gameObject.SetActive(false);
+        option6.gameObject.SetActive(false);
+        option7.gameObject.SetActive(false);
+        option8.gameObject.SetActive(false);
+
+        // hide the option buttons page 3
+        option9.gameObject.SetActive(false);
+        option10.gameObject.SetActive(false);
+        option11.gameObject.SetActive(false);
+
+        // show next and prev buttons
+        prev.gameObject.SetActive(false);
+        next.gameObject.SetActive(true);
+    }
+    
+    // show the canvas
+    void EnableOptions1() 
+    {
+        // show options page 2
+        options = 1;
+
+        // hide the option buttons page 1
+        option1.gameObject.SetActive(false);
+        option2.gameObject.SetActive(false);
+        option3.gameObject.SetActive(false);
+        option4.gameObject.SetActive(false);
+
+        // show the option buttons page 2
+        option5.gameObject.SetActive(true);
+        option6.gameObject.SetActive(true);
+        option7.gameObject.SetActive(true);
+        option8.gameObject.SetActive(true);
+
+        // hide the option buttons page 3
+        option9.gameObject.SetActive(false);
+        option10.gameObject.SetActive(false);
+        option11.gameObject.SetActive(false);
+
+        // show next and prev buttons
+        prev.gameObject.SetActive(true);
+        next.gameObject.SetActive(true);
+    }
+    
+    // show the canvas
+    void EnableOptions2() 
+    {
+        // show options page 1
+        options = 2;
+
+        // show the option buttons
+        option1.gameObject.SetActive(false);
+        option2.gameObject.SetActive(false);
+        option3.gameObject.SetActive(false);
+        option4.gameObject.SetActive(false);
+
+        // show the option buttons page 2
+        option5.gameObject.SetActive(false);
+        option6.gameObject.SetActive(false);
+        option7.gameObject.SetActive(false);
+        option8.gameObject.SetActive(false);
+
+        // show the option buttons page 3
+        option9.gameObject.SetActive(true);
+        option10.gameObject.SetActive(true);
+        option11.gameObject.SetActive(true);
+
+        // show next and prev buttons
+        prev.gameObject.SetActive(true);
+        next.gameObject.SetActive(false);
     }
 
     // show the canvas
@@ -171,6 +246,10 @@ public class TatikArarDialogue : MonoBehaviour
         option2.gameObject.SetActive(false);
         option3.gameObject.SetActive(false);
         option4.gameObject.SetActive(false);
+
+        // show next and prev buttons
+        prev.gameObject.SetActive(false);
+        next.gameObject.SetActive(false);
     }
     
     // when the start button is clicked
@@ -191,6 +270,12 @@ public class TatikArarDialogue : MonoBehaviour
         {
             //remove continue button
             cont.gameObject.SetActive(false);
+            EnableOptions0();
+        
+            //hide NPC name tag
+            NPCname.gameObject.SetActive(false);
+            text.gameObject.SetActive(false);
+            
         }
         else
         {
@@ -203,15 +288,17 @@ public class TatikArarDialogue : MonoBehaviour
     {
         if(options == 0)
         {
-            prev.gameObject.SetActive(false);
+            //prev.gameObject.SetActive(false);
         }
         else if (options == 1)
         {
-            prev.gameObject.SetActive(true);
+            //prev.gameObject.SetActive(true);
+            EnableOptions0();
         }
         else if (options == 2)
         {
-            prev.gameObject.SetActive(true);
+            //prev.gameObject.SetActive(true);
+            EnableOptions1();
         }
     }
         
@@ -220,17 +307,19 @@ public class TatikArarDialogue : MonoBehaviour
     {
         if(options == 0)
         {
-            next.gameObject.SetActive(true);
-
+            //next.gameObject.SetActive(true);
+            Debug.Log("hit");
+            EnableOptions1();
         }
         else if (options == 1)
         {
-            next.gameObject.SetActive(true);
+            //next.gameObject.SetActive(true);
+            EnableOptions2();
 
         }
         else if (options == 2)
         {
-            next.gameObject.SetActive(false);
+            //next.gameObject.SetActive(false);
         }
     }
 
