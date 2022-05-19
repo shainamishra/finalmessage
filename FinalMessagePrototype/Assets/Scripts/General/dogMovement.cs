@@ -70,6 +70,11 @@ public class dogMovement : MonoBehaviour
 
             // Move
             move();
+
+            if (Input.GetMouseButton(0) == true)
+            {
+                Act();
+            }
         }
     }
 
@@ -80,6 +85,14 @@ public class dogMovement : MonoBehaviour
             animator.SetTrigger("Pet");
         }
 
+    }
+
+    void Act()
+    {
+        if (TextTrigger.Speaking == false)
+        {
+            animator.SetTrigger("Bark");
+        }
     }
 
     private void switchSFX() 
