@@ -4,27 +4,24 @@ using UnityEngine;
 
 public class CrowFlyOff : MonoBehaviour
 {
-    public GameObject dog_on;
     public bool status;
 
-    bool bark_status;
-    bool overlap;
+    GameObject dog;
+    GameObject dog_on;
+    Collider2D dog_collider;
+    Collider2D this_collider;
     Vector3 pos;
     Vector3 scale;
-
-    void OnTriggerEnter2D(Collider2D collider){
-        overlap = true;
-    }
-
-    void OnTriggerExit2D(Collider2D collider){
-        overlap = false;
-    }
+    bool bark_status;
 
     // Start is called before the first frame update
     void Start()
     {
+        dog = GameObject.Find("DogPrefab").transform.GetChild(0).gameObject;
+        dog_on = dog.transform.GetChild(0).gameObject;
+        dog_collider = dog.GetComponent<Collider2D>();
+        this_collider = gameObject.GetComponent<Collider2D>();
         status = false;
-        overlap = false;
         bark_status = false;
         scale = transform.localScale;
         scale.x *= -1;
@@ -33,7 +30,7 @@ public class CrowFlyOff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((dog_on.activeSelf == true) && overlap && Input.GetKeyDown(KeyCode.Mouse0)){
+        if((dog_on.activeSelf == true) && this_collider.IsTouching(dog_collider) && Input.GetKeyDown(KeyCode.Mouse0)){
             bark_status = true;
             Debug.Log("Woof activated");
         }

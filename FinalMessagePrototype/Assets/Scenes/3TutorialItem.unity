@@ -5917,7 +5917,7 @@ PrefabInstance:
     - target: {fileID: 5148869021734905732, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
       propertyPath: dog_on
       value: 
-      objectReference: {fileID: 333358169}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
 --- !u!1 &1854619409
