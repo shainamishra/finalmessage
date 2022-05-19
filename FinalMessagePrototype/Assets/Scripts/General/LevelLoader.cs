@@ -491,7 +491,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[20] = 1;
             // back to six doors room (sadge)
-            GameObject door20 = GameObject.Find("StageExit");
+            GameObject door20 = GameObject.Find("GrandioseDoor");
             GrandioseDoorOpen exitTransition20 = door20.GetComponent<GrandioseDoorOpen>();
             if (exitTransition20.status)
             {
