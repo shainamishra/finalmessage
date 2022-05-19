@@ -288,16 +288,14 @@ public class TatikArarDialogue : MonoBehaviour
     {
         if(options == 0)
         {
-            //prev.gameObject.SetActive(false);
+            
         }
         else if (options == 1)
         {
-            //prev.gameObject.SetActive(true);
             EnableOptions0();
         }
         else if (options == 2)
         {
-            //prev.gameObject.SetActive(true);
             EnableOptions1();
         }
     }
@@ -307,19 +305,16 @@ public class TatikArarDialogue : MonoBehaviour
     {
         if(options == 0)
         {
-            //next.gameObject.SetActive(true);
-            Debug.Log("hit");
             EnableOptions1();
         }
         else if (options == 1)
         {
-            //next.gameObject.SetActive(true);
             EnableOptions2();
 
         }
         else if (options == 2)
         {
-            //next.gameObject.SetActive(false);
+            
         }
     }
 

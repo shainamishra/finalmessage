@@ -6500,6 +6500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 6963275727456374137, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: energy
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
 --- !u!1001 &1568130312
