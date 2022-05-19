@@ -637,6 +637,8 @@ MonoBehaviour:
   button: {fileID: 1768105613}
   speed: 5
   target_elevation: 1
+  second_button: 0
+  button_2: {fileID: 0}
 --- !u!1 &640879933
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,14 +727,14 @@ RectTransform:
   m_GameObject: {fileID: 743626987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 0.29163262, y: 0.2879872, z: 0.29163262}
   m_Children: []
   m_Father: {fileID: 784695764}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 290, y: 128.9}
+  m_AnchoredPosition: {x: -188, y: 237.3}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743626989
@@ -757,18 +759,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c5d5070d675a3401c9e85e5fef9a299c, type: 3}
-    m_FontSize: 15
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 150
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Swap characters with SPACE
+  m_Text: Switch characters with SPACE
 --- !u!222 &743626990
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1720,6 +1722,7 @@ MonoBehaviour:
   _xClamp:
   - 0
   - 1
+  _yClamp: []
 --- !u!1 &1266838265
 GameObject:
   m_ObjectHideFlags: 0
