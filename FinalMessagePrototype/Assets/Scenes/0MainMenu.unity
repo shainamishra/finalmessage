@@ -2159,18 +2159,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300606441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event:
+  CollisionTag: 
+  EventReference:
     Guid:
       Data1: -541501747
       Data2: 1104696402
       Data3: 1260350602
       Data4: 607716358
     Path: event:/Music/MainMenuMusic
-  PlayOnAwake: 1
-  PlayOnDestroy: 0
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1300606443
 Transform:
   m_ObjectHideFlags: 0

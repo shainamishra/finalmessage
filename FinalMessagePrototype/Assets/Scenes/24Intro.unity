@@ -1265,6 +1265,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Music/OpeningCutscene-Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1192006652
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1311917351
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 637344441
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 149947630
+      objectReference: {fileID: 0}
     - target: {fileID: 4056259159864216427, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
       propertyPath: m_Name
       value: Music Player
