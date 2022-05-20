@@ -686,6 +686,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &267847120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -934,9 +941,9 @@ GameObject:
   - component: {fileID: 323864002}
   - component: {fileID: 323864001}
   - component: {fileID: 323864000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor6
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Cave'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1377,9 +1384,9 @@ GameObject:
   - component: {fileID: 618167313}
   - component: {fileID: 618167312}
   - component: {fileID: 618167311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor5
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Cave'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2126,6 +2133,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &922113842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,9 +2233,9 @@ GameObject:
   - component: {fileID: 930271618}
   - component: {fileID: 930271617}
   - component: {fileID: 930271616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor1
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Cave'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2490,6 +2504,14 @@ PrefabInstance:
     - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
       propertyPath: m_Name
       value: LowerElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
@@ -2912,9 +2934,9 @@ GameObject:
   - component: {fileID: 1214408690}
   - component: {fileID: 1214408689}
   - component: {fileID: 1214408688}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor4
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Cave'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3117,9 +3139,9 @@ GameObject:
   - component: {fileID: 1403911201}
   - component: {fileID: 1403911200}
   - component: {fileID: 1403911199}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor2
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Cave'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3465,6 +3487,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1602107683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2536786408706460654, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
@@ -4251,9 +4280,9 @@ GameObject:
   - component: {fileID: 1928290144}
   - component: {fileID: 1928290143}
   - component: {fileID: 1928290142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor3
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Cave'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4539,6 +4568,14 @@ PrefabInstance:
     - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
       propertyPath: m_Name
       value: UpperElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}

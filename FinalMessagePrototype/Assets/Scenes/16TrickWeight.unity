@@ -250,9 +250,9 @@ GameObject:
   - component: {fileID: 198721560}
   - component: {fileID: 198721559}
   - component: {fileID: 198721558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LPlatform
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,9 +616,9 @@ GameObject:
   - component: {fileID: 675253660}
   - component: {fileID: 675253659}
   - component: {fileID: 675253658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform2
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -945,9 +945,9 @@ GameObject:
   - component: {fileID: 854921172}
   - component: {fileID: 854921171}
   - component: {fileID: 854921170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1184,9 +1184,9 @@ GameObject:
   - component: {fileID: 927637510}
   - component: {fileID: 927637509}
   - component: {fileID: 927637508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (1)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1294,9 +1294,9 @@ GameObject:
   - component: {fileID: 1059111098}
   - component: {fileID: 1059111101}
   - component: {fileID: 1059111100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2613,9 +2613,9 @@ GameObject:
   - component: {fileID: 2033556336}
   - component: {fileID: 2033556335}
   - component: {fileID: 2033556334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RPlatform
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

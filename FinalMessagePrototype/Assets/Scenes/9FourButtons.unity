@@ -2621,9 +2621,9 @@ GameObject:
   - component: {fileID: 2129451331}
   - component: {fileID: 2129451330}
   - component: {fileID: 2129451329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

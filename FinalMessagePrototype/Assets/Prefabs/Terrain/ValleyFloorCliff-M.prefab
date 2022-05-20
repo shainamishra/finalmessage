@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1401046457276968489}
   m_Layer: 6
   m_Name: ValleyFloorCliff-M
-  m_TagString: 'Terrain: Snow'
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

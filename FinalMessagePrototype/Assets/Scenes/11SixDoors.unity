@@ -195,9 +195,9 @@ GameObject:
   - component: {fileID: 115540710}
   - component: {fileID: 115540709}
   - component: {fileID: 115540708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (6)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 325325091}
   - component: {fileID: 325325093}
   - component: {fileID: 325325092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor2
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 532846123}
   - component: {fileID: 532846125}
   - component: {fileID: 532846124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor3
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -911,9 +911,9 @@ GameObject:
   - component: {fileID: 585515500}
   - component: {fileID: 585515499}
   - component: {fileID: 585515498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (5)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1686,9 +1686,9 @@ GameObject:
   - component: {fileID: 1452241080}
   - component: {fileID: 1452241079}
   - component: {fileID: 1452241078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor1
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2067,9 +2067,9 @@ GameObject:
   - component: {fileID: 1547487322}
   - component: {fileID: 1547487321}
   - component: {fileID: 1547487320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (2)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2401,6 +2401,10 @@ PrefabInstance:
     - target: {fileID: 7503050955936963531, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
       propertyPath: m_Name
       value: HigherSlopesCliff-M
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503050955936963531, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Grass'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
@@ -2939,9 +2943,9 @@ GameObject:
   - component: {fileID: 2131030456}
   - component: {fileID: 2131030455}
   - component: {fileID: 2131030454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (3)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3048,9 +3052,9 @@ GameObject:
   - component: {fileID: 2138932535}
   - component: {fileID: 2138932534}
   - component: {fileID: 2138932533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (4)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

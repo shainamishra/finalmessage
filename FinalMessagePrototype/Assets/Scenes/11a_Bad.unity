@@ -332,9 +332,9 @@ GameObject:
   - component: {fileID: 233685983}
   - component: {fileID: 233685982}
   - component: {fileID: 233685981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (4)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1693,9 +1693,9 @@ GameObject:
   - component: {fileID: 1895797303}
   - component: {fileID: 1895797302}
   - component: {fileID: 1895797301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (2)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1939,9 +1939,9 @@ GameObject:
   - component: {fileID: 2049642078}
   - component: {fileID: 2049642077}
   - component: {fileID: 2049642076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (3)
-  m_TagString: Player
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -495,9 +495,9 @@ GameObject:
   - component: {fileID: 737719134}
   - component: {fileID: 737719133}
   - component: {fileID: 737719132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

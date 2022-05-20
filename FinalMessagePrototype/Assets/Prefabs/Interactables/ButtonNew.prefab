@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1777027817
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3754258981560797907, guid: e5f92fd2b3a2b1c42adb5e688550c974, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -124,3 +124,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rock_in_scene: 0
   status: 0
+  buttonDown:
+    Guid:
+      Data1: -807389467
+      Data2: 1207946385
+      Data3: -396595563
+      Data4: 1067773877
+    Path: event:/Environment & Ambience/ButtonPress
+  buttonUp:
+    Guid:
+      Data1: -33990288
+      Data2: 1232402197
+      Data3: -731095664
+      Data4: 3834942
+    Path: event:/Environment & Ambience/ButtonRelease

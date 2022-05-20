@@ -2053,9 +2053,9 @@ GameObject:
   - component: {fileID: 972150918}
   - component: {fileID: 972150917}
   - component: {fileID: 972150916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
-  m_TagString: Player
+  m_TagString: 'Terrain: Snow'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2535,9 +2535,9 @@ GameObject:
   - component: {fileID: 1189550940}
   - component: {fileID: 1189550939}
   - component: {fileID: 1189550938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -450,9 +450,9 @@ GameObject:
   - component: {fileID: 122325749}
   - component: {fileID: 122325748}
   - component: {fileID: 122325747}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ButtonElevatorLeft
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -584,7 +584,7 @@ Transform:
   m_LocalScale: {x: 0.68011135, y: 3.57, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &275770355
 GameObject:
@@ -650,7 +650,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346677464
 GameObject:
@@ -783,7 +783,7 @@ Transform:
   - {fileID: 1929263875}
   - {fileID: 44279847}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &386589089
 GameObject:
@@ -1004,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HigherSlopesCliff-M (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7503050955936963531, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Grass'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
 --- !u!1001 &537149899
@@ -1167,9 +1171,9 @@ GameObject:
   - component: {fileID: 585893530}
   - component: {fileID: 585893529}
   - component: {fileID: 585893528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ButtonElevatorRight
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1301,7 +1305,7 @@ Transform:
   m_LocalScale: {x: 0.68011135, y: 3.57, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &600212888
 GameObject:
@@ -1478,9 +1482,9 @@ GameObject:
   - component: {fileID: 664735743}
   - component: {fileID: 664735742}
   - component: {fileID: 664735741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftPlatform
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1587,9 +1591,9 @@ GameObject:
   - component: {fileID: 729769967}
   - component: {fileID: 729769966}
   - component: {fileID: 729769965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpperPlatform
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1940,7 +1944,7 @@ Transform:
   - {fileID: 1851751547}
   - {fileID: 1646287266}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &949581129
 MonoBehaviour:
@@ -3325,6 +3329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HigherSlopesCliff-M
       objectReference: {fileID: 0}
+    - target: {fileID: 7503050955936963531, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Grass'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
 --- !u!1 &1710633206
@@ -3504,9 +3512,9 @@ GameObject:
   - component: {fileID: 1784704680}
   - component: {fileID: 1784704679}
   - component: {fileID: 1784704678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RopeElevator
-  m_TagString: Player
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4095,9 +4103,9 @@ GameObject:
   - component: {fileID: 2010032905}
   - component: {fileID: 2010032904}
   - component: {fileID: 2010032903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightPlatform
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

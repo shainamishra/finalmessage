@@ -393,9 +393,9 @@ GameObject:
   m_Component:
   - component: {fileID: 43307801}
   - component: {fileID: 43307800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Foreground 1
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Snow'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,9 +475,9 @@ GameObject:
   m_Component:
   - component: {fileID: 47589378}
   - component: {fileID: 47589377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Foreground 3 - Cliff
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Snow'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4012,9 +4012,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2116100148}
   - component: {fileID: 2116100147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Foreground 2
-  m_TagString: Untagged
+  m_TagString: 'Terrain: Snow'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
