@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
-  key_required: 0
+  key_required: 1
 --- !u!1 &26915417
 GameObject:
   m_ObjectHideFlags: 0
