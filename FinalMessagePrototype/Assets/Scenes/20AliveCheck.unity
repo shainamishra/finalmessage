@@ -338,6 +338,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+      propertyPath: StopEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056259159864216426, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
       propertyPath: EventReference.Path
       value: event:/Music/Summit
       objectReference: {fileID: 0}

@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class ChimeActivate : MonoBehaviour
 {
     bool overlap;
     public bool status;
+
+    public EventReference chimeAudio;
+
+    public void playChime() {
+        RuntimeManager.PlayOneShot(chimeAudio);
+    }
 
     void OnTriggerEnter2D(Collider2D collider){
         overlap = true;
@@ -38,6 +45,8 @@ public class ChimeActivate : MonoBehaviour
                 }
             //}
             //Debug.Log("Ding..." + status);
+            playChime();
+
         }
     }
 }

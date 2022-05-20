@@ -251,6 +251,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 164051252
+      Data2: 1134386536
+      Data3: 1863254703
+      Data4: 1158533738
+    Path: event:/Environment & Ambience/ChimeBells-E
 --- !u!61 &60230611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3130,6 +3137,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 164051252
+      Data2: 1134386536
+      Data3: 1863254703
+      Data4: 1158533738
+    Path: event:/Environment & Ambience/ChimeBells-E
 --- !u!61 &1214373044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3310,6 +3324,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: -1972815368
+      Data2: 1293959518
+      Data3: -1353071464
+      Data4: -1083049821
+    Path: event:/Environment & Ambience/ChimeBells-A
 --- !u!61 &1258547400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3401,6 +3422,7 @@ GameObject:
   - component: {fileID: 1261237044}
   - component: {fileID: 1261237043}
   - component: {fileID: 1261237042}
+  - component: {fileID: 1261237048}
   m_Layer: 0
   m_Name: EmberHeart
   m_TagString: Untagged
@@ -3544,6 +3566,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1261237048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261237041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -536301823
+      Data2: 1205742474
+      Data3: 1641270200
+      Data4: -1948076511
+    Path: event:/UI/Item-PickUp
+  Event: 
+  PlayEvent: 12
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1324500331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3654,7 +3706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 700929097}
   dialogueText: {fileID: 2136347777}
-  audioTrigger: {fileID: 0}
+  audioTrigger: {fileID: 1894846241}
 --- !u!4 &1349267552
 Transform:
   m_ObjectHideFlags: 0
@@ -3760,6 +3812,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 79586787
+      Data2: 1188282384
+      Data3: 1486507440
+      Data4: -901951980
+    Path: event:/Environment & Ambience/ChimeBells-D
 --- !u!61 &1400046262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4440,6 +4499,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: -1972815368
+      Data2: 1293959518
+      Data3: -1353071464
+      Data4: -1083049821
+    Path: event:/Environment & Ambience/ChimeBells-A
 --- !u!61 &1534196384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5108,6 +5174,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821976152}
   m_CullTransparentMesh: 1
+--- !u!1001 &1894846240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.2334085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.030575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.9607515
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556312, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679726819140556318, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: m_Name
+      value: DialogueAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963275727456374137, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+      propertyPath: isFM
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+--- !u!1 &1894846241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5679726819140556318, guid: 9cd68b28afe8c4c04aa73cb7e0f1d348, type: 3}
+  m_PrefabInstance: {fileID: 1894846240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1939325518
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,6 +5726,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  chimeAudio:
+    Guid:
+      Data1: 79586787
+      Data2: 1188282384
+      Data3: 1486507440
+      Data4: -901951980
+    Path: event:/Environment & Ambience/ChimeBells-D
 --- !u!61 &2049904181
 BoxCollider2D:
   m_ObjectHideFlags: 0

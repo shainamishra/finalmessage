@@ -123,3 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  transitionAudio:
+    Guid:
+      Data1: 345546735
+      Data2: 1197736667
+      Data3: -1008379472
+      Data4: -1979097216
+    Path: event:/PlayerAudio/SceneTransition
