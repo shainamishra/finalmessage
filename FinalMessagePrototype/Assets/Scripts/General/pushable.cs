@@ -9,8 +9,6 @@ public class pushable : MonoBehaviour
     public GameObject player;
     public GameObject reach;
     GameObject box;
-
-
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +26,7 @@ public class pushable : MonoBehaviour
         if (Input.GetMouseButton(1) == false)
         {
             transform.parent = null;
+
         }
     }
 
