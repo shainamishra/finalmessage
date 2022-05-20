@@ -52,13 +52,16 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Foregrounds
+    uniqueID: 3599211061
+    locked: 0
   - name: Elements
     uniqueID: 2517939479
     locked: 0
   - name: Player
     uniqueID: 1104943215
     locked: 0
-  - name: Foreground
+  - name: ElementsInFrontOfPlayer
     uniqueID: 3576119815
     locked: 0
   - name: LevelLoader
