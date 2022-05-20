@@ -4,44 +4,56 @@ using UnityEngine;
 
 public class AltarActivate : MonoBehaviour
 {
-    //public GameObject dog;
-    public GameObject dog_on;
-    public GameObject player_on;
-    public bool bark_status;
-    public bool ember_heart_status;
-    bool overlap;
+    public bool status;
+    public bool key_required = true;
 
-    void OnTriggerEnter2D(Collider2D collider){
-        overlap = true;
-    }
+    GameObject player;
+    GameObject player_on;
+    Collider2D player_collider;
+    Collider2D altar_collider;
 
-    void OnTriggerExit2D(Collider2D collider){
-        overlap = false;
-    }
+    CrowFlyOff crowFlyOff;
+    bool bark_status;
+
+    GameObject ember_heart;
+    bool is_on;
 
     // Start is called before the first frame update
     void Start()
     {
-        //dog = GameObject.Find("Dog");
-        overlap = false;
+        status = false;
+
+        player = GameObject.Find("Player");
+        player_on = player.transform.GetChild(0).gameObject;
+        player_collider = player.GetComponent<Collider2D>();
+        altar_collider = gameObject.GetComponent<Collider2D>();
+
+        crowFlyOff = GameObject.Find("Crow").GetComponent<CrowFlyOff>();
         bark_status = false;
-        ember_heart_status = false;
+
+        ember_heart = gameObject.transform.GetChild(0).gameObject;
+        is_on = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if((dog_on.activeSelf == true) && overlap && Input.GetKeyDown(KeyCode.Mouse0)){
-            bark_status = true;
-            Debug.Log("Woof activated: " + bark_status);
-        }
+        bark_status = crowFlyOff.status;
 
-        // if the player has the ember heart
-        //if (LevelLoader.Key3 == 1) {
-            if (bark_status && (player_on.activeSelf == true) && overlap && Input.GetKeyDown(KeyCode.E)) {
-                ember_heart_status = true;
-                Debug.Log("Ember Heart on pedestal: " + ember_heart_status);
-            }
-        //}
+        // If you want the key to be required (this is on by default), the the requirements are
+        // the crow has been scared of, the knight is currently being controlled, they are in range, they press E, and they have the Ember Heart in their inventory GAAAAAASSSSP...
+        // ... otherwise, just the first four of those things (left available for testing purposes)
+        if(key_required){
+            is_on = bark_status && (player_on.activeSelf == true) && player_collider.IsTouching(altar_collider) && Input.GetKeyDown(KeyCode.E) && (LevelLoader.Key3 == 1);
+        }
+        else{
+            is_on = bark_status && (player_on.activeSelf == true) && player_collider.IsTouching(altar_collider) && Input.GetKeyDown(KeyCode.E);
+        }
+        
+        if(is_on){
+            status = true;
+            ember_heart.SetActive(true);
+            //Debug.Log("Ember Heart on pedestal: " + status);
+        }
     }
 }

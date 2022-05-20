@@ -23,7 +23,7 @@ public class MoveOnAltarTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        is_on = altarActivate.bark_status && altarActivate.ember_heart_status;
+        is_on = altarActivate.status;
         pos = transform.position;
         if(is_on){
             if(pos.y < target_elevation){
