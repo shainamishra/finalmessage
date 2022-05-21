@@ -111,6 +111,7 @@ public class TimeManager : MonoBehaviour
 
         } 
         Awake();
+        slowdown();
 
     }
 
@@ -172,6 +173,33 @@ public class TimeManager : MonoBehaviour
     public void ResumeGame ()
     {
         Time.timeScale = 1;
+    }
+
+    public void slowdown(){
+      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("7FM4_Key3")) 
+         {
+             Time.timeScale = 0.5f;
+         }
+      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("8FM2")) 
+         {
+             Time.timeScale = 0.5f;
+         }
+      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("12FM5_Seeker")) 
+         {
+             Time.timeScale = 0.5f;
+         }
+      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("13FM1_Key2")) 
+         {
+             Time.timeScale = 0.5f;
+         }
+      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("17Garveyard")) 
+         {
+             Time.timeScale = 0.5f;
+         }
+      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("18FM_3Key1")) 
+         {
+             Time.timeScale = 0.5f;
+         }
     }
 
     public IEnumerator waiter()
