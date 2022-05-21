@@ -8,16 +8,21 @@ using UnityEngine;
 public class RopeCut : MonoBehaviour
 {
     public bool requires_key = false;
+    public bool crow_can_cut = false;
     public bool status;
 
     bool is_on;
     bool condition;
+    GameObject crow;
 
     // Start is called before the first frame update
     void Start()
     {
         status = false;
         is_on = false;
+        if(crow_can_cut){
+            crow = GameObject.Find("Crow");
+        }
     }
 
     // Update is called once per frame
@@ -36,6 +41,13 @@ public class RopeCut : MonoBehaviour
         if(condition){
             Destroy(gameObject, 0.15f);
             status = true;
+        }
+        else if(crow_can_cut){
+            float x_difference = gameObject.transform.position.x - crow.transform.position.x;
+            if((x_difference < 0.1) && (x_difference > -0.1)){
+                Destroy(gameObject, 0.15f);
+                status = true;
+            }
         }
     }
 

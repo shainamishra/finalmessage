@@ -15,15 +15,12 @@ public class DropFromRopeCut : MonoBehaviour
         ropeCut = rope.GetComponent<RopeCut>();
         gravity = gameObject.GetComponent<Rigidbody2D>();
         gravity.gravityScale = 0;
-
-        //gravity.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
     }
 
     // Update is called once per frame
     void Update()
     {
         if(ropeCut.status){
-            //gravity.constraints = RigidbodyConstraints2D.None;
             gravity.gravityScale = 1;
         }
     }

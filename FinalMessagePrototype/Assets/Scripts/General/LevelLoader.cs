@@ -398,7 +398,7 @@ public class LevelLoader : MonoBehaviour
             // graveyard
             stageExit = GameObject.Find("StageExit");
             exitTransition = stageExit.GetComponent<ExitTransitionTrigger>();
-            if ((player.transform.position.x > 10 && player.transform.position.y > 0))
+            if (dog.transform.position.x > 13.5 || player.transform.position.x > 13.5)
             {
                 // goes to 17
                 levelVar = 0;
