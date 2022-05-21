@@ -86,12 +86,14 @@ public class TimeManager : MonoBehaviour
             }
 
             shadow.SetActive(true);
-            
-            if(skpos.position.x>knight.transform.position.x+3){
+            // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
+
+            // if(skpos.position.x>knight.transform.position.x){
+
 
                 StartCoroutine(waiter());
                 
-            }
+            // }
             // skpos.SetPositionAndRotation(new Vector3(250f,-1.33f,0f),new Quaternion(0,0,0,0));
 
             TimesUp = true;
@@ -116,19 +118,32 @@ public class TimeManager : MonoBehaviour
       // //  rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
       //   // Vector2 target = new Vector2(-1f,0f);
       //   // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
-        
-        if(skpos.position.x>knight.transform.position.x+20){
-          // Vector3 path1 = Vector3.MoveTowards(new Vector3(-20f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+        // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
+        if(skpos.position.x>knight.transform.position.x+15){
           skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
-          Debug.Log("meet y");
-          skpos.Translate(new Vector3(-knight.transform.position.x-5,0,0));
-          Debug.Log("meet x");
+          Vector3 path2 = Vector3.MoveTowards(new Vector3(-2f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          skpos.Translate(path2);
+
         }
-        else{
-          shadowidle.SetTrigger("Start");
+
+
+        if(skpos.position.x>knight.transform.position.x+4){
           Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
           skpos.Translate(path2);
         }
+
+        // if(skpos.position.x>knight.transform.position.x+20){
+        //   // Vector3 path1 = Vector3.MoveTowards(new Vector3(-20f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+        //   // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
+        //   Debug.Log("meet y"+knight.transform.position+skpos.position);
+        //   skpos.Translate(new Vector3(-knight.transform.position.x-10,0,0));
+        //   Debug.Log("meet x"+knight.transform.position+skpos.position);
+        // }
+        // else{
+        //   shadowidle.SetTrigger("Start");
+        //   Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+        //   skpos.Translate(path2);
+        // }
     }
     // void shadowLeave() {
 
