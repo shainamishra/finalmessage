@@ -127,7 +127,7 @@ public class TimeManager : MonoBehaviour
         }
 
 
-        if(skpos.position.x>knight.transform.position.x+4){
+        if(skpos.position.x>knight.transform.position.x+3){
           Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
           skpos.Translate(path2);
         }
