@@ -370,7 +370,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[15] = 1;
             // witch knight
-            if (player.transform.position.x > -6.7 && player.transform.position.y > 27 && Input.GetKeyDown("x"))
+            if (dog.transform.position.x > 18 || player.transform.position.x > 18)
             {
                 // goes to 16
                 levelVar = 0;
