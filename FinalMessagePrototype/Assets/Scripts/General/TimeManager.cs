@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 300;
+    public static float startingTime = 3;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -120,6 +120,7 @@ public class TimeManager : MonoBehaviour
       //   // Vector2 target = new Vector2(-1f,0f);
       //   // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
         // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
+        shadowidle.SetTrigger("Start");
         if(skpos.position.x>knight.transform.position.x+15){
           skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
           Vector3 path2 = Vector3.MoveTowards(new Vector3(-2f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
@@ -180,26 +181,29 @@ public class TimeManager : MonoBehaviour
          {
              Time.timeScale = 0.5f;
          }
-      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("8FM2")) 
+      else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("8FM2")) 
          {
              Time.timeScale = 0.5f;
          }
-      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("12FM5_Seeker")) 
+      else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("12FM5_Seeker")) 
          {
              Time.timeScale = 0.5f;
          }
-      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("13FM1_Key2")) 
+      else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("13FM1_Key2")) 
          {
              Time.timeScale = 0.5f;
          }
-      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("17Garveyard")) 
+      else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("17Graveyard")) 
          {
              Time.timeScale = 0.5f;
          }
-      if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("18FM_3Key1")) 
+      else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("18FM_3Key1")) 
          {
              Time.timeScale = 0.5f;
          }
+      else {
+        Time.timeScale = 1;
+      }
     }
 
     public IEnumerator waiter()
