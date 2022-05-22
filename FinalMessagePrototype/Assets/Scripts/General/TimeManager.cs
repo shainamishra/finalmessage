@@ -191,6 +191,11 @@ public class TimeManager : MonoBehaviour
          {
              startingTime -= 0;
          }
+      else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("21Summit")) 
+         {
+             startingTime -= 0;
+             shadow.SetActive(false);
+         }
       else {
         startingTime -= Time.deltaTime;
       }
