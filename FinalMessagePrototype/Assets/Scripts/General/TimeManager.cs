@@ -58,7 +58,7 @@ public class TimeManager : MonoBehaviour
         knight = GameObject.Find("Player");
         cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
 
-        startingTime -= Time.deltaTime;
+        // startingTime -= Time.deltaTime;
         float t = startingTime;
         string min = ((int) t/60).ToString();
         string sec = Mathf.Round((t%60)).ToString();
@@ -169,30 +169,30 @@ public class TimeManager : MonoBehaviour
     public void slowdown(){
       if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("7FM4_Key3")) 
          {
-             Time.timeScale = 0.5f;
+             startingTime -= 0;
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("8FM2")) 
          {
-             Time.timeScale = 0.5f;
+             startingTime -= 0;
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("12FM5_Seeker")) 
          {
-             Time.timeScale = 0.5f;
+             startingTime -= 0;
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("13FM1_Key2")) 
          {
-             Time.timeScale = 0.5f;
+             startingTime -= 0;
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("17Graveyard")) 
          {
-             Time.timeScale = 0.5f;
+             startingTime -= 0;
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("18FM_3Key1")) 
          {
-             Time.timeScale = 0.5f;
+             startingTime -= 0;
          }
       else {
-        Time.timeScale = 1;
+        startingTime -= Time.deltaTime;
       }
     }
 
