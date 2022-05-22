@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &110750564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4472,7 +4472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1055502327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7425,8 +7425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -401.88}
-  m_SizeDelta: {x: 544.53, y: 26.1948}
+  m_AnchoredPosition: {x: -57, y: -401.88}
+  m_SizeDelta: {x: 508.7439, y: 26.1948}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674536797
 MonoBehaviour:
