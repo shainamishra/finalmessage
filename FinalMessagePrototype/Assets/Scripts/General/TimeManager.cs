@@ -96,12 +96,13 @@ public class TimeManager : MonoBehaviour
             // }
             // skpos.SetPositionAndRotation(new Vector3(250f,-1.33f,0f),new Quaternion(0,0,0,0));
 
-            TimesUp = true;
+            
             
         }
         
 
-        if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
+        // if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
+        if(TimesUp == true ){
           // shadow.SetActive(false);
           skpos.SetPositionAndRotation(new Vector3(250f,-1.33f,0f),new Quaternion(0,0,0,0));
 
@@ -134,18 +135,7 @@ public class TimeManager : MonoBehaviour
           skpos.Translate(path2);
         }
 
-        // if(skpos.position.x>knight.transform.position.x+20){
-        //   // Vector3 path1 = Vector3.MoveTowards(new Vector3(-20f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
-        //   // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
-        //   Debug.Log("meet y"+knight.transform.position+skpos.position);
-        //   skpos.Translate(new Vector3(-knight.transform.position.x-10,0,0));
-        //   Debug.Log("meet x"+knight.transform.position+skpos.position);
-        // }
-        // else{
-        //   shadowidle.SetTrigger("Start");
-        //   Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
-        //   skpos.Translate(path2);
-        // }
+ 
     }
     // void shadowLeave() {
 
@@ -219,6 +209,8 @@ public class TimeManager : MonoBehaviour
         Debug.Log("Leave");
           // startingTime = 300;
           // Debug.Log("Restart");
+
+        TimesUp = true;
         
         
 
