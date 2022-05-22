@@ -1651,7 +1651,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183cf5187d7c34eeea6c5afe10313c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boulder: {fileID: 0}
+  player: {fileID: 0}
+  dog: {fileID: 0}
+  boulderAudio:
+    Guid:
+      Data1: 227962681
+      Data2: 1125955365
+      Data3: 846523021
+      Data4: 1815852522
+    Path: event:/Environment & Ambience/BoulderPushPull
 --- !u!1 &741373980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,6 +2184,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: boulderAudio.Path
+      value: event:/Environment & Ambience/BoulderPushPull
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: boulderAudio.Guid.Data1
+      value: 227962681
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: boulderAudio.Guid.Data2
+      value: 1125955365
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: boulderAudio.Guid.Data3
+      value: 846523021
+      objectReference: {fileID: 0}
+    - target: {fileID: -963015765024825959, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: boulderAudio.Guid.Data4
+      value: 1815852522
+      objectReference: {fileID: 0}
     - target: {fileID: 161633578629541076, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
       propertyPath: PlayEvent
       value: 9
