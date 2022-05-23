@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
+using System.Threading;
 
 public class DialogueManager : MonoBehaviour 
 {
@@ -56,6 +57,7 @@ public class DialogueManager : MonoBehaviour
 		{
 			dialogueText.text += letter;
 			audioTrigger.gameObject.GetComponent<DialogueAudioTrigger>().playMumbles("event:/UI/DialougeTrill");
+			Thread.Sleep(5);
 			yield return null;
 		}
 	}
