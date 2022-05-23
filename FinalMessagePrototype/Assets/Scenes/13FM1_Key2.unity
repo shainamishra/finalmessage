@@ -414,6 +414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8727871871392637871, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.81
+      objectReference: {fileID: 0}
     - target: {fileID: 6347981530451927433, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2135,7 +2139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: -1.42
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2404,6 +2408,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8727871871392637871, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.81
+      objectReference: {fileID: 0}
     - target: {fileID: 6347981530451927433, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2479,7 +2487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.21
+      value: -1.46
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4086,6 +4094,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8727871871392637871, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.81
+      objectReference: {fileID: 0}
     - target: {fileID: 6347981530451927433, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
       propertyPath: m_RootOrder
       value: 10

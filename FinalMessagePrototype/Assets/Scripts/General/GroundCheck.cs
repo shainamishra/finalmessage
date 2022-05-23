@@ -21,7 +21,7 @@ public class GroundCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (playerMovement.rb.velocity.y < -7)
+        if ((playerMovement.rb.velocity.y < -7) || (dogMovement.rb.velocity.y < -7))
         {
             Debug.Log("Death by broken ankles.");
             dead = true;

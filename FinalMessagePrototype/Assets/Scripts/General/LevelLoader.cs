@@ -210,7 +210,14 @@ public class LevelLoader : MonoBehaviour
                 levelVarNeg = 0;
                 LoadPrevLevel();
             }
-            
+            // check if player fell from a great height
+            if (GroundCheck.dead == true)
+            {
+                // goes to 0
+                levelVar = -7;
+                LoadNextLevel();
+            }
+
         }
 
         // Final Message 2
@@ -226,6 +233,13 @@ public class LevelLoader : MonoBehaviour
             {
                 levelVarNeg = -2;
                 LoadPrevLevel();
+            }
+            // check if player fell from a great height
+            if (GroundCheck.dead == true)
+            {
+                // goes to 0
+                levelVar = -8;
+                LoadNextLevel();
             }
         }
 
@@ -557,7 +571,19 @@ public class LevelLoader : MonoBehaviour
                 LoadPrevLevel();
             }
         }
-        
+
+        // 11a bad door room "you suck"
+        if (SceneManager.GetActiveScene().buildIndex == 23)
+        {
+            levels[23] = 1;
+            if (player.transform.position.x > 45 && Input.GetKeyDown("e"))
+            {
+                levelVar = -23;
+                LoadNextLevel();
+                // fix the timer?
+            }
+        }
+
     }
 
     // public void PlayTransition() {

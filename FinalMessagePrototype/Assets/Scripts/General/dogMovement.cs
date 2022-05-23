@@ -9,7 +9,7 @@ public class dogMovement : MonoBehaviour
     public GameObject dog;
     public Animator animator;
 
-    private Rigidbody2D rb;
+    public static Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
 

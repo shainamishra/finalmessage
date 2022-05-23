@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457490058949734991, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 457490058949734991, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_SortingLayerID
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: -1.72
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -432,8 +432,9 @@ GameObject:
   - component: {fileID: 266692695}
   - component: {fileID: 266692694}
   - component: {fileID: 266692696}
+  - component: {fileID: 266692697}
   m_Layer: 0
-  m_Name: npcKnight (1)_0
+  m_Name: Lonely Climber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,6 +531,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 7.96875}
   m_EdgeRadius: 0
+--- !u!95 &266692697
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266692693}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d0f65e0f45b0284e8d4e2bf6e7660f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &294822310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: -1.58
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.z
