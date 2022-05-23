@@ -154,10 +154,10 @@ TextureImporter:
       name: chime-staff-Sheet_0
       rect:
         serializedVersion: 2
-        x: 262
-        y: 298
-        width: 986
-        height: 1138
+        x: 0
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: chime-staff-Sheet_1
       rect:
         serializedVersion: 2
-        x: 1656
-        y: 998
-        width: 12
-        height: 12
+        x: 1492
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: chime-staff-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 420
-        width: 986
-        height: 1016
+        x: 2984
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: chime-staff-Sheet_3
       rect:
         serializedVersion: 2
-        x: 3248
-        y: 450
-        width: 986
-        height: 986
+        x: 4476
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +238,10 @@ TextureImporter:
       name: chime-staff-Sheet_4
       rect:
         serializedVersion: 2
-        x: 4642
-        y: 998
-        width: 12
-        height: 12
+        x: 5968
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: chime-staff-Sheet_5
       rect:
         serializedVersion: 2
-        x: 4741
-        y: 426
-        width: 1009
-        height: 1010
+        x: 7460
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: chime-staff-Sheet_6
       rect:
         serializedVersion: 2
-        x: 6234
-        y: 368
-        width: 986
-        height: 1068
+        x: 8952
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +301,10 @@ TextureImporter:
       name: chime-staff-Sheet_7
       rect:
         serializedVersion: 2
-        x: 7727
-        y: 432
-        width: 1021
-        height: 1004
+        x: 10444
+        y: 0
+        width: 1492
+        height: 1798
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,258 +314,6 @@ TextureImporter:
       bones: []
       spriteID: dcb16aa6e076d12e0800000000000000
       internalID: -2153451735196754995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 9220
-        y: 450
-        width: 986
-        height: 986
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd17ae40f9b310580800000000000000
-      internalID: -8862737037520113185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 10713
-        y: 432
-        width: 986
-        height: 1004
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 198652be4a9da7870800000000000000
-      internalID: 8681490534053013649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 1347
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31d12c9641873d590800000000000000
-      internalID: -7650639312903332589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 2840
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94aa2ddb9b7efcfe0800000000000000
-      internalID: -1166458993526003127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 4333
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0bd7816720a5bdd0800000000000000
-      internalID: -2470892729542386934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 5826
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ad77a59dca868ee0800000000000000
-      internalID: -1259166430219764319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 7319
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3979384637d0c4ad0800000000000000
-      internalID: -2716781685952505965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 8812
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c7805abf64dfffa0800000000000000
-      internalID: -5764655421678647358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 10305
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78c954c84eacc8a40800000000000000
-      internalID: 5371891538500885639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 11798
-        y: 905
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 811481298a9d588f0800000000000000
-      internalID: -538785262372110056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 7722
-        y: 870
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09e0b25c3db492fe0800000000000000
-      internalID: -1213355251681522032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chime-staff-Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 10708
-        y: 870
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcaa40928fe8567a0800000000000000
-      internalID: -6384539700236604725
       vertices: []
       indices: 
       edges: []

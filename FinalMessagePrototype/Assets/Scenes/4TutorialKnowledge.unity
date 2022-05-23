@@ -750,6 +750,11 @@ MonoBehaviour:
     - I ask you, why do you climb this Mount?
     - 
   dialogueManager: {fileID: 0}
+--- !u!212 &298543792 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8319865076112734807, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+  m_PrefabInstance: {fileID: 1705761252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &331551630
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +951,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370635835}
   m_CullTransparentMesh: 1
+--- !u!212 &399760501 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1543175227573423065, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+  m_PrefabInstance: {fileID: 1522120360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &433105038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,6 +3312,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpperButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4270962627415034047, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377758286833750837, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4880700986720645398, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3346,10 +3364,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5259738076220800723, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451795288548657280, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7489043828445073805, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
       propertyPath: rock_in_scene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8061954585866875673, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1705761256}
+    - target: {fileID: 8061954585866875673, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: ButtonUp
+      value: 
+      objectReference: {fileID: 399760501}
+    - target: {fileID: 8061954585866875673, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: ButtonDown
+      value: 
+      objectReference: {fileID: 2042708060}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
 --- !u!1 &1532602186 stripped
@@ -3466,9 +3504,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3466361946583212383, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4270962627415034047, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
       propertyPath: m_Name
       value: LowerButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270962627415034047, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377758286833750837, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4880700986720645398, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
       propertyPath: m_RootOrder
@@ -3514,11 +3564,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5259738076220800723, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061954585866875673, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061954585866875673, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: ButtonUp
+      value: 
+      objectReference: {fileID: 2093278364}
+    - target: {fileID: 8061954585866875673, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+      propertyPath: ButtonDown
+      value: 
+      objectReference: {fileID: 298543792}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
 --- !u!1 &1705761253 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4270962627415034047, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+  m_PrefabInstance: {fileID: 1705761252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1705761256 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: -9065599463096013722, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
   m_PrefabInstance: {fileID: 1705761252}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1719515760
@@ -4384,6 +4455,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2042708060 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8319865076112734807, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+  m_PrefabInstance: {fileID: 1522120360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056724275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4463,6 +4539,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056724275}
   m_CullTransparentMesh: 1
+--- !u!212 &2093278364 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1543175227573423065, guid: b0eb19680cd256e41a3f00b76d481e04, type: 3}
+  m_PrefabInstance: {fileID: 1705761252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2097268992
 GameObject:
   m_ObjectHideFlags: 0

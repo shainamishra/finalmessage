@@ -2,62 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// script is SPECIFICALLY for button animation as of 5/23 - Chantel 
+
 public class ButtonCollision : MonoBehaviour
 {
     public Collider2D dog;
     public Collider2D player;
-    public Collider2D dogButton;
-    public Collider2D playerButton;
 
-    public GameObject door;
+    public Collider2D button;
+    
+    public SpriteRenderer ButtonUp;
+    public SpriteRenderer ButtonDown;
 
     // Start is called before the first frame update
     void Start()
     {
         dog = GameObject.Find("Dog").GetComponent<Collider2D>();
         player = GameObject.Find("Player").GetComponent<Collider2D>();
-        //dogButton = GameObject.Find("DogButton").GetComponent<Collider2D>();
-        //playerButton = GameObject.Find("PlayerButton").GetComponent<Collider2D>();
         
-        door = GameObject.Find("Door");
+        //button = GameObject.Find("Button").GetComponent<Collider2D>();
+
+        ButtonUp = GameObject.Find("ButtonUp").GetComponent<SpriteRenderer>();
+        ButtonDown = GameObject.Find("ButtonDown").GetComponent<SpriteRenderer>();
+
+        ButtonDown.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*// if the dog is on the button
-        if(dogButton.IsTouching(dog))
+        // if the dog is on the button
+        if (button.IsTouching(dog) || button.IsTouching(player))
         {
             // then the button is lowered
-            Vector3 temp = new Vector3(3.75f, -3f, 0.0f);
-            (GameObject.Find("DogButton")).transform.position = temp;
+            ButtonUp.enabled = false;
+            ButtonDown.enabled = true;
         }
         else
         {
             // raise the button
-            Vector3 temp = new Vector3(3.75f, -2.75f, 0.0f);
-            (GameObject.Find("DogButton")).transform.position = temp;
-        }
-
-        // if the player is on the button then the button is lowered
-        if(playerButton.IsTouching(player))
-        {
-            // then the button is lowered
-            Vector3 temp = new Vector3(-3.75f, -3f, 0.0f);
-            (GameObject.Find("PlayerButton")).transform.position = temp;
-        }
-        else
-        {
-            // raise the button
-            Vector3 temp = new Vector3(-3.75f, -2.75f, 0.0f);
-            (GameObject.Find("PlayerButton")).transform.position = temp;
-        }*/
-
-        // if the dog and the player are on their respective buttons and the door is visisble
-        if (dogButton.IsTouching(dog) && playerButton.IsTouching(player) && door.activeSelf == true)
-        {
-            // the door disappears
-            door.SetActive(false);
+            ButtonUp.enabled = true;
+            ButtonDown.enabled = false;
         }
     }
 }

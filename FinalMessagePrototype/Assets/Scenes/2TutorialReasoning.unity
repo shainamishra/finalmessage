@@ -1243,6 +1243,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 966241324286330993, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3425318112120364960, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1983294250}
     - target: {fileID: 4163238942575203293, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1286,6 +1294,10 @@ PrefabInstance:
     - target: {fileID: 4163238942575203293, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681693448402124915, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6681693448402124915, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
       propertyPath: m_IsTrigger
@@ -2220,6 +2232,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1983294250 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4756584191155575247, guid: 85aff1cc6e6a38e4bab265fb84ddffcf, type: 3}
+  m_PrefabInstance: {fileID: 905380791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2007042018
 GameObject:
   m_ObjectHideFlags: 0
