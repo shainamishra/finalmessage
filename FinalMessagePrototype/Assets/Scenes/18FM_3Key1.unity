@@ -3103,6 +3103,7 @@ GameObject:
   - component: {fileID: 1214373045}
   - component: {fileID: 1214373044}
   - component: {fileID: 1214373043}
+  - component: {fileID: 1214373046}
   m_Layer: 0
   m_Name: Chime2
   m_TagString: Untagged
@@ -3221,6 +3222,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1214373046
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214373041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61b4278907ab9b345b09ebe593eb7b3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1225794088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3290,6 +3310,7 @@ GameObject:
   - component: {fileID: 1258547401}
   - component: {fileID: 1258547400}
   - component: {fileID: 1258547399}
+  - component: {fileID: 1258547402}
   m_Layer: 0
   m_Name: Chime1
   m_TagString: Untagged
@@ -3408,6 +3429,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1258547402
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258547397}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61b4278907ab9b345b09ebe593eb7b3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1261237041
 GameObject:
   m_ObjectHideFlags: 0
@@ -5692,6 +5732,7 @@ GameObject:
   - component: {fileID: 2049904182}
   - component: {fileID: 2049904181}
   - component: {fileID: 2049904180}
+  - component: {fileID: 2049904183}
   m_Layer: 0
   m_Name: Chime3
   m_TagString: Untagged
@@ -5810,6 +5851,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2049904183
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049904178}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61b4278907ab9b345b09ebe593eb7b3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2136347775
 GameObject:
   m_ObjectHideFlags: 0
