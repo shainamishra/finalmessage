@@ -7,21 +7,24 @@ public class DropFromRopeCut : MonoBehaviour
     public GameObject rope;
 
     RopeCut ropeCut;
-    Rigidbody2D gravity;
+    Rigidbody2D body;
 
     // Start is called before the first frame update
     void Start()
     {
         ropeCut = rope.GetComponent<RopeCut>();
-        gravity = gameObject.GetComponent<Rigidbody2D>();
-        gravity.gravityScale = 0;
+        body = gameObject.GetComponent<Rigidbody2D>();
+        body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        body.gravityScale = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         if(ropeCut.status){
-            gravity.gravityScale = 1;
+            body.constraints = RigidbodyConstraints2D.None;
+            body.constraints = RigidbodyConstraints2D.FreezeRotation;
+            body.gravityScale = 1;
         }
     }
 }
