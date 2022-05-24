@@ -384,7 +384,7 @@ public class LevelLoader : MonoBehaviour
         {
             levels[15] = 1;
             // witch knight
-            if (dog.transform.position.x > 18 || player.transform.position.x > 18)
+            if (dog.transform.position.x > 19.5 || player.transform.position.x > 19.5)
             {
                 // goes to 16
                 levelVar = 0;
