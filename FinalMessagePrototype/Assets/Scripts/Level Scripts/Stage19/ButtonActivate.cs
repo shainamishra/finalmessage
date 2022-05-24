@@ -14,6 +14,11 @@ public class ButtonActivate : MonoBehaviour
     Collider2D dog;
     Collider2D rock;
     Collider2D rock_1;
+    
+    SpriteRenderer spriteRenderer;
+    // These two are set in the prefab in the editor, cause they won't find for some reason...
+    public Sprite button_up;
+    public Sprite button_down;
 
     bool condition;
 
@@ -30,6 +35,8 @@ public class ButtonActivate : MonoBehaviour
                 rock_1 = GameObject.Find("Rock (1)").GetComponent<Collider2D>();
             }
         }
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
         condition = false;
     }
 
@@ -48,9 +55,11 @@ public class ButtonActivate : MonoBehaviour
         }
 
         if(condition){
+            spriteRenderer.sprite = button_down;
             status = true;
         }
         else{
+            spriteRenderer.sprite = button_up;
             status = false;
         }
     }
