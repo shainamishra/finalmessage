@@ -6462,7 +6462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2082152124}
-  FinalMessage: {fileID: 0}
+  FinalMessage: {fileID: 774443230}
 --- !u!70 &2082152128 stripped
 CapsuleCollider2D:
   m_CorrespondingSourceObject: {fileID: 7408466783819260744, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}

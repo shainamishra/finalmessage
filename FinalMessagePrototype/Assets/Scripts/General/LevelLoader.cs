@@ -70,9 +70,11 @@ public class LevelLoader : MonoBehaviour
         }
 
         // CutScene
+        /*
         if (SceneManager.GetActiveScene().buildIndex == 25){
-            //LoadNextLevel();
+            no code, head empty, only vibes
         }
+        */
 
         // Start
         if (SceneManager.GetActiveScene().buildIndex == 1){
@@ -138,7 +140,6 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
-                //checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -425,13 +426,8 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 1;
                 LoadNextLevel();
             }
-            // previous level
-            else if((player.transform.position.x < -8 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -1.5 && (dog.transform.position.y > 0 && dog.transform.position.y < 1)))
-            {
-                //LoadPrevLevel();
-            }
             // move back
-            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            else if((player.transform.position.x < -10) || (dog.transform.position.x < -10))
             {
                 levelVarNeg = 0;
                 LoadPrevLevel();
@@ -525,13 +521,13 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 21)
         {
             levels[21] = 1;
-            if (player.transform.position.x > 35 && Input.GetKeyDown("x"))
+            if (player.transform.position.x > 35 && Input.GetKeyDown("e"))
             {
                 levelVar = 3;
                 LoadNextLevel();
             }
             // move back
-            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            else if((player.transform.position.x < -10) || (dog.transform.position.x < -11))
             {
                 levelVarNeg = 0;
                 LoadPrevLevel();
@@ -581,6 +577,13 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -23;
                 LoadNextLevel();
                 // fix the timer?
+            }
+
+            // move back
+            else if((player.transform.position.x < -10) || (dog.transform.position.x < -11))
+            {
+                levelVarNeg = -11;
+                LoadPrevLevel();
             }
         }
 
