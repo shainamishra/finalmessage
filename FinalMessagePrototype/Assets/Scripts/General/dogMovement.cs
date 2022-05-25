@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class dogMovement : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class dogMovement : MonoBehaviour
     private bool facingRight = true;
     private float moveDirection = 0f;
 
+    public FMOD.Studio.EventInstance pettingAudio;
+
     // Awake is called after all objects are initialized. Called in random order
     private void Awake()
     {
+        pettingAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/Dog/Pup-Idle");
         rb = GetComponent<Rigidbody2D>(); // will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D
     }
 
@@ -83,6 +87,9 @@ public class dogMovement : MonoBehaviour
         if (Input.GetKey("p"))
         {
             animator.SetTrigger("Pet");
+            if (!AudioManager.isPlaying(pettingAudio)) {
+                pettingAudio.start();
+            }
         }
 
     }
@@ -100,6 +107,11 @@ public class dogMovement : MonoBehaviour
         AudioManager.instance.PlaySound("event:/UI/CharacterSwitch");
     
     } 
+
+    // private void pettingSFX() {
+    //     AudioManager.instance.PlaySound("event:/PlayerAudio/Dog/Pup-Idle");
+    // }
+
     private void move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);

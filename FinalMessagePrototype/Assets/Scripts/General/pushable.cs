@@ -10,8 +10,6 @@ public class pushable : MonoBehaviour
     public GameObject player;
     public GameObject reach;
     GameObject box;
-
-    public EventReference boulderAudio;
     public FMOD.Studio.EventInstance playBoulder;
     
     // Start is called before the first frame update
@@ -33,7 +31,6 @@ public class pushable : MonoBehaviour
             transform.parent = null;
             if (AudioManager.isPlaying(playBoulder)) {
                 playBoulder.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                Debug.Log("stop playing");
             }
         }
     }
@@ -45,7 +42,6 @@ public class pushable : MonoBehaviour
             transform.parent = player.transform;
             if (!AudioManager.isPlaying(playBoulder)) {
                 playBoulder.start();
-                Debug.Log("start playing");
             }
         } 
         

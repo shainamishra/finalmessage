@@ -1639,32 +1639,6 @@ Transform:
   m_Father: {fileID: 1787653044}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &725589313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3735060251806573993, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
-  m_PrefabInstance: {fileID: 1093270779}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &725589314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725589313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 183cf5187d7c34eeea6c5afe10313c02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  dog: {fileID: 0}
-  boulderAudio:
-    Guid:
-      Data1: 227962681
-      Data2: 1125955365
-      Data3: 846523021
-      Data4: 1815852522
-    Path: event:/Environment & Ambience/BoulderPushPull
 --- !u!1 &741373980
 GameObject:
   m_ObjectHideFlags: 0

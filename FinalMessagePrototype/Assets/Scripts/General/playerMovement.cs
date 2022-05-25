@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class playerMovement : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class playerMovement : MonoBehaviour
     public GameObject strikepoint;
     public GameObject reachzone;
     public static Rigidbody2D rb;
+
+    public FMOD.Studio.EventInstance pettingAudio;
     //public NPCBehavior npc;
 
     //public bool interactPressed = false;
@@ -23,6 +26,7 @@ public class playerMovement : MonoBehaviour
     // Awake is called after all objects are initialized. Called in random order
     private void Awake()
     {
+        pettingAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/Knight/PupPetting");
         rb = GetComponent<Rigidbody2D>(); // will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D
     }
 
@@ -116,6 +120,10 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey("p"))
         {
             animator.SetTrigger("Pet");
+            if (!AudioManager.isPlaying(pettingAudio)) {
+                pettingAudio.start();
+            }
+
         }
         
     }
@@ -132,7 +140,11 @@ public class playerMovement : MonoBehaviour
     {
         AudioManager.instance.PlaySound("event:/UI/CharacterSwitch");
     
-    } 
+    }
+
+    // private void pettingSFX() {
+    //     AudioManager.instance.PlaySound("event:/PlayerAudio/Knight/PupPetting");
+    // }
     
     private void move()
     {
