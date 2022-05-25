@@ -1,3 +1,10 @@
+/* This script handles on half of the chime gate puzzle mechanic, the other
+ * half being done in "ChimePuzzle.cs". This essentially has two modes, one
+ * that is identical to "ObstacleMove.cs" and one that is the same as
+ * "MoveOnButtonTrigger.cs". These are set automatically provided the tags
+ * of the respective ojects are set correctly. This script handles moving the
+ * obstacles themselves. ChimePuzzle handles turning them off and on.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,19 +19,28 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
     public bool is_on = true;
     public float target_elevation;
 
+    Vector3 initial_position;
     Vector3 pos;
     float elevation_snapshot = 0;
-    //bool still_moving = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        initial_position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(gameObject.tag == "MovingObstacle"){
+            MovingObstacleUpdate();
+        }
+        else if(gameObject.tag == "ObstacleDoor"){
+            ObstacleDoorUpdate();
+        }
+    }
+
+    void MovingObstacleUpdate(){
         if(is_on){
             elevation_snapshot = 0;
             Oscillate();
@@ -38,6 +54,25 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
             }
             else{
                 MoveUp(target_elevation);
+            }
+        }
+    }
+
+    void ObstacleDoorUpdate(){
+        if( (target_elevation-initial_position.y) > 0){
+            if(is_on == false){
+                MoveUp(target_elevation);
+            }
+            else{
+                MoveDown(initial_position.y);
+            }
+        }
+        else{
+            if(is_on == false){
+                MoveDown(target_elevation);
+            }
+            else{
+                MoveUp(initial_position.y);
             }
         }
     }

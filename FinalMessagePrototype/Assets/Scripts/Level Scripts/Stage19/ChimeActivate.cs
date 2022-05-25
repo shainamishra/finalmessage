@@ -5,10 +5,13 @@ using FMODUnity;
 
 public class ChimeActivate : MonoBehaviour
 {
-    bool overlap;
     public bool status;
 
+    bool overlap;
+    bool condition;
     public EventReference chimeAudio;
+    public GameObject chimeGate;
+    ChimePuzzle chimePuzzle;
 
     public void playChime() {
         RuntimeManager.PlayOneShot(chimeAudio);
@@ -26,27 +29,25 @@ public class ChimeActivate : MonoBehaviour
     void Start()
     {
         overlap = false;
+        condition = false;
         status = false;
+        chimePuzzle = chimeGate.GetComponent<ChimePuzzle>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(overlap && Input.GetKeyDown(KeyCode.E)){
-            //if (LevelLoader.Key2 == 1)
-            //{
-                if (status == false)
-                {
-                    status = true;
-                }
-                else
-                {
-                    status = false;
-                }
-            //}
-            //Debug.Log("Ding..." + status);
-            playChime();
+        // Here's my now standard stacking condition block.
+        // Lowest level is to be touching the chime and hit E
+        // The next level is to also have the chime staff
+        condition = overlap && Input.GetKeyDown(KeyCode.E);
+        if(chimePuzzle.requires_key){
+            condition = condition && (LevelLoader.Key2 == 1);
+        }
 
+        if(condition){
+            status = !status;
+            playChime();
         }
     }
 }

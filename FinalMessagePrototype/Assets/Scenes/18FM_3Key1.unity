@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 60230612}
   - component: {fileID: 60230611}
   - component: {fileID: 60230610}
+  - component: {fileID: 60230613}
   m_Layer: 0
   m_Name: Chime2
   m_TagString: Untagged
@@ -258,6 +259,7 @@ MonoBehaviour:
       Data3: 1863254703
       Data4: 1158533738
     Path: event:/Environment & Ambience/ChimeBells-E
+  chimeGate: {fileID: 931657177}
 --- !u!61 &60230611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -335,6 +337,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &60230613
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60230608}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61b4278907ab9b345b09ebe593eb7b3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &74934156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1595,12 +1616,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
   m_PrefabInstance: {fileID: 827868562}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &553569274 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1136679113918599179, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
-  m_PrefabInstance: {fileID: 827868562}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &553569275
+--- !u!114 &553569272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1609,14 +1625,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 553569271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d69ae0921e3dce49b62c235b665e272, type: 3}
+  m_Script: {fileID: 11500000, guid: 794ddcc303b6be0489d36268d784c0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1258547397}
+  max_height: 0
+  min_height: 0
   speed: 10
+  is_moving_up: 0
+  is_on: 1
   target_elevation: -6
-  second_button: 0
-  button_2: {fileID: 0}
+--- !u!4 &553569274 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1136679113918599179, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+  m_PrefabInstance: {fileID: 827868562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &648703073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2009,12 +2031,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
   m_PrefabInstance: {fileID: 887369623}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &787488059 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1136679113918599179, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
-  m_PrefabInstance: {fileID: 887369623}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &787488060
+--- !u!114 &787488057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2023,14 +2040,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 787488056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d69ae0921e3dce49b62c235b665e272, type: 3}
+  m_Script: {fileID: 11500000, guid: 794ddcc303b6be0489d36268d784c0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1214373041}
+  max_height: 0
+  min_height: 0
   speed: 10
+  is_moving_up: 0
+  is_on: 1
   target_elevation: -6
-  second_button: 0
-  button_2: {fileID: 0}
+--- !u!4 &787488059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1136679113918599179, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+  m_PrefabInstance: {fileID: 887369623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &816817842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,6 +2238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+      propertyPath: m_TagString
+      value: ObstacleDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
 --- !u!1001 &887369623
@@ -2279,6 +2306,10 @@ PrefabInstance:
     - target: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
       propertyPath: m_Name
       value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+      propertyPath: m_TagString
+      value: ObstacleDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
@@ -2351,7 +2382,7 @@ GameObject:
   - component: {fileID: 931657179}
   - component: {fileID: 931657178}
   m_Layer: 0
-  m_Name: ChimeGate
+  m_Name: ChimeGate2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2369,6 +2400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b963d35106a29449e72b2904be0a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requires_key: 1
+  first_chime: {fileID: 60230609}
+  second_chime: {fileID: 1534196382}
+  third_chime: {fileID: 1400046260}
   Obstacle_1: {fileID: 949189863}
   Obstacle_2: {fileID: 933872419}
   Obstacle_3: {fileID: 2016828446}
@@ -2425,7 +2460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997361927980505683, guid: f320fe4c7d78ba04896b879253727279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.91943
+      value: -11.4
       objectReference: {fileID: 0}
     - target: {fileID: 2997361927980505683, guid: f320fe4c7d78ba04896b879253727279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2463,6 +2498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingObstacle2
       objectReference: {fileID: 0}
+    - target: {fileID: 6613874792067171222, guid: f320fe4c7d78ba04896b879253727279, type: 3}
+      propertyPath: m_TagString
+      value: MovingObstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2206493927838321144, guid: f320fe4c7d78ba04896b879253727279, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f320fe4c7d78ba04896b879253727279, type: 3}
@@ -2484,7 +2523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_height: -5
-  min_height: -10
+  min_height: -8
   speed: 5
   is_moving_up: 1
   is_on: 1
@@ -2730,6 +2769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingObstacle1
       objectReference: {fileID: 0}
+    - target: {fileID: 6613874792067171222, guid: f320fe4c7d78ba04896b879253727279, type: 3}
+      propertyPath: m_TagString
+      value: MovingObstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2206493927838321144, guid: f320fe4c7d78ba04896b879253727279, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f320fe4c7d78ba04896b879253727279, type: 3}
@@ -2751,7 +2794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_height: -5
-  min_height: -10
+  min_height: -8
   speed: 5
   is_moving_up: 0
   is_on: 1
@@ -3145,6 +3188,7 @@ MonoBehaviour:
       Data3: 1863254703
       Data4: 1158533738
     Path: event:/Environment & Ambience/ChimeBells-E
+  chimeGate: {fileID: 1401727589}
 --- !u!61 &1214373044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3352,6 +3396,7 @@ MonoBehaviour:
       Data3: -1353071464
       Data4: -1083049821
     Path: event:/Environment & Ambience/ChimeBells-A
+  chimeGate: {fileID: 1401727589}
 --- !u!61 &1258547400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3818,6 +3863,7 @@ GameObject:
   - component: {fileID: 1400046263}
   - component: {fileID: 1400046262}
   - component: {fileID: 1400046261}
+  - component: {fileID: 1400046264}
   m_Layer: 0
   m_Name: Chime3
   m_TagString: Untagged
@@ -3859,6 +3905,7 @@ MonoBehaviour:
       Data3: 1486507440
       Data4: -901951980
     Path: event:/Environment & Ambience/ChimeBells-D
+  chimeGate: {fileID: 931657177}
 --- !u!61 &1400046262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3936,6 +3983,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1400046264
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400046259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61b4278907ab9b345b09ebe593eb7b3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1401727589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3947,7 +4013,7 @@ GameObject:
   - component: {fileID: 1401727591}
   - component: {fileID: 1401727590}
   m_Layer: 0
-  m_Name: ChimeGate (1)
+  m_Name: ChimeGate1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3965,9 +4031,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b963d35106a29449e72b2904be0a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Obstacle_1: {fileID: 0}
-  Obstacle_2: {fileID: 0}
-  Obstacle_3: {fileID: 0}
+  requires_key: 1
+  first_chime: {fileID: 1258547398}
+  second_chime: {fileID: 1214373042}
+  third_chime: {fileID: 2049904179}
+  Obstacle_1: {fileID: 553569271}
+  Obstacle_2: {fileID: 787488056}
+  Obstacle_3: {fileID: 1538006560}
 --- !u!4 &1401727591
 Transform:
   m_ObjectHideFlags: 0
@@ -4505,6 +4575,7 @@ GameObject:
   - component: {fileID: 1534196385}
   - component: {fileID: 1534196384}
   - component: {fileID: 1534196383}
+  - component: {fileID: 1534196386}
   m_Layer: 0
   m_Name: Chime1
   m_TagString: Untagged
@@ -4546,6 +4617,7 @@ MonoBehaviour:
       Data3: -1353071464
       Data4: -1083049821
     Path: event:/Environment & Ambience/ChimeBells-A
+  chimeGate: {fileID: 931657177}
 --- !u!61 &1534196384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4623,17 +4695,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1534196386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534196381}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61b4278907ab9b345b09ebe593eb7b3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1538006560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
   m_PrefabInstance: {fileID: 1649621550}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1538006563 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1136679113918599179, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
-  m_PrefabInstance: {fileID: 1649621550}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1538006564
+--- !u!114 &1538006561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4642,14 +4728,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1538006560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d69ae0921e3dce49b62c235b665e272, type: 3}
+  m_Script: {fileID: 11500000, guid: 794ddcc303b6be0489d36268d784c0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 2049904178}
+  max_height: 0
+  min_height: 0
   speed: 10
+  is_moving_up: 0
+  is_on: 1
   target_elevation: -6
-  second_button: 0
-  button_2: {fileID: 0}
+--- !u!4 &1538006563 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1136679113918599179, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+  m_PrefabInstance: {fileID: 1649621550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1602122161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,6 +5007,10 @@ PrefabInstance:
     - target: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
       propertyPath: m_Name
       value: Door (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768517065324326167, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+      propertyPath: m_TagString
+      value: ObstacleDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
@@ -5624,6 +5720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingObstacle3
       objectReference: {fileID: 0}
+    - target: {fileID: 6613874792067171222, guid: f320fe4c7d78ba04896b879253727279, type: 3}
+      propertyPath: m_TagString
+      value: MovingObstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2206493927838321144, guid: f320fe4c7d78ba04896b879253727279, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f320fe4c7d78ba04896b879253727279, type: 3}
@@ -5645,7 +5745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_height: -5
-  min_height: -10
+  min_height: -8
   speed: 5
   is_moving_up: 0
   is_on: 1
@@ -5774,6 +5874,7 @@ MonoBehaviour:
       Data3: 1486507440
       Data4: -901951980
     Path: event:/Environment & Ambience/ChimeBells-D
+  chimeGate: {fileID: 1401727589}
 --- !u!61 &2049904181
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 /* Okay, so this script is a little odd looking, but it's pretty simple in concept.
  * It's a standard brute force puzzle, like Simon: players have to hit the chimes in a certain order.
  * If the mess up the order, they have to start over.
- * I managed this is probably the least elegant way possible, but it's workable for a small number of variations.
+ * I managed this in probably the least elegant way possible, but it's workable for a small number of variations.
  * If we want more variations or a longer version, we'll revisit it.
 */
 
@@ -11,10 +11,11 @@ using UnityEngine;
 
 public class ChimePuzzle : MonoBehaviour
 {
+    public bool requires_key = true;
     //Grab the Chime children of this object
-    Transform chime1;
-    Transform chime2;
-    Transform chime3;
+    public Transform first_chime;
+    public Transform second_chime;
+    public Transform third_chime;
     ChimeActivate chimeActivate1;
     ChimeActivate chimeActivate2;
     ChimeActivate chimeActivate3;
@@ -36,12 +37,9 @@ public class ChimePuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        chime1 = transform.Find("Chime1");
-        chime2 = transform.Find("Chime2");
-        chime3 = transform.Find("Chime3");
-        chimeActivate1 = chime1.GetComponent<ChimeActivate>();
-        chimeActivate2 = chime2.GetComponent<ChimeActivate>();
-        chimeActivate3 = chime3.GetComponent<ChimeActivate>();
+        chimeActivate1 = first_chime.GetComponent<ChimeActivate>();
+        chimeActivate2 = second_chime.GetComponent<ChimeActivate>();
+        chimeActivate3 = third_chime.GetComponent<ChimeActivate>();
         obstacleMove1 = Obstacle_1.GetComponent<ChimePuzzleObstacleMove>();
         obstacleMove2 = Obstacle_2.GetComponent<ChimePuzzleObstacleMove>();
         obstacleMove3 = Obstacle_3.GetComponent<ChimePuzzleObstacleMove>();
@@ -58,40 +56,37 @@ public class ChimePuzzle : MonoBehaviour
         To do this, we check the status of the current chime against its status in the last call of update() (control1/2/3)
         If the proper bell for this state is activated, stop the associated obstacle and advance the state by 1
         Else, reset everything to state 0
-
-        Current Solution: 3, 1, 2
-
         */
 
         if(state == 0){
-            if(chimeActivate3.status != control3){
-                obstacleMove3.is_on = false;
-                state++;
-                //Debug.Log("State = " + state);
-            }
-            else if( (chimeActivate1.status != control1) || (chimeActivate2.status != control2)){
-                StartOver();
-                //Debug.Log("State = " + state);
-            }
-        }
-        else if(state == 1){
             if(chimeActivate1.status != control1){
                 obstacleMove1.is_on = false;
                 state++;
                 //Debug.Log("State = " + state);
             }
-            else if( (chimeActivate2.status != control2) || (chimeActivate3.status != control3)){
+            else if( (chimeActivate2.status != control1) || (chimeActivate3.status != control2)){
                 StartOver();
                 //Debug.Log("State = " + state);
             }
         }
-        else if(state == 2){
+        else if(state == 1){
             if(chimeActivate2.status != control2){
                 obstacleMove2.is_on = false;
                 state++;
                 //Debug.Log("State = " + state);
             }
             else if( (chimeActivate1.status != control1) || (chimeActivate3.status != control3)){
+                StartOver();
+                //Debug.Log("State = " + state);
+            }
+        }
+        else if(state == 2){
+            if(chimeActivate3.status != control3){
+                obstacleMove3.is_on = false;
+                state++;
+                //Debug.Log("State = " + state);
+            }
+            else if( (chimeActivate1.status != control1) || (chimeActivate2.status != control2)){
                 StartOver();
                 //Debug.Log("State = " + state);
             }
