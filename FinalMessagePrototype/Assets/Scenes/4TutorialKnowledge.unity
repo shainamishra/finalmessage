@@ -2086,7 +2086,7 @@ GameObject:
   - component: {fileID: 972150916}
   m_Layer: 6
   m_Name: Floor
-  m_TagString: 'Terrain: Snow'
+  m_TagString: 'Terrain: Grass'
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

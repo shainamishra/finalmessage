@@ -129,7 +129,7 @@ public class playerMovement : MonoBehaviour
 
     private void switchSFX() 
     {
-        AudioManager.instance.PlayCharSwitch("event:/UI/CharacterSwitch");
+        AudioManager.instance.PlaySound("event:/UI/CharacterSwitch");
     
     } 
     

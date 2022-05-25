@@ -12,13 +12,14 @@ public class pushable : MonoBehaviour
     GameObject box;
 
     public EventReference boulderAudio;
-    //public FMOD.Studio.EventInstance playBoulder = RuntimeManager.CreateInstance("event:/Environment & Ambience/BoulderPushPull");
+    public FMOD.Studio.EventInstance playBoulder;
     
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
         reach = GameObject.Find("Reach");
+        playBoulder = RuntimeManager.CreateInstance("event:/Environment & Ambience/BoulderPushPull");
     }
 
     // Update is called once per frame
@@ -30,7 +31,10 @@ public class pushable : MonoBehaviour
         if (Input.GetMouseButton(1) == false)
         {
             transform.parent = null;
-            //playBoulder.release();
+            if (AudioManager.isPlaying(playBoulder)) {
+                playBoulder.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                Debug.Log("stop playing");
+            }
         }
     }
 
@@ -39,9 +43,10 @@ public class pushable : MonoBehaviour
         if (other.gameObject.name == "ReachZone") {
             Debug.Log("Grab");
             transform.parent = player.transform;
-            //if (AudioManager.isPlaying(playBoulder)) {
-            //    playBoulder.start();
-            //}
+            if (!AudioManager.isPlaying(playBoulder)) {
+                playBoulder.start();
+                Debug.Log("start playing");
+            }
         } 
         
     }
