@@ -19,7 +19,7 @@ public class CharacterAudio : MonoBehaviour
         hit = Physics2D.Raycast(transform.position, Vector2.down, distance, 1 << 6);
 
         if (hit.collider) {
-            if (hit.collider.tag == "Terrain: Grass") {
+            if (hit.collider.tag == "Terrain: Grass" || hit.collider.tag == "Terrain: HighSlopesGrass") {
                 Material = 0f;
             } else if (hit.collider.tag == "Terrain: Snow") {
                 Material = 1f;
@@ -29,7 +29,6 @@ public class CharacterAudio : MonoBehaviour
                 Material = 4f;
             } else {
                 Material = 0f;
-
             }
         }
 

@@ -17,6 +17,8 @@ TagManager:
   - 'Terrain: Stone'
   - ObstacleDoor
   - MovingObstacle
+  - Rock
+  - 'Terrain: HighSlopesGrass'
   layers:
   - Default
   - TransparentFX

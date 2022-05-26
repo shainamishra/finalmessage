@@ -22,6 +22,10 @@ public class ButtonActivate : MonoBehaviour
 
     bool condition;
 
+    public FMOD.Studio.EventInstance buttonAudio;
+    public float onOff; 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,8 @@ public class ButtonActivate : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         condition = false;
+        onOff = 0f;
+        buttonAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/ButtonPress");
     }
 
     // Update is called once per frame
@@ -57,10 +63,38 @@ public class ButtonActivate : MonoBehaviour
         if(condition){
             spriteRenderer.sprite = button_down;
             status = true;
+            // onOff = 1f;
+            // if (!AudioManager.isPlaying(buttonAudio)) {
+            //     buttonAudio.setParameterByName("OnOff", onOff);
+            //     buttonAudio.start();
+            // } else {
+            //     buttonAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            // }
         }
         else{
             spriteRenderer.sprite = button_up;
             status = false;
+            // onOff = 0f;
+            // if (!AudioManager.isPlaying(buttonAudio)) {
+            //     buttonAudio.setParameterByName("OnOff", onOff);
+            //     buttonAudio.start();
+            // } else {
+            //     buttonAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            // }
         }
     }
+
+    // private void onCollisionEnter2D(Collider2D other) {
+    //     Debug.Log("trigger!");
+    //     if (other.gameObject.tag == "Player" || other.gameObject.tag == "Rock") {
+    //         if (!AudioManager.isPlaying(buttonAudio)) {
+    //             buttonAudio.setParameterByName("OnOff", onOff);
+    //             buttonAudio.start();
+    //             Debug.Log("start playing");
+    //         } else {
+    //             buttonAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    //             Debug.Log("stop playing");
+    //         }
+    //     }
+    // }
 }

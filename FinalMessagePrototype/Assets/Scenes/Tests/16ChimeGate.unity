@@ -385,16 +385,6 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1663769156227580805, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
   m_PrefabInstance: {fileID: 200146823}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &200146826 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4803309098173792284, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
-  m_PrefabInstance: {fileID: 200146823}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &200146827 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3567531701597368207, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
-  m_PrefabInstance: {fileID: 200146823}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &378812279
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,16 +529,6 @@ PrefabInstance:
 --- !u!1 &439323261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4663050324671714030, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
-  m_PrefabInstance: {fileID: 439323260}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &439323262 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6178971557100727808, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
-  m_PrefabInstance: {fileID: 439323260}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &439323263 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2173304178534002162, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
   m_PrefabInstance: {fileID: 439323260}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &459454756
@@ -1123,7 +1103,7 @@ MonoBehaviour:
       Data2: 1322489739
       Data3: -411140973
       Data4: 1281404409
-    Path: event:/Environment & Ambience/Wind
+    Path: event:/Environment & Ambience/Ambience
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -1554,7 +1534,7 @@ SpriteRenderer:
   m_Size: {x: 0.30821696, y: 0.3578125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1150717332
@@ -1934,12 +1914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b69dfbdf95e845c883d448ba485021b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 300
   shadow: {fileID: 1147560870}
-  player: {fileID: 200146826}
-  dog: {fileID: 439323263}
-  playeron: {fileID: 200146827}
-  dogon: {fileID: 439323262}
+  shadowidle: {fileID: 0}
+  cameraMovement: {fileID: 0}
+  skpos: {fileID: 0}
+  knight: {fileID: 0}
 --- !u!114 &2068123219
 MonoBehaviour:
   m_ObjectHideFlags: 0
