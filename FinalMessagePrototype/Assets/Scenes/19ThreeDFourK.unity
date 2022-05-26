@@ -4709,6 +4709,22 @@ PrefabInstance:
       propertyPath: platform
       value: 
       objectReference: {fileID: 618167311}
+    - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
+      propertyPath: m_LocalAABB.m_Center.x
+      value: 0.6781273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
+      propertyPath: m_LocalAABB.m_Center.y
+      value: 0.82603323
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
+      propertyPath: m_LocalAABB.m_Extent.x
+      value: 1.9232686
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
+      propertyPath: m_LocalAABB.m_Extent.y
+      value: 2.294724
+      objectReference: {fileID: 0}
     - target: {fileID: 3127007267302732285, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
       propertyPath: m_RootOrder
       value: 19
