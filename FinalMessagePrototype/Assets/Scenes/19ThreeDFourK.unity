@@ -1905,7 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b963d35106a29449e72b2904be0a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requires_key: 1
+  requires_key: 0
   first_chime: {fileID: 154081164}
   second_chime: {fileID: 1522989215}
   third_chime: {fileID: 902534841}
@@ -3308,7 +3308,7 @@ PrefabInstance:
       objectReference: {fileID: 645422697}
     - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
       propertyPath: requires_key
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}

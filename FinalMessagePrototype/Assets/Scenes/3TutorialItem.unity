@@ -5798,7 +5798,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8067761230402354811, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
       propertyPath: m_SortingLayer
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8067761230402354811, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
       propertyPath: m_SortingLayerID
@@ -5856,7 +5856,8 @@ PrefabInstance:
       propertyPath: dog_on
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7722423899383662189, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
 --- !u!1 &1854619409
 GameObject:

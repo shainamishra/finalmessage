@@ -12,6 +12,7 @@ public class AudioTrigger : MonoBehaviour
 
     public void PlayEvent(string path) {
         FMOD.Studio.EventInstance audioEvent = RuntimeManager.CreateInstance(path);
+        RuntimeManager.AttachInstanceToGameObject(audioEvent, GetComponent<Transform>(), GetComponent<Rigidbody2D>());
         audioEvent.start();
         audioEvent.release();
     }

@@ -130,8 +130,8 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.26666668
-    functionName: PlayOneShot
-    data: 
+    functionName: PlayEvent
+    data: event:/Environment & Ambience/Crow-Caw
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
