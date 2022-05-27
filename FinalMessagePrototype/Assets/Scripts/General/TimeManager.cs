@@ -8,7 +8,7 @@ using FMODUnity;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 300;
+    public static float startingTime = 10;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -28,6 +28,7 @@ public class TimeManager : MonoBehaviour
     static TimeManager instance;
 
     public FMOD.Studio.EventInstance restartAudio;
+    private FMOD.Studio.VCA timeOutVCA;
     // static GameObject ShadowKnight;
  
      void Awake()
@@ -52,6 +53,7 @@ public class TimeManager : MonoBehaviour
         knight = GameObject.Find("Player");
         cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
         TimesUp = false;
+        timeOutVCA = RuntimeManager.GetVCA("vca:/TimeOutAudio");
 
 
     }
@@ -84,6 +86,7 @@ public class TimeManager : MonoBehaviour
         if(startingTime<=0){
           startingTime=0;
           theText.text = "0:00";
+          timeOutVCA.setVolume(0f);
           if(cameraMovement.dogon.activeSelf == true){
               cameraMovement.dogon.SetActive(false);
               cameraMovement.playeron.SetActive(true);
@@ -116,7 +119,7 @@ public class TimeManager : MonoBehaviour
           if (!AudioManager.isPlaying(restartAudio)) {
             restartAudio.start();
           }
-
+          timeOutVCA.setVolume(1f);
 
         } 
         Awake();
