@@ -8,7 +8,7 @@ using FMODUnity;
 public class TimeManager : MonoBehaviour
 {
 
-    public static float startingTime = 10;
+    public static float startingTime = 300;
     private Text theText;
 
     public static bool TimesUp = false;
@@ -28,12 +28,13 @@ public class TimeManager : MonoBehaviour
     static TimeManager instance;
 
     public FMOD.Studio.EventInstance restartAudio;
+    public FMOD.Studio.EventInstance timerAudio;
+    public float timerState = 3f;
     private FMOD.Studio.VCA timeOutVCA;
     // static GameObject ShadowKnight;
  
      void Awake()
      {
-         restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
          if(instance == null )
          {    
              instance = this; 
@@ -48,12 +49,16 @@ public class TimeManager : MonoBehaviour
     void Start()
     {
       // DontDestroyOnLoad(this.gameObject);
-      
-        theText = GetComponent<Text>();
-        knight = GameObject.Find("Player");
-        cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
-        TimesUp = false;
-        timeOutVCA = RuntimeManager.GetVCA("vca:/TimeOutAudio");
+      theText = GetComponent<Text>();
+      knight = GameObject.Find("Player");
+      cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
+      TimesUp = false;
+      timeOutVCA = RuntimeManager.GetVCA("vca:/TimeOutAudio");
+      restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
+      timerAudio = RuntimeManager.CreateInstance("event:/UI/Timer");
+      if (!AudioManager.isPlaying(timerAudio)) {
+        timerAudio.start();
+      }
 
 
     }
@@ -121,10 +126,28 @@ public class TimeManager : MonoBehaviour
           }
           timeOutVCA.setVolume(1f);
 
-        } 
+        }
         Awake();
         slowdown();
+        timeCheck();
+        timerAudio.setParameterByName("Timer", timerState);
 
+    }
+
+    void timeCheck() {
+      if (startingTime <= 150 && startingTime > 60) {
+          timerState = 0f;
+          Debug.Log("timer slow");
+        } else if (startingTime <= 60 && startingTime > 30) {
+          timerState = 1f;
+          Debug.Log("timer med");
+        } else if (startingTime <= 30 && startingTime > 0) {
+          timerState = 2f;
+          Debug.Log("timer fast");
+        } else if (startingTime > 150 || startingTime <= 0){
+          timerState = 3f;
+          Debug.Log("timer off");
+        }
     }
 
     void shadowMove(){
