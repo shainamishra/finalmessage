@@ -14,6 +14,7 @@ public class GrandioseDoorOpen : MonoBehaviour
     Collider2D dog;
     ButtonActivate button1Activate;
     ButtonActivate button2Activate;
+    public Animator animator;
     bool button_trigger;
 
     // Start is called before the first frame update
@@ -34,14 +35,22 @@ public class GrandioseDoorOpen : MonoBehaviour
         if(button1Activate.status && button2Activate.status){
             //Play big opening animation...
             button_trigger = true;
+            animator.SetTrigger("Open");
+            StartCoroutine(OpenDoor());
         }
-        if(button_trigger){
+        /*if(button_trigger){
             if((thisDoor.IsTouching(knight) || thisDoor.IsTouching(dog)) && Input.GetKeyDown(KeyCode.E)){
                 status = true;
             }
             else{
                 status = false;
             }
-        }
+        }*/
+    }
+    IEnumerator OpenDoor()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(4);
+        status = true;
     }
 }

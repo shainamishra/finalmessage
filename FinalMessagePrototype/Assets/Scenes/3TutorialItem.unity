@@ -1900,8 +1900,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705711710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -1.39, z: 0}
-  m_LocalScale: {x: 1.06, y: 0.72, z: 1}
+  m_LocalPosition: {x: 0.67, y: -1.37, z: 0}
+  m_LocalScale: {x: 0.24, y: 0.24, z: 1}
   m_Children: []
   m_Father: {fileID: 33931961}
   m_RootOrder: 0
@@ -1946,7 +1946,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3814a5b60be9c5c49be98fb103505c72, type: 3}
   m_Color: {r: 0.8313726, g: 0.7372549, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5856,6 +5856,10 @@ PrefabInstance:
       propertyPath: dog_on
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5148869021734905732, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2058494823}
     m_RemovedComponents:
     - {fileID: 7722423899383662189, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
@@ -7060,6 +7064,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &2058494823 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4446285007609019694, guid: b08b577d403e4444d97c310afdc973e4, type: 3}
+  m_PrefabInstance: {fileID: 1830680406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2069124417
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 4dc5c8af576b88b44b8f02919951bd8b
+guid: 0e37e381718359145b48d5de52237930
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3562556818780669247
-    second: DogPetting-Sheet_0
+      213: -8799770783600463563
+    second: door_opening (1)_0
   - first:
-      213: 2319163831610948899
-    second: DogPetting-Sheet_1
+      213: 2951511528468791619
+    second: door_opening (1)_1
   - first:
-      213: -2284794906904337648
-    second: DogPetting-Sheet_2
+      213: 4042796476714777241
+    second: door_opening (1)_2
   - first:
-      213: -3648242723705167906
-    second: DogPetting-Sheet_3
+      213: 4936725793987502354
+    second: door_opening (1)_3
   - first:
-      213: -1352155916814755356
-    second: DogPetting-Sheet_4
-  - first:
-      213: 8769518031977516832
-    second: DogPetting-Sheet_5
+      213: 8118331906906980575
+    second: door_opening (1)_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DogPetting-Sheet_0
+      name: door_opening (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 512
+        height: 511
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,41 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cabe64d2714f8ec0800000000000000
-      internalID: -3562556818780669247
+      spriteID: 53132a2781fe0e580800000000000000
+      internalID: -8799770783600463563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DogPetting-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32dba17a7335f2020800000000000000
-      internalID: 2319163831610948899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DogPetting-Sheet_2
+      name: door_opening (1)_1
       rect:
         serializedVersion: 2
         x: 512
         y: 0
-        width: 256
-        height: 256
+        width: 512
+        height: 511
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,41 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01368553327ca40e0800000000000000
-      internalID: -2284794906904337648
+      spriteID: 3414adce810e5f820800000000000000
+      internalID: 2951511528468791619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DogPetting-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edf562f6296de5dc0800000000000000
-      internalID: -3648242723705167906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DogPetting-Sheet_4
+      name: door_opening (1)_2
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
-        width: 256
-        height: 256
+        width: 512
+        height: 511
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e950519b5d2c3de0800000000000000
-      internalID: -1352155916814755356
+      spriteID: 99af8c5d9f5ea1830800000000000000
+      internalID: 4042796476714777241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DogPetting-Sheet_5
+      name: door_opening (1)_3
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1536
         y: 0
-        width: 256
-        height: 256
+        width: 512
+        height: 511
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +183,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02f076bef2693b970800000000000000
-      internalID: 8769518031977516832
+      spriteID: 211222824f5c28440800000000000000
+      internalID: 4936725793987502354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_opening (1)_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd009e74bdb1aa070800000000000000
+      internalID: 8118331906906980575
       vertices: []
       indices: 
       edges: []

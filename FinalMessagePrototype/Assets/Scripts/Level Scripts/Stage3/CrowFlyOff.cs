@@ -10,6 +10,7 @@ public class CrowFlyOff : MonoBehaviour
     GameObject dog_on;
     Collider2D dog_collider;
     Collider2D this_collider;
+    public Animator animator;
     Vector3 pos;
     Vector3 scale;
     bool bark_status;
@@ -38,6 +39,7 @@ public class CrowFlyOff : MonoBehaviour
             // send signal to activated stuff
             status = true;
             // Move off as if flying
+            animator.SetTrigger("Fly");
             transform.localScale = scale;
             pos = transform.position;
             pos.y += 5 * Time.deltaTime;
