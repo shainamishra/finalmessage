@@ -1905,7 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b963d35106a29449e72b2904be0a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requires_key: 0
+  requires_key: 1
   first_chime: {fileID: 154081164}
   second_chime: {fileID: 1522989215}
   third_chime: {fileID: 902534841}
@@ -3308,7 +3308,7 @@ PrefabInstance:
       objectReference: {fileID: 645422697}
     - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
       propertyPath: requires_key
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
@@ -3961,6 +3961,7 @@ GameObject:
   - component: {fileID: 1896885990}
   - component: {fileID: 1896885989}
   - component: {fileID: 1896885988}
+  - component: {fileID: 1896885993}
   m_Layer: 0
   m_Name: EmberHeart
   m_TagString: Untagged
@@ -4104,6 +4105,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1896885993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896885986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -5147078
+      Data2: 1255436289
+      Data3: -1634310485
+      Data4: 1108825993
+    Path: event:/UI/KeyCheck
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1909907484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,7 +4246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3937519851163698214, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3937519851163698214, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_SortingLayerID
@@ -4711,19 +4742,19 @@ PrefabInstance:
       objectReference: {fileID: 618167311}
     - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: 0.6781273
+      value: 0.67666924
       objectReference: {fileID: 0}
     - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
       propertyPath: m_LocalAABB.m_Center.y
-      value: 0.82603323
+      value: 0.8265699
       objectReference: {fileID: 0}
     - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 1.9232686
+      value: 1.921435
       objectReference: {fileID: 0}
     - target: {fileID: 2984530828472776824, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 2.294724
+      value: 2.2939806
       objectReference: {fileID: 0}
     - target: {fileID: 3127007267302732285, guid: b1a036e5dcde2874ea8eb62efbf66d1d, type: 3}
       propertyPath: m_RootOrder
