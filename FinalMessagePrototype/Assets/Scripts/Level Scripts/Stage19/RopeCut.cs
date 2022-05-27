@@ -4,6 +4,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class RopeCut : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class RopeCut : MonoBehaviour
     bool is_on;
     bool condition;
     GameObject crow;
+    public EventReference ropeFail;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,10 @@ public class RopeCut : MonoBehaviour
         if(crow_can_cut){
             crow = GameObject.Find("Crow");
         }
+    }
+
+    public void playRopeFail() {
+        RuntimeManager.PlayOneShot(ropeFail);
     }
 
     // Update is called once per frame
@@ -41,6 +47,7 @@ public class RopeCut : MonoBehaviour
         if(condition){
             Destroy(gameObject, 0.15f);
             status = true;
+            
         }
         else if(crow_can_cut){
             float x_difference = gameObject.transform.position.x - crow.transform.position.x;
@@ -48,6 +55,8 @@ public class RopeCut : MonoBehaviour
                 Destroy(gameObject, 0.15f);
                 status = true;
             }
+        } else if (!condition && is_on && Input.GetMouseButtonDown(0)) {
+            playRopeFail();
         }
     }
 

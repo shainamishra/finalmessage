@@ -695,6 +695,13 @@ MonoBehaviour:
       Data3: 1486507440
       Data4: -901951980
     Path: event:/Environment & Ambience/ChimeBells-D
+  chimeFail:
+    Guid:
+      Data1: 303680924
+      Data2: 1321084514
+      Data3: 819564186
+      Data4: -1098203406
+    Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 764438855}
 --- !u!95 &154081168
 Animator:
@@ -2187,6 +2194,13 @@ MonoBehaviour:
       Data3: 1863254703
       Data4: 1158533738
     Path: event:/Environment & Ambience/ChimeBells-E
+  chimeFail:
+    Guid:
+      Data1: 303680924
+      Data2: 1321084514
+      Data3: 819564186
+      Data4: -1098203406
+    Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 764438855}
 --- !u!95 &902534845
 Animator:
@@ -3310,6 +3324,46 @@ PrefabInstance:
       propertyPath: requires_key
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeCut.Path
+      value: event:/Environment & Ambience/RopeSnap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeFail.Path
+      value: event:/Environment & Ambience/FalchionFail
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeCut.Guid.Data1
+      value: -898395767
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeCut.Guid.Data2
+      value: 1163168486
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeCut.Guid.Data3
+      value: 1316113799
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeCut.Guid.Data4
+      value: 317772160
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeFail.Guid.Data1
+      value: -1572593438
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeFail.Guid.Data2
+      value: 1162507736
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeFail.Guid.Data3
+      value: 635266456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356492560850525150, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
+      propertyPath: ropeFail.Guid.Data4
+      value: -1540272715
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 147fca9405337c24daa8b9b58eeabd8e, type: 3}
 --- !u!1 &1517071018 stripped
@@ -3505,6 +3559,13 @@ MonoBehaviour:
       Data3: -1353071464
       Data4: -1083049821
     Path: event:/Environment & Ambience/ChimeBells-A
+  chimeFail:
+    Guid:
+      Data1: 303680924
+      Data2: 1321084514
+      Data3: 819564186
+      Data4: -1098203406
+    Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 764438855}
 --- !u!95 &1522989219
 Animator:

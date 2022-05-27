@@ -10,11 +10,16 @@ public class ChimeActivate : MonoBehaviour
     bool overlap;
     bool condition;
     public EventReference chimeAudio;
+    public EventReference chimeFail;
     public GameObject chimeGate;
     ChimePuzzle chimePuzzle;
 
     public void playChime() {
         RuntimeManager.PlayOneShot(chimeAudio);
+    }
+
+    public void playFail() {
+        RuntimeManager.PlayOneShot(chimeFail);
     }
 
     void OnTriggerEnter2D(Collider2D collider){
@@ -48,6 +53,8 @@ public class ChimeActivate : MonoBehaviour
         if(condition){
             status = !status;
             playChime();
+        } else if (!condition && Input.GetKeyDown(KeyCode.E) && overlap){
+            playFail();
         }
     }
 }
