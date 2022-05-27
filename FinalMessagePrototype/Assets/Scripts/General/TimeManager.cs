@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class TimeManager : MonoBehaviour
 {
@@ -25,10 +26,13 @@ public class TimeManager : MonoBehaviour
     public static float speed = 0.000000000000000000000000000000000000000000000001f;
 
     static TimeManager instance;
+
+    public FMOD.Studio.EventInstance restartAudio;
     // static GameObject ShadowKnight;
  
      void Awake()
      {
+         restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
          if(instance == null )
          {    
              instance = this; 
@@ -109,6 +113,10 @@ public class TimeManager : MonoBehaviour
           TimesUp = false;
           startingTime = 300;
           SceneManager.LoadScene("1StartScene");
+          if (!AudioManager.isPlaying(restartAudio)) {
+            restartAudio.start();
+          }
+
 
         } 
         Awake();
