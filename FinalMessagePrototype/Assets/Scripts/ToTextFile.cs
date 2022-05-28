@@ -7,7 +7,9 @@ using System.IO;
 public class ToTextFile : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text finalMessage;
+    public InputField finalMessage;
+    public GameObject display;
+    public Text displayMessage;
 
     void Start()
     {
@@ -28,8 +30,14 @@ public class ToTextFile : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Return)){
             File.AppendAllText(txtFileName, finalMessage.text + "\n");
+            Debug.Log(finalMessage.text);
+            display.SetActive(true);
+            displayMessage.text += finalMessage.text;
+            finalMessage.gameObject.SetActive(false);
 
         }
+
+        
         
     }
 }
