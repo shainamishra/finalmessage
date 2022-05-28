@@ -11,7 +11,7 @@ public class ToTextFile : MonoBehaviour
 
     void Start()
     {
-        Directory.CreateDirectory(Application.streamingAssetsPath + "/YourFinalMessage/");
+        Directory.CreateDirectory(Application.dataPath + "/YourFinalMessage/");
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class ToTextFile : MonoBehaviour
         if (finalMessage.text == ""){
             return;
         }
-        string txtFileName = Application.streamingAssetsPath + "/YourFinalMessage/" + "YourFinalMessage" + ".txt";
+        string txtFileName = Application.dataPath + "/YourFinalMessage/" + "YourFinalMessage" + ".txt";
 
         if (!File.Exists(txtFileName)){
             File.WriteAllText(txtFileName, "Your Final Message: \n\n");
