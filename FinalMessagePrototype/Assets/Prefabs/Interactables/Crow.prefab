@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
+  animator: {fileID: 4446285007609019694}
 --- !u!95 &4446285007609019694
 Animator:
   serializedVersion: 3
