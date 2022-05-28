@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1777027817
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3754258981560797907, guid: e5f92fd2b3a2b1c42adb5e688550c974, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -127,3 +127,4 @@ MonoBehaviour:
   status: 0
   button_up: {fileID: 3754258981560797907, guid: e5f92fd2b3a2b1c42adb5e688550c974, type: 3}
   button_down: {fileID: -8531050031912521313, guid: e5f92fd2b3a2b1c42adb5e688550c974, type: 3}
+  onOff: 0
