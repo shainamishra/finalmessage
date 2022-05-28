@@ -509,7 +509,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 5, y: 2}
   m_EdgeRadius: 0
 --- !u!4 &373623954
 Transform:
@@ -1974,21 +1974,23 @@ MonoBehaviour:
   dialogue:
     name: Final Message
     sentences:
-    - Is this how I am to die?! Defeated by rope?!
-    - I finally found my way to the staff-which-brings-music, but there is a problem.
-    - 'I suspect that damn lich affixed his staff to this tree many years ago when
-      it was but a sapling. '
-    - In the time since, the tree has grown, and the cord he used has become embedded
-      deep in the wood as one of the great boughs grew around it.
-    - "I have not the strength left to fell the tree. I would simply cut the cord,
-      \nbut that eternal bastard must have protected it with some kind of magic!"
-    - My weapon does nothing!
-    - "I have tried every implement I can think of. I can see now that there must
-      \nbe some other item with the power to scotch the infernal fixture."
-    - "But alas, I have traveled the mountain with many a life and found not what
-      \nI seek."
+    - Damnable ravens! Foul creatures! Fine! You win!
+    - "I finally found my way to the staff-which-brings-music, but the damn things
+      won\u2019t let me close!"
+    - Their foul screams and wicked beaks keep me away! I managed to scare them off
+      with a mighty shout once, only to find the damn staff is tied down!
+    - That foul lich must have done it, the cord has become embedded deep in the
+      wood in a fell and unnatural manner...
+    - I had not the strength left to rip up the cord. I would have simply cut it,
+      but that eternal bastard must have protected it with some kind of magic!
+    - My weapon did nothing!
+    - I tried every implement I could think of. I can see now that there must be
+      some other item of power needed to scotch the infernal fixture.
+    - But alas, I have traveled the mountain with many a life and found not what
+      I seek.
     - "Now, I can\u2019t help but falter in my courage. The shadows come, and I leave
-      \nthis message such that I may be avenged against this tree and its \ntantalizations:\n"
+      this message such that I may be avenged against these foul ravens and their
+      master:"
     - Find what is needed to cut the rope!
   dialogueManager: {fileID: 1419260403}
 --- !u!114 &929827539
@@ -2046,7 +2048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: 99}
+  m_AnchoredPosition: {x: 179, y: 9}
   m_SizeDelta: {x: 52.0744, y: 14.6589}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &983781904

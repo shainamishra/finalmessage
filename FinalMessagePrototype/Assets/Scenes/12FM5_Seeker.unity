@@ -2100,7 +2100,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Witch Knight
+  m_Text: Final Message
 --- !u!1 &524356572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2455,7 @@ MonoBehaviour:
   canvas: {fileID: 2119193426}
   finalText: {fileID: 1623614069}
   text: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  dialogueManager: {fileID: 1507329254}
   levelVar: 0
   transition: {fileID: 0}
   transitionTime: 0.5
@@ -4637,7 +4637,7 @@ GameObject:
   - component: {fileID: 1507329256}
   - component: {fileID: 1507329255}
   m_Layer: 0
-  m_Name: DialogueManager
+  m_Name: DialogueManager_FM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4980,7 +4980,7 @@ GameObject:
   - component: {fileID: 1554712637}
   - component: {fileID: 1554712636}
   m_Layer: 0
-  m_Name: DialogueManager (1)
+  m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5878,7 +5878,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201CI have decided to rest."
+  m_Text: I have decided to rest.
 --- !u!222 &1868626693
 CanvasRenderer:
   m_ObjectHideFlags: 0

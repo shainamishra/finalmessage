@@ -608,7 +608,7 @@ MonoBehaviour:
     - Well-I mean, s-NO! Of course not!
     - I'm just taking my scheduled mid-cycle break! I have every minute of this cycle
       blocked out you know!
-    - And-And you always find me while I'm here, on my break!
+    - And-And you happened to find me while I'm here, on my break!
     - I don't need to explain myself to you! I see how you wander aimlessly, wasting
       daylight here and there!
     - Doting on that silly beast of yours instead of studying the Mountain!
@@ -826,7 +826,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you always just standing here?
+  m_Text: Are you just standing here?
 --- !u!222 &411281772
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1519,6 +1519,8 @@ MonoBehaviour:
     - I do know that the central pathway at that crossroads a way back leads to the
       Peak of the Mount, although I haven't been able to get very far along it.
     - Since you're here with me, it seems you haven't either.
+    - The Witch Knight there is quite fast with her blade...from the looks of it,
+      lots of Climbers gave up before they got past her. But not us!
     - So here we both are, clambering about the Mountain's base searching for things
       to aid our climb.
     - I'd recommend you pick up the pace, actually. I image in a few cycles I'll
@@ -3748,7 +3750,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fare Well.
+  m_Text: Fare well.
 --- !u!222 &2070024374
 CanvasRenderer:
   m_ObjectHideFlags: 0

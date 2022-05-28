@@ -1691,9 +1691,9 @@ MonoBehaviour:
       Are you new to the Valley?
     - She gave you the blessing, yes? The one with the medallion? She really wasn't
       kidding, lose your life out here and you'll wind up back with her.
-    - On that note, I've taken enough of your precious time today. Take this key
-      as a token of my thanks, then you'd best get going. I'm sure we'll see each
-      other again on the climb. Good luck!
+    - On that note, we're both burning daylight here. Take this key as a token of
+      my thanks, then you'd best get going soon. I'm sure we'll see each other again
+      on the climb.
     - 
   dialogueManager: {fileID: 177318873}
 --- !u!1 &680478080
@@ -3817,7 +3817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fare Well.
+  m_Text: Fare well.
 --- !u!222 &1387070555
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -33,6 +33,8 @@ public class TatikArarDialogue : MonoBehaviour
     public Button option10; 
     public Button option11; 
 
+    public GameObject dialogueManager;
+
     // text stuff
     public GameObject NPCname; 
     public GameObject canvas; 
@@ -108,6 +110,8 @@ public class TatikArarDialogue : MonoBehaviour
 
             Button btn11 = option11.GetComponent<Button>();
             btn11.onClick.AddListener(TaskOnClick11);
+
+            sentences = start.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
     }
 
     // Update is called once per frame
@@ -115,6 +119,8 @@ public class TatikArarDialogue : MonoBehaviour
     {
         // if the player touches the NPC
         StartDialogue();
+        // if the player stops touching the NPC
+        HideDialogue();
     }
 
     // show start button
@@ -126,6 +132,18 @@ public class TatikArarDialogue : MonoBehaviour
             start.gameObject.SetActive(true);
 
             TextTrigger.Speaking = true;
+        }
+    }
+    
+    // hide start button
+    void HideDialogue()
+    {
+        if(!player.IsTouching(npc) && (textOn == false))
+        {
+            // hide the talk button
+            start.gameObject.SetActive(false);
+
+            TextTrigger.Speaking = false;
         }
     }
     
@@ -239,7 +257,7 @@ public class TatikArarDialogue : MonoBehaviour
     }
 
     // show the canvas
-    void DiaableOptions() 
+    void DisableOptions() 
     {
         // show the option buttons
         option1.gameObject.SetActive(false);

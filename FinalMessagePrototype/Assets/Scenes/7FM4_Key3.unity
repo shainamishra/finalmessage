@@ -5172,7 +5172,7 @@ MonoBehaviour:
   dialogue:
     name: Final Message
     sentences:
-    - "\u201CCurses, how cruel is a fate such as this?"
+    - Curses, how cruel is a fate such as this?
     - My darling Witch Knight, the sun of my Earth,
     - the only thing I wished was to never leave you behind, hence my hesitance to
       climb towards the mountain top even after I had discovered it.
@@ -5188,7 +5188,7 @@ MonoBehaviour:
       of Mount Arar, a spirit endlessly waltzing with the shadows.
     - Perhaps when the curse of the mountain is lifted, if it is ever lifted,
     - we will all be able to bask underneath the incandescent sun together.
-    - "What a beautiful sight it would be\u2026 but never as beautiful as you.\u201D"
+    - "What a beautiful sight it would be\u2026 but never as beautiful as you."
   dialogueManager: {fileID: 1317711358}
 --- !u!114 &1795035739
 MonoBehaviour:

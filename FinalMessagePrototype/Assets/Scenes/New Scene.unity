@@ -3139,6 +3139,7 @@ MonoBehaviour:
   cameraMovement: {fileID: 0}
   skpos: {fileID: 1823901214}
   knight: {fileID: 0}
+  timerState: 3
 --- !u!114 &660884665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6521,6 +6522,7 @@ MonoBehaviour:
   option9: {fileID: 472207815}
   option10: {fileID: 1118955486}
   option11: {fileID: 897379644}
+  dialogueManager: {fileID: 1299604718}
   NPCname: {fileID: 680971996}
   canvas: {fileID: 455252464}
   text: {fileID: 0}
@@ -8003,7 +8005,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1299604719}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
@@ -8143,7 +8145,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '  Speak to?'
+  m_Text: '  Speak'
 --- !u!222 &1943403808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9387,10 +9389,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 6, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9401,7 +9403,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!4 &2122489065
 Transform:
