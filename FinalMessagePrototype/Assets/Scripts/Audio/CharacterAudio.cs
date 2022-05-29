@@ -10,7 +10,6 @@ public class CharacterAudio : MonoBehaviour
 
     void FixedUpdate() {
         TerrainCheck();
-        Debug.DrawRay(transform.position, Vector2.down*distance, Color.red);
     }
 
     void TerrainCheck() {
