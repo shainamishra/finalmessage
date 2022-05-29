@@ -18,6 +18,8 @@ public class TimeManager : MonoBehaviour
     public Animator shadowidle;
 
     public cameraMovement cameraMovement;
+    public playerMovement player;
+    public dogMovement dog;
 
 
     // public Transform kpos;
@@ -52,6 +54,9 @@ public class TimeManager : MonoBehaviour
       theText = GetComponent<Text>();
       knight = GameObject.Find("Player");
       cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
+      player = GameObject.Find("Player").GetComponent<playerMovement>();
+      dog = GameObject.Find("Dog").GetComponent<dogMovement>();
+
       TimesUp = false;
       timeOutVCA = RuntimeManager.GetVCA("vca:/TimeOutAudio");
       restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
@@ -68,6 +73,8 @@ public class TimeManager : MonoBehaviour
     {
         knight = GameObject.Find("Player");
         cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
+        player = GameObject.Find("Player").GetComponent<playerMovement>();
+        dog = GameObject.Find("Dog").GetComponent<dogMovement>();
 
         // startingTime -= Time.deltaTime;
         float t = startingTime;
@@ -91,6 +98,9 @@ public class TimeManager : MonoBehaviour
         if(startingTime<=0){
           startingTime=0;
           theText.text = "0:00";
+          player.moveSpeed = 0;
+          dog.moveSpeed = 0;
+
           timeOutVCA.setVolume(0f);
           if(cameraMovement.dogon.activeSelf == true){
               cameraMovement.dogon.SetActive(false);
@@ -240,7 +250,7 @@ public class TimeManager : MonoBehaviour
         //Wait for 10 seconds
         // Debug.Log("Fine. I admit it. I cut in line.");
         shadowMove();
-        yield return new WaitForSecondsRealtime (8f);
+        yield return new WaitForSecondsRealtime (9f);
         // Debug.Log("Fine. I admit it. I cut in line.");
         // shadowLeave();
         // Debug.Log("flipped");
