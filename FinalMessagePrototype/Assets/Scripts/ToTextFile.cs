@@ -32,7 +32,7 @@ public class ToTextFile : MonoBehaviour
             File.AppendAllText(txtFileName, finalMessage.text + "\n");
             Debug.Log(finalMessage.text);
             display.SetActive(true);
-            displayMessage.text += finalMessage.text;
+            displayMessage.text += " "+finalMessage.text+" ";
             finalMessage.gameObject.SetActive(false);
 
         }
