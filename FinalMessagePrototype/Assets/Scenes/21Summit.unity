@@ -806,7 +806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " Enter Your Final Message Here \n Press Return When You Finish "
+  m_Text: 
 --- !u!222 &825560757
 CanvasRenderer:
   m_ObjectHideFlags: 0
