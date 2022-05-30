@@ -10,15 +10,21 @@ public class ToTextFile : MonoBehaviour
     public InputField finalMessage;
     public GameObject display;
     public Text displayMessage;
+    public GameObject player;
 
     void Start()
     {
         Directory.CreateDirectory(Application.dataPath + "/YourFinalMessage/");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        // finalMessage.gameObject.SetActive(false);
+        if (player.transform.position.x > 75){
+            finalMessage.gameObject.SetActive(true);
+        }
         if (finalMessage.text == ""){
             return;
         }
