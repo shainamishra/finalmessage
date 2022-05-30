@@ -18,6 +18,7 @@ public class CutScene : MonoBehaviour
         SceneManager.LoadScene(26);
     }
 
+
     public void Exit()
     {
         Application.Quit();
