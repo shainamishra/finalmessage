@@ -557,6 +557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformNew (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
+      objectReference: {fileID: 0}
     - target: {fileID: 1325649279518234487, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.51
@@ -980,6 +984,10 @@ PrefabInstance:
     - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_Name
       value: PlatformNew (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
       objectReference: {fileID: 0}
     - target: {fileID: 1325649279518234487, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1415,6 +1423,10 @@ PrefabInstance:
     - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_Name
       value: PlatformNew (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
       objectReference: {fileID: 0}
     - target: {fileID: 1325649279518234487, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2085,6 +2097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformNew (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
+      objectReference: {fileID: 0}
     - target: {fileID: 1325649279518234487, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.28
@@ -2636,10 +2652,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5774242789248531454, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
       propertyPath: m_TagString
-      value: 'Terrain: Cave'
+      value: 'Terrain: Wood'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b0916f1eb0e4b146b1422b45c30f941, type: 3}
+--- !u!1 &972605483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972605484}
+  m_Layer: 0
+  m_Name: AmbienceCheck
+  m_TagString: 'Terrain: Cave'
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972605484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972605483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8830884, y: -1.8674763, z: -42.36232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &973408231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2784,6 +2830,10 @@ PrefabInstance:
     - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_Name
       value: PlatformNew (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
       objectReference: {fileID: 0}
     - target: {fileID: 1325649279518234487, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3787,6 +3837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformNew (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
+      objectReference: {fileID: 0}
     - target: {fileID: 1325649279518234487, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.28
@@ -4570,6 +4624,10 @@ PrefabInstance:
     - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_Name
       value: PlatformNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020328156017025330, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+      propertyPath: m_TagString
+      value: 'Terrain: Cave'
       objectReference: {fileID: 0}
     - target: {fileID: 1389534503875699818, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
       propertyPath: m_Size.x

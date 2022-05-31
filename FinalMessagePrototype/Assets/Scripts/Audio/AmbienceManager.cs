@@ -9,8 +9,8 @@ public class AmbienceManager : MonoBehaviour
     
     public static AmbienceManager instance;
     public FMOD.Studio.EventInstance Ambience;
-    public float scene = 0f;
-    public GameObject floor;
+    public float sceneType = 0f;
+    public GameObject setAmbience;
     public GameObject ambienceManager;
     public bool onOff;
 
@@ -21,7 +21,7 @@ public class AmbienceManager : MonoBehaviour
     }
 
     void onSceneLoaded(Scene scene, LoadSceneMode mode) {
-        floor = GameObject.Find("Floor");
+        setAmbience = GameObject.Find("AmbienceCheck");
     }
 
     void Start() {
@@ -40,20 +40,22 @@ public class AmbienceManager : MonoBehaviour
 
     void Update() {
         SceneCheck();
-        Ambience.setParameterByName("Location", scene); 
+        RuntimeManager.StudioSystem.setParameterByName("Location", sceneType);
     }
     
     void SceneCheck() {
-        if (floor.tag == "Terrain: Grass") {
-            scene = 0f;
-        } else if (floor.tag == "Terrain: HighSlopesGrass") {
-            scene = 1f;
-        } else if (floor.tag == "Terrain: Snow") {
-            scene = 2f;
-        } else if (floor.tag == "Terrain: Cave") {
-            scene = 3f;
-        } else if (floor.tag == "Terrain: Stone") {
-            scene = 4f;
+        if (setAmbience.tag == "Terrain: Grass") {
+            sceneType = 0f;
+        } else if (setAmbience.tag == "Terrain: HighSlopesGrass") {
+            sceneType = 1f;
+        } else if (setAmbience.tag == "Terrain: Snow") {
+            sceneType = 2f;
+        } else if (setAmbience.tag == "Terrain: Cave") {
+            sceneType = 3f;
+        } else if (setAmbience.tag == "Terrain: Stone") {
+            sceneType = 4f;
+        } else if (setAmbience.tag == "Terrain: Cutscene") {
+            sceneType = 5f;
         }
     }
 

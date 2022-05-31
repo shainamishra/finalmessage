@@ -24,7 +24,9 @@ public class CharacterAudio : MonoBehaviour
                 Material = 1f;
             } else if (hit.collider.tag == "Terrain: Cave") {
                 Material = 2f;
-            }  else if (hit.collider.tag == "Terrain: Stone") {
+            } else if (hit.collider.tag == "Terrain: Stone") {
+                Material = 3f;
+            } else if (hit.collider.tag == "Terrain: Wood") {
                 Material = 4f;
             } else {
                 Material = 0f;
@@ -32,7 +34,7 @@ public class CharacterAudio : MonoBehaviour
         }
 
     }
-    
+
     public void PlayFootsteps(string path) {
         FMOD.Studio.EventInstance Footsteps = RuntimeManager.CreateInstance(path);
         Footsteps.setParameterByName("Material", Material);
@@ -51,6 +53,4 @@ public class CharacterAudio : MonoBehaviour
         Action.start();
         Action.release();
     }
-
-
 }

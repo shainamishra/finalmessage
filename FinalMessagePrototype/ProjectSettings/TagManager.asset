@@ -19,6 +19,8 @@ TagManager:
   - MovingObstacle
   - Rock
   - 'Terrain: HighSlopesGrass'
+  - 'Terrain: Wood'
+  - 'Terrain: Cutscene'
   layers:
   - Default
   - TransparentFX

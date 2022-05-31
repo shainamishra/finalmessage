@@ -147,16 +147,12 @@ public class TimeManager : MonoBehaviour
     void timeCheck() {
       if (startingTime <= 150 && startingTime > 60) {
           timerState = 0f;
-          Debug.Log("timer slow");
         } else if (startingTime <= 60 && startingTime > 30) {
           timerState = 1f;
-          Debug.Log("timer med");
         } else if (startingTime <= 30 && startingTime > 0) {
           timerState = 2f;
-          Debug.Log("timer fast");
         } else if (startingTime > 150 || startingTime <= 0){
           timerState = 3f;
-          Debug.Log("timer off");
         }
     }
 
