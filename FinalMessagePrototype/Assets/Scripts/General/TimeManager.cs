@@ -31,6 +31,7 @@ public class TimeManager : MonoBehaviour
 
     public FMOD.Studio.EventInstance restartAudio;
     public FMOD.Studio.EventInstance timerAudio;
+    public FMOD.Studio.EventInstance lowTimeAudio;
     public float timerState = 3f;
     private FMOD.Studio.VCA timeOutVCA;
     // static GameObject ShadowKnight;
@@ -61,8 +62,9 @@ public class TimeManager : MonoBehaviour
       timeOutVCA = RuntimeManager.GetVCA("vca:/TimeOutAudio");
       restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
       timerAudio = RuntimeManager.CreateInstance("event:/UI/Timer");
-      if (!AudioManager.isPlaying(timerAudio)) {
-        timerAudio.start();
+      lowTimeAudio = RuntimeManager.CreateInstance("event:/UI/LowTimeLoop");
+      if (AudioManager.isPlaying(timerAudio)) {
+        timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
       }
 
 
@@ -145,14 +147,27 @@ public class TimeManager : MonoBehaviour
     }
 
     void timeCheck() {
-      if (startingTime <= 150 && startingTime > 60) {
+      if (startingTime <= 150 && startingTime > 146) {
           timerState = 0f;
-        } else if (startingTime <= 60 && startingTime > 30) {
+          if (!AudioManager.isPlaying(timerAudio)) {
+            timerAudio.start();
+          }
+        } else if (startingTime <= 60 && startingTime > 56) {
           timerState = 1f;
-        } else if (startingTime <= 30 && startingTime > 0) {
+          if (!AudioManager.isPlaying(timerAudio)) {
+            timerAudio.start();
+          }
+        } else if (startingTime <= 30 && startingTime > 26) {
           timerState = 2f;
-        } else if (startingTime > 150 || startingTime <= 0){
-          timerState = 3f;
+          if (!AudioManager.isPlaying(timerAudio)) {
+            timerAudio.start();
+          }
+        } else if (startingTime <= 290 && startingTime > 280){
+          if (!AudioManager.isPlaying(lowTimeAudio)) {
+            lowTimeAudio.start();
+          } else if (startingTime == 0) {
+            timerState = 3f;
+          }
         }
     }
 
