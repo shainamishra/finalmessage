@@ -574,7 +574,7 @@ public class LevelLoader : MonoBehaviour
             levels[23] = 1;
             if (player.transform.position.x > 45 && Input.GetKeyDown("e"))
             {
-                levelVar = -23;
+                levelVar = -13;
                 LoadNextLevel();
                 // fix the timer?
             }
