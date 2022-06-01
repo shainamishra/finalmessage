@@ -43,7 +43,6 @@ public class pushable : MonoBehaviour
             if (!AudioManager.isPlaying(playBoulder)) {
                 playBoulder.start();
             }
-        } 
-        
+        }  
     }
 }

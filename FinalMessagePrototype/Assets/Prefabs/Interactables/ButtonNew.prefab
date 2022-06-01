@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7451795288548657280}
   - component: {fileID: -9065599463096013722}
   - component: {fileID: 7489043828445073805}
+  - component: {fileID: 1587933495842416588}
   m_Layer: 0
   m_Name: ButtonNew
   m_TagString: Untagged
@@ -128,3 +129,24 @@ MonoBehaviour:
   button_up: {fileID: 3754258981560797907, guid: e5f92fd2b3a2b1c42adb5e688550c974, type: 3}
   button_down: {fileID: -8531050031912521313, guid: e5f92fd2b3a2b1c42adb5e688550c974, type: 3}
   onOff: 0
+--- !u!114 &1587933495842416588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4270962627415034047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: -807389467
+      Data2: 1207946385
+      Data3: -396595563
+      Data4: 1067773877
+    Path: event:/Environment & Ambience/ButtonPress
+  PlayOnAwake: 0
+  PlayOnDestroy: 0

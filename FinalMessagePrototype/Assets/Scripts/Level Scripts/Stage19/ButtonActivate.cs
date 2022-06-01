@@ -20,10 +20,11 @@ public class ButtonActivate : MonoBehaviour
     public Sprite button_up;
     public Sprite button_down;
 
-    bool condition;
+    private bool condition;
 
     public FMOD.Studio.EventInstance buttonAudio;
     public float onOff; 
+    public bool hasPlayed = true;
     
 
     // Start is called before the first frame update
@@ -63,38 +64,30 @@ public class ButtonActivate : MonoBehaviour
         if(condition){
             spriteRenderer.sprite = button_down;
             status = true;
-            // onOff = 1f;
-            // if (!AudioManager.isPlaying(buttonAudio)) {
-            //     buttonAudio.setParameterByName("OnOff", onOff);
-            //     buttonAudio.start();
-            // } else {
-            //     buttonAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            // }
         }
         else{
             spriteRenderer.sprite = button_up;
             status = false;
-            // onOff = 0f;
-            // if (!AudioManager.isPlaying(buttonAudio)) {
-            //     buttonAudio.setParameterByName("OnOff", onOff);
-            //     buttonAudio.start();
-            // } else {
-            //     buttonAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            // }
         }
     }
 
-    // private void onCollisionEnter2D(Collider2D other) {
-    //     Debug.Log("trigger!");
-    //     if (other.gameObject.tag == "Player" || other.gameObject.tag == "Rock") {
-    //         if (!AudioManager.isPlaying(buttonAudio)) {
-    //             buttonAudio.setParameterByName("OnOff", onOff);
-    //             buttonAudio.start();
-    //             Debug.Log("start playing");
-    //         } else {
-    //             buttonAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-    //             Debug.Log("stop playing");
-    //         }
-    //     }
-    // }
+    public void OnTriggerEnter2D(Collider2D collision) {
+        if (collision == knight || dog || rock || rock_1) {
+            if (!AudioManager.isPlaying(buttonAudio)) {
+                    onOff = 1f;
+                    buttonAudio.setParameterByName("OnOff", onOff);
+                    buttonAudio.start();
+            }
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision) {
+        if (collision == knight || dog || rock || rock_1) {
+            if (!AudioManager.isPlaying(buttonAudio)) {
+                    onOff = 0f;
+                    buttonAudio.setParameterByName("OnOff", onOff);
+                    buttonAudio.start();
+            }
+        }
+    }
 }
