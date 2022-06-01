@@ -4226,7 +4226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Player
   EventReference:
     Guid:
       Data1: -898395767
@@ -4235,7 +4235,7 @@ MonoBehaviour:
       Data4: 317772160
     Path: event:/Environment & Ambience/RopeSnap
   Event: 
-  PlayEvent: 12
+  PlayEvent: 3
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 1

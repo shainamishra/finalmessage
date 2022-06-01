@@ -162,7 +162,7 @@ public class TimeManager : MonoBehaviour
           if (!AudioManager.isPlaying(timerAudio)) {
             timerAudio.start();
           }
-        } else if (startingTime <= 290 && startingTime > 280){
+        } else if (startingTime <= 10 && startingTime > 0){
           if (!AudioManager.isPlaying(lowTimeAudio)) {
             lowTimeAudio.start();
           } else if (startingTime == 0) {
