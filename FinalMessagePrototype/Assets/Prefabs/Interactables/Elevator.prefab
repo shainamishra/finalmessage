@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2028357078410750525}
   - component: {fileID: 5749788147847103963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391182782177281331}
   - component: {fileID: 971430886704986922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Middle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295400551907310011}
   - component: {fileID: 8903690343712446695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4124609161271544006}
   - component: {fileID: 327214000085184731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6994481306518039622}
   - component: {fileID: 4335774007611034021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Middle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 1111275277892221497}
   - component: {fileID: 1111275277892221499}
   - component: {fileID: -7297863037735345935}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Elevator
   m_TagString: 'Terrain: Wood'
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7239319022703727200}
   - component: {fileID: 6448251217741104588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Middle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8933527821383313152}
   - component: {fileID: 1389534503875699818}
   - component: {fileID: 2922782531425522237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformNew
   m_TagString: 'Terrain: Stone'
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325649279518234487}
   - component: {fileID: 3858514875500885887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3697404628999727196}
   - component: {fileID: 8795390468773056829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8318514656017352904}
   - component: {fileID: 8318514656017352905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
