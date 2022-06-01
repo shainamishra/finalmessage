@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pauseMenu : MonoBehaviour
 {
@@ -30,7 +31,6 @@ public class pauseMenu : MonoBehaviour
 
     void pauseTask()
     {
-        Debug.Log("pause");
         pause.gameObject.SetActive(false);
         play.gameObject.SetActive(true);
         canvas.gameObject.SetActive(true);
@@ -38,9 +38,19 @@ public class pauseMenu : MonoBehaviour
 
     void playTask()
     {
-        Debug.Log("play");
         pause.gameObject.SetActive(true);
         play.gameObject.SetActive(false);
         canvas.gameObject.SetActive(false);
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(1);
+        TimeManager.startingTime = 300;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

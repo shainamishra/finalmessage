@@ -73,3 +73,6 @@ TagManager:
   - name: LevelLoader
     uniqueID: 104513875
     locked: 0
+  - name: PauseMenu
+    uniqueID: 2440864569
+    locked: 0
