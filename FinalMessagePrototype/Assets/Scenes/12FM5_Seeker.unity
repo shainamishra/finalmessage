@@ -4743,26 +4743,28 @@ MonoBehaviour:
     - It was a gift from a departed friend of mine, you see.
     - So, you will need to find one of your own. The Mount does wish to be climbed,
       despite its efforts to appear otherwise, so I do believe it will provide.
-    - I suspect you need only explore its slopes. Perhaps you already know where
-      to find one, hm?
-    - The Chime Gate, which bisects the caves that will take you to the Summit, has
-      three bells of differing sizes suspended in the air.
-    - These bells produce different tones. This is obvious, but I'm trying to keep
-      it simple for you.
+    - You need only explore its slopes. Last I saw, there was one left not far from
+      here.
+    - The hill with the six diverging paths leads there, I believe. Follow the boulder,
+      it will lead you in the right direction.
+    - Acquiring the bell will be another matter of course. But enough of that, you
+      were asking about the chimes.
+    - And the greatest obstacle the chimes present is the Chime Gate, which bisects
+      the caves that will take you to the Summit.
+    - It has three bells of differing sizes suspended in the air. These bells produce
+      different tones. This is obvious, but I'm trying to keep it simple for you.
     - To open the Gate, you must strike them in a precise order to create the song
       that it listens for.
     - Your instrument will resonate with the Gate's. It will not open without this
       resonance.
-    - I am going to teach you the order of chimes to perform the song now. Observe
-      carefully and remember, I have no patience for repetition.
-    - First, strike the largest of the bells.
-    - Then, strike the smallest.
-    - Finally, strike the middle bell.
-    - If you perform this simple ritual correctly, the way will become open to you.
-      Do you understand?
-    - Good. Now you may enter the Caves and begin your final ascent, if you wish.
-      Foolishness, but who am I to stop you?
-    - 
+    - If you have any brains, the Gate will teach you the order of chimes needed
+      to perform the song. Observe carefully, and the way will become open to you.
+    - Otherwise, well.
+    - You would not be the first simpleton to be turned away from the Summit of the
+      Mount.
+    - Although it would still be interesting to see you get even that far. Few do.
+    - Once you have your bell, you may enter the Caves and begin your final ascent,
+      if you wish. Foolishness, but who am I to stop you?
   dialogueManager: {fileID: 1554712635}
 --- !u!114 &1549186769
 MonoBehaviour:
@@ -6173,8 +6175,8 @@ MonoBehaviour:
     - The Shadows, of course, represent the spell's only true downside. In order
       to prevent each death from being your last, Tatik seems to have externalized
       our connection to it
-    - This creates a sort of mirror image of each Climber, a living Ghost. I'm sure
-      you've met yours already.
+    - This creates a sort of mirror image of each Climber, a living Ghost. You may
+      have met yours already.
     - But not to worry. The most your Shadow of Death can do to you is kill you.
     - Which isn't such a terrible thing when you know you're going to wake up the
       next morning regardless.
