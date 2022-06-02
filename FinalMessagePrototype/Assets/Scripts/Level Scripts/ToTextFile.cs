@@ -13,15 +13,15 @@ public class ToTextFile : MonoBehaviour
     public Text displayMessage;
     public GameObject player;
     public Button finish;
-    public playerMovement playerMovement;
-    public dogMovement dogMovement;
+    // public playerMovement playerMovement;
+    // public dogMovement dogMovement;
 
 
     void Start()
     {
         Directory.CreateDirectory(Application.dataPath + "/YourFinalMessage/");
-        playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
-        dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
+        // playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
+        // dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
     }
 
     // Update is called once per frame
