@@ -625,6 +625,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 549776823}
+    - target: {fileID: 3065096178899888131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065096178899888131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+      propertyPath: finalMessage
+      value: 
+      objectReference: {fileID: 961704982}
     - target: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab
@@ -696,11 +704,45 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 549776822}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549776823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb5cda89ed724ef4b9c968a488ef9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &549776827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3415249136469001705, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 549776822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &549776828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8509873703597993653, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 549776822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &549776829 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4803309098173792284, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+  m_PrefabInstance: {fileID: 549776822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &549776830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549776823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ab46b4342514194a838882319de09d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  playeron: {fileID: 549776824}
+  player: {fileID: 549776823}
+  animator: {fileID: 549776829}
+  strikepoint: {fileID: 549776828}
+  reachzone: {fileID: 549776827}
+  finalMessage: {fileID: 961704982}
 --- !u!1 &737719131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1598,8 @@ MonoBehaviour:
   displayMessage: {fileID: 825560756}
   player: {fileID: 549776823}
   finish: {fileID: 192270684}
+  playerMovement: {fileID: 0}
+  dogMovement: {fileID: 0}
 --- !u!1 &1305660794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,6 +2436,14 @@ PrefabInstance:
       propertyPath: dog
       value: 
       objectReference: {fileID: 1731050845}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603683128740824038, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+      propertyPath: finalMessage
+      value: 
+      objectReference: {fileID: 961704982}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
 --- !u!1 &1731050845 stripped
@@ -2415,11 +2467,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1731050844}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731050845}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ded343e509d7c04e80a7f15bdaedcc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1731050849 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2173304178534002162, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
+  m_PrefabInstance: {fileID: 1731050844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1731050850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731050845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356acc498eb6e4941866953ec48786a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  dogon: {fileID: 1731050846}
+  dog: {fileID: 1731050845}
+  animator: {fileID: 1731050849}
+  finalMessage: {fileID: 961704982}
 --- !u!1001 &1943955684
 PrefabInstance:
   m_ObjectHideFlags: 0

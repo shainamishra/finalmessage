@@ -6117,7 +6117,7 @@ GameObject:
   - component: {fileID: 1185880731}
   - component: {fileID: 1185880730}
   m_Layer: 5
-  m_Name: Time System
+  m_Name: Time System1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9647,6 +9647,7 @@ MonoBehaviour:
   dog: {fileID: 0}
   skpos: {fileID: 963782720}
   knight: {fileID: 0}
+  thisTimeManager: {fileID: 628722387}
   timerState: 3
 --- !u!114 &1930143245
 MonoBehaviour:

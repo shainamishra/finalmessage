@@ -6,7 +6,7 @@ using FMODUnity;
 using UnityEngine.UI;
 using System.IO;
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement1 : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject playeron;
@@ -15,6 +15,7 @@ public class playerMovement : MonoBehaviour
     public GameObject strikepoint;
     public GameObject reachzone;
     public static Rigidbody2D rb;
+    public InputField finalMessage;
 
     public FMOD.Studio.EventInstance pettingAudio;
     //public NPCBehavior npc;
@@ -66,7 +67,11 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         // swapping between knight and dog
-        if (Input.GetKeyDown("space"))
+        if (finalMessage.isFocused && Input.GetKeyDown("space")){
+            return;
+        
+        }
+        else if (Input.GetKeyDown("space"))
         {
             if (playeron.activeSelf == true)
             {
@@ -151,9 +156,12 @@ public class playerMovement : MonoBehaviour
     
     private void move()
     {
-        
+        if(finalMessage.isFocused){
+            rb.velocity = new Vector3(0,0,0);
+        }
+        else {
             rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        
+        }
         // rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
         // if(rb.velocity.x != 0){
         //     if(!FindObjectOfType<AudioManager>().isPlaying()){
@@ -196,10 +204,13 @@ public class playerMovement : MonoBehaviour
     {
         // facingRight = !facingRight; //inverse boolean
         // transform.Rotate(0f, 180f, 0f);
-        
+        if(finalMessage.isFocused){
+            transform.Rotate(0f, 0f, 0f);
+        }
+        else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
-        
+        }
     }
 
     /*private void OnCollisionEnter2D(Collision2D other) {

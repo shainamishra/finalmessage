@@ -13,19 +13,22 @@ public class ToTextFile : MonoBehaviour
     public Text displayMessage;
     public GameObject player;
     public Button finish;
+    public playerMovement playerMovement;
+    public dogMovement dogMovement;
 
 
     void Start()
     {
         Directory.CreateDirectory(Application.dataPath + "/YourFinalMessage/");
-        
+        playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
+        dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
         // finalMessage.gameObject.SetActive(false);
-        if (player.transform.position.x > 55){
+        if (player.transform.position.x > 75){
             finalMessage.gameObject.SetActive(true);
         }
         if (finalMessage.text == ""){
@@ -37,6 +40,13 @@ public class ToTextFile : MonoBehaviour
             File.WriteAllText(txtFileName, "Your Final Message: \n\n");
 
         }
+
+        // if (finalMessage.gameObject.activeSelf == true){
+        //     playerMovement.whileInput();
+        //     dogMovement.whileInput();
+        // }
+
+        
         // if (Input.GetKeyDown(KeyCode.Return)){
         //     File.AppendAllText(txtFileName, finalMessage.text + "\n");
         //     Debug.Log(finalMessage.text);

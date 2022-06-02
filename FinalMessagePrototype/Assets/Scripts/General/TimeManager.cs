@@ -29,6 +29,8 @@ public class TimeManager : MonoBehaviour
 
     static TimeManager instance;
 
+    public GameObject thisTimeManager;
+
     public FMOD.Studio.EventInstance restartAudio;
     public FMOD.Studio.EventInstance timerAudio;
     public FMOD.Studio.EventInstance lowTimeAudio;
@@ -250,6 +252,7 @@ public class TimeManager : MonoBehaviour
          {
              startingTime -= 0;
              shadow.SetActive(false);
+             thisTimeManager.SetActive(false);
          }
       else {
         startingTime -= Time.deltaTime;

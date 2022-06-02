@@ -5,7 +5,7 @@ using FMODUnity;
 using UnityEngine.UI;
 using System.IO;
 
-public class dogMovement : MonoBehaviour
+public class DogMovement1 : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject dogon;
@@ -15,6 +15,7 @@ public class dogMovement : MonoBehaviour
     public static Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
+    public InputField finalMessage;
 
     public FMOD.Studio.EventInstance pettingAudio;
 
@@ -40,7 +41,11 @@ public class dogMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {        
-        if (Input.GetKeyDown("space")) {
+        if (finalMessage.isFocused && Input.GetKeyDown("space")){
+            return;
+        
+        }
+        else if (Input.GetKeyDown("space")) {
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
@@ -124,9 +129,12 @@ public class dogMovement : MonoBehaviour
     private void move()
     {
         // rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        
+        if(finalMessage.isFocused){
+            rb.velocity = new Vector3(0,0,0);
+        }
+        else {
             rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        
+        }
         // if(rb.velocity.x != 0){
         //     if(!FindObjectOfType<AudioManager>().isPlaying()){
         //         FindObjectOfType<AudioManager>().Play("Footsteps-Dog");
@@ -159,10 +167,13 @@ public class dogMovement : MonoBehaviour
     {
         // facingRight = !facingRight; //inverse boolean
         // transform.Rotate(0f, 180f, 0f);
-        
+        if(finalMessage.isFocused){
+            transform.Rotate(0f, 0f, 0f);
+        }
+        else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
-        
+        }
     }
 
 

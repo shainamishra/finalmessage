@@ -521,17 +521,17 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 21)
         {
             levels[21] = 1;
-            if (player.transform.position.x > 35 && Input.GetKeyDown("e"))
-            {
-                levelVar = 3;
-                LoadNextLevel();
-            }
+            // if (player.transform.position.x > 35 && Input.GetKeyDown("e"))
+            // {
+            //     levelVar = 3;
+            //     LoadNextLevel();
+            // }
             // move back
-            else if((player.transform.position.x < -10) || (dog.transform.position.x < -11))
-            {
-                levelVarNeg = 0;
-                LoadPrevLevel();
-            }
+            // else if((player.transform.position.x < -10) || (dog.transform.position.x < -11))
+            // {
+            //     levelVarNeg = 0;
+            //     LoadPrevLevel();
+            // }
         }
 
         // Three doors
