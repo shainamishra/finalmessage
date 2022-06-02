@@ -1446,6 +1446,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &555736667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2620,6 +2621,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 7
   finalMessage: 1
+  repeatable: 1
 --- !u!114 &1067994159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3198,6 +3200,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1318426360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3490,6 +3493,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 2
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1429222392
 MonoBehaviour:
   m_ObjectHideFlags: 0

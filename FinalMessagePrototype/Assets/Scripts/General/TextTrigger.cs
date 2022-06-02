@@ -40,6 +40,8 @@ public class TextTrigger : MonoBehaviour
 
     //toggling for conversations or Final Messages
     public bool finalMessage = false;
+    //toggling for if the dialogue can be reread in full
+    public bool repeatable = false;
     
     void Start()
     {
@@ -74,6 +76,7 @@ public class TextTrigger : MonoBehaviour
         Button btn4 = option4.GetComponent<Button>();
         btn4.onClick.AddListener(TaskOnClick4);
         
+        //adjust sentences to correct value
         sentences = start.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
     }
 
@@ -113,7 +116,9 @@ public class TextTrigger : MonoBehaviour
     // close the canvas
     void Close() 
     {
-        contClicked = 0;
+        if(repeatable) {
+            contClicked = 0;
+        }
         TextTrigger.Speaking = false;
         textOn = false;
 
@@ -161,6 +166,13 @@ public class TextTrigger : MonoBehaviour
         // hide the start button
         start.gameObject.SetActive(false);
         textOn = true;
+        //reveal continue button if there is more text
+        if(contClicked < sentences) {
+            cont.gameObject.SetActive(true);
+        }
+        else {//remove continue button
+            cont.gameObject.SetActive(false);
+        }
 
         // show the text canvas
         EnableCanvas();
@@ -191,6 +203,8 @@ public class TextTrigger : MonoBehaviour
         }
         else
         {
+            //reveal continue button
+            cont.gameObject.SetActive(true);
             contClicked = contClicked + 1;
         }
     }

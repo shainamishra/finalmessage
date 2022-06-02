@@ -279,6 +279,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 2
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &97950884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2008,6 +2009,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 1
+  repeatable: 1
 --- !u!114 &766494714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,6 +3918,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1438426455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5431,6 +5434,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1805040159
 MonoBehaviour:
   m_ObjectHideFlags: 0

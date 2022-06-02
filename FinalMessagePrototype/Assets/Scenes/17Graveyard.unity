@@ -1906,7 +1906,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '  Speak to?'
+  m_Text: '  Speak'
 --- !u!222 &103016858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5353,6 +5353,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &261181876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5564,6 +5565,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &266029902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5809,6 +5811,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &280567712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7847,6 +7850,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &402574121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9415,6 +9419,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &454571634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9820,6 +9825,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &479050021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10581,6 +10587,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &501797342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12075,6 +12082,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &564349122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14348,6 +14356,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &654096708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16140,6 +16149,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &785991798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19573,6 +19583,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &943339002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22618,6 +22629,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1055027542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24908,6 +24920,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1190128372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27357,6 +27370,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1316623065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27489,6 +27503,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1317344253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27959,6 +27974,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 15
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1329398757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29699,6 +29715,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1401602512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30367,6 +30384,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1442935611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30612,6 +30630,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1446358999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31071,6 +31090,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1475022139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32683,6 +32703,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1587435134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33742,6 +33763,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1628748631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33987,6 +34009,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1639378371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34573,6 +34596,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1660750039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35263,6 +35287,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1703680512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37071,6 +37096,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1791538041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37886,6 +37912,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &1826207175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38534,6 +38561,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1849327112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40337,6 +40365,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1974124178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41309,6 +41338,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &2036174536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42700,6 +42730,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &2082016614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44173,6 +44204,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 12
   finalMessage: 1
+  repeatable: 0
 --- !u!114 &2142163864
 MonoBehaviour:
   m_ObjectHideFlags: 0

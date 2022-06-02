@@ -730,6 +730,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 7
   finalMessage: 1
+  repeatable: 1
 --- !u!114 &274954563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2799,6 +2800,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &948396645
 MonoBehaviour:
   m_ObjectHideFlags: 0
