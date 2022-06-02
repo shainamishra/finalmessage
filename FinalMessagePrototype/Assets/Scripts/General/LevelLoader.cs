@@ -195,6 +195,13 @@ public class LevelLoader : MonoBehaviour
                 levelVarNeg = 0;
                 LoadPrevLevel();
             }
+
+            // check if player fell from a great height, send to start
+            if (GroundCheck.dead == true)
+            {
+                levelVar = -6;
+                LoadNextLevel();
+            }
         }
 
         // Final Message 1
