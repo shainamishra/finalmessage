@@ -585,13 +585,6 @@ public class LevelLoader : MonoBehaviour
                 LoadNextLevel();
                 // fix the timer?
             }
-
-            // move back
-            else if((player.transform.position.x < -10) || (dog.transform.position.x < -11))
-            {
-                levelVarNeg = -11;
-                LoadPrevLevel();
-            }
         }
 
     }
