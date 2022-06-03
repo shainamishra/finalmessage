@@ -15,7 +15,7 @@ public class GrandioseDoorOpen : MonoBehaviour
     ButtonActivate button1Activate;
     ButtonActivate button2Activate;
     public Animator animator;
-    bool button_trigger;
+    //bool button_trigger;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class GrandioseDoorOpen : MonoBehaviour
         thisDoor = gameObject.GetComponent<Collider2D>();
         button1Activate = button1.GetComponent<ButtonActivate>();
         button2Activate = button2.GetComponent<ButtonActivate>();
-        button_trigger = false;
+        //button_trigger = false;
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class GrandioseDoorOpen : MonoBehaviour
     {
         if(button1Activate.status && button2Activate.status){
             //Play big opening animation...
-            button_trigger = true;
+            //button_trigger = true;
             animator.SetTrigger("Open");
             StartCoroutine(OpenDoor());
         }
