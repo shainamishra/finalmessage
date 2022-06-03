@@ -93,11 +93,14 @@ public class TimeManager : MonoBehaviour
         // shadow.SetActive(false);
     
 
+        /*
         if (Input.GetKeyDown(KeyCode.R)){
           // shadow.SetActive(false);
           SceneManager.LoadScene("1StartScene");
           startingTime = 300;
         }
+        */
+        restart();
 
         if(startingTime<=0){
           startingTime=0;
@@ -115,18 +118,12 @@ public class TimeManager : MonoBehaviour
             // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
 
             // if(skpos.position.x>knight.transform.position.x){
-
-
                 StartCoroutine(waiter());
                 
             // }
-            // skpos.SetPositionAndRotation(new Vector3(250f,-1.33f,0f),new Quaternion(0,0,0,0));
-
-            
-            
+            // skpos.SetPositionAndRotation(new Vector3(250f,-1.33f,0f),new Quaternion(0,0,0,0)); 
         }
         
-
         // if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
         if(TimesUp == true ){
           // shadow.SetActive(false);
@@ -274,8 +271,14 @@ public class TimeManager : MonoBehaviour
           // Debug.Log("Restart");
 
         TimesUp = true;
-        
-        
-
+    }
+    
+    public static void restart()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("1StartScene");
+            startingTime = 300;
+        }
     }
 }

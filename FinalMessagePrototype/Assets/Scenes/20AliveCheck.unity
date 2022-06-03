@@ -250,8 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bg1: {fileID: 22902798}
-  bg2: {fileID: 21300000, guid: ce26f428fc47e44da89b43f096d78180, type: 3}
-  bg3: {fileID: 21300000, guid: cea942738d90740a5ab2792d642ef8f6, type: 3}
+  bg2: {fileID: 21300000, guid: 7fc22a754e85741d68903abadf79d596, type: 3}
+  bg3: {fileID: 21300000, guid: 693d54e0a2e2f4b48bd35d70c64f69d6, type: 3}
   fg1: {fileID: 486037264}
   fg2: {fileID: 21300000, guid: 2923533fae70a4f0a8a789887e8ecb55, type: 3}
   fg3: {fileID: 21300000, guid: afeeefef6ad3f4b80bcf018d65fdc6f8, type: 3}

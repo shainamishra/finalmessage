@@ -166,8 +166,9 @@ public class TextTrigger : MonoBehaviour
         // hide the start button
         start.gameObject.SetActive(false);
         textOn = true;
+        
         //reveal continue button if there is more text
-        if(contClicked < sentences) {
+        if(!finalMessage || contClicked < sentences) {
             cont.gameObject.SetActive(true);
         }
         else {//remove continue button

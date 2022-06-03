@@ -42,7 +42,6 @@ public class LevelLoader : MonoBehaviour
         door = GameObject.Find("Door");
         // playerMovement = GameObject.GetComponent(typeof(playerMovement));
         // dogMovement = GameObject.GetComponent(typeof(dogMovement));
-  
 
         LoadLevel(24);
     }

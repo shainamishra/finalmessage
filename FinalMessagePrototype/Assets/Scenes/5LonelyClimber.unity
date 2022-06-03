@@ -327,6 +327,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 2
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &96678296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,6 +1282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+--- !u!212 &830308208 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+  m_PrefabInstance: {fileID: 830308207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &857724475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1644,6 +1650,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+--- !u!212 &1128480862 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+  m_PrefabInstance: {fileID: 1128480861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1136172285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,14 +3274,14 @@ MonoBehaviour:
   bg1: {fileID: 1660781628}
   bg2: {fileID: 21300000, guid: 280187dd0f28a43fd871b1026b237b1a, type: 3}
   bg3: {fileID: 21300000, guid: 18508c43aba014868903906ee2d68727, type: 3}
-  fg1: {fileID: 0}
+  fg1: {fileID: 830308208}
   fg2: {fileID: 21300000, guid: ea0fdacbcd06742ee88343819f09b567, type: 3}
   fg3: {fileID: 21300000, guid: 1b8f928ab31944504b498511b7328d09, type: 3}
   cliff1: {fileID: 535321101}
   cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliffPt2: {fileID: 535321101}
-  floorPt2: {fileID: 535321101}
+  floorPt2: {fileID: 1128480862}
   floorPt3: {fileID: 535321101}
   floorPt4: {fileID: 535321101}
   floorPt5: {fileID: 535321101}
@@ -3326,6 +3337,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 0
   finalMessage: 0
+  repeatable: 0
 --- !u!114 &1735186139
 MonoBehaviour:
   m_ObjectHideFlags: 0

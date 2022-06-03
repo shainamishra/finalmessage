@@ -33,8 +33,9 @@ public class backgroundChanger : MonoBehaviour
         {
             bg1.sprite = bg2;
             fg1.sprite = fg2;
-            cliff1.sprite = cliff2;
 
+            cliff1.sprite = cliff2;
+            
             cliffPt2.sprite = cliff2;
 
             floorPt2.sprite = fg2;
@@ -48,6 +49,7 @@ public class backgroundChanger : MonoBehaviour
         {
             bg1.sprite = bg3;
             fg1.sprite = fg3;
+
             cliff1.sprite = cliff3;
 
             cliffPt2.sprite = cliff3;

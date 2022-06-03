@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class pauseMenu : MonoBehaviour
 {
@@ -43,10 +42,12 @@ public class pauseMenu : MonoBehaviour
         canvas.gameObject.SetActive(false);
     }
 
-    public void ResetGame()
+     void ResetGame()
     {
-        SceneManager.LoadScene(1);
-        TimeManager.startingTime = 300;
+        //TimeManager.startingTime = 300;
+        //SceneManager.LoadScene(1);
+        TimeManager.restart();
+        //LoadNextLevel();
     }
 
     public void QuitGame()
