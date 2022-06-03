@@ -17,7 +17,7 @@ public class LevelLoader : MonoBehaviour
     GameObject stageExit;
     ExitTransitionTrigger exitTransition;
 
-    //public EventReference transitionAudio;
+    public FMOD.Studio.EventInstance transitionAudio;
 
     public static bool Prev;
 
@@ -44,6 +44,7 @@ public class LevelLoader : MonoBehaviour
         // dogMovement = GameObject.GetComponent(typeof(dogMovement));
 
         LoadLevel(24);
+        transitionAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/SceneTransition");
     }
 
     // Check win conditions
@@ -587,15 +588,6 @@ public class LevelLoader : MonoBehaviour
         }
 
     }
-
-    // public void PlayTransition() {
-    //     FMOD.Studio.EventInstance transitionSteps = RuntimeManager.CreateInstance(transitionAudio);
-    //     if (!transitionSteps.isPlaying()) {
-    //         transitionSteps.start();
-    //     } else if (transitionSteps.isPlaying()) {
-    //         transitionSteps.release();
-    //     }
-    // }
     
     public void LoadNextLevel()
     {
@@ -620,7 +612,9 @@ public class LevelLoader : MonoBehaviour
         transition.SetTrigger("Start");
 
         //play scene transition audio
-        // PlayTransition();
+        if (!AudioManager.isPlaying(transitionAudio)) {
+            transitionAudio.start();
+        }
 
         // wait for x amount of seconds
         yield return new WaitForSeconds(transitionTime);
