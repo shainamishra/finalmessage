@@ -14,7 +14,9 @@ public class RopeCut : MonoBehaviour
 
     bool is_on;
     bool condition;
+    bool isColliding;
     GameObject crow;
+
     public EventReference ropeFail;
 
     // Start is called before the first frame update
@@ -55,8 +57,10 @@ public class RopeCut : MonoBehaviour
                 Destroy(gameObject, 0.15f);
                 status = true;
             }
-        } else if (!condition && is_on && Input.GetMouseButtonDown(0)) {
-            playRopeFail();
+        } else if (!condition && is_on && isColliding) {
+            if (Input.GetMouseButtonDown(0)) {
+                playRopeFail();
+            }
         }
     }
 
@@ -64,6 +68,18 @@ public class RopeCut : MonoBehaviour
     {
         if (collider.gameObject.name == "StrikeZone"){
             is_on = true;
+        }
+
+        if (collider.gameObject.tag == "Player") {
+            isColliding = true;
+            Debug.Log("Colliding");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider) {
+        if (collider.gameObject.tag == "Player") {
+            isColliding = false;
+            Debug.Log("Not Colliding");
         }
     }
 }
