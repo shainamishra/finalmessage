@@ -72,14 +72,12 @@ public class RopeCut : MonoBehaviour
 
         if (collider.gameObject.tag == "Player") {
             isColliding = true;
-            Debug.Log("Colliding");
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider) {
         if (collider.gameObject.tag == "Player") {
             isColliding = false;
-            Debug.Log("Not Colliding");
         }
     }
 }
