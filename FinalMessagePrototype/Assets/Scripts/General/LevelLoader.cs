@@ -24,9 +24,9 @@ public class LevelLoader : MonoBehaviour
     public int levelVar = 0;
     public int levelVarNeg = 0;
 
-    public static int Key1 = 0;
-    public static int Key2 = 0;
-    public static int Key3 = 0;
+    public static int Key1 = 0; //falchion
+    public static int Key2 = 0; //bell
+    public static int Key3 = 0; //ember heart
     public static int Key4 = 0;
 
     public playerMovement playerMovement;
