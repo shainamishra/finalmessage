@@ -7,15 +7,19 @@ public class InventoryUIManager : MonoBehaviour
     GameObject inventoryFalchion;
     GameObject inventoryChimeStaff;
     GameObject inventoryEmberHeart;
+    //Camera mainCamera;
+    Canvas canvas;
 
     //public bool test_UI = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        inventoryFalchion = gameObject.transform.GetChild(1).gameObject;
-        inventoryChimeStaff = gameObject.transform.GetChild(2).gameObject;
-        inventoryEmberHeart = gameObject.transform.GetChild(3).gameObject;
+        inventoryFalchion = gameObject.transform.GetChild(2).gameObject;
+        inventoryChimeStaff = gameObject.transform.GetChild(3).gameObject;
+        inventoryEmberHeart = gameObject.transform.GetChild(4).gameObject;
+        //mainCamera = GameObject.Find("Main Camera");
+        canvas = gameObject.GetComponent<Canvas>();
     }
 
     // Update is called once per frame
@@ -33,7 +37,7 @@ public class InventoryUIManager : MonoBehaviour
             inventoryEmberHeart.SetActive(false);
         }
         */
-
+        canvas.worldCamera = Camera.main;
         if(LevelLoader.Key1 == 1){
             inventoryFalchion.SetActive(true);
         }
