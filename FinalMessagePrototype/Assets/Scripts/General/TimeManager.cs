@@ -12,6 +12,7 @@ public class TimeManager : MonoBehaviour
     private Text theText;
 
     public static bool TimesUp = false;
+    private static bool timeUp = false;
     public GameObject shadow;
     
 
@@ -61,6 +62,7 @@ public class TimeManager : MonoBehaviour
       dog = GameObject.Find("Dog").GetComponent<dogMovement>();
 
       TimesUp = false;
+      timeUp = false;
       timeOutVCA = RuntimeManager.GetVCA("vca:/TimeOutAudio");
       restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
       timerAudio = RuntimeManager.CreateInstance("event:/UI/Timer");
@@ -107,6 +109,7 @@ public class TimeManager : MonoBehaviour
           theText.text = "0:00";
           player.moveSpeed = 0;
           dog.moveSpeed = 0;
+          TimesUp = true;
 
           timeOutVCA.setVolume(0f);
           if(cameraMovement.dogon.activeSelf == true){
@@ -125,7 +128,7 @@ public class TimeManager : MonoBehaviour
         }
         
         // if(TimesUp == true && Input.GetKeyDown(KeyCode.R)){
-        if(TimesUp == true ){
+        if(timeUp == true ){
           // shadow.SetActive(false);
           skpos.SetPositionAndRotation(new Vector3(250f,-1.33f,0f),new Quaternion(0,0,0,0));
 
@@ -260,6 +263,7 @@ public class TimeManager : MonoBehaviour
     {
         //Wait for 10 seconds
         // Debug.Log("Fine. I admit it. I cut in line.");
+        // TimesUp = true;
         shadowMove();
         yield return new WaitForSecondsRealtime (9f);
         // Debug.Log("Fine. I admit it. I cut in line.");
@@ -269,8 +273,9 @@ public class TimeManager : MonoBehaviour
         Debug.Log("Leave");
           // startingTime = 300;
           // Debug.Log("Restart");
+          timeUp = TimesUp;
 
-        TimesUp = true;
+        // TimesUp = true;
     }
     
     public static void restart()

@@ -17,10 +17,12 @@ public class playerMovement : MonoBehaviour
     public static Rigidbody2D rb;
 
     public FMOD.Studio.EventInstance pettingAudio;
+    // public TimeManager time;
     //public NPCBehavior npc;
 
     //public bool interactPressed = false;
     //public bool submitPressed = false;
+    // public static bool check = TimeManager.TimesUp;
 
     private bool facingRight = true;
     private float moveDirection = 0f;
@@ -152,7 +154,12 @@ public class playerMovement : MonoBehaviour
     private void move()
     {
         
+        if(TimeManager.TimesUp == true){
+            rb.velocity = new Vector3(0,0,0);
+        }
+        else {
             rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        }            
         
         // rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
         // if(rb.velocity.x != 0){
@@ -192,14 +199,27 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(moveDirection));
     }
 
+    // private void flipChara()
+    // {
+    //     // facingRight = !facingRight; //inverse boolean
+    //     // transform.Rotate(0f, 180f, 0f);
+        
+    //         facingRight = !facingRight; //inverse boolean
+    //         transform.Rotate(0f, 180f, 0f);
+        
+    // }
     private void flipChara()
     {
         // facingRight = !facingRight; //inverse boolean
         // transform.Rotate(0f, 180f, 0f);
         
+        if(TimeManager.TimesUp == true){
+            transform.Rotate(0f, 0f, 0f);
+        }
+        else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
-        
+        }
     }
 
     /*private void OnCollisionEnter2D(Collision2D other) {

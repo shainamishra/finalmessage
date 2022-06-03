@@ -125,7 +125,12 @@ public class dogMovement : MonoBehaviour
     {
         // rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
         
+        if(TimeManager.TimesUp == true){
+            rb.velocity = new Vector3(0,0,0);
+        }
+        else {
             rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        }   
         
         // if(rb.velocity.x != 0){
         //     if(!FindObjectOfType<AudioManager>().isPlaying()){
@@ -160,8 +165,13 @@ public class dogMovement : MonoBehaviour
         // facingRight = !facingRight; //inverse boolean
         // transform.Rotate(0f, 180f, 0f);
         
+        if(TimeManager.TimesUp == true){
+            transform.Rotate(0f, 0f, 0f);
+        }
+        else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
+        }
         
     }
 
