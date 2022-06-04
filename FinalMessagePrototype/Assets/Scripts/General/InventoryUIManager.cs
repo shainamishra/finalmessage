@@ -4,22 +4,40 @@ using UnityEngine;
 
 public class InventoryUIManager : MonoBehaviour
 {
-    GameObject inventoryFalchion;
-    GameObject inventoryChimeStaff;
-    GameObject inventoryEmberHeart;
-    //Camera mainCamera;
-    Canvas canvas;
+    public GameObject inventoryFalchion;
+    public GameObject inventoryChimeBells;
+    public GameObject inventoryEmberHeart;
+    
+    public GameObject darkFalchion;
+    public GameObject darkChimeBells;
+    public GameObject darkEmberHeart;
 
-    //public bool test_UI = false;
+    Canvas canvas;
 
     // Start is called before the first frame update
     void Start()
     {
+        /*
         inventoryFalchion = gameObject.transform.GetChild(2).gameObject;
-        inventoryChimeStaff = gameObject.transform.GetChild(3).gameObject;
+        inventoryChimeBells = gameObject.transform.GetChild(3).gameObject;
         inventoryEmberHeart = gameObject.transform.GetChild(4).gameObject;
-        //mainCamera = GameObject.Find("Main Camera");
+        
+        darkFalchion = gameObject.transform.GetChild(2).gameObject;
+        darkChimeBells = gameObject.transform.GetChild(3).gameObject;
+        darkEmberHeart = gameObject.transform.GetChild(4).gameObject;
+        */
+
         canvas = gameObject.GetComponent<Canvas>();
+
+        // aquired
+        inventoryFalchion.SetActive(false);
+        inventoryChimeBells.SetActive(false);
+        inventoryEmberHeart.SetActive(false);
+
+        // dark default
+        darkFalchion.SetActive(true);
+        darkChimeBells.SetActive(true);
+        darkEmberHeart.SetActive(true);
     }
 
     // Update is called once per frame
@@ -28,24 +46,33 @@ public class InventoryUIManager : MonoBehaviour
         /*
         if(test_UI){
             inventoryFalchion.SetActive(true);
-            inventoryChimeStaff.SetActive(true);
+            inventoryChimeBells.SetActive(true);
             inventoryEmberHeart.SetActive(true);
         }
         else{
             inventoryFalchion.SetActive(false);
-            inventoryChimeStaff.SetActive(false);
+            inventoryChimeBells.SetActive(false);
             inventoryEmberHeart.SetActive(false);
         }
-        */
         canvas.worldCamera = Camera.main;
-        if(LevelLoader.Key1 == 1){
+        */
+
+        if(LevelLoader.Key1 == 1)
+        {
             inventoryFalchion.SetActive(true);
+            darkFalchion.SetActive(false);
         }
-        if(LevelLoader.Key2 == 1){
-            inventoryChimeStaff.SetActive(true);
+        if(LevelLoader.Key2 == 1)
+        {
+            inventoryChimeBells.SetActive(true);
+            darkChimeBells.SetActive(false);
         }
-        if(LevelLoader.Key3 == 1){
+        if(LevelLoader.Key3 == 1)
+        {
             inventoryEmberHeart.SetActive(true);
+            darkEmberHeart.SetActive(false);
         } 
+
+
     }
 }

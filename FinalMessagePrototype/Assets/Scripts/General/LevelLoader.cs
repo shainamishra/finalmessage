@@ -357,6 +357,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 13){
             // level ending conditions
             levels[13] = 1;
+
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch

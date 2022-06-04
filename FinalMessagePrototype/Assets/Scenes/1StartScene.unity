@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 288458658}
   - component: {fileID: 288458659}
   m_Layer: 0
-  m_Name: InventoryChimeStaff
+  m_Name: InventoryChimeBells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2553,7 +2553,7 @@ GameObject:
   - component: {fileID: 528399609}
   - component: {fileID: 528399610}
   m_Layer: 0
-  m_Name: DarkChimeStaff
+  m_Name: DarkChimeBells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3100,6 +3100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dec0e939a115fe4aa7073b36665b788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryFalchion: {fileID: 0}
+  inventoryChimeBells: {fileID: 0}
+  inventoryEmberHeart: {fileID: 0}
+  darkFalchion: {fileID: 0}
+  darkChimeBells: {fileID: 0}
+  darkEmberHeart: {fileID: 0}
 --- !u!114 &613015674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3946,14 +3952,14 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -718847481
+  m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &768012953
@@ -3973,7 +3979,7 @@ RectTransform:
   - {fileID: 1237926723}
   - {fileID: 25643697}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3992,6 +3998,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dec0e939a115fe4aa7073b36665b788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryFalchion: {fileID: 1157120318}
+  inventoryChimeBells: {fileID: 288458657}
+  inventoryEmberHeart: {fileID: 509539497}
+  darkFalchion: {fileID: 923743423}
+  darkChimeBells: {fileID: 528399608}
+  darkEmberHeart: {fileID: 944148277}
 --- !u!1 &807058201
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,7 +4362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855074231
 GameObject:
@@ -6582,7 +6594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1237926723}
   m_Layer: 5
-  m_Name: ChimeStaff
+  m_Name: ChimeBells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9433,7 +9445,7 @@ RectTransform:
   - {fileID: 365573234}
   - {fileID: 1361724947}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

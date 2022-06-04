@@ -13,7 +13,7 @@ public class TimeManager : MonoBehaviour
     public static bool TimesUp = false;
     private static bool timeUp = false;
     public GameObject shadow;
-    
+
 
     public Animator shadowidle;
 
