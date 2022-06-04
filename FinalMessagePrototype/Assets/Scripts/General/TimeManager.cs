@@ -7,7 +7,6 @@ using FMODUnity;
 
 public class TimeManager : MonoBehaviour
 {
-
     public static float startingTime = 300;
     private Text theText;
 
