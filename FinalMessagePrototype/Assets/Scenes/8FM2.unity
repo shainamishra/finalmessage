@@ -441,7 +441,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90f6531c1fe904e4a8b0bbf2d32f8a0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 228b71ddaeb504984b4892541ca3ee91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -523,7 +523,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 76218250f998d4b06aa3bd37da758159, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83965c426ca1743b98bbaadc831ac1d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3243,8 +3243,8 @@ MonoBehaviour:
   cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
   cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
   cliffPt2: {fileID: 3385869}
-  floorPt2: {fileID: 43307800}
-  floorPt3: {fileID: 2116100147}
+  floorPt2: {fileID: 2116100147}
+  floorPt3: {fileID: 3385869}
   floorPt4: {fileID: 3385869}
   floorPt5: {fileID: 3385869}
   floorPt6: {fileID: 3385869}
@@ -4091,7 +4091,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90f6531c1fe904e4a8b0bbf2d32f8a0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 228b71ddaeb504984b4892541ca3ee91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

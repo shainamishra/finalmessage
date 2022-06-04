@@ -679,6 +679,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+--- !u!1 &259877542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3427892712498508449, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+  m_PrefabInstance: {fileID: 1949159830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &259877544 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+  m_PrefabInstance: {fileID: 1949159830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &259877546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259877542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 259877544}
+  cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
+  cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
 --- !u!1 &274954561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,6 +1783,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &648135030 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+  m_PrefabInstance: {fileID: 1225794088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &648703073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1866,15 +1896,15 @@ MonoBehaviour:
   bg1: {fileID: 541368332}
   bg2: {fileID: 21300000, guid: ce26f428fc47e44da89b43f096d78180, type: 3}
   bg3: {fileID: 21300000, guid: cea942738d90740a5ab2792d642ef8f6, type: 3}
-  fg1: {fileID: 0}
+  fg1: {fileID: 755487413}
   fg2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
   fg3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
-  cliff1: {fileID: 0}
+  cliff1: {fileID: 648135030}
   cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
   cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
-  cliffPt2: {fileID: 4093041}
-  floorPt2: {fileID: 0}
-  floorPt3: {fileID: 4093041}
+  cliffPt2: {fileID: 259877544}
+  floorPt2: {fileID: 1685668391}
+  floorPt3: {fileID: 1667705991}
   floorPt4: {fileID: 4093041}
   floorPt5: {fileID: 4093041}
   floorPt6: {fileID: 4093041}
@@ -2143,6 +2173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43945a36309eb4686bb44749a6cd9b62, type: 3}
+--- !u!212 &755487413 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9079517532113669561, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+  m_PrefabInstance: {fileID: 203673811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &768011774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2544,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+--- !u!1 &903254489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3427892712498508449, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+  m_PrefabInstance: {fileID: 648703073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &903254491 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+  m_PrefabInstance: {fileID: 648703073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &903254493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903254489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 903254491}
+  cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
+  cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
 --- !u!1 &905236489
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,6 +5318,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+--- !u!212 &1667705991 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9079517532113669561, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+  m_PrefabInstance: {fileID: 435654530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1685668391 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9079517532113669561, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+  m_PrefabInstance: {fileID: 1118612667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1777492525
 PrefabInstance:
   m_ObjectHideFlags: 0

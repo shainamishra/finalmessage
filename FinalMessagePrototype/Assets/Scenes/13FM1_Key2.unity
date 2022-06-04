@@ -1982,6 +1982,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873714194}
   m_CullTransparentMesh: 1
+--- !u!212 &914685526 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+  m_PrefabInstance: {fileID: 1484189793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &929827536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,6 +2155,11 @@ RectTransform:
   m_AnchoredPosition: {x: 111.28, y: 9}
   m_SizeDelta: {x: 52.0744, y: 14.6589}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &968397029 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9079517532113669561, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+  m_PrefabInstance: {fileID: 359643157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &983781904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2441,6 +2451,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026812935}
   m_CullTransparentMesh: 1
+--- !u!212 &1032077358 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9079517532113669561, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+  m_PrefabInstance: {fileID: 2028463106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1048591024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4414,6 +4429,11 @@ MonoBehaviour:
   _yClamp:
   - 0
   - 100
+--- !u!212 &2076162854 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9079517532113669561, guid: bbf0f1749e26b0e439a0f297f3aa66cf, type: 3}
+  m_PrefabInstance: {fileID: 1048591024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2099894060
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,15 +4481,15 @@ MonoBehaviour:
   bg1: {fileID: 605127904}
   bg2: {fileID: 21300000, guid: ce26f428fc47e44da89b43f096d78180, type: 3}
   bg3: {fileID: 21300000, guid: cea942738d90740a5ab2792d642ef8f6, type: 3}
-  fg1: {fileID: 0}
+  fg1: {fileID: 2076162854}
   fg2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
   fg3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
-  cliff1: {fileID: 0}
+  cliff1: {fileID: 914685526}
   cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
   cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
   cliffPt2: {fileID: 463563055}
-  floorPt2: {fileID: 463563055}
-  floorPt3: {fileID: 463563055}
+  floorPt2: {fileID: 1032077358}
+  floorPt3: {fileID: 968397029}
   floorPt4: {fileID: 463563055}
   floorPt5: {fileID: 463563055}
   floorPt6: {fileID: 463563055}

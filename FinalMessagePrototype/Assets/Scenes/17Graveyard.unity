@@ -6998,6 +6998,7 @@ GameObject:
   - component: {fileID: 352532031}
   - component: {fileID: 352532030}
   - component: {fileID: 352532029}
+  - component: {fileID: 352532032}
   m_Layer: 6
   m_Name: Floor (9)
   m_TagString: Player
@@ -7096,6 +7097,21 @@ Transform:
   m_Father: {fileID: 40897052}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &352532032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352532028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 352532030}
+  cliff2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  cliff3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
 --- !u!1 &373171878
 GameObject:
   m_ObjectHideFlags: 0
@@ -22741,6 +22757,7 @@ GameObject:
   - component: {fileID: 1072742888}
   - component: {fileID: 1072742887}
   - component: {fileID: 1072742886}
+  - component: {fileID: 1072742889}
   m_Layer: 6
   m_Name: Floor (6)
   m_TagString: Player
@@ -22839,6 +22856,21 @@ Transform:
   m_Father: {fileID: 40897052}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072742889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072742885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 1072742887}
+  cliff2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  cliff3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
 --- !u!1 &1073777992
 GameObject:
   m_ObjectHideFlags: 0
@@ -23005,6 +23037,7 @@ GameObject:
   - component: {fileID: 1078327954}
   - component: {fileID: 1078327953}
   - component: {fileID: 1078327952}
+  - component: {fileID: 1078327955}
   m_Layer: 6
   m_Name: Floor (5)
   m_TagString: Player
@@ -23103,6 +23136,21 @@ Transform:
   m_Father: {fileID: 40897052}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1078327955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078327951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 1078327953}
+  cliff2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
 --- !u!1001 &1083966523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33515,6 +33563,7 @@ GameObject:
   - component: {fileID: 1610289051}
   - component: {fileID: 1610289050}
   - component: {fileID: 1610289049}
+  - component: {fileID: 1610289052}
   m_Layer: 6
   m_Name: Floor (7)
   m_TagString: Player
@@ -33613,6 +33662,21 @@ Transform:
   m_Father: {fileID: 40897052}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610289052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610289048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 1610289050}
+  cliff2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  cliff3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
 --- !u!1 &1624384714
 GameObject:
   m_ObjectHideFlags: 0
@@ -43036,15 +43100,15 @@ MonoBehaviour:
   fg1: {fileID: 558030914}
   fg2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
   fg3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
-  cliff1: {fileID: 0}
+  cliff1: {fileID: 658749827}
   cliff2: {fileID: 21300000, guid: e9a86d4132a7e45eca1720c767a01a1a, type: 3}
   cliff3: {fileID: 21300000, guid: fe47376eeae3944a2988c9820abae924, type: 3}
   cliffPt2: {fileID: 658749827}
-  floorPt2: {fileID: 658749827}
-  floorPt3: {fileID: 658749827}
-  floorPt4: {fileID: 658749827}
-  floorPt5: {fileID: 658749827}
-  floorPt6: {fileID: 658749827}
+  floorPt2: {fileID: 558030914}
+  floorPt3: {fileID: 416416132}
+  floorPt4: {fileID: 410670818}
+  floorPt5: {fileID: 216013674}
+  floorPt6: {fileID: 165686050}
 --- !u!1 &2093544518
 GameObject:
   m_ObjectHideFlags: 0
@@ -43386,6 +43450,7 @@ GameObject:
   - component: {fileID: 2110925124}
   - component: {fileID: 2110925123}
   - component: {fileID: 2110925122}
+  - component: {fileID: 2110925125}
   m_Layer: 6
   m_Name: Floor (8)
   m_TagString: Player
@@ -43484,6 +43549,21 @@ Transform:
   m_Father: {fileID: 40897052}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2110925125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110925121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a01d92b1d34e0c97a4ec52e0816bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cliff1: {fileID: 2110925123}
+  cliff2: {fileID: 21300000, guid: 1e260c7dcaad345918f6ced62ede0200, type: 3}
+  cliff3: {fileID: 21300000, guid: 340d7bb70442248d7a1a11010ffd9f12, type: 3}
 --- !u!1 &2113473677
 GameObject:
   m_ObjectHideFlags: 0

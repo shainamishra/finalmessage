@@ -906,8 +906,8 @@ MonoBehaviour:
   cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliffPt2: {fileID: 406311862}
-  floorPt2: {fileID: 406311862}
-  floorPt3: {fileID: 406311862}
+  floorPt2: {fileID: 1662613405}
+  floorPt3: {fileID: 29657286}
   floorPt4: {fileID: 406311862}
   floorPt5: {fileID: 406311862}
   floorPt6: {fileID: 406311862}

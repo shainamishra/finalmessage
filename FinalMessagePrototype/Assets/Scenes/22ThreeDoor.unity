@@ -647,6 +647,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!212 &384089624 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 1b1104d2c8809564ca40927d4aa0d0f3, type: 3}
+  m_PrefabInstance: {fileID: 1464089893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &542790575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,6 +2037,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e881062843f9641bbfe5cc4b97d52b, type: 3}
+--- !u!212 &1766099533 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 9d756407a7412c64fad789a11b200fb1, type: 3}
+  m_PrefabInstance: {fileID: 582780674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1776060291 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 9d756407a7412c64fad789a11b200fb1, type: 3}
+  m_PrefabInstance: {fileID: 201818965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1889860301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,15 +2195,15 @@ MonoBehaviour:
   bg1: {fileID: 281912423}
   bg2: {fileID: 21300000, guid: 1264eae52320440008fd60ff27af3ca5, type: 3}
   bg3: {fileID: 21300000, guid: 4b837db68b733423586f5cbd4fbc4ad3, type: 3}
-  fg1: {fileID: 0}
+  fg1: {fileID: 2113068446}
   fg2: {fileID: 21300000, guid: dffef89c0148a464a9c813d442dbb5df, type: 3}
   fg3: {fileID: 21300000, guid: 34b27516e07d4480d8f14f260b98e561, type: 3}
-  cliff1: {fileID: 213131572}
-  cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
-  cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
+  cliff1: {fileID: 384089624}
+  cliff2: {fileID: 21300000, guid: 928367886feb04a5b8f2c0a3cef336b4, type: 3}
+  cliff3: {fileID: 21300000, guid: ad642ce6aa8cf4372beb9e4c609135a3, type: 3}
   cliffPt2: {fileID: 213131572}
-  floorPt2: {fileID: 213131572}
-  floorPt3: {fileID: 213131572}
+  floorPt2: {fileID: 1776060291}
+  floorPt3: {fileID: 1766099533}
   floorPt4: {fileID: 213131572}
   floorPt5: {fileID: 213131572}
   floorPt6: {fileID: 213131572}
@@ -2335,6 +2350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ee5e58185ddc546a8853ca72158472, type: 3}
+--- !u!212 &2113068446 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 9d756407a7412c64fad789a11b200fb1, type: 3}
+  m_PrefabInstance: {fileID: 1110870129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2124761903
 GameObject:
   m_ObjectHideFlags: 0

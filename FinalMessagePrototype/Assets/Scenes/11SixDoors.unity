@@ -1393,6 +1393,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1212191506 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
+  m_PrefabInstance: {fileID: 1650531232}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1248256836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2066,9 +2071,9 @@ MonoBehaviour:
   fg1: {fileID: 1452241079}
   fg2: {fileID: 21300000, guid: ea0fdacbcd06742ee88343819f09b567, type: 3}
   fg3: {fileID: 21300000, guid: 1b8f928ab31944504b498511b7328d09, type: 3}
-  cliff1: {fileID: 0}
-  cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
-  cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
+  cliff1: {fileID: 1212191506}
+  cliff2: {fileID: 21300000, guid: 78e483a7b4242164db5322ee62b8942e, type: 3}
+  cliff3: {fileID: 21300000, guid: eb107d8985cdac54c9696c58b2819427, type: 3}
   cliffPt2: {fileID: 563580598}
   floorPt2: {fileID: 1547487321}
   floorPt3: {fileID: 2131030455}

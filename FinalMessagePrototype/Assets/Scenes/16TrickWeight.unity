@@ -728,6 +728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+--- !u!212 &575381855 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4047248682046728888, guid: 0f7b11661bba3bc4dabe9f2fb16ab7a2, type: 3}
+  m_PrefabInstance: {fileID: 434910037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &616684703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1562,6 +1567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fe34dfea05fae448467addbdee6020, type: 3}
+--- !u!212 &975565291 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+  m_PrefabInstance: {fileID: 1380849873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1060990029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,15 +2245,15 @@ MonoBehaviour:
   bg1: {fileID: 1060990031}
   bg2: {fileID: 21300000, guid: 280187dd0f28a43fd871b1026b237b1a, type: 3}
   bg3: {fileID: 21300000, guid: 18508c43aba014868903906ee2d68727, type: 3}
-  fg1: {fileID: 0}
+  fg1: {fileID: 975565291}
   fg2: {fileID: 21300000, guid: ea0fdacbcd06742ee88343819f09b567, type: 3}
   fg3: {fileID: 21300000, guid: 1b8f928ab31944504b498511b7328d09, type: 3}
-  cliff1: {fileID: 1256423179}
-  cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
-  cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
+  cliff1: {fileID: 575381855}
+  cliff2: {fileID: 21300000, guid: 78e483a7b4242164db5322ee62b8942e, type: 3}
+  cliff3: {fileID: 21300000, guid: eb107d8985cdac54c9696c58b2819427, type: 3}
   cliffPt2: {fileID: 1256423179}
-  floorPt2: {fileID: 1256423179}
-  floorPt3: {fileID: 1256423179}
+  floorPt2: {fileID: 1639329451}
+  floorPt3: {fileID: 975565291}
   floorPt4: {fileID: 1256423179}
   floorPt5: {fileID: 1256423179}
   floorPt6: {fileID: 1256423179}
@@ -2464,6 +2474,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6881e06ce5ffc2c4d89b5fde84fe7f9b, type: 3}
+--- !u!212 &1639329451 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 339932069323388800, guid: 5feb05938dad9421f84f19311b6a711a, type: 3}
+  m_PrefabInstance: {fileID: 549590674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1734111398
 PrefabInstance:
   m_ObjectHideFlags: 0

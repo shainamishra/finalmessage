@@ -404,7 +404,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: e9fcc407017dd4656bb49dae02bcaac8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d93785f8e1314fc3beda19f5d8b57d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -450,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.14
+      value: -6.94
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1102,15 +1102,15 @@ MonoBehaviour:
   bg1: {fileID: 116972834}
   bg2: {fileID: 21300000, guid: 280187dd0f28a43fd871b1026b237b1a, type: 3}
   bg3: {fileID: 21300000, guid: 18508c43aba014868903906ee2d68727, type: 3}
-  fg1: {fileID: 0}
+  fg1: {fileID: 1895797302}
   fg2: {fileID: 21300000, guid: ea0fdacbcd06742ee88343819f09b567, type: 3}
   fg3: {fileID: 21300000, guid: 1b8f928ab31944504b498511b7328d09, type: 3}
   cliff1: {fileID: 706603935}
   cliff2: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliff3: {fileID: 21300000, guid: 1f3fcfc578ced4bb7bf83ec26f958ebe, type: 3}
   cliffPt2: {fileID: 706603935}
-  floorPt2: {fileID: 706603935}
-  floorPt3: {fileID: 706603935}
+  floorPt2: {fileID: 233685982}
+  floorPt3: {fileID: 2049642077}
   floorPt4: {fileID: 706603935}
   floorPt5: {fileID: 706603935}
   floorPt6: {fileID: 706603935}
@@ -1305,7 +1305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.3
+      value: -7.1
       objectReference: {fileID: 0}
     - target: {fileID: 6721822282640273650, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1652,7 +1652,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: e9fcc407017dd4656bb49dae02bcaac8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d93785f8e1314fc3beda19f5d8b57d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1980,7 +1980,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: e9fcc407017dd4656bb49dae02bcaac8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d93785f8e1314fc3beda19f5d8b57d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
