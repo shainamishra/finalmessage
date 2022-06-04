@@ -319,7 +319,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a53e08b708db4f2b80da07b1ba5e59c, type: 3}
-    m_FontSize: 160
+    m_FontSize: 130
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -355,7 +355,7 @@ MonoBehaviour:
   dog_on: {fileID: 1198122129}
   text_box: {fileID: 164073965}
   instruction1: As Knight, use W/S to climb
-  instruction2: As Knight, RIGHT CLICK to drag rocks
+  instruction2: As Knight, HOLD RIGHT CLICK to drag rocks
   transition_point: 3.25
   horizontal_break: 0
 --- !u!1 &175578064
@@ -1804,6 +1804,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 2
   finalMessage: 0
+  repeatable: 0
 --- !u!1 &787584052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +3638,7 @@ MonoBehaviour:
   transitionTime: 0.5
   sentences: 1
   finalMessage: 0
+  repeatable: 0
 --- !u!1001 &1756964916
 PrefabInstance:
   m_ObjectHideFlags: 0
