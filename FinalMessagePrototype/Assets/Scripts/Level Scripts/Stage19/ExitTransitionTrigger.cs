@@ -12,12 +12,6 @@ public class ExitTransitionTrigger : MonoBehaviour
     Collider2D knight;
     Collider2D dog;
 
-    public EventReference transitionAudio;
-
-    public void playTransitionAudio() {
-        RuntimeManager.PlayOneShot(transitionAudio);
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +26,6 @@ public class ExitTransitionTrigger : MonoBehaviour
     {
         if((thisDoor.IsTouching(knight) || thisDoor.IsTouching(dog)) && Input.GetKeyDown(KeyCode.E)){
             status = true;
-            playTransitionAudio();
         }
         else{
             status = false;

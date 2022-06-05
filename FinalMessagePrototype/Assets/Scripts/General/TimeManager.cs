@@ -34,6 +34,7 @@ public class TimeManager : MonoBehaviour
     public FMOD.Studio.EventInstance restartAudio;
     public FMOD.Studio.EventInstance timerAudio;
     public FMOD.Studio.EventInstance lowTimeAudio;
+    public FMOD.Studio.EventInstance transitionAudio;
     public float timerState = 3f;
     private FMOD.Studio.VCA timeOutVCA;
     // static GameObject ShadowKnight;
@@ -66,6 +67,7 @@ public class TimeManager : MonoBehaviour
       restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
       timerAudio = RuntimeManager.CreateInstance("event:/UI/Timer");
       lowTimeAudio = RuntimeManager.CreateInstance("event:/UI/LowTimeLoop");
+      transitionAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/SceneTransition");
       if (AudioManager.isPlaying(timerAudio)) {
         timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
       }
@@ -136,6 +138,9 @@ public class TimeManager : MonoBehaviour
           SceneManager.LoadScene("1StartScene");
           if (!AudioManager.isPlaying(restartAudio)) {
             restartAudio.start();
+            if (AudioManager.isPlaying(transitionAudio)) {
+              transitionAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
           }
           timeOutVCA.setVolume(1f);
 
