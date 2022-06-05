@@ -9,6 +9,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class MoveOnButtonTrigger : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class MoveOnButtonTrigger : MonoBehaviour
     Vector3 initial_position;
     Vector3 pos;
     bool is_on; 
+    public FMOD.Studio.EventInstance platformAudio;
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class MoveOnButtonTrigger : MonoBehaviour
             buttonActivate2 = button_2.GetComponent<ButtonActivate>();
         }
         initial_position = transform.position;
+        platformAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/MovingPlatforms");
     }
 
     // Update is called once per frame
@@ -71,14 +74,25 @@ public class MoveOnButtonTrigger : MonoBehaviour
         pos = transform.position;
         if(pos.y < end_pos){
             pos.y += speed * Time.deltaTime;
+            if(!AudioManager.isPlaying(platformAudio)) {
+                platformAudio.start();
+            }
+        } else if (pos.y == end_pos) {
+            platformAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
         transform.position = pos;
+
     }
 
-    void MoveDown(float end_pos){
+    void MoveDown(float end_pos) {
         pos = transform.position;
-        if(pos.y > end_pos){
+        if(pos.y > end_pos) {
             pos.y -= speed * Time.deltaTime;
+            if(!AudioManager.isPlaying(platformAudio)) {
+                platformAudio.start();
+            }
+        } else if (pos.y == end_pos) {
+            platformAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
         transform.position = pos;
     }
