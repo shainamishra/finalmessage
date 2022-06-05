@@ -230,27 +230,64 @@ public class TimeManager : MonoBehaviour
     public void slowdown(){
       if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("7FM4_Key3")) 
          {
-             startingTime -= 0;
+            startingTime -= 0;
+            if (AudioManager.isPlaying(timerAudio)) {
+              timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+            if (AudioManager.isPlaying(lowTimeAudio)) {
+              lowTimeAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("8FM2")) 
          {
-             startingTime -= 0;
+              startingTime -= 0;
+              if (AudioManager.isPlaying(timerAudio)) {
+                timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+              }
+              if (AudioManager.isPlaying(lowTimeAudio)) {
+              lowTimeAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("12FM5_Seeker")) 
          {
-             startingTime -= 0;
+            startingTime -= 0;
+            if (AudioManager.isPlaying(timerAudio)) {
+              timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+            if (AudioManager.isPlaying(lowTimeAudio)) {
+              lowTimeAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+             
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("13FM1_Key2")) 
          {
-             startingTime -= 0;
+            startingTime -= 0;
+            if (AudioManager.isPlaying(timerAudio)) {
+              timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+            if (AudioManager.isPlaying(lowTimeAudio)) {
+              lowTimeAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("17Graveyard")) 
          {
-             startingTime -= 0;
+            startingTime -= 0;
+            if (AudioManager.isPlaying(timerAudio)) {
+              timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+            if (AudioManager.isPlaying(lowTimeAudio)) {
+              lowTimeAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("18FM_3Key1")) 
          {
-             startingTime -= 0;
+            startingTime -= 0;
+            if (AudioManager.isPlaying(timerAudio)) {
+              timerAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
+            if (AudioManager.isPlaying(lowTimeAudio)) {
+              lowTimeAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            }
          }
       else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("21Summit")) 
          {
