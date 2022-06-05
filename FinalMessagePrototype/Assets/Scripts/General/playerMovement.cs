@@ -14,6 +14,7 @@ public class playerMovement : MonoBehaviour
     public Animator animator;
     public GameObject strikepoint;
     public GameObject reachzone;
+    GameObject interactionDisplay;
     public static Rigidbody2D rb;
 
     public FMOD.Studio.EventInstance pettingAudio;
@@ -61,7 +62,7 @@ public class playerMovement : MonoBehaviour
         }
         */
 
-        
+        interactionDisplay = gameObject.transform.Find("InteractionDisplay").gameObject;
     }
 
     // Update is called once per frame
@@ -118,6 +119,18 @@ public class playerMovement : MonoBehaviour
             move();
 
         }
+    }
+
+    // This block controls the little interactable indicator
+    void OnTriggerStay2D(Collider2D collider){
+        if(collider.tag == "PressE"){
+            //Debug.Log("Here.");
+            interactionDisplay.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider){
+        interactionDisplay.SetActive(false);
     }
 
     void pet()
@@ -219,6 +232,7 @@ public class playerMovement : MonoBehaviour
         else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
+            //interactionDisplay.transform.Rotate(0f, 0f, 0f);
         }
     }
 

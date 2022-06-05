@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 23717955}
   m_Layer: 0
   m_Name: EmberHeartAltar
-  m_TagString: Untagged
+  m_TagString: PressE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 154081168}
   m_Layer: 0
   m_Name: Chime3
-  m_TagString: Untagged
+  m_TagString: PressE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2247,7 +2247,7 @@ GameObject:
   - component: {fileID: 902534845}
   m_Layer: 0
   m_Name: Chime2
-  m_TagString: Untagged
+  m_TagString: PressE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3461,7 +3461,7 @@ GameObject:
   - component: {fileID: 1522989219}
   m_Layer: 0
   m_Name: Chime1
-  m_TagString: Untagged
+  m_TagString: PressE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

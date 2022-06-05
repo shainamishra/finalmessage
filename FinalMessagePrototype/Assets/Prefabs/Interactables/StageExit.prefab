@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3110778530918694164}
   m_Layer: 0
   m_Name: StageExit
-  m_TagString: Untagged
+  m_TagString: PressE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
