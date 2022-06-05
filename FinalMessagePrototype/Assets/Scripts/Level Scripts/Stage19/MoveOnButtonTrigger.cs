@@ -36,7 +36,7 @@ public class MoveOnButtonTrigger : MonoBehaviour
             buttonActivate2 = button_2.GetComponent<ButtonActivate>();
         }
         initial_position = transform.position;
-        platformAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/MovingPlatforms");
+        platformAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/MovingPlatforms-OneShot");
     }
 
     // Update is called once per frame

@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class ChimePuzzleObstacleMove : MonoBehaviour
 {
@@ -22,11 +23,13 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
     Vector3 initial_position;
     Vector3 pos;
     float elevation_snapshot = 0;
+    public FMOD.Studio.EventInstance platformAudio;
 
     // Start is called before the first frame update
     void Start()
     {
         initial_position = transform.position;
+        platformAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/MovingPlatforms-Loop");
     }
 
     // Update is called once per frame
@@ -44,6 +47,9 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
         if(is_on){
             elevation_snapshot = 0;
             Oscillate();
+            if (!AudioManager.isPlaying(platformAudio)) {
+                platformAudio.start();
+            }
         }
         else{
             if(elevation_snapshot == 0){
@@ -51,9 +57,15 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
             }
             if(target_elevation < elevation_snapshot){
                 MoveDown(target_elevation);
+                if (AudioManager.isPlaying(platformAudio)) {
+                    platformAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
             }
             else{
                 MoveUp(target_elevation);
+                if (AudioManager.isPlaying(platformAudio)) {
+                    platformAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
             }
         }
     }
