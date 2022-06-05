@@ -37,7 +37,6 @@ public class MoveOnButtonTrigger : MonoBehaviour
         }
         initial_position = transform.position;
         platformAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/MovingPlatforms-OneShot");
-        RuntimeManager.AttachInstanceToGameObject(platformAudio, GetComponent<Transform>(), GetComponent<Rigidbody2D>());
     }
 
     // Update is called once per frame
