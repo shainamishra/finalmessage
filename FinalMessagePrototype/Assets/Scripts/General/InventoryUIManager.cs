@@ -27,7 +27,7 @@ public class InventoryUIManager : MonoBehaviour
         darkEmberHeart = gameObject.transform.GetChild(4).gameObject;
         */
 
-        canvas = gameObject.GetComponent<Canvas>();
+        //canvas = gameObject.GetComponent<Canvas>();
 
         // aquired
         inventoryFalchion.SetActive(false);
