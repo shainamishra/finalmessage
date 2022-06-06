@@ -36,7 +36,7 @@ public class TimeManager : MonoBehaviour
     public FMOD.Studio.EventInstance lowTimeAudio;
     public FMOD.Studio.EventInstance transitionAudio;
     public float timerState = 3f;
-    private FMOD.Studio.VCA timeOutVCA;
+    public static FMOD.Studio.VCA timeOutVCA;
     // static GameObject ShadowKnight;
  
      void Awake()
@@ -325,6 +325,7 @@ public class TimeManager : MonoBehaviour
         {
             SceneManager.LoadScene("1StartScene");
             startingTime = 300;
+            timeOutVCA.setVolume(1f);
         }
     }
 }
