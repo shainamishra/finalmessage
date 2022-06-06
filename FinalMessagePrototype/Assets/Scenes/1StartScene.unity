@@ -4689,6 +4689,7 @@ GameObject:
   - component: {fileID: 963782719}
   - component: {fileID: 963782718}
   - component: {fileID: 963782721}
+  - component: {fileID: 963782722}
   m_Layer: 0
   m_Name: ShadowKnight
   m_TagString: Untagged
@@ -4790,6 +4791,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 858bdae3479e244dca2d14482786a56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &963782722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963782717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c9f6754fd014c0c94b1a40d7ec5f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &998948141
@@ -8440,6 +8453,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752152528}
   m_CullTransparentMesh: 1
+--- !u!1 &1764553502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5868103561602681019, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+  m_PrefabInstance: {fileID: 5868103560961377975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1764553503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764553502}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858bdae3479e244dca2d14482786a56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1764553504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764553502}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fd37de1991847bc99b58176640f397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1764598371
 GameObject:
   m_ObjectHideFlags: 0
@@ -9852,6 +9894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974276998}
   - component: {fileID: 1974276999}
+  - component: {fileID: 1974277000}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -9885,6 +9928,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 858bdae3479e244dca2d14482786a56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1974277000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974276997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc94dc25ea924ed7bc3bbf3804151aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1981267373
@@ -11370,6 +11425,10 @@ PrefabInstance:
     - target: {fileID: 5868103562066243237, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 542.4315
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103562066243238, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}

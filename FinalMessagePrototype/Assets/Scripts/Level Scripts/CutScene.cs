@@ -22,5 +22,6 @@ public class CutScene : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+        // SceneManager.UnloadSceneAsync("1StartScene");
     }
 }

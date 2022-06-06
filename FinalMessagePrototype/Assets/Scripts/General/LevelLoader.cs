@@ -36,12 +36,14 @@ public class LevelLoader : MonoBehaviour
 
     void Start()
     {
+        // transition = GameObject.Find("Crossfade").GetComponent<Animator>();
         dog = GameObject.Find("Dog");
         player = GameObject.Find("Player");
         playeron = GameObject.Find("PlayerON");
         door = GameObject.Find("Door");
-        // playerMovement = GameObject.GetComponent(typeof(playerMovement));
-        // dogMovement = GameObject.GetComponent(typeof(dogMovement));
+        playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
+        dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
+
 
         LoadLevel(24);
         transitionAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/SceneTransition");
@@ -50,6 +52,13 @@ public class LevelLoader : MonoBehaviour
     // Check win conditions
     void Update()
     {
+        // transition = GameObject.Find("Crossfade").GetComponent<Animator>();
+        // dog = GameObject.Find("Dog");
+        // player = GameObject.Find("Player");
+        // playeron = GameObject.Find("PlayerON");
+        // door = GameObject.Find("Door");
+        // playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
+        // dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
         if(TimeManager.TimesUp == true){
             disableMovement();
         }
