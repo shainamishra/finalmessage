@@ -12,6 +12,8 @@ public class dogMovement : MonoBehaviour
     public GameObject dog;
     public Animator animator;
 
+    public static bool petting = false;
+
     public static Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection = 0f;
@@ -54,8 +56,11 @@ public class dogMovement : MonoBehaviour
 
         if (dogon.activeSelf == false)
         {
-            // Get Pet
-            pet();
+            if (petting == true)
+            {
+                // Get Pet
+                pet();
+            }
         }
 
         if (Input.GetKey("w") || Input.GetKey("s"))

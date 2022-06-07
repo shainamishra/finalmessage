@@ -60,12 +60,6 @@ public class playerMovement : MonoBehaviour
             }   
         }
 
-        if (playeron.activeSelf == true)
-        {
-            // Pet the Dog
-            pet();
-        }
-
         // Left Click (0) to strike and Right Click (1) to grab objects
         if (playeron.activeSelf == true)
         {
@@ -104,6 +98,12 @@ public class playerMovement : MonoBehaviour
         if(collider.tag == "PressE")
         {
             interactionDisplay.SetActive(true);
+        }
+
+        if (collider.gameObject.name == "PetZone")
+        {
+            // Pet the Dog
+            pet();
         }
     }
 
