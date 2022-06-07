@@ -17,8 +17,6 @@ public class playerMovement : MonoBehaviour
     GameObject interactionDisplay;
     public static Rigidbody2D rb;
 
-    public bool dialogue;
-
     public FMOD.Studio.EventInstance pettingAudio;
     // public TimeManager time;
     // public NPCBehavior npc;
@@ -95,14 +93,13 @@ public class playerMovement : MonoBehaviour
 
             // Move
             move();
-
         }
     }
 
     // This block controls the little interactable indicator
     void OnTriggerStay2D(Collider2D collider){
-        if(collider.tag == "PressE"){
-            //Debug.Log("Here.");
+        if(collider.tag == "PressE")
+        {
             interactionDisplay.SetActive(true);
         }
     }
@@ -116,29 +113,19 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey("p"))
         {
             animator.SetTrigger("Pet");
-            if (!AudioManager.isPlaying(pettingAudio)) {
+            if (!AudioManager.isPlaying(pettingAudio)) 
+            {
                 pettingAudio.start();
             }
-
         }
-        
     }
 
     void Act()
     {
-                animator.SetTrigger("Strike");
-        /*
-        if (dialogue == true)
+        if (TextTrigger.Speaking == false)
         {
-            Debug.Log(dialogue);
-            
-        } else {
-            if (TextTrigger.Speaking == false)
-            {
-                animator.SetTrigger("Strike");
-            }
+            animator.SetTrigger("Strike");
         }
-        */
     }
 
     private void switchSFX() 
