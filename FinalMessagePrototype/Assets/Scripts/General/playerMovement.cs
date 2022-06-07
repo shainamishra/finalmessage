@@ -104,8 +104,12 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D collider){
-        interactionDisplay.SetActive(false);
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if(SceneManager.GetActiveScene().buildIndex != 21)
+        {
+            interactionDisplay.SetActive(false);
+        }
     }
 
     void pet()

@@ -110,7 +110,6 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
-                //checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -129,7 +128,6 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
-                //checkPrev();
                 LoadPrevLevel();
             }
         }
@@ -510,11 +508,15 @@ public class LevelLoader : MonoBehaviour
             // back to six doors room (sadge)
             GameObject door20 = GameObject.Find("GrandioseDoor");
             GrandioseDoorOpen exitTransition20 = door20.GetComponent<GrandioseDoorOpen>();
-            if (exitTransition20.status)
+            if (exitTransition20.status)//if(exitTransition20.status && (player.transform.position.x > 23 && player.transform.position.x < 26) || (dog.transform.position.x > 22 && dog.transform.position.x < 26))
             {
+                // player has to enter door
+                if((player.transform.position.x > 23 && player.transform.position.x < 26) || (dog.transform.position.x > 22 && dog.transform.position.x < 26))
+                {
                 //goes to 21
-                levelVar = 0;
-                LoadNextLevel();
+                    levelVar = 0;
+                    LoadNextLevel();
+                }
             }
             // move back
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
@@ -583,7 +585,6 @@ public class LevelLoader : MonoBehaviour
             {
                 levelVar = -13;
                 LoadNextLevel();
-                // fix the timer?
             }
         }
 
@@ -596,7 +597,6 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1 + levelVar));
         
     }
-
 
     public void LoadPrevLevel()
     {
@@ -621,44 +621,6 @@ public class LevelLoader : MonoBehaviour
 
         // load scene
         SceneManager.LoadScene(levelIndex);
-    }
-
-    public void checkPrev()
-    {
-        /*
-            later on I can use the check to reset the level
-        */
-        int var = 0;
-
-        // check if level load var is 0
-        if(levelVarNeg == 0)
-        {
-            var = -1;
-        }
-        else{
-            var = levelVarNeg;
-        }
-
-        //Debug.Log("levels= " + levels[SceneManager.GetActiveScene().buildIndex + var]);
-        //Debug.Log("num= " + (SceneManager.GetActiveScene().buildIndex + var));
-
-        // completed scene
-        if(SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().buildIndex != 1)
-        {
-            if(levels[SceneManager.GetActiveScene().buildIndex + var] != 0)
-            {
-                Prev = true;
-            }
-            // new scene
-            else
-            {
-                Prev = false;
-            }
-        } 
-        else if(SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            Prev = true;
-        }
     }
 
     public void disableMovement()
