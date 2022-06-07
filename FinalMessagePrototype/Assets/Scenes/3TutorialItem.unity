@@ -1848,9 +1848,8 @@ MonoBehaviour:
       Are you new to the Valley?
     - She gave you the blessing, yes? The one with the medallion? She really wasn't
       kidding, lose your life out here and you'll wind up back with her.
-    - On that note, we're both burning daylight here. Take this key as a token of
-      my thanks, then you'd best get going soon. I'm sure we'll see each other again
-      on the climb.
+    - On that note, we're both burning daylight here. You'd best get going soon.
+      I'm sure we'll see each other again on the climb.
     - 
   dialogueManager: {fileID: 177318873}
 --- !u!1 &625854171

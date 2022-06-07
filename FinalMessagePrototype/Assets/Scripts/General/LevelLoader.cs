@@ -644,4 +644,9 @@ public class LevelLoader : MonoBehaviour
         playerMovement.moveSpeed = 0;
         dogMovement.moveSpeed = 0;
     }
+
+    public int getDeathCount()
+    {
+        return deathCount;
+    }
 }
