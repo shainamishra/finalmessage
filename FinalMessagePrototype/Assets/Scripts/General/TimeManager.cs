@@ -125,6 +125,7 @@ public class TimeManager : MonoBehaviour
             }
 
             shadow.SetActive(true);
+            shadowidle.SetBool("Play",true);
             // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
 
             // if(skpos.position.x>knight.transform.position.x){
@@ -198,7 +199,7 @@ public class TimeManager : MonoBehaviour
 
 
         if(skpos.position.x>knight.transform.position.x+3){
-          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.008f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
           skpos.Translate(path2);
         }
         // shadowidle.SetTrigger("Wait");
@@ -315,7 +316,8 @@ public class TimeManager : MonoBehaviour
         // Debug.Log("Fine. I admit it. I cut in line.");
         // TimesUp = true;
         shadowMove();
-        yield return new WaitForSecondsRealtime (5.7f);
+        yield return new WaitForSecondsRealtime (9f);
+        shadowidle.SetBool("Play", false);
         // Debug.Log("Fine. I admit it. I cut in line.");
         // shadowLeave();
         // Debug.Log("flipped");
