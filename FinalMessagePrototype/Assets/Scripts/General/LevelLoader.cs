@@ -32,6 +32,8 @@ public class LevelLoader : MonoBehaviour
     public playerMovement playerMovement;
     public dogMovement dogMovement;
 
+    public static int deathCount = 0;
+    
     // private float playbackTime = 2;
 
     void Start()
@@ -59,7 +61,8 @@ public class LevelLoader : MonoBehaviour
         // door = GameObject.Find("Door");
         // playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
         // dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
-        if(TimeManager.TimesUp == true){
+        if(TimeManager.TimesUp == true)
+        {
             disableMovement();
         }
         
@@ -90,7 +93,16 @@ public class LevelLoader : MonoBehaviour
             // level ending conditions
             levels[1] = 1;
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5){
-                LoadNextLevel();
+                if(levels[4] == 0)
+                {
+                    levelVar = 0;
+                    LoadNextLevel();
+                }
+                else if (levels[4] == 1)
+                {
+                    levelVar = 20;
+                    LoadNextLevel();
+                }
             }
         }
 
@@ -204,6 +216,7 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -6;
                 LoadNextLevel();
                 TimeManager.startingTime = 300;
+                deathCount += 1;
                 //timeOutVCA.setVolume(1f);
             }
         }
@@ -229,6 +242,7 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -7;
                 LoadNextLevel();
                 TimeManager.startingTime = 300;
+                deathCount += 1;
                 //timeOutVCA.setVolume(1f);
             }
         }

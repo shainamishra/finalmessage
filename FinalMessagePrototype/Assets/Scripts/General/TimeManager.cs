@@ -326,6 +326,7 @@ public class TimeManager : MonoBehaviour
             SceneManager.LoadScene("1StartScene");
             startingTime = 300;
             timeOutVCA.setVolume(1f);
+            LevelLoader.deathCount += 1;
         }
     }
 }

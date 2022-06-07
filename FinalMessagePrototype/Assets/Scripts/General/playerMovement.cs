@@ -229,5 +229,6 @@ public class playerMovement : MonoBehaviour
         playeron.SetActive(false);
         TimeManager.startingTime = 300;
         SceneManager.LoadScene("1StartScene");
+        LevelLoader.deathCount += 1;
     }
 }
