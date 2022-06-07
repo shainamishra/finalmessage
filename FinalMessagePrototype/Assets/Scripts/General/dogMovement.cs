@@ -52,8 +52,11 @@ public class dogMovement : MonoBehaviour
             }
         }
 
-        // Get Pet
-        pet();
+        if (dogon.activeSelf == false)
+        {
+            // Get Pet
+            pet();
+        }
 
         if (Input.GetKey("w") || Input.GetKey("s"))
         {

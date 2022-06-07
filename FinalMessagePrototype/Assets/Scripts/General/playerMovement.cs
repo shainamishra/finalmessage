@@ -60,8 +60,11 @@ public class playerMovement : MonoBehaviour
             }   
         }
 
-        // Pet the Dog
-        pet();
+        if (playeron.activeSelf == true)
+        {
+            // Pet the Dog
+            pet();
+        }
 
         // Left Click (0) to strike and Right Click (1) to grab objects
         if (playeron.activeSelf == true)

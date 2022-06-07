@@ -112,10 +112,10 @@ TextureImporter:
       name: ember-heart-Sheet_0
       rect:
         serializedVersion: 2
-        x: 2699
-        y: 875
-        width: 7
-        height: 6
+        x: 0
+        y: 0
+        width: 930
+        height: 891
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,10 +133,10 @@ TextureImporter:
       name: ember-heart-Sheet_1
       rect:
         serializedVersion: 2
-        x: 835
-        y: 864
-        width: 6
-        height: 7
+        x: 930
+        y: 0
+        width: 930
+        height: 891
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +154,10 @@ TextureImporter:
       name: ember-heart-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 864
-        width: 7
-        height: 7
+        x: 1860
+        y: 0
+        width: 930
+        height: 891
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,69 +167,6 @@ TextureImporter:
       bones: []
       spriteID: 98c1f8de48faa0aa0800000000000000
       internalID: -6193945352038572919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ember-heart-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 124
-        width: 666
-        height: 635
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03c7d93d9c0083340800000000000000
-      internalID: 4843622266075708464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ember-heart-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1061
-        y: 111
-        width: 667
-        height: 671
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c63b81e74bbfc9400800000000000000
-      internalID: 332417225146807148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ember-heart-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1986
-        y: 111
-        width: 662
-        height: 659
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dc73e84cc68b3430800000000000000
-      internalID: 3763750125552499924
       vertices: []
       indices: 
       edges: []
