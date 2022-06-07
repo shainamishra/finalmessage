@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using FMODUnity;
 
-public class LevelLoader : MonoBehaviour
+public class LevelLoader1 : MonoBehaviour
 {
     public static int[] levels = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     public Animator transition;
@@ -29,8 +29,8 @@ public class LevelLoader : MonoBehaviour
     public static int Key3 = 0; //ember heart
     public static int Key4 = 0;
 
-    public playerMovement playerMovement;
-    public dogMovement dogMovement;
+    public PlayerMovement1 playerMovement;
+    public DogMovement1 dogMovement;
 
     public static int deathCount = 0;
     
@@ -43,8 +43,8 @@ public class LevelLoader : MonoBehaviour
         player = GameObject.Find("Player");
         playeron = GameObject.Find("PlayerON");
         door = GameObject.Find("Door");
-        playerMovement = GameObject.Find("Player").GetComponent<playerMovement>();
-        dogMovement = GameObject.Find("Dog").GetComponent<dogMovement>();
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement1>();
+        dogMovement = GameObject.Find("Dog").GetComponent<DogMovement1>();
 
 
         LoadLevel(24);
@@ -544,6 +544,18 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 21)
         {
             levels[21] = 1;
+            if (player.transform.position.x < 10){
+                playerMovement.moveSpeed = 8;
+            }
+            else {
+                playerMovement.moveSpeed = 6;
+                dogMovement.moveSpeed = 6;
+
+            }
+            
+            // player.transform.SetPositionAndRotation(new Vector3(dog.transform.position.x+2,-1.6f,0f),new Quaternion(0,0,0,0));
+            playerMovement.playeron.SetActive(true);
+            dogMovement.dogon.SetActive(true);
             
             // if (player.transform.position.x > 35 && Input.GetKeyDown("e"))
             // {

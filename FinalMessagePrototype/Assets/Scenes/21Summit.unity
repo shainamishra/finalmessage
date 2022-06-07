@@ -2364,6 +2364,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1503014701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5868103561602681019, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+  m_PrefabInstance: {fileID: 1943955684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1503014704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503014701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a789c3bc56847c2a5da6b9b4d5c589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 1976419895}
+  transitionTime: 1
+  dog: {fileID: 0}
+  player: {fileID: 0}
+  playeron: {fileID: 0}
+  door: {fileID: 0}
+  levelVar: 0
+  levelVarNeg: 0
+  playerMovement: {fileID: 0}
+  dogMovement: {fileID: 0}
 --- !u!1001 &1534427902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3126,6 +3153,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868103561602681017, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
       propertyPath: dogMovement
       value: 
       objectReference: {fileID: 1731050848}
@@ -3255,6 +3286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+--- !u!95 &1976419895 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5868103562066243233, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+  m_PrefabInstance: {fileID: 1943955684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1992398912
 GameObject:
   m_ObjectHideFlags: 0

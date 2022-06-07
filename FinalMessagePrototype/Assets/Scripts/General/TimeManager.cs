@@ -55,6 +55,9 @@ public class TimeManager : MonoBehaviour
     void Start()
     {
       // DontDestroyOnLoad(this.gameObject);
+      shadow = GameObject.Find("ShadowKnight");
+      shadowidle = GameObject.Find("ShadowKnight").GetComponent<Animator>();
+      skpos = GameObject.Find("ShadowKnight").GetComponent<Transform>();
       theText = GetComponent<Text>();
       knight = GameObject.Find("Player");
       cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
@@ -78,6 +81,9 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      shadow = GameObject.Find("ShadowKnight");
+      shadowidle = GameObject.Find("ShadowKnight").GetComponent<Animator>();
+      skpos = GameObject.Find("ShadowKnight").GetComponent<Transform>();
         knight = GameObject.Find("Player");
         cameraMovement = GameObject.Find("Main Camera").GetComponent<cameraMovement>();
         player = GameObject.Find("Player").GetComponent<playerMovement>();
@@ -182,7 +188,7 @@ public class TimeManager : MonoBehaviour
       //   // Vector2 target = new Vector2(-1f,0f);
       //   // Vector2 path = Vector2.MoveTowards(target,skpos.position,rb.velocity.x);
         // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
-        shadowidle.SetTrigger("Start");
+        // shadowidle.SetTrigger("Start");
         if(skpos.position.x>knight.transform.position.x+15){
           skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
           Vector3 path2 = Vector3.MoveTowards(new Vector3(-2f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
@@ -192,9 +198,12 @@ public class TimeManager : MonoBehaviour
 
 
         if(skpos.position.x>knight.transform.position.x+3){
-          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.01f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
+          Vector3 path2 = Vector3.MoveTowards(new Vector3(-0.008f,0,0),skpos.position,speed*Time.deltaTime/100000000000);
           skpos.Translate(path2);
         }
+        // shadowidle.SetTrigger("Wait");
+
+        // shadowidle.ResetTrigger("Wait");
 
  
     }
@@ -306,7 +315,7 @@ public class TimeManager : MonoBehaviour
         // Debug.Log("Fine. I admit it. I cut in line.");
         // TimesUp = true;
         shadowMove();
-        yield return new WaitForSecondsRealtime (9f);
+        yield return new WaitForSecondsRealtime (5.7f);
         // Debug.Log("Fine. I admit it. I cut in line.");
         // shadowLeave();
         // Debug.Log("flipped");
