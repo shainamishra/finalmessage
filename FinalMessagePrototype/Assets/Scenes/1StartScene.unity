@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 13164967}
   - component: {fileID: 13164966}
   - component: {fileID: 13164965}
+  - component: {fileID: 13164968}
   m_Layer: 5
   m_Name: Option 7
   m_TagString: Untagged
@@ -205,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 13164966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 13164968}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &13164966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +257,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13164963}
   m_CullTransparentMesh: 1
+--- !u!114 &13164968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13164963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &16143872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1104,7 @@ GameObject:
   - component: {fileID: 190080994}
   - component: {fileID: 190080993}
   - component: {fileID: 190080995}
+  - component: {fileID: 190080996}
   m_Layer: 5
   m_Name: Option 3
   m_TagString: Untagged
@@ -1183,7 +1213,46 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 190080993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 190080996}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &190080996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190080991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences:
+    - Oh, they're not really keys dear.
+    - The other Climbers call them that, when they speak of them at all, because
+      they "open the way to the Summit."
+    - Really, hey are objects of power from elsewhere in the world brought here by
+      Climbers long fallen.
+    - The Falchion was left here by some Wizard many years ago,
+    - the Chime Bell was stolen from the Mount by scholars then returned,
+    - and the Ember Heart is an ancient stone imbued with the Sun's fire.
+    - Hold them close to you if you find them, dear, they will open ways to you that
+      are closed.
+    - 
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &235193848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1323,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is Mount Arar?
+  m_Text: How do I reach the Summit?
 --- !u!222 &235193851
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1357,7 +1426,7 @@ GameObject:
   - component: {fileID: 296381894}
   - component: {fileID: 296381893}
   - component: {fileID: 296381892}
-  - component: {fileID: 296381891}
+  - component: {fileID: 296381895}
   m_Layer: 5
   m_Name: Option 9
   m_TagString: Untagged
@@ -1385,38 +1454,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -345.99997}
   m_SizeDelta: {x: 465.0559, y: 34.469}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &296381891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296381889}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  npc: {fileID: 0}
-  start: {fileID: 1594392969}
-  cont: {fileID: 0}
-  close: {fileID: 0}
-  option1: {fileID: 296381892}
-  option2: {fileID: 2122971594}
-  option3: {fileID: 1038529207}
-  option4: {fileID: 0}
-  NPCname: {fileID: 1010182124}
-  canvas: {fileID: 1314894035}
-  finalText: {fileID: 0}
-  text: {fileID: 0}
-  dialogueManager: {fileID: 0}
-  levelVar: 0
-  transition: {fileID: 0}
-  transitionTime: 0.5
-  sentences: 2
-  finalMessage: 0
-  repeatable: 0
 --- !u!114 &296381892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,9 +1498,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296381891}
-        m_TargetAssemblyTypeName: TextTrigger, Assembly-CSharp
-        m_MethodName: TaskOnClick1
+      - m_Target: {fileID: 296381895}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1511,6 +1548,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296381889}
   m_CullTransparentMesh: 1
+--- !u!114 &296381895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296381889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &326029664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1731,7 @@ GameObject:
   - component: {fileID: 372551616}
   - component: {fileID: 372551615}
   - component: {fileID: 372551614}
-  - component: {fileID: 372551613}
+  - component: {fileID: 372551617}
   m_Layer: 5
   m_Name: Option 5
   m_TagString: Untagged
@@ -1706,38 +1759,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -322}
   m_SizeDelta: {x: 465.0559, y: 34.469}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &372551613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372551611}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  npc: {fileID: 0}
-  start: {fileID: 1594392969}
-  cont: {fileID: 0}
-  close: {fileID: 0}
-  option1: {fileID: 372551614}
-  option2: {fileID: 670477435}
-  option3: {fileID: 13164965}
-  option4: {fileID: 1396931494}
-  NPCname: {fileID: 1010182124}
-  canvas: {fileID: 1314894035}
-  finalText: {fileID: 0}
-  text: {fileID: 0}
-  dialogueManager: {fileID: 0}
-  levelVar: 0
-  transition: {fileID: 0}
-  transitionTime: 0.5
-  sentences: 2
-  finalMessage: 0
-  repeatable: 0
 --- !u!114 &372551614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,9 +1803,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 372551613}
-        m_TargetAssemblyTypeName: TextTrigger, Assembly-CSharp
-        m_MethodName: TaskOnClick1
+      - m_Target: {fileID: 372551617}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1832,6 +1853,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372551611}
   m_CullTransparentMesh: 1
+--- !u!114 &372551617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372551611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &382176837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,6 +3179,7 @@ GameObject:
   - component: {fileID: 670477437}
   - component: {fileID: 670477436}
   - component: {fileID: 670477435}
+  - component: {fileID: 670477438}
   m_Layer: 5
   m_Name: Option 6
   m_TagString: Untagged
@@ -3212,7 +3250,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 670477436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 670477438}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &670477436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3251,6 +3301,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670477433}
   m_CullTransparentMesh: 1
+--- !u!114 &670477438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670477433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &729448286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3793,7 +3859,7 @@ GameObject:
   - component: {fileID: 834932258}
   - component: {fileID: 834932257}
   - component: {fileID: 834932259}
-  - component: {fileID: 834932256}
+  - component: {fileID: 834932260}
   m_Layer: 5
   m_Name: Option 1
   m_TagString: Untagged
@@ -3821,38 +3887,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -322}
   m_SizeDelta: {x: 465.0559, y: 34.469}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &834932256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834932254}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ccf85d61d1a4a2c8c1271169876777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  npc: {fileID: 0}
-  start: {fileID: 1594392969}
-  cont: {fileID: 0}
-  close: {fileID: 0}
-  option1: {fileID: 834932259}
-  option2: {fileID: 1065608634}
-  option3: {fileID: 190080995}
-  option4: {fileID: 2019750308}
-  NPCname: {fileID: 1010182124}
-  canvas: {fileID: 1314894035}
-  finalText: {fileID: 0}
-  text: {fileID: 0}
-  dialogueManager: {fileID: 0}
-  levelVar: 0
-  transition: {fileID: 0}
-  transitionTime: 0.5
-  sentences: 2
-  finalMessage: 0
-  repeatable: 0
 --- !u!114 &834932257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3935,9 +3969,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 834932256}
-        m_TargetAssemblyTypeName: TextTrigger, Assembly-CSharp
-        m_MethodName: TaskOnClick1
+      - m_Target: {fileID: 834932260}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3947,6 +3981,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &834932260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834932254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences:
+    - Learning how to Climb the Mount is part of your journey, dearie.
+    - Wander where you will, and remember the lessons the Mount teaches you.
+    - Do not be afraid to be lost, and do not fear the setting sun. It's a wonderful
+      thing, to climb!
+    - So climb joyfully! Anything otherwise is a waste of your youthful bones.
+    - 
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &837664785
 GameObject:
   m_ObjectHideFlags: 0
@@ -5132,6 +5188,7 @@ GameObject:
   - component: {fileID: 1038529209}
   - component: {fileID: 1038529208}
   - component: {fileID: 1038529207}
+  - component: {fileID: 1038529210}
   m_Layer: 5
   m_Name: Option 11
   m_TagString: Untagged
@@ -5202,7 +5259,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1038529208}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1038529210}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1038529208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5241,6 +5310,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038529205}
   m_CullTransparentMesh: 1
+--- !u!114 &1038529210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038529205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &1044005718
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,6 +5384,7 @@ GameObject:
   - component: {fileID: 1065608633}
   - component: {fileID: 1065608632}
   - component: {fileID: 1065608634}
+  - component: {fileID: 1065608635}
   m_Layer: 5
   m_Name: Option 2
   m_TagString: Untagged
@@ -5407,7 +5493,44 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1065608632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1065608635}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1065608635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065608630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences:
+    - Ah, yes. The Final Messages are the last gift Mount Arar gives to its climbers.
+    - The Mountain remembers those who have fallen on its slopes. It listens to them,
+      and preserves their last words in remembrance.
+    - Whispered in the wind's soft voice, those who came before you will speak to
+      you and guide you should you stop to listen by their graves.
+    - The living can leave final messages as well, but only if they achieve their
+      goal and leave this place.
+    - ...
+    - 
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &1088595813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5711,7 +5834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is a Final Message?
+  m_Text: Who is the Lonely Climber?
 --- !u!222 &1119444630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6217,7 +6340,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who is the Lonely Climber?
+  m_Text: What is a Final Message?
 --- !u!222 &1350181203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6569,6 +6692,7 @@ GameObject:
   - component: {fileID: 1396931496}
   - component: {fileID: 1396931495}
   - component: {fileID: 1396931494}
+  - component: {fileID: 1396931497}
   m_Layer: 5
   m_Name: Option 8
   m_TagString: Untagged
@@ -6639,7 +6763,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1396931495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1396931497}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1396931495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6678,6 +6814,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396931492}
   m_CullTransparentMesh: 1
+--- !u!114 &1396931497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396931492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &1400309576
 GameObject:
   m_ObjectHideFlags: 0
@@ -6748,7 +6900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What are the keys?
+  m_Text: Who is the Witch Knight?
 --- !u!222 &1400309579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8023,7 +8175,10 @@ MonoBehaviour:
   dialogue:
     name: Tatik Arar
     sentences:
-    - Your fear is halting your progress. What ails you, my child?
+    - Hello again, young Climber.
+    - If you have time to listen to this old witch's ramblings, perhaps I may provide
+      you some guidance?
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!114 &1594392971
 MonoBehaviour:
@@ -8228,8 +8383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -57, y: -401.88}
-  m_SizeDelta: {x: 508.7439, y: 26.1948}
+  m_AnchoredPosition: {x: -42.11479, y: -417.43}
+  m_SizeDelta: {x: 518.436, y: 38.474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674536797
 MonoBehaviour:
@@ -8264,7 +8419,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your fear is halting your progress. What ails you, my child?
+  m_Text: "Hello again, young Climber.\r"
 --- !u!222 &1674536798
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8343,7 +8498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who is the Witch Knight?
+  m_Text: What are the keys?
 --- !u!222 &1752152531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8590,8 +8745,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'I hope my words have quelled your fears, young climber. Go forth, and
-    prove yourself. '
+  m_Text: The light is with you, dearie.
 --- !u!222 &1801544749
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9986,7 +10140,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "What is the Seeker\u2019s Chime Staff?"
+  m_Text: What is the Chime Bell?
 --- !u!222 &1998929822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10330,6 +10484,7 @@ GameObject:
   - component: {fileID: 2019750307}
   - component: {fileID: 2019750306}
   - component: {fileID: 2019750308}
+  - component: {fileID: 2019750309}
   m_Layer: 5
   m_Name: Option 4
   m_TagString: Untagged
@@ -10438,7 +10593,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2019750306}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019750309}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2019750309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019750304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &2032297577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10923,6 +11106,7 @@ GameObject:
   - component: {fileID: 2122971596}
   - component: {fileID: 2122971595}
   - component: {fileID: 2122971594}
+  - component: {fileID: 2122971597}
   m_Layer: 5
   m_Name: Option 10
   m_TagString: Untagged
@@ -10993,7 +11177,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2122971595}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2122971597}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2122971595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11032,6 +11228,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122971592}
   m_CullTransparentMesh: 1
+--- !u!114 &2122971597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122971592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c268e315416c4cec9b8b56fd14d9935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tatik Arar
+    sentences: []
+  dialogueManager: {fileID: 2005993114}
 --- !u!1 &2133830877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4663050324671714030, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}

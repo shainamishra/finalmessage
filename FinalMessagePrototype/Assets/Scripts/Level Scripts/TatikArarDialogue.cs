@@ -292,7 +292,7 @@ public class TatikArarDialogue : MonoBehaviour
         
             //hide NPC name tag
             NPCname.gameObject.SetActive(false);
-            text.gameObject.SetActive(false);
+            //text.gameObject.SetActive(false);
             
         }
         else
@@ -339,57 +339,222 @@ public class TatikArarDialogue : MonoBehaviour
     // What is Mount Arar?
     void TaskOnClick1()
     {
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option1.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option1.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
 
+        //TextTrigger.Speaking = false;
     }
     // Who is the Lonely Climber?
     void TaskOnClick2()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option2.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option2.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // Who is the Witch Knight?
     void TaskOnClick3()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option3.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option3.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // What are the keys?
     void TaskOnClick4()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option4.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option4.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // What is the Witch Key?
     void TaskOnClick5()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option5.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option5.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // What is the Fallens Falchion?
     void TaskOnClick6()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option6.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option6.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // What is the Seekers Chime Staff?
     void TaskOnClick7()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option7.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option7.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // What is the Ember Heart?
     void TaskOnClick8()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option8.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option8.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // What is a Final Message?
     void TaskOnClick9()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option9.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option9.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // Who is the Exhausted Adventurer?
     void TaskOnClick10()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option10.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option10.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
     // Who is the Seeker of Eternity?
     void TaskOnClick11()
     {
-        
+        //jump to new dialogue
+        contClicked = 0;
+        sentences = option11.gameObject.GetComponent<DialogueTrigger>().dialogue.sentences.Length - 2;
+        dialogueManager.gameObject.GetComponent<DialogueManager>().StartDialogue(option11.gameObject.GetComponent<DialogueTrigger>().dialogue);
+        // hide buttons
+        DisableOptions();
+        // show name tag
+        NPCname.gameObject.SetActive(true);
+        // show continue button
+        cont.gameObject.SetActive(true);
+        // show final text
+        //finalText.gameObject.SetActive(true);
+        // disable NPC box collider
+        npc.GetComponent<BoxCollider2D>().enabled = false;
+
+        //TextTrigger.Speaking = false;
     }
 }
 
