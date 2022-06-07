@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class adventurerKill : MonoBehaviour
 {
-    private bool dead = false;
+    private static bool dead = false;
     private static int currentLoop = -1;
     private static int spokenLoop = -1;
 
