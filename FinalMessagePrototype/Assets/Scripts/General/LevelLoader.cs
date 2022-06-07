@@ -138,6 +138,7 @@ public class LevelLoader : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
             levels[4] = 1;
+
             // four platform
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
@@ -179,12 +180,6 @@ public class LevelLoader : MonoBehaviour
                 LoadPrevLevel();
             }
 
-            // check if player fell from a great height, send to start
-            if (GroundCheck.dead == true)
-            {
-                levelVar = -5;
-                LoadNextLevel();
-            }
         }
 
         // No No Zone
@@ -206,10 +201,12 @@ public class LevelLoader : MonoBehaviour
             }
 
             // check if player fell from a great height, send to start
-            if (GroundCheck.dead == true)
+            if((player.transform.position.y < -5) || (dog.transform.position.y < -5))
             {
                 levelVar = -6;
                 LoadNextLevel();
+                TimeManager.startingTime = 300;
+                //timeOutVCA.setVolume(1f);
             }
         }
 
@@ -227,14 +224,15 @@ public class LevelLoader : MonoBehaviour
                 levelVarNeg = 0;
                 LoadPrevLevel();
             }
-            // check if player fell from a great height
-            if (GroundCheck.dead == true)
+
+            // check if player fell from a great height, send to start
+            if((player.transform.position.y < -5) || (dog.transform.position.y < -5))
             {
-                // goes to 0
                 levelVar = -7;
                 LoadNextLevel();
+                TimeManager.startingTime = 300;
+                //timeOutVCA.setVolume(1f);
             }
-
         }
 
         // Final Message 2
@@ -250,13 +248,6 @@ public class LevelLoader : MonoBehaviour
             {
                 levelVarNeg = -2;
                 LoadPrevLevel();
-            }
-            // check if player fell from a great height
-            if (GroundCheck.dead == true)
-            {
-                // goes to 0
-                levelVar = -8;
-                LoadNextLevel();
             }
         }
 
@@ -408,13 +399,6 @@ public class LevelLoader : MonoBehaviour
                 levelVar = 0;
                 LoadNextLevel();
             }
-            // check if player fell from a great height
-            if (GroundCheck.dead == true)
-            {
-                // goes to 0
-                levelVar = -15;
-                LoadNextLevel();
-            }
             // move back
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
@@ -450,6 +434,7 @@ public class LevelLoader : MonoBehaviour
                 LoadPrevLevel();
             }
 
+            /*
             // check if player fell from a great height
             if (GroundCheck.dead == true) 
             {
@@ -457,6 +442,7 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -15;
                 LoadNextLevel();
             }
+            */
         }
 
         // Graveyard
@@ -481,6 +467,10 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 18){
             // level ending conditions
             levels[18] = 1;
+            Key1 = 1;
+            Key2 = 1;
+            Key3 = 1;
+
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {
                 // end of branch

@@ -14,6 +14,8 @@ public class ChimeActivate : MonoBehaviour
     public GameObject chimeGate;
     ChimePuzzle chimePuzzle;
 
+    public GameObject playerON;
+
     public void playChime() {
         RuntimeManager.PlayOneShot(chimeAudio);
     }
@@ -51,8 +53,12 @@ public class ChimeActivate : MonoBehaviour
         }
 
         if(condition){
-            status = !status;
-            playChime();
+            // added this so that only when the player is active && presses E then the gates will move
+            if (playerON.activeInHierarchy == true)
+            {
+                status = !status;
+                playChime();
+            }
         } else if (!condition && Input.GetKeyDown(KeyCode.E) && overlap){
             playFail();
         }

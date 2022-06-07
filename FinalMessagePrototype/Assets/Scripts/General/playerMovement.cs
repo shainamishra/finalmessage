@@ -17,12 +17,14 @@ public class playerMovement : MonoBehaviour
     GameObject interactionDisplay;
     public static Rigidbody2D rb;
 
+    public bool dialogue;
+
     public FMOD.Studio.EventInstance pettingAudio;
     // public TimeManager time;
-    //public NPCBehavior npc;
+    // public NPCBehavior npc;
 
-    //public bool interactPressed = false;
-    //public bool submitPressed = false;
+    // public bool interactPressed = false;
+    // public bool submitPressed = false;
     // public static bool check = TimeManager.TimesUp;
 
     private bool facingRight = true;
@@ -38,30 +40,6 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        // get levels complete from Level Loader script
-        levelsComplete = LevelLoader.levels;
-
-        for direction: 
-        if levels[previous scene#] != 0 then start pos right and facing right
-
-        later on I can use the check to reset the level
-        */
-
-        /*
-        if (LevelLoader.Prev == true)
-        {
-            //Debug.Log("true");
-            player.transform.position = new Vector3(6.75f, -1.2f, 0.0f);
-            flipChara();
-        }
-        else
-        {
-            //Debug.Log("false");
-            player.transform.position = new Vector3(-7.3f, -1.2f, 0.0f);
-        }
-        */
-
         interactionDisplay = gameObject.transform.Find("InteractionDisplay").gameObject;
     }
 
@@ -148,10 +126,19 @@ public class playerMovement : MonoBehaviour
 
     void Act()
     {
-        if (TextTrigger.Speaking == false)
+                animator.SetTrigger("Strike");
+        /*
+        if (dialogue == true)
         {
-            animator.SetTrigger("Strike");
+            Debug.Log(dialogue);
+            
+        } else {
+            if (TextTrigger.Speaking == false)
+            {
+                animator.SetTrigger("Strike");
+            }
         }
+        */
     }
 
     private void switchSFX() 
@@ -249,6 +236,7 @@ public class playerMovement : MonoBehaviour
 
     public void Die() {
         playeron.SetActive(false);
+        TimeManager.startingTime = 300;
         SceneManager.LoadScene("1StartScene");
     }
 }

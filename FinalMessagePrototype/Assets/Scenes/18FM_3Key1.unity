@@ -267,6 +267,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 931657177}
+  playerON: {fileID: 1777492530}
 --- !u!61 &60230611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2316,7 +2317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752087225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.34, y: -1.01, z: 0}
+  m_LocalPosition: {x: -14.6, y: -1.01, z: 0}
   m_LocalScale: {x: 1.7, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3950,6 +3951,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 1401727589}
+  playerON: {fileID: 1777492530}
 --- !u!61 &1214373044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4165,6 +4167,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 1401727589}
+  playerON: {fileID: 1777492530}
 --- !u!61 &1258547400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4493,6 +4496,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 931657177}
+  playerON: {fileID: 1777492530}
 --- !u!61 &1400046262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5215,6 +5219,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 931657177}
+  playerON: {fileID: 1777492530}
 --- !u!61 &1534196384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5747,6 +5752,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1527980907868759071, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1663769156227580805, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_LinearDrag
       value: 1
@@ -5755,6 +5764,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1777492526}
+    - target: {fileID: 3065096178899888131, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
+      propertyPath: dialogue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3796853056380971295, guid: 2e69583d456f1b040a05c4ece498b16c, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab
@@ -6846,6 +6859,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 1401727589}
+  playerON: {fileID: 1777492530}
 --- !u!61 &2049904181
 BoxCollider2D:
   m_ObjectHideFlags: 0

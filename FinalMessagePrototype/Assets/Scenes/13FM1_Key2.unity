@@ -459,6 +459,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3595834720704735808, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
+      propertyPath: m_Offset.y
+      value: 2.24
+      objectReference: {fileID: 0}
     - target: {fileID: 1113816838770911607, guid: 4d6fac442432d21438ce674babd882ec, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3735,6 +3739,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1401046457276968489, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.73
+      objectReference: {fileID: 0}
     - target: {fileID: 3427892712498508449, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
       propertyPath: m_Name
       value: AscentCliff
@@ -3745,11 +3753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6040051707467160481, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.44
+      value: 31.5
       objectReference: {fileID: 0}
     - target: {fileID: 6040051707467160481, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 6040051707467160481, guid: 06008b11d48d20e4796b84a2a7dd661f, type: 3}
       propertyPath: m_LocalPosition.z

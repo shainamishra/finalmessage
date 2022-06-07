@@ -852,6 +852,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 764438855}
+  playerON: {fileID: 1602107683}
 --- !u!95 &154081168
 Animator:
   serializedVersion: 3
@@ -2677,6 +2678,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 764438855}
+  playerON: {fileID: 1602107683}
 --- !u!95 &902534845
 Animator:
   serializedVersion: 3
@@ -4211,6 +4213,7 @@ MonoBehaviour:
       Data4: -1098203406
     Path: event:/Environment & Ambience/ChimeFail
   chimeGate: {fileID: 764438855}
+  playerON: {fileID: 1602107683}
 --- !u!95 &1522989219
 Animator:
   serializedVersion: 3
