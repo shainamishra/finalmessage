@@ -9708,11 +9708,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shadow: {fileID: 963782717}
   shadowidle: {fileID: 963782718}
-  cameraMovement: {fileID: 0}
-  player: {fileID: 0}
-  dog: {fileID: 0}
+  cameraMovement: {fileID: 519420030}
+  player: {fileID: 1274237546}
+  dog: {fileID: 2133830881}
   skpos: {fileID: 963782720}
-  knight: {fileID: 0}
+  knight: {fileID: 1274237543}
   thisTimeManager: {fileID: 628722387}
   timerState: 3
 --- !u!114 &1930143245

@@ -147,7 +147,6 @@ public class playerMovement : MonoBehaviour
     
     private void move()
     {
-        
         if(TimeManager.TimesUp == true){
             rb.velocity = new Vector3(0,0,0);
         }

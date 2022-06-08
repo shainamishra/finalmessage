@@ -14,13 +14,11 @@ public class TimeManager : MonoBehaviour
     private static bool timeUp = false;
     public GameObject shadow;
 
-
     public Animator shadowidle;
 
     public cameraMovement cameraMovement;
     public playerMovement player;
     public dogMovement dog;
-
 
     // public Transform kpos;
     public Transform skpos;
@@ -119,11 +117,16 @@ public class TimeManager : MonoBehaviour
           TimesUp = true;
 
           timeOutVCA.setVolume(0f);
-          if(cameraMovement.dogon.activeSelf == true){
-              cameraMovement.dogon.SetActive(false);
-              cameraMovement.playeron.SetActive(true);
+          
+          if(cameraMovement != null)
+          {
+            if(cameraMovement.dogon.activeInHierarchy == true)
+            {
+                cameraMovement.dogon.SetActive(false);
+                cameraMovement.playeron.SetActive(true);
             }
-
+          }
+          
             shadow.SetActive(true);
             shadowidle.SetBool("Play",true);
             // skpos.SetPositionAndRotation(new Vector3(knight.transform.position.x+15,knight.transform.position.y,0f),new Quaternion(0,0,0,0));
