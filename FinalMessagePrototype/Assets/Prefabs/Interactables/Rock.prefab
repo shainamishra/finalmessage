@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1113816838770911607}
   - component: {fileID: 7005447329923298701}
   - component: {fileID: -7686688211104351513}
-  - component: {fileID: -3595834720704735808}
+  - component: {fileID: 3792767513768400742}
   - component: {fileID: -963015765024825959}
   m_Layer: 0
   m_Name: Rock
@@ -106,8 +106,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &-3595834720704735808
-BoxCollider2D:
+--- !u!70 &3792767513768400742
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,19 +119,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10364914, y: 1.4325397}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16.2, y: 21.6}
-    newSize: {x: 16.2, y: 21.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 14.645256, y: 16.454626}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.25042206, y: 1.279936}
+  m_Size: {x: 13.807083, y: 17.036764}
+  m_Direction: 0
 --- !u!114 &-963015765024825959
 MonoBehaviour:
   m_ObjectHideFlags: 0
