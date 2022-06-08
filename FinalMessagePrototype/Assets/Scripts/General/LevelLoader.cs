@@ -525,15 +525,15 @@ public class LevelLoader : MonoBehaviour
             if (exitTransition20.status)//if(exitTransition20.status && (player.transform.position.x > 23 && player.transform.position.x < 26) || (dog.transform.position.x > 22 && dog.transform.position.x < 26))
             {
                 // player has to enter door
-                if((player.transform.position.x > 23 && player.transform.position.x < 26) || (dog.transform.position.x > 22 && dog.transform.position.x < 26))
-                {
+                //if((player.transform.position.x > 23 && player.transform.position.x < 26) || (dog.transform.position.x > 22 && dog.transform.position.x < 26))
+                //{
                 //goes to 21
-                    if(Input.GetKeyDown(KeyCode.E))
-                    {
+                    //if(Input.GetKeyDown(KeyCode.E))
+                    //{
                         levelVar = 0;
                         LoadNextLevel();
-                    }
-                }
+                    //}
+                //}
             }
             // move back
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
