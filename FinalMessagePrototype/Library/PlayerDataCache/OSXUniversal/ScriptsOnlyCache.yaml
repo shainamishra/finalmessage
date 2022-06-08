@@ -58,6 +58,7 @@ ScriptsOnlyBuild:
     - TutorialTextChanger
     - UIAudioManager
     - VCAController
+    - VideoLoad
     - adventurerKill
     - backgroundChanger
     - cameraMovement
@@ -94,6 +95,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.SpriteShape.Runtime.dll:
@@ -2001,6 +2003,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5644}
     - Class: 114
       Script: {instanceID: 6634}
+    - Class: 114
+      Script: {instanceID: 20096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2068,6 +2072,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4044}
     - Class: 114
       Script: {instanceID: 6634}
+    - Class: 114
+      Script: {instanceID: 20096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2141,6 +2147,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5644}
     - Class: 114
       Script: {instanceID: 6634}
+    - Class: 114
+      Script: {instanceID: 20096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -4378,6 +4386,12 @@ ScriptsOnlyBuild:
     assemblyName: FMODUnity.dll
     namespaceName: FMODUnity
     className: PlatformMobileHigh
+  - hash:
+      serializedVersion: 2
+      Hash: e5d83d8736b02d4479d5bb358ec0ff9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VideoLoad
   platform: 2
   scenePathNames:
   - Assets/Scenes/0MainMenu.unity
@@ -4407,4 +4421,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/24Intro.unity
   - Assets/Scenes/25Outro.unity
   - Assets/Scenes/26Credits.unity
-  playerPath: /Users/shaina/Desktop/FinalMessage(Mac)11.3.app
+  playerPath: /Users/shaina/Desktop/FinalMessage(Mac)11.4.app
