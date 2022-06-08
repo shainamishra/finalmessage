@@ -46,7 +46,6 @@ public class dogMovement : MonoBehaviour
             if(dogon.activeSelf == true){
                 dogon.SetActive(false);
                 animator.SetFloat("Speed", 0);
-                
             }
             else if(dogon.activeSelf == false){
                 dogon.SetActive(true);

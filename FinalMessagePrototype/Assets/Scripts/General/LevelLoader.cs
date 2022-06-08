@@ -73,7 +73,7 @@ public class LevelLoader : MonoBehaviour
 
         // quit the game
         if (Input.GetKey(KeyCode.Escape)) {
-            Application.Quit();
+            //Application.Quit();
         }
 
         // Menu
@@ -95,7 +95,7 @@ public class LevelLoader : MonoBehaviour
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5){
                 if(levels[4] == 0)
                 {
-                    levelVar = 0;
+                    levelVar = 19;
                     LoadNextLevel();
                 }
                 else if (levels[4] == 1)
@@ -528,8 +528,11 @@ public class LevelLoader : MonoBehaviour
                 if((player.transform.position.x > 23 && player.transform.position.x < 26) || (dog.transform.position.x > 22 && dog.transform.position.x < 26))
                 {
                 //goes to 21
-                    levelVar = 0;
-                    LoadNextLevel();
+                    if(Input.GetKeyDown(KeyCode.E))
+                    {
+                        levelVar = 0;
+                        LoadNextLevel();
+                    }
                 }
             }
             // move back
