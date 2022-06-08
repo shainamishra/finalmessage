@@ -212,7 +212,7 @@ public class playerMovement : MonoBehaviour
         else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
-            //interactionDisplay.transform.Rotate(0f, 0f, 0f);
+            interactionDisplay.transform.Rotate(0f, 0f, 0f);
         }
     }
 
