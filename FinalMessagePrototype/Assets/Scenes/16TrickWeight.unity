@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1431712983}
-  speed: 10
+  speed: 5
   target_elevation: -3.82
   second_button: 0
   button_2: {fileID: 0}
