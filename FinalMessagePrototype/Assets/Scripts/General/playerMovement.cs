@@ -19,6 +19,7 @@ public class playerMovement : MonoBehaviour
     public static Rigidbody2D rb;
 
     public FMOD.Studio.EventInstance pettingAudio;
+    public FMOD.Studio.EventInstance restartAudio;
     // public TimeManager time;
     // public NPCBehavior npc;
 
@@ -32,7 +33,6 @@ public class playerMovement : MonoBehaviour
     // Awake is called after all objects are initialized. Called in random order
     private void Awake()
     {
-        pettingAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/Knight/PupPetting");
         rb = GetComponent<Rigidbody2D>(); // will look for a component on this GameObject (what the script is attached to) of type Rigidbody2D
     }
 
@@ -40,6 +40,8 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         interactionDisplay = gameObject.transform.Find("InteractionDisplay").gameObject;
+        pettingAudio = RuntimeManager.CreateInstance("event:/PlayerAudio/Knight/PupPetting");
+        restartAudio = RuntimeManager.CreateInstance("event:/UI/Restart");
         //canvas = interactionDisplay.GetComponent<Canvas>();
         //canvas.worldCamera = Camera.main;
     }
@@ -235,5 +237,8 @@ public class playerMovement : MonoBehaviour
         TimeManager.startingTime = 300;
         SceneManager.LoadScene("1StartScene");
         LevelLoader.deathCount += 1;
+        if (!AudioManager.isPlaying(restartAudio)) {
+            restartAudio.start();
+        }
     }
 }
