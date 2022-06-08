@@ -15,6 +15,7 @@ public class playerMovement : MonoBehaviour
     public GameObject strikepoint;
     public GameObject reachzone;
     GameObject interactionDisplay;
+    Canvas canvas;
     public static Rigidbody2D rb;
 
     public FMOD.Studio.EventInstance pettingAudio;
@@ -39,6 +40,8 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         interactionDisplay = gameObject.transform.Find("InteractionDisplay").gameObject;
+        //canvas = interactionDisplay.GetComponent<Canvas>();
+        //canvas.worldCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -212,7 +215,7 @@ public class playerMovement : MonoBehaviour
         else{
             facingRight = !facingRight; //inverse boolean
             transform.Rotate(0f, 180f, 0f);
-            interactionDisplay.transform.Rotate(0f, 0f, 0f);
+            interactionDisplay.transform.Rotate(0f, 180f, 0f);
         }
     }
 
