@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1863339123875141066}
   - component: {fileID: -3956843983662974986}
   - component: {fileID: 1818765957408081833}
-  - component: {fileID: 1241938543301750406}
+  - component: {fileID: 6775246916185585291}
   m_Layer: 0
   m_Name: RopeNew
   m_TagString: Untagged
@@ -343,12 +343,12 @@ MonoBehaviour:
   status: 0
   ropeFail:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!114 &1241938543301750406
+      Data1: -1572593438
+      Data2: 1162507736
+      Data3: 635266456
+      Data4: -1540272715
+    Path: event:/Environment & Ambience/FalchionFail
+--- !u!114 &6775246916185585291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,14 +363,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -898395767
-      Data2: 1163168486
-      Data3: 1316113799
-      Data4: 317772160
-    Path: event:/Environment & Ambience/RopeSnap
+      Data1: -565234904
+      Data2: 1249700546
+      Data3: 129203388
+      Data4: -1954776876
+    Path: event:/Environment & Ambience/Rope
   Event: 
-  PlayEvent: 12
-  StopEvent: 0
+  PlayEvent: 1
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

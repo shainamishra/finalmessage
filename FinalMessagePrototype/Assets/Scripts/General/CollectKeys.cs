@@ -44,8 +44,6 @@ public class CollectKeys : MonoBehaviour
             {
                 LevelLoader.Key3 = 1;
             }
-
-
         }
     }
 }

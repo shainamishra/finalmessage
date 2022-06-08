@@ -3034,6 +3034,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30.083
       objectReference: {fileID: 0}
+    - target: {fileID: 1241938543301750406, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Environment & Ambience/RopeSnap
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241938543301750406, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -898395767
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241938543301750406, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1163168486
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241938543301750406, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1316113799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241938543301750406, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 317772160
+      objectReference: {fileID: 0}
     - target: {fileID: 1818765957408081833, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
       propertyPath: crow_can_cut
       value: 1
@@ -3062,7 +3082,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockRelease
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1241938543301750406, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2742ee9fb2a88844880bf963201e8194, type: 3}
 --- !u!1 &1605900539 stripped
 GameObject:
@@ -3259,11 +3280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.22
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.79
+      value: 9.13
       objectReference: {fileID: 0}
     - target: {fileID: 5117929789146743894, guid: 8ff66e4d232947140a7e342a56dae4ff, type: 3}
       propertyPath: m_LocalPosition.z

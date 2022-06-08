@@ -18,6 +18,7 @@ public class RopeCut : MonoBehaviour
     GameObject crow;
 
     public EventReference ropeFail;
+    public FMOD.Studio.EventInstance ropeCut;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class RopeCut : MonoBehaviour
         if(crow_can_cut){
             crow = GameObject.Find("Crow");
         }
+        ropeCut = RuntimeManager.CreateInstance("event:/Environment & Ambience/RopeSnap");
     }
 
     public void playRopeFail() {
@@ -49,6 +51,9 @@ public class RopeCut : MonoBehaviour
         if(condition){
             Destroy(gameObject, 0.15f);
             status = true;
+            if (!AudioManager.isPlaying(ropeCut)) {
+                    ropeCut.start();
+                } 
             
         }
         else if(crow_can_cut){
@@ -56,6 +61,10 @@ public class RopeCut : MonoBehaviour
             if((x_difference < 0.1) && (x_difference > -0.1)){
                 Destroy(gameObject, 0.15f);
                 status = true;
+                if (!AudioManager.isPlaying(ropeCut)) {
+                    ropeCut.start();
+                } 
+                
             }
         } else if (!condition && is_on && isColliding) {
             if (Input.GetMouseButtonDown(0)) {
