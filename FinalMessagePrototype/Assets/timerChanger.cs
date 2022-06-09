@@ -11,9 +11,6 @@ public class timerChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //regular = GameObject.Find("Regular");
-
-        //frozen = GameObject.Find("Frozen");
         frozen.SetActive(false);
     }
 

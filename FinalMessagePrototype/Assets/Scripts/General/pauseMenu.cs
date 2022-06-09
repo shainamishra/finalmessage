@@ -31,15 +31,7 @@ public class pauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (play.gameObject.activeInHierarchy == true)
-        {
-            Debug.Log("play on");
-        }
-        else
-        {
-            Debug.Log("play off");
-            pause.gameObject.SetActive(true);
-        }
+        
     }
 
     void pauseTask()
@@ -52,16 +44,15 @@ public class pauseMenu : MonoBehaviour
     void playTask()
     {
         play.gameObject.SetActive(false);
-        canvas.gameObject.SetActive(false);
         pause.gameObject.SetActive(true);
     }
 
     void ResetGame()
     {
+        //SceneManager.LoadScene("1StartScene");
         //TimeManager.startingTime = 300;
         //LevelLoader.deathCount += 1;
         //SceneManager.LoadScene(1);
-        
     }
 
     public void QuitGame()

@@ -24,10 +24,12 @@ public class VideoLoad : MonoBehaviour
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(26);
         } 
+        /*
         else if(SceneManager.GetActiveScene().buildIndex == 26)
         {
-            //UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         } 
+        */
     } 
 
     // Update is called once per frame
