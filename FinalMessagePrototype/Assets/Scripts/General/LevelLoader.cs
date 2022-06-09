@@ -95,7 +95,7 @@ public class LevelLoader : MonoBehaviour
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5){
                 if(levels[4] == 0)
                 {
-                    levelVar = 0;
+                    levelVar = 5;
                     LoadNextLevel();
                 }
                 else if (levels[4] == 1)
@@ -478,9 +478,6 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 18){
             // level ending conditions
             levels[18] = 1;
-            Key1 = 1;
-            Key2 = 1;
-            Key3 = 1;
 
             if(dog.transform.position.x > 10.5 || player.transform.position.x > 10.5)
             {

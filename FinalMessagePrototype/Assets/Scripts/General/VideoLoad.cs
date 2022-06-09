@@ -26,7 +26,7 @@ public class VideoLoad : MonoBehaviour
         } 
         else if(SceneManager.GetActiveScene().buildIndex == 26)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            //UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         } 
     } 
 

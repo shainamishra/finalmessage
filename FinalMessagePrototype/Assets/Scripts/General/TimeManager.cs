@@ -325,7 +325,7 @@ public class TimeManager : MonoBehaviour
         // shadowLeave();
         // Debug.Log("flipped");
         skpos.SetPositionAndRotation(new Vector3(skpos.position.x,skpos.position.y,0f),new Quaternion(0,0,0,0));
-        Debug.Log("Leave");
+        //Debug.Log("Leave");
           // startingTime = 300;
           // Debug.Log("Restart");
           timeUp = TimesUp;
