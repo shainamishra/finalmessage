@@ -1831,6 +1831,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+--- !u!1 &1198466543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5868103561602681019, guid: 04c74169f94be47cda0b1eb45a151bab, type: 3}
+  m_PrefabInstance: {fileID: 1198466542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1219445056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +2653,7 @@ GameObject:
   - component: {fileID: 1889860304}
   - component: {fileID: 1889860303}
   - component: {fileID: 1889860302}
+  - component: {fileID: 1889860306}
   m_Layer: 5
   m_Name: InstructionCanvas (1)
   m_TagString: Untagged
@@ -2737,6 +2743,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1889860306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889860301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac7a51ce89f67a409f7996c930d24da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructions: {fileID: 1889860301}
+  levelLoader: {fileID: 1198466543}
 --- !u!1 &1891241974
 GameObject:
   m_ObjectHideFlags: 0
