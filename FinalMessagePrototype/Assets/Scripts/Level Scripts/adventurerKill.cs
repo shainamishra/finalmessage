@@ -19,7 +19,7 @@ public class adventurerKill : MonoBehaviour
     {
         currentLoop = levelLoader.gameObject.GetComponent<LevelLoader>().getDeathCount();
         if(spokenLoop == -1) {
-            spokenLoop = 6;
+            spokenLoop = 2147483647;
         }
 
         if(dead) {
