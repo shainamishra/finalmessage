@@ -11493,8 +11493,7 @@ MonoBehaviour:
   dialogue:
     name: Final Message
     sentences:
-    - Foul Witch, what right have you to the Mount of the Sun? By the Power and Glory
-      invested in m-
+    - Why did he leave me?
   dialogueManager: {fileID: 1519600355}
 --- !u!114 &579140970
 MonoBehaviour:

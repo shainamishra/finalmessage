@@ -350,7 +350,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - Well, when I met him long ago he had a proper name. A brilliant scholar from
+      the university, who came here to study the power of the Mount.
+    - "Now he\u2019s been reduced to a pompous madman who thinks he\u2019s going
+      to live forever."
+    - But he does know many things.
+    - "Last I saw him he was high on the Mount\u2019s eastern slopes. He\u2019s probably
+      still there, he doesn\u2019t move about often."
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &16143872
 GameObject:
@@ -1477,16 +1485,17 @@ MonoBehaviour:
   dialogue:
     name: Tatik Arar
     sentences:
-    - Oh, they're not really keys dear.
-    - The other Climbers call them that, when they speak of them at all, because
-      they "open the way to the Summit."
-    - Really, they are objects of power from elsewhere in the world brought here
-      by Climbers long fallen.
-    - The Falchion was left here by some Wizard many years ago,
-    - the Chime Bell was stolen from the Mount by scholars then returned,
-    - and the Ember Heart is an ancient stone imbued with the Sun's fire.
-    - Hold them close to you if you find them, dear, they will open ways to you that
-      are closed.
+    - Ah, yes. The Final Messages are the last gift Mount Arar gives to its climbers.
+    - The Mountain remembers those who have fallen on its slopes. It listens to them,
+      and preserves their last words in remembrance.
+    - Whispered in the wind's soft voice, those who came before you will speak to
+      you and guide you should you stop to listen by their graves.
+    - They will never fade from the mountain face.
+    - It has become tradition to leave behind a well-loved weapon and an adored piece
+      of clothing as a marker for the message.
+    - The living can leave final messages as well, but only if they achieve their
+      goal and leave this place.
+    - "\u2026"
     - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &235193848
@@ -1559,7 +1568,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: How do I reach the Summit?
+  m_Text: What is Mount Arar?
 --- !u!222 &235193851
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1798,7 +1807,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - "It once belonged to a man, no\u2026 a boy."
+    - "How perfect he was for her, how loving and kind, yet I knew\u2026 it wasn\u2019t
+      to be."
+    - "Ah, but I\u2019m getting carried away."
+    - It is a strange weapon, enchanted by the wizard who wielded it long ago.
+    - "It rests at his grave. If you wish to pay your respects, follow the sword
+      at the crossroads ahead.\r"
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &326029664
 GameObject:
@@ -2140,7 +2157,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - A man blinded by pride. A poor soul, bless him.
+    - Long ago, he had a partner he abandoned, too invested in climbing to bother
+      asking for help.
+    - Ever since he chose to climb alone, alas, he has failed to make any significant
+      progress.
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &382176837
 GameObject:
@@ -3595,7 +3618,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - An artisan, once. Another Climber now.
+    - She was once so full of life, offering to forge a weapon for any who wanted
+      to Climb but did not have one of their own.
+    - I worry for her.
+    - Many of the weapons left behind on the slopes of the Mount are her craftsmanship.
+    - "I fear her own weapon may join them soon.\r"
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &677754039
 GameObject:
@@ -4397,11 +4427,11 @@ MonoBehaviour:
   dialogue:
     name: Tatik Arar
     sentences:
-    - Learning how to Climb the Mount is part of your journey, dearie.
-    - Wander where you will, and remember the lessons the Mount teaches you.
-    - Do not be afraid to be lost, and do not fear the setting sun. It's a wonderful
-      thing, to climb!
-    - So climb joyfully! Anything otherwise is a waste of your youthful bones.
+    - Mount Arar, a chunk of earth as old as the sun itself, is said to be a link
+      to the world above.
+    - Those who wish to prove themselves, and renew the purpose of their lives,
+    - attempt to scale this mountain to leave their Final Message on the summit.
+    - Those like you, dearie.
     - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &837664785
@@ -5568,7 +5598,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who is the Seeker of Eternity
+  m_Text: What is the Ember Heart?
 --- !u!222 &1019645722
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5800,7 +5830,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - What a pretty thing, that rock is.
+    - So pretty.
+    - " I\u2019ve been told it\u2019s a piece of the Summit of this very Mount, although
+      I doubt that\u2019s true."
+    - After all, if it were you would think I would know about it!
+    - Nevertheless, the Sun cares for that stone dearly and the Mount responds to
+      its presence.
+    - Keep it close to you.
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &1044005718
 GameObject:
@@ -5997,14 +6036,12 @@ MonoBehaviour:
   dialogue:
     name: Tatik Arar
     sentences:
-    - Ah, yes. The Final Messages are the last gift Mount Arar gives to its climbers.
-    - The Mountain remembers those who have fallen on its slopes. It listens to them,
-      and preserves their last words in remembrance.
-    - Whispered in the wind's soft voice, those who came before you will speak to
-      you and guide you should you stop to listen by their graves.
-    - The living can leave final messages as well, but only if they achieve their
-      goal and leave this place.
-    - ...
+    - Learning how to Climb the Mount is part of your journey, dearie.
+    - "Wander where you will, and remember the lessons the Mount and its Climbers
+      \u2014 living and dead \u2014 teach you."
+    - Do not be afraid to be lost, and do not fear the setting sun. It's a wonderful
+      thing, to climb!
+    - So climb joyfully! Anything otherwise is a waste of your youthful bones.
     - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &1088595813
@@ -6077,7 +6114,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is the Witch Key?
+  m_Text: Who is the Lonely Climber?
 --- !u!222 &1088595816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6310,7 +6347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who is the Lonely Climber?
+  m_Text: "What is the Fallen\u2019s Falchion?"
 --- !u!222 &1119444630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6817,7 +6854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is a Final Message?
+  m_Text: How do I reach the Summit?
 --- !u!222 &1350181203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7308,7 +7345,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - 'My dearest daughter; a woman of one purpose: to guard the summit from those
+      who are unworthy of reaching it.'
+    - "You will meet her if you haven\u2019t already."
+    - My daughter is a kind woman, but she is also merciless.
+    - You will not reach the summit unless she allows it, dear.
+    - I suggest staying on her good side!
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &1400309576
 GameObject:
@@ -7380,7 +7424,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who is the Witch Knight?
+  m_Text: What are the keys?
 --- !u!222 &1400309579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7636,7 +7680,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is the Ember Heart?
+  m_Text: Who is the Witch Knight?
 --- !u!222 &1432382707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8341,7 +8385,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "What is the Fallen\u2019s Falchion?"
+  m_Text: Who is the Exhausted Adventurer?
 --- !u!222 &1496950403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9195,7 +9239,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What are the keys?
+  m_Text: What is a Final Message?
 --- !u!222 &1752152531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10876,7 +10920,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is the Chime Bell?
+  m_Text: Who is the Seeker of Eternity?
 --- !u!222 &1998929822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11356,7 +11400,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - Oh, they're not really keys dear.
+    - The other Climbers call them that, when they speak of them at all, because
+      they "open the way to the Summit."
+    - 'Really, they are objects of power from elsewhere in the world brought here
+      by Climbers long fallen... '
+    - Left behind to aid future Climbers in their endeavor.
+    - The Falchion was left here by a Wizard many years ago,
+    - the Chime Bell was stolen from the Mount by scholars then returned,
+    - and the Ember Heart is an ancient stone imbued with the Sun's fire.
+    - Hold them close to you if you find them, dear, they will open ways to you that
+      are closed.
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &2032297577
 GameObject:
@@ -11559,7 +11615,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who is the Exhausted Adventurer?
+  m_Text: What is the Chime Bell?
 --- !u!222 &2065455052
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11980,7 +12036,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Tatik Arar
-    sentences: []
+    sentences:
+    - There are many chime bells across the Mountain, bringers of sound and peace
+      to the soul.
+    - But only one will move from its place.
+    - "That bell\u2019s static sisters will be listening for it."
+    - "If you find it, carry it with you. Its song will open many closed doors.\r"
+    - 
   dialogueManager: {fileID: 2005993114}
 --- !u!1 &2133830877 stripped
 GameObject:
