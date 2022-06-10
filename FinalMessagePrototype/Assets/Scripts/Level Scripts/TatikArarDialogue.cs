@@ -259,11 +259,22 @@ public class TatikArarDialogue : MonoBehaviour
     // show the canvas
     void DisableOptions() 
     {
-        // show the option buttons
+        // hide the option buttons
         option1.gameObject.SetActive(false);
         option2.gameObject.SetActive(false);
         option3.gameObject.SetActive(false);
         option4.gameObject.SetActive(false);
+
+        // hide the option buttons page 2
+        option5.gameObject.SetActive(false);
+        option6.gameObject.SetActive(false);
+        option7.gameObject.SetActive(false);
+        option8.gameObject.SetActive(false);
+
+        // hide the option buttons page 3
+        option9.gameObject.SetActive(false);
+        option10.gameObject.SetActive(false);
+        option11.gameObject.SetActive(false);
 
         // show next and prev buttons
         prev.gameObject.SetActive(false);
