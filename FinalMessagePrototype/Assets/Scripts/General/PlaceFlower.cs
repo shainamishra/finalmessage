@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class PlaceFlower : MonoBehaviour
 {
-    private static bool placed = false;
+    public bool graveyard;
+    public int number;
     public GameObject flower;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(placed) {
-            flower.gameObject.SetActive(true);
+        //access memory for non-graveyard Final Messages
+        if(!graveyard) {
+            if(number == 7 && LevelLoader.flower7) {flower.gameObject.SetActive(true);}
+            else if(number == 8 && LevelLoader.flower8) {flower.gameObject.SetActive(true);}
+            else if(number == 10 && LevelLoader.flower10) {flower.gameObject.SetActive(true);}
+            else if(number == 12 && LevelLoader.flower12) {flower.gameObject.SetActive(true);}
+            else if(number == 13 && LevelLoader.flower13) {flower.gameObject.SetActive(true);}
+            else if(number == 18 && LevelLoader.flower18) {flower.gameObject.SetActive(true);}
+        }
+        else { //access memory for graveyard Final Messages
+            if(LevelLoader.graveFlowers[number]) {
+                flower.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -23,7 +35,19 @@ public class PlaceFlower : MonoBehaviour
 
     public void place()
     {
-        placed = true;
+        //edit memory so flower stays placed
+        if(!graveyard) {
+            if(number == 7) {LevelLoader.flower7 = true;}
+            else if(number == 8) {LevelLoader.flower8 = true;}
+            else if(number == 10) {LevelLoader.flower10 = true;}
+            else if(number == 12) {LevelLoader.flower12 = true;}
+            else if(number == 13) {LevelLoader.flower13 = true;}
+            else if(number == 18) {LevelLoader.flower18 = true;}
+            else {Debug.Log("Error: could not write non-graveyard flower memory.");}
+        }
+        else {//edit graveyard memory
+            LevelLoader.graveFlowers[number] = true;    
+        }
         flower.gameObject.SetActive(true);
     }
 }

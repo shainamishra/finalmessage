@@ -10119,6 +10119,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -10577,6 +10585,14 @@ PrefabInstance:
     - target: {fileID: 3401625186477643918, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_Name
       value: GraveFlower (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
@@ -11733,6 +11749,14 @@ PrefabInstance:
     - target: {fileID: 3401625186477643918, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_Name
       value: GraveFlower (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
@@ -13669,6 +13693,14 @@ PrefabInstance:
     - target: {fileID: 3401625186477643918, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_Name
       value: GraveFlower (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
@@ -16737,6 +16769,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -18416,6 +18456,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -18795,6 +18843,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -19136,6 +19192,14 @@ PrefabInstance:
     - target: {fileID: 3401625186477643918, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_Name
       value: GraveFlower (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
@@ -27783,6 +27847,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -29738,6 +29810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30683,7 +30759,7 @@ MonoBehaviour:
   violentDialogue: {fileID: 1806500207}
   violentManager: {fileID: 1637782213}
   niceDialogue: {fileID: 333703583}
-  niceManager: {fileID: 333703583}
+  niceManager: {fileID: 1091022003}
   killBox: {fileID: 1182465115}
 --- !u!1 &1364178472
 GameObject:
@@ -32971,6 +33047,14 @@ PrefabInstance:
     - target: {fileID: 3401625186477643918, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_Name
       value: GraveFlower (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
@@ -41371,6 +41455,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -41851,6 +41943,14 @@ PrefabInstance:
     - target: {fileID: 3401625186477643918, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_Name
       value: GraveFlower (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: graveyard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder

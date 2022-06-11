@@ -29,6 +29,15 @@ public class LevelLoader : MonoBehaviour
     public static int Key3 = 0; //ember heart
     public static int Key4 = 0;
 
+    //final message flower memory
+    public static bool flower7 = false;
+    public static bool flower8 = false;
+    public static bool flower10 = false;
+    public static bool flower12 = false;
+    public static bool flower13 = false;
+    public static bool flower18 = false;
+    public static bool[] graveFlowers = {false, false, false, false, false, false, false, false, false, false, false, false, false};
+
     public playerMovement playerMovement;
     public dogMovement dogMovement;
 

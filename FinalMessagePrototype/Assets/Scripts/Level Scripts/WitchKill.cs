@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class WitchKill : MonoBehaviour
 {
@@ -24,5 +27,9 @@ public class WitchKill : MonoBehaviour
 
     void Kill() {
         Debug.Log("You died.");
+        SceneManager.LoadScene("1StartScene");
+        TimeManager.startingTime = 300;
+        TimeManager.timeOutVCA.setVolume(1f);
+        LevelLoader.deathCount += 1;
     }
 }

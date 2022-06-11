@@ -3841,6 +3841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraveFlower
       objectReference: {fileID: 0}
+    - target: {fileID: 6935383311639468801, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
+      propertyPath: number
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8566501037422018348, guid: a05deffb9fbc73b4b933dbd159088532, type: 3}
       propertyPath: m_RootOrder
       value: 26
