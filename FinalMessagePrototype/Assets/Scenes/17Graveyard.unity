@@ -22224,6 +22224,7 @@ GameObject:
   - component: {fileID: 990600412}
   - component: {fileID: 990600411}
   - component: {fileID: 990600410}
+  - component: {fileID: 990600415}
   m_Layer: 0
   m_Name: WitchKnightNPC
   m_TagString: NPC
@@ -22355,6 +22356,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &990600415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990600409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3604c86c5bc44437ca9a04a4353a7f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    Guid:
+      Data1: -521617516
+      Data2: 1333553764
+      Data3: 1733297031
+      Data4: -645825471
+    Path: event:/UI/Restart
+  PlayOnAwake: 0
+  PlayOnDestroy: 0
 --- !u!1 &990606024
 GameObject:
   m_ObjectHideFlags: 0
@@ -26304,6 +26326,7 @@ MonoBehaviour:
   killBox: {fileID: 1182465117}
   player: {fileID: 1116995427}
   dog: {fileID: 582008775}
+  sfx: {fileID: 990600415}
 --- !u!61 &1182465117
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class WitchKill : MonoBehaviour
     public Collider2D killBox;
     public Collider2D player;
     public Collider2D dog;
+    public AudioTrigger sfx;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class WitchKill : MonoBehaviour
 
     void Kill() {
         Debug.Log("You died.");
+        sfx.PlayOneShot();
         SceneManager.LoadScene("1StartScene");
         TimeManager.startingTime = 300;
         TimeManager.timeOutVCA.setVolume(1f);

@@ -2326,7 +2326,7 @@ MonoBehaviour:
   levelVar: 0
   transition: {fileID: 1649312281}
   transitionTime: 0.5
-  sentences: 0
+  sentences: 2
   finalMessage: 1
   repeatable: 1
 --- !u!114 &766494714

@@ -5511,7 +5511,7 @@ MonoBehaviour:
     - You would not be the first simpleton to be turned away from the Summit of the
       Mount.
     - Although it would still be interesting to see you get even that far. Few do.
-    - Once you have your bell, you may enter the Caves and begin your final ascent,
+    - Once you have your bell you may enter the Caves and begin your final ascent,
       if you wish. Foolishness, but who am I to stop you?
     - 
   dialogueManager: {fileID: 1554712635}
