@@ -216,6 +216,7 @@ public class LevelLoader : MonoBehaviour
             else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
             {
                 levelVarNeg = 0;
+                LoadPrevLevel();
             }
 
             // check if player fell from a great height, send to start
@@ -609,6 +610,12 @@ public class LevelLoader : MonoBehaviour
                 levelVar = -13;
                 LoadNextLevel();
             }
+            else if((player.transform.position.x < -10 && (player.transform.position.y > -3 && player.transform.position.y < 1)) || (dog.transform.position.x < -11 && (dog.transform.position.y > -2 && dog.transform.position.y < 1)))
+            {
+                levelVarNeg = -11;
+                LoadPrevLevel();
+            }
+
         }
 
         
