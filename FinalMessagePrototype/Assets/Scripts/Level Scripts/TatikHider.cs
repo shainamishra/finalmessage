@@ -19,7 +19,7 @@ public class TatikHider : MonoBehaviour
         else {
             if(levelLoader.gameObject.GetComponent<LevelLoader>().getDeathCount() >= 1) {
                 tatik = true;
-                tatikArar.gameObject.SetActive(true);
+                tatikArar.gameObject.SetActive(false);
             }
         }
     }
