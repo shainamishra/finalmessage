@@ -90,4 +90,12 @@ public class ButtonActivate : MonoBehaviour
             }
         }
     }
+
+    public void OnTriggerStay2D(Collider2D other) {
+        if (other == knight || dog || rock || rock_1) {
+            if (AudioManager.isPlaying(buttonAudio)) {
+                    buttonAudio.release();
+            }
+        }
+    }
 }
