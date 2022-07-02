@@ -77,15 +77,5 @@ public class RopeCut : MonoBehaviour
                 playRopeFail();
             }
         }
-
-        if (collider.gameObject.tag == "Player") {
-            isColliding = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collider) {
-        if (collider.gameObject.tag == "Player") {
-            isColliding = false;
-        }
     }
 }
