@@ -56,7 +56,7 @@ public class RopeCut : MonoBehaviour
                 } 
             
         }
-        else if(crow_can_cut){
+        else if(crow_can_cut) {
             float x_difference = gameObject.transform.position.x - crow.transform.position.x;
             if((x_difference < 0.1) && (x_difference > -0.1)){
                 Destroy(gameObject, 0.15f);
@@ -66,10 +66,6 @@ public class RopeCut : MonoBehaviour
                 } 
                 
             }
-        } else if (!condition && is_on && isColliding) {
-            if (Input.GetMouseButtonDown(0)) {
-                playRopeFail();
-            }
         }
     }
 
@@ -77,6 +73,9 @@ public class RopeCut : MonoBehaviour
     {
         if (collider.gameObject.name == "StrikeZone"){
             is_on = true;
+            if (!condition) {
+                playRopeFail();
+            }
         }
 
         if (collider.gameObject.tag == "Player") {

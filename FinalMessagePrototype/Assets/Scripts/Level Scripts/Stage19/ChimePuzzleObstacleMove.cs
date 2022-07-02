@@ -30,6 +30,7 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
     {
         initial_position = transform.position;
         platformAudio = RuntimeManager.CreateInstance("event:/Environment & Ambience/MovingPlatforms-Loop");
+        RuntimeManager.AttachInstanceToGameObject(platformAudio, GetComponent<Transform>(), GetComponent<Rigidbody2D>());
     }
 
     // Update is called once per frame
@@ -49,6 +50,7 @@ public class ChimePuzzleObstacleMove : MonoBehaviour
             Oscillate();
             if (!AudioManager.isPlaying(platformAudio)) {
                 platformAudio.start();
+                Debug.Log("audio!");
             }
         }
         else{
